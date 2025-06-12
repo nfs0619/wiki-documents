@@ -60,7 +60,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 
 ## Past Weekly wiki
 
-<!-- <details><summary>Click here</summary>
+<details><summary>Click here</summary>
 
 <!-- - [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
 - [weekly wiki on 3.06th](/Seeed_Elderly/weekly_wiki/wiki306)
@@ -172,4 +172,4 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
 - [weekly wiki on 2025.6.02nd](/Seeed_Elderly/weekly_wiki/wiki250602)
 
-<!-- </details> --> -->
+</details>

@@ -52,8 +52,10 @@ The Grove ecosystem offers a wide range of sensors that can be easily integrated
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/GroveSystem/images/grove_cover.png" style={{width:1000, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Sensor_Intro/"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong></a>
+    <a class="get_one_now_item" href="/Grove_Sensor_Intro/"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong>
+    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong>
+    </a>
 </div>
 
 ### <span id="jump4"> Grove Network Modules</span>
@@ -63,8 +65,10 @@ The Grove system also includes network modules that enable communication and con
 With Grove network modules, you can easily add wireless capabilities to your projects, enabling data transmission, remote control, or interaction with other devices and the internet.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_network_module_intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong></a>
+    <a class="get_one_now_item" href="/Grove_network_module_intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong>
+    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong>
+    </a>
 </div>
 
 ### <span id="jump5"> Grove Accessories </span>
@@ -72,8 +76,10 @@ With Grove network modules, you can easily add wireless capabilities to your pro
 In addition to sensors and network modules, the Grove ecosystem offers a variety of accessories that complement and enhance your electronics projects. These accessories include components such as LCD displays, LED matrices, motor drivers, relay modules, and more.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong></a>
+    <a class="get_one_now_item" href="/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong>
+    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong>
+    </a>
 </div>
 
 <!-- - [Grove Sensor](/Grove_Sensor_Intro)
@@ -295,8 +301,10 @@ Seeed Studio Fusion has launched a Grove Sensor Co-brand Campaign to help engine
 <div style={{textAlign:'center'}}><img src="https://www.seeedstudio.com/blog/wp-content/uploads/2023/03/project_2.png" style={{width:500, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Apply Now</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 More Information</font></span></strong></a>
+    <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Apply Now</font></span></strong>
+    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 More Information</font></span></strong>
+    </a>
 </div>
 
 ### <span id="jump9"> Grove Cables </span>
