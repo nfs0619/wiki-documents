@@ -33,13 +33,13 @@ This guide focuses on the hardware setup, physical connections, key specificatio
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/img/top.jpg" alt="pir" width={800} height="auto" /></p>
 
-The XIAO Soil Moisture Sensor is a compact, low-power environmental monitor powered by the [XIAO ESP32-C6](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html). Running on a single AA battery, it offers long-lasting operation and real-time soil condition updates. It features Pre-Calibrated Adaptive Soil Moisture Sensing for precise soil monitoring. Meanwhile, it enables dynamic monitoring intervals and instant readouts for accurate, responsive data. Fully compatible with Home Assistant, it’s ideal for smart gardening and precision agriculture—efficient, reliable, and made for sustainable plant care.
+The XIAO Soil Moisture Sensor is a compact, low-power environmental monitor powered by the [XIAO ESP32-C6](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html). Running on a single AA battery, it offers long-lasting operation and real-time soil condition updates. It features Pre-Calibrated Adaptive Soil Moisture Sensing for precise soil monitoring. Meanwhile, it enables dynamic monitoring intervals and instant readouts for accurate, responsive data. Fully compatible with Home Assistant, it's ideal for smart gardening and precision agriculture—efficient, reliable, and made for sustainable plant care.
 
 ### [Benchmark Labs Forecast Integration for Seeed Weather Stations](https://wiki.seeedstudio.com/benchmark_labs_forecast_integration_for_seeed_weather_stations/)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image59.png" alt="pir" width={800} height="auto" /></p>
 
-This guide explains how to purchase and activate Benchmark Labs’ hyper-local point specific weather forecasts with your Seeed weather station. Our AI-powered system delivers point-specific 10-day hourly forecasts tailored to your microclimate powered by data from your weather station, helping you make better environmental and operational decisions.
+This guide explains how to purchase and activate Benchmark Labs' hyper-local point specific weather forecasts with your Seeed weather station. Our AI-powered system delivers point-specific 10-day hourly forecasts tailored to your microclimate powered by data from your weather station, helping you make better environmental and operational decisions.
 
 ## Existing Wiki Updated
 
@@ -60,7 +60,8 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 
 ## Past Weekly wiki
 
-<!-- <details><summary>Click here</summary>
+<details>
+<summary>Click here</summary>
 
 <!-- - [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
 - [weekly wiki on 3.06th](/Seeed_Elderly/weekly_wiki/wiki306)
@@ -148,7 +149,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.12.02nd](/Seeed_Elderly/weekly_wiki/wiki241202)
 - [weekly wiki on 2024.12.09th](/Seeed_Elderly/weekly_wiki/wiki241209)
 - [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
-- [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
+- [weekly wiki on 2024.12.23rd](/Seeed_Elderly/weekly_wiki/wiki241223)
 - [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
 - [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
 - [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
@@ -161,10 +162,10 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
 - [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
 - [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
-- [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
+- [weekly wiki on 2025.3.31st](/Seeed_Elderly/weekly_wiki/wiki250331)
 - [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
 - [weekly wiki on 2025.4.14th](/Seeed_Elderly/weekly_wiki/wiki250414)
-- [weekly wiki on 2025.4.21th](/Seeed_Elderly/weekly_wiki/wiki250421)
+- [weekly wiki on 2025.4.21st](/Seeed_Elderly/weekly_wiki/wiki250421)
 - [weekly wiki on 2025.4.28th](/Seeed_Elderly/weekly_wiki/wiki250428)
 - [weekly wiki on 2025.5.05th](/Seeed_Elderly/weekly_wiki/wiki250505)
 - [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
@@ -172,4 +173,4 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
 - [weekly wiki on 2025.6.02nd](/Seeed_Elderly/weekly_wiki/wiki250602)
 
-<!-- </details> --> -->
+</details>

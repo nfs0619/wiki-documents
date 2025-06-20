@@ -1,0 +1,575 @@
+{
+  "currentIndex": 126,
+  "completed": [
+    "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
+    "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
+    "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Measurement_IDs.md",
+    "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Sensor_Types.md",
+    "Cloud_Chain\\SenseCAP_API\\Data_OpenStream_API\\Data_OpenStream_API_Quickstart.md",
+    "Cloud_Chain\\SenseCAP_API\\Data_OpenStream_API\\Data_OpenStream_API_Reference.md",
+    "Cloud_Chain\\SenseCAP_API\\HTTP_API\\HTTP_API_Access_Guide.md",
+    "Cloud_Chain\\SenseCAP_API\\HTTP_API\\Quick_Start.md",
+    {
+      "file": "Cloud_Chain\\SenseCAP_Dashboard\\Dashboard_Basics.md",
+      "completedAt": "2025-06-19T06:45:01.039Z",
+      "index": 13
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Dashboard\\Dashboard_Registration.md",
+      "completedAt": "2025-06-19T06:51:43.733Z",
+      "index": 14
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Dashboard\\hotspot-registration.md",
+      "completedAt": "2025-06-19T07:04:42.191Z",
+      "index": 15
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\app-settings.md",
+      "completedAt": "2025-06-19T07:06:16.149Z",
+      "index": 16
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\Deeplink_Helium_Wallet.md",
+      "completedAt": "2025-06-19T07:09:05.197Z",
+      "index": 17
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\Download_APP.md",
+      "completedAt": "2025-06-19T07:11:26.911Z",
+      "index": 18
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\FAQ.md",
+      "completedAt": "2025-06-19T07:13:46.111Z",
+      "index": 19
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\forget-wifi-profile.md",
+      "completedAt": "2025-06-19T07:15:07.334Z",
+      "index": 20
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\Hotspot_Management.md",
+      "completedAt": "2025-06-19T07:15:44.286Z",
+      "index": 21
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\Hotspot_Onboarding.md",
+      "completedAt": "2025-06-19T07:16:54.862Z",
+      "index": 22
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\Introduction.md",
+      "completedAt": "2025-06-19T07:17:38.484Z",
+      "index": 23
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\Remote Reboot.md",
+      "completedAt": "2025-06-19T07:18:41.182Z",
+      "index": 24
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\Update_antenna.md",
+      "completedAt": "2025-06-19T07:19:38.969Z",
+      "index": 25
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Hotspot_APP\\Update_Hotspot_Location.md",
+      "completedAt": "2025-06-19T07:20:57.339Z",
+      "index": 26
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Mate_APP\\overview.md",
+      "completedAt": "2025-06-19T07:21:41.821Z",
+      "index": 27
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Mate_APP\\sensecap_mate_app_event.md",
+      "completedAt": "2025-06-19T07:22:58.531Z",
+      "index": 28
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Mate_APP\\sensecraft_cloud_fee.md",
+      "completedAt": "2025-06-19T07:23:40.088Z",
+      "index": 29
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Portal\\Detail_Introduction\\Dashboard.md",
+      "completedAt": "2025-06-19T07:26:07.728Z",
+      "index": 30
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Portal\\Detail_Introduction\\Data_Management.md",
+      "completedAt": "2025-06-19T07:28:42.621Z",
+      "index": 31
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Portal\\Detail_Introduction\\Device_Management.md",
+      "completedAt": "2025-06-19T07:29:20.466Z",
+      "index": 32
+    },
+    {
+      "file": "Cloud_Chain\\SenseCAP_Portal\\QuickStart.md",
+      "completedAt": "2025-06-19T07:29:53.828Z",
+      "index": 33
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Application\\grove-vision-ai-v2-ha.md",
+      "completedAt": "2025-06-19T07:30:28.350Z",
+      "index": 34
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Grove_Vision_AI_v2_Workspace.md",
+      "completedAt": "2025-06-19T07:31:01.870Z",
+      "index": 35
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\recomputer_jetson\\Nvidia_Jetson_Workspace.md",
+      "completedAt": "2025-06-19T07:33:06.718Z",
+      "index": 36
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\recomputer_jetson\\SenseCraft_AI_Jetson.md",
+      "completedAt": "2025-06-19T07:34:44.960Z",
+      "index": 37
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\sensecraft_grove_visionai_output.md",
+      "completedAt": "2025-06-19T07:35:34.881Z",
+      "index": 38
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\xiao_esp32s3_sense\\sensecraft_xiao_esp32s3_gpio.md",
+      "completedAt": "2025-06-19T07:41:50.876Z",
+      "index": 39
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\xiao_esp32s3_sense\\sensecraft_xiao_esp32s3_libraries.md",
+      "completedAt": "2025-06-19T07:48:13.223Z",
+      "index": 40
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\xiao_esp32s3_sense\\sensecraft_xiao_esp32s3_mqtt.md",
+      "completedAt": "2025-06-19T07:56:13.499Z",
+      "index": 41
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\xiao_esp32s3_sense\\sensecraft_xiao_esp32s3_sscma.md",
+      "completedAt": "2025-06-19T08:07:52.370Z",
+      "index": 42
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Pretrained_Models\\Deploy_model_to_Jetson.md",
+      "completedAt": "2025-06-19T08:09:28.698Z",
+      "index": 43
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Pretrained_Models\\SenseCraft_Pretrained_Grove_vision_AI_V2.md",
+      "completedAt": "2025-06-19T08:11:03.781Z",
+      "index": 44
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Pretrained_Models\\SenseCraft_Pretrained_Watcher.md",
+      "completedAt": "2025-06-19T08:46:34.919Z",
+      "index": 45
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Pretrained_Models\\SenseCraft_Pretrained_XIAO_ESP32S3.md",
+      "completedAt": "2025-06-19T08:47:41.106Z",
+      "index": 46
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\SenseCraft_AI_main_page.md",
+      "completedAt": "2025-06-19T08:48:41.078Z",
+      "index": 47
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\SenseCraft_AI_overview.md",
+      "completedAt": "2025-06-19T08:52:08.081Z",
+      "index": 48
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Training\\Classification.md",
+      "completedAt": "2025-06-19T08:53:14.005Z",
+      "index": 49
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Training\\Object_Detection.md",
+      "completedAt": "2025-06-19T08:53:56.074Z",
+      "index": 50
+    },
+    {
+      "file": "Cloud_Chain\\SenseCraft\\SenseCraft_AI\\XIAO_ESP32S3_Workspace.md",
+      "completedAt": "2025-06-19T08:54:44.060Z",
+      "index": 51
+    },
+    {
+      "file": "Cloud.md",
+      "completedAt": "2025-06-19T08:55:08.103Z",
+      "index": 52
+    },
+    {
+      "file": "Contribution\\2023-True-Wild\\Embedded-World-Seeed-Studio-Presentation-BeagleBone.md",
+      "completedAt": "2025-06-19T08:57:09.125Z",
+      "index": 53
+    },
+    {
+      "file": "Contribution\\2023-True-Wild\\Embedded-World-Seeed-Studio-Presentation-Edge-Series.md",
+      "completedAt": "2025-06-19T08:57:20.984Z",
+      "index": 54
+    },
+    {
+      "file": "Contribution\\2023-True-Wild\\Embedded-World-Seeed-Studio-Presentation-Jetson-Family.md",
+      "completedAt": "2025-06-19T08:57:32.891Z",
+      "index": 55
+    },
+    {
+      "file": "Contribution\\2023-True-Wild\\Embedded-World-Seeed-Studio-Presentation-reComputer.md",
+      "completedAt": "2025-06-19T08:58:15.052Z",
+      "index": 56
+    },
+    {
+      "file": "Contribution\\2023-True-Wild\\Embedded-World-Seeed-Studio-Presentation-SenseCAP.md",
+      "completedAt": "2025-06-19T08:59:42.993Z",
+      "index": 57
+    },
+    {
+      "file": "Contribution\\2023-True-Wild\\Embedded-World-Seeed-Studio-Presentation-Wio-Series.md",
+      "completedAt": "2025-06-19T09:00:37.104Z",
+      "index": 58
+    },
+    {
+      "file": "Contribution\\2023-True-Wild\\Embedded-World-Seeed-Studio-Presentation-XIAO.md",
+      "completedAt": "2025-06-19T09:01:19.015Z",
+      "index": 59
+    },
+    {
+      "file": "Contribution\\Contributors\\community_sourced_projects.md",
+      "completedAt": "2025-06-19T09:05:31.038Z",
+      "index": 60
+    },
+    {
+      "file": "Contribution\\Contributors\\Contribution-Guide\\Contribution-Guide.md",
+      "completedAt": "2025-06-19T09:06:07.191Z",
+      "index": 61
+    },
+    {
+      "file": "Contribution\\Contributors\\Contribution-Guide\\full_steps_pull_request.md",
+      "completedAt": "2025-06-19T09:06:55.130Z",
+      "index": 62
+    },
+    {
+      "file": "Contribution\\Contributors\\Contribution-Guide\\quick_pull_request.md",
+      "completedAt": "2025-06-19T09:07:49.086Z",
+      "index": 63
+    },
+    {
+      "file": "Contribution\\Contributors\\Deploy_Page_Locally\\Deploy_Page_Locally.md",
+      "completedAt": "2025-06-19T09:10:07.110Z",
+      "index": 64
+    },
+    {
+      "file": "Contribution\\Contributors\\Honorary-Contributors.md",
+      "completedAt": "2025-06-19T09:13:25.045Z",
+      "index": 65
+    },
+    {
+      "file": "Contribution\\Contributors\\How_To_Edit_A_Document.md",
+      "completedAt": "2025-06-19T09:53:00.237Z",
+      "index": 66
+    },
+    {
+      "file": "Contribution\\Contributors\\Scale-up-Your-Creation-with-Fusion.md",
+      "completedAt": "2025-06-19T09:53:36.085Z",
+      "index": 67
+    },
+    {
+      "file": "Contribution\\Contributors\\Things_We_Make.md",
+      "completedAt": "2025-06-19T09:54:35.988Z",
+      "index": 68
+    },
+    {
+      "file": "Contribution\\Fusion\\Galileo_Case.md",
+      "completedAt": "2025-06-19T09:57:11.962Z",
+      "index": 69
+    },
+    {
+      "file": "Contribution\\Fusion\\Service_for_Fusion_PCB.md",
+      "completedAt": "2025-06-19T10:16:53.150Z",
+      "index": 70
+    },
+    {
+      "file": "Contribution\\Fusion\\Starter_bundle_harness_V1.md",
+      "completedAt": "2025-06-19T10:19:52.142Z",
+      "index": 71
+    },
+    {
+      "file": "Contribution\\Fusion\\Unibody_box_for_Galileo_Gen2.md",
+      "completedAt": "2025-06-19T10:20:58.008Z",
+      "index": 72
+    },
+    {
+      "file": "Contributor.md",
+      "completedAt": "2025-06-19T10:21:10.063Z",
+      "index": 73
+    },
+    {
+      "file": "Edge_Computing.md",
+      "completedAt": "2025-06-19T10:21:22.007Z",
+      "index": 74
+    },
+    {
+      "file": "Edge_Robotics.md",
+      "completedAt": "2025-06-19T10:21:33.999Z",
+      "index": 75
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Application\\BeagleBone_Solutions.md",
+      "completedAt": "2025-06-19T10:22:10.106Z",
+      "index": 76
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Application\\ChatGPT_and_BeagleBone.md",
+      "completedAt": "2025-06-19T10:22:58.004Z",
+      "index": 77
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\BeagleBone_Blue.md",
+      "completedAt": "2025-06-19T10:25:22.265Z",
+      "index": 78
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Beaglebone_Case.md",
+      "completedAt": "2025-06-19T10:28:16.187Z",
+      "index": 79
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\BeagleBone_Green_Wireless.md",
+      "completedAt": "2025-06-19T10:28:58.010Z",
+      "index": 80
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\BeagleBone_Green.md",
+      "completedAt": "2025-06-19T10:29:46.074Z",
+      "index": 81
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\BeagleBone-Green-Gateway.md",
+      "completedAt": "2025-06-19T10:32:16.082Z",
+      "index": 82
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\BeagleBone.md",
+      "completedAt": "2025-06-20T02:11:40.622Z",
+      "index": 83
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Extension_Board\\BeagleBone_Green_HDMI_Cape.md",
+      "completedAt": "2025-06-20T02:13:01.861Z",
+      "index": 84
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Extension_Board\\Grove_Base_Cape_for_BeagleBone_v2.md",
+      "completedAt": "2025-06-20T02:26:43.052Z",
+      "index": 85
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Extension_Board\\Grove_Cape_for_BeagleBone_Series.md",
+      "completedAt": "2025-06-20T02:29:42.257Z",
+      "index": 86
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Extension_Board\\Motor_Bridge_Cape_v1.0.md",
+      "completedAt": "2025-06-20T02:33:09.889Z",
+      "index": 87
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Extension_Board\\Seeed-Studio-BeagleBone-Green-LCD-Cape-with-Resistive-Touch.md",
+      "completedAt": "2025-06-20T02:34:57.594Z",
+      "index": 88
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Extension_Board\\Skeleton_box_for_Beaglebone.md",
+      "completedAt": "2025-06-20T02:36:34.734Z",
+      "index": 89
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Kit_with_Courses\\Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS.md",
+      "completedAt": "2025-06-20T02:37:17.333Z",
+      "index": 90
+    },
+    {
+      "file": "Edge\\Beagle_Bone\\Kit_with_Courses\\Grove_Starter_Kit_for_BeagleBone_Green.md",
+      "completedAt": "2025-06-20T02:38:38.502Z",
+      "index": 91
+    },
+    {
+      "file": "Edge\\Edge_Series\\Edge_Box_ESP_100\\Edgebox-ESP-100-Arduino.md",
+      "completedAt": "2025-06-20T02:39:16.942Z",
+      "index": 92
+    },
+    {
+      "file": "Edge\\Edge_Series\\Edge_series_Intro.md",
+      "completedAt": "2025-06-20T02:39:56.287Z",
+      "index": 93
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\AI-NVR_with_Jetson.md",
+      "completedAt": "2025-06-20T02:41:06.278Z",
+      "index": 94
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\DashCamNet-with-Jetson-Xavier-NX-Multicamera.md",
+      "completedAt": "2025-06-20T02:41:44.492Z",
+      "index": 95
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\deploy_frigate_on_jetson.md",
+      "completedAt": "2025-06-20T02:44:37.761Z",
+      "index": 96
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\How_to_Train_and_Deploy_YOLOv8_on_reComputer.md",
+      "completedAt": "2025-06-20T02:45:48.214Z",
+      "index": 97
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\Jetson-Nano-MaskCam.md",
+      "completedAt": "2025-06-20T02:46:57.458Z",
+      "index": 98
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\reComputer_Jetson_Series_Projects.md",
+      "completedAt": "2025-06-20T02:47:36.919Z",
+      "index": 99
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\reComputer_Jetson_Series_Tutorials_Exercise.md",
+      "completedAt": "2025-06-20T02:48:12.614Z",
+      "index": 100
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\Security_Scan.md",
+      "completedAt": "2025-06-20T02:51:46.787Z",
+      "index": 101
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\Traffic-Management-DeepStream-SDK.md",
+      "completedAt": "2025-06-20T02:52:24.928Z",
+      "index": 102
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\YOLOv5-Object-Detection-Jetson.md",
+      "completedAt": "2025-06-20T02:53:03.484Z",
+      "index": 103
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\YOLOv8_custom_classification_model.md",
+      "completedAt": "2025-06-20T02:54:45.534Z",
+      "index": 104
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\YOLOv8-DeepStream-TRT-Jetson.md",
+      "completedAt": "2025-06-20T02:55:22.433Z",
+      "index": 105
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\YOLOv8-TRT-Jetson.md",
+      "completedAt": "2025-06-20T02:56:01.497Z",
+      "index": 106
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\Cochl.Sense-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-20T02:59:07.635Z",
+      "index": 108
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\CVEDIA-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-20T02:59:46.921Z",
+      "index": 109
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\DeciAI-Getting-Started.md",
+      "completedAt": "2025-06-20T03:00:24.374Z",
+      "index": 110
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\Gapi-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-20T03:03:36.695Z",
+      "index": 111
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\HardHat.md",
+      "completedAt": "2025-06-20T03:04:12.051Z",
+      "index": 112
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\Jetson-AI-developer-tools.md",
+      "completedAt": "2025-06-20T03:04:48.576Z",
+      "index": 113
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\jetson-docker-getting-started.md",
+      "completedAt": "2025-06-20T03:05:24.290Z",
+      "index": 114
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\Lumeo-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-20T03:06:04.691Z",
+      "index": 115
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\No-code-Edge-AI-Tool.md",
+      "completedAt": "2025-06-20T03:07:18.079Z",
+      "index": 116
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\NVStreamer_Getting_Started.md",
+      "completedAt": "2025-06-20T03:07:54.352Z",
+      "index": 117
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\reComputer_Jetson_Series_Resource.md",
+      "completedAt": "2025-06-20T03:08:34.916Z",
+      "index": 118
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\Roboflow-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-20T03:11:43.859Z",
+      "index": 119
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\vnc_for_reComputer.md",
+      "completedAt": "2025-06-20T03:12:22.485Z",
+      "index": 120
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Deploy_DeepSeek_on_reComputer_Jetson_with_MLC.md",
+      "completedAt": "2025-06-20T03:14:17.767Z",
+      "index": 121
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Deploy_Dia_on_reComputer_Jetson.md",
+      "completedAt": "2025-06-20T03:16:44.727Z",
+      "index": 122
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Deploy_Ollama_and_AnythingLLM_on_Jetson.md",
+      "completedAt": "2025-06-20T03:18:00.630Z",
+      "index": 123
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Deploy_Riva_and_Llama2_on_reComputer.md",
+      "completedAt": "2025-06-20T03:19:26.313Z",
+      "index": 124
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Finetune_LLM_by_Llama_Factory_on_Jetson.md",
+      "completedAt": "2025-06-20T03:20:09.032Z",
+      "index": 125
+    }
+  ],
+  "lastSkipped": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\alwaysAI-Jetson-Getting-Started.md",
+  "lastCompleted": "2025-06-20T03:20:09.033Z"
+}

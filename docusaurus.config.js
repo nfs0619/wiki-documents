@@ -42,6 +42,11 @@ module.exports = (async () => {
       },
     ],
 
+    future: {
+      v4: true, // Enable future Docusaurus v4 features
+      experimental_faster: true, // Enable experimental faster features
+    },
+
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: 'Seeed-Studio', // Usually your GitHub org/user name.
