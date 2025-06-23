@@ -1,5 +1,5 @@
 {
-  "currentIndex": 126,
+  "currentIndex": 579,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -568,8 +568,2183 @@
       "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Finetune_LLM_by_Llama_Factory_on_Jetson.md",
       "completedAt": "2025-06-20T03:20:09.032Z",
       "index": 125
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Generative_AI_Intro.md",
+      "completedAt": "2025-06-20T03:30:29.340Z",
+      "index": 126
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson.md",
+      "completedAt": "2025-06-20T03:31:17.537Z",
+      "index": 127
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\How_to_run_local_llm_text_to_image_on_reComputer.md",
+      "completedAt": "2025-06-20T03:34:15.905Z",
+      "index": 128
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\How_to_run_VLM_on_reComputer.md",
+      "completedAt": "2025-06-20T03:35:06.308Z",
+      "index": 129
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\How_to_run_zero_shot_detection_on_reComputer.md",
+      "completedAt": "2025-06-20T03:35:53.652Z",
+      "index": 130
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Local_RAG_based_on_Jetson_with_LlamaIndex.md",
+      "completedAt": "2025-06-20T03:37:54.690Z",
+      "index": 131
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Quantized_Llama2_7B_with_MLC_LLM_on_Jetson.md",
+      "completedAt": "2025-06-20T03:38:41.528Z",
+      "index": 132
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Quickly_Deploy_DeepSeek_on_reComputer_Jetson.md",
+      "completedAt": "2025-06-20T03:40:24.116Z",
+      "index": 133
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Real_Time_Subtitle_Recoder_on_Jetson.md",
+      "completedAt": "2025-06-20T03:42:47.763Z",
+      "index": 134
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\Whisper_on_Jetson_for_Real_Time_Speech_to_Text.md",
+      "completedAt": "2025-06-20T03:44:17.645Z",
+      "index": 135
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\Allxon-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-20T03:45:10.598Z",
+      "index": 136
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\neqto_engine_for_linux_recomputer.md",
+      "completedAt": "2025-06-20T03:47:19.309Z",
+      "index": 137
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\Scailable-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-20T03:48:08.174Z",
+      "index": 138
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\Update-Jetson-Linux-OTA-Using-Allxon.md",
+      "completedAt": "2025-06-20T03:48:56.349Z",
+      "index": 139
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Application\\Multimodal_AI\\Speech_vlm.md",
+      "completedAt": "2025-06-20T03:49:46.595Z",
+      "index": 140
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\A203v2\\reComputer_A203_Flash_System.md",
+      "completedAt": "2025-06-20T03:54:23.461Z",
+      "index": 141
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\A205\\reComputer_A205_Flash_System.md",
+      "completedAt": "2025-06-20T03:56:22.735Z",
+      "index": 142
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\A603\\A603_Flash_JetPack.md",
+      "completedAt": "2025-06-20T04:32:33.702Z",
+      "index": 143
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\A607\\A607_Flash_JetPack.md",
+      "completedAt": "2025-06-20T04:42:13.990Z",
+      "index": 144
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\A608\\A608_Flash_JetPack.md",
+      "completedAt": "2025-06-20T04:46:25.848Z",
+      "index": 145
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\J101\\reComputer_J1010_J101_Flash_Jetpack.md",
+      "completedAt": "2025-06-20T04:47:04.354Z",
+      "index": 146
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\J202\\reComputer_J2021_J202_Flash_Jetpack.md",
+      "completedAt": "2025-06-20T04:47:45.784Z",
+      "index": 147
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\J401\\J401_carrierboard_Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-20T04:51:52.421Z",
+      "index": 148
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\J401\\reComputer_J4012_Flash_Jetpack.md",
+      "completedAt": "2025-06-20T04:56:20.613Z",
+      "index": 149
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\J501\\Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-20T04:58:51.410Z",
+      "index": 150
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\J501\\reServer_Industrial_J501_Getting_Started.md",
+      "completedAt": "2025-06-20T04:59:29.298Z",
+      "index": 151
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\Mini_J401\\J401_Mini_carrierboard_Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-20T05:00:11.717Z",
+      "index": 152
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\Mini_J401\\reComputer_Mini_J4012_Flash_Jetpack.md",
+      "completedAt": "2025-06-20T05:00:50.473Z",
+      "index": 153
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Carrier_Boards\\Robotics_J401\\Robotics_J401_carrierboard_Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-20T05:32:59.524Z",
+      "index": 154
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\FAQs\\Create_Backup_and_Restore_on_reComputer.md",
+      "completedAt": "2025-06-20T05:34:17.577Z",
+      "index": 155
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\FAQs\\Differences_of_L4T_Between_Seeed_and_NVIDIA.md",
+      "completedAt": "2025-06-20T05:35:02.378Z",
+      "index": 156
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\FAQs\\Get_System_Log_of_reComputer_J30_and_J40.md",
+      "completedAt": "2025-06-20T05:37:13.688Z",
+      "index": 157
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\FAQs\\How_to_Upgrade_Software_Packages_for_Jetson.md",
+      "completedAt": "2025-06-20T05:38:22.637Z",
+      "index": 158
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\FAQs\\jetson_FAQ.md",
+      "completedAt": "2025-06-20T05:39:05.355Z",
+      "index": 159
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\FAQs\\Overview_of_the_Relationship_Between_JetPack_and_Jetson.md",
+      "completedAt": "2025-06-20T05:40:36.047Z",
+      "index": 160
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\FAQs\\Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera.md",
+      "completedAt": "2025-06-20T05:41:19.069Z",
+      "index": 161
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\FAQs\\Updating_Jetpack_with_OTA.md",
+      "completedAt": "2025-06-20T05:42:00.314Z",
+      "index": 162
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\FAQs\\USB_Timeout_during_Flashing.md",
+      "completedAt": "2025-06-20T05:42:39.188Z",
+      "index": 163
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\FAQs\\Use_IMX477_Camera_with_A603.md",
+      "completedAt": "2025-06-20T05:43:19.939Z",
+      "index": 164
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Other_Devices\\How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit.md",
+      "completedAt": "2025-06-20T05:43:59.959Z",
+      "index": 165
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Other_Devices\\Jetson_AGX_Orin_32GB_H01_Flash_Jetpack.md",
+      "completedAt": "2025-06-20T05:45:13.581Z",
+      "index": 166
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Other_Devices\\Jetson_Xavier_AGX_H01_Driver_Installation.md",
+      "completedAt": "2025-06-20T05:48:09.047Z",
+      "index": 167
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Other_Devices\\Jetson-Mate.md",
+      "completedAt": "2025-06-20T05:49:21.045Z",
+      "index": 168
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Other_Devices\\Mini_AI_Computer_T906.md",
+      "completedAt": "2025-06-20T05:50:49.668Z",
+      "index": 169
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Other_Devices\\reComputer_A203E_Flash_System.md",
+      "completedAt": "2025-06-20T05:51:30.618Z",
+      "index": 170
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Other_Devices\\reComputer_A205E_Flash_System.md",
+      "completedAt": "2025-06-20T05:54:06.514Z",
+      "index": 171
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Other_Devices\\reComputer_Jetson_Series_GPIO_Grove.md",
+      "completedAt": "2025-06-20T05:54:51.166Z",
+      "index": 172
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\Other_Devices\\RTL8822CE_Wireless_Module_for_Jetson.md",
+      "completedAt": "2025-06-20T05:55:39.956Z",
+      "index": 173
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_Industrial\\reComputer_Industrial_Getting_Started.md",
+      "completedAt": "2025-06-20T06:02:51.663Z",
+      "index": 174
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_Industrial\\reComputer_Industrial_J20_Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-20T06:04:20.070Z",
+      "index": 175
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_Industrial\\reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-20T06:05:04.327Z",
+      "index": 176
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_Intro.md",
+      "completedAt": "2025-06-20T06:05:54.863Z",
+      "index": 177
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_J1010\\J101_Enable_SD_Card.md",
+      "completedAt": "2025-06-20T06:06:34.883Z",
+      "index": 178
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_J1010\\J1010_Boot_From_SD_Card.md",
+      "completedAt": "2025-06-20T06:08:52.488Z",
+      "index": 179
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_J1010\\reComputer_J1010_with_Jetson_getting_start.md",
+      "completedAt": "2025-06-20T06:13:17.900Z",
+      "index": 180
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_J1010\\reComputer_Jetson_GPIO.md",
+      "completedAt": "2025-06-20T06:14:03.821Z",
+      "index": 181
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_J1010\\reComputer_Jetson_Memory_Expansion.md",
+      "completedAt": "2025-06-20T06:20:59.890Z",
+      "index": 182
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_J1010\\reComputer_Jetson_Series_Hardware_Layout.md",
+      "completedAt": "2025-06-20T06:21:52.560Z",
+      "index": 183
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_J1010\\reComputer_Jetson_Series_Initiation.md",
+      "completedAt": "2025-06-20T06:22:39.414Z",
+      "index": 184
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_J1020v2\\reComputer_J1020_A206_Flash_JetPack.md",
+      "completedAt": "2025-06-20T06:23:33.885Z",
+      "index": 185
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_J1020v2\\reComputer_J1020v2_with_Jetson_getting_start.md",
+      "completedAt": "2025-06-20T06:27:23.147Z",
+      "index": 186
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_Jetson_Series_Introduction.md",
+      "completedAt": "2025-06-20T06:28:09.845Z",
+      "index": 187
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J20\\reComputer_J20_with_Jetson_getting_start.md",
+      "completedAt": "2025-06-20T06:28:55.652Z",
+      "index": 188
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J30_40\\reComputer_J30_40_with_Jetson_getting_start.md",
+      "completedAt": "2025-06-20T06:29:49.523Z",
+      "index": 189
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J30_40\\reComputer_Jetson_with_Infineon_Wi-Fi_Module.md",
+      "completedAt": "2025-06-20T06:30:34.837Z",
+      "index": 190
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J401B\\recomputer_j401b_getting_start.md",
+      "completedAt": "2025-06-20T06:33:29.043Z",
+      "index": 191
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J401B\\recomputer_j401b_interfaces_usage.md",
+      "completedAt": "2025-06-20T06:34:15.574Z",
+      "index": 192
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_Mini\\reComputer_Mini_Getting_Started.md",
+      "completedAt": "2025-06-20T06:35:05.338Z",
+      "index": 193
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_Mini\\reComputer_Mini_Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-20T06:35:51.865Z",
+      "index": 194
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_Super\\reComputer_Super_Getting_Started.md",
+      "completedAt": "2025-06-20T06:36:40.512Z",
+      "index": 195
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_Super\\reComputer_Super_Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-20T06:37:59.058Z",
+      "index": 196
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_Super\\reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing.md",
+      "completedAt": "2025-06-20T06:38:43.193Z",
+      "index": 197
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\RecomputerPage.mdx",
+      "completedAt": "2025-06-20T06:40:29.839Z",
+      "index": 198
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reServer_Jetson_Series\\reServer_Industrial_J30_J40\\reServer_Industrial_Getting_Started.md",
+      "completedAt": "2025-06-20T06:49:35.128Z",
+      "index": 199
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reServer_Jetson_Series\\reServer_Industrial_J30_J40\\reServer_Industrial_Hardware_Interface_Usage.md",
+      "completedAt": "2025-06-20T06:51:55.180Z",
+      "index": 200
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reServer_Jetson_Series\\reServer_J2032\\reServer_J2032_Flash_Jetpack.md",
+      "completedAt": "2025-06-20T06:53:25.510Z",
+      "index": 201
+    },
+    {
+      "file": "Edge\\NVIDIA_Jetson\\reServer_Jetson_Series\\reServer_J2032\\reServer_J2032_Getting_Started.md",
+      "completedAt": "2025-06-20T06:54:16.052Z",
+      "index": 202
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_FAQ.md",
+      "completedAt": "2025-06-20T06:55:03.932Z",
+      "index": 203
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_Getting_Started.md",
+      "completedAt": "2025-06-20T06:55:51.243Z",
+      "index": 204
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_Intro.md",
+      "completedAt": "2025-06-20T06:58:00.379Z",
+      "index": 205
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_STM32MP135D\\ODYSSEY STM32MP135D.md",
+      "completedAt": "2025-06-20T06:58:53.354Z",
+      "index": 206
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_STM32MP157C\\ODYSSEY-STM32MP157C.md",
+      "completedAt": "2025-06-20T06:59:43.502Z",
+      "index": 207
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_STM32MP157C\\SEEED-SOM-STM32MP157C.md",
+      "completedAt": "2025-06-20T07:01:37.342Z",
+      "index": 208
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\Application\\Azure_IoT_for_ODYSSEY\\ODYSSEY-X86J4105-AzureIOT.md",
+      "completedAt": "2025-06-20T07:02:29.907Z",
+      "index": 209
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\Application\\Computer_Version\\ODYSSEY-X86J4105-Frigate.md",
+      "completedAt": "2025-06-20T07:03:22.743Z",
+      "index": 210
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\Application\\Computer_Version\\ODYSSEY-X86J4105-Intel-OpenVINO.md",
+      "completedAt": "2025-06-20T07:04:52.040Z",
+      "index": 211
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\Application\\Computer_Version\\ODYSSEY-X86J4105-NCS2.md",
+      "completedAt": "2025-06-20T07:05:56.553Z",
+      "index": 212
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\Application\\Home-Assistant_for_ODYSSEY\\Connect-Grove-to-Home-Assistant-ESPHome.md",
+      "completedAt": "2025-06-20T07:07:02.442Z",
+      "index": 213
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\Application\\Home-Assistant_for_ODYSSEY\\ODYSSEY-Home-Assistant-Customize.md",
+      "completedAt": "2025-06-20T07:08:05.732Z",
+      "index": 214
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\Application\\Home-Assistant_for_ODYSSEY\\ODYSSEY-X86-Home-Assistant.md",
+      "completedAt": "2025-06-20T07:09:11.153Z",
+      "index": 215
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\Application\\Mender_for_ODYSSEY\\Mender-Client-ODYSSEY-X86.md",
+      "completedAt": "2025-06-20T07:10:15.855Z",
+      "index": 216
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\Application\\Mender_for_ODYSSEY\\Mender-Server-ODYSSEY-X86.md",
+      "completedAt": "2025-06-20T07:12:07.872Z",
+      "index": 217
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\Coral-Mini-PCIe-Accelerator-on-ODYSSEY-X86J4105.md",
+      "completedAt": "2025-06-20T07:13:12.276Z",
+      "index": 218
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\ODYSSEY-X86J4105-Accessories.md",
+      "completedAt": "2025-06-20T07:14:14.309Z",
+      "index": 219
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\ODYSSEY-X86J4105-GPIO.md",
+      "completedAt": "2025-06-20T07:15:06.506Z",
+      "index": 220
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\ODYSSEY-X86J4105-LTE-Module.md",
+      "completedAt": "2025-06-20T07:15:58.709Z",
+      "index": 221
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\ODYSSEY-X86J4105.md",
+      "completedAt": "2025-06-20T07:16:59.948Z",
+      "index": 222
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\OS_Installation\\BalenaOS-X86-Getting-Started.md",
+      "completedAt": "2025-06-20T07:17:53.722Z",
+      "index": 223
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\OS_Installation\\Jellyfin-on-Docker-Ubuntu-X86.md",
+      "completedAt": "2025-06-20T07:18:48.632Z",
+      "index": 224
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\OS_Installation\\ODYSSEY-X86-OPNsense.md",
+      "completedAt": "2025-06-20T07:19:46.967Z",
+      "index": 225
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\OS_Installation\\ODYSSEY-X86-TrueNAS.md",
+      "completedAt": "2025-06-20T07:20:40.034Z",
+      "index": 226
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\OS_Installation\\ODYSSEY-X86J4105-Installing-Android.md",
+      "completedAt": "2025-06-20T07:21:36.341Z",
+      "index": 227
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\OS_Installation\\ODYSSEY-X86J4105-Installing-FreeNAS.md",
+      "completedAt": "2025-06-20T07:22:33.858Z",
+      "index": 228
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\OS_Installation\\ODYSSEY-X86J4105-Installing-openwrt.md",
+      "completedAt": "2025-06-20T07:23:29.235Z",
+      "index": 229
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\OS_Installation\\ODYSSEY-X86J4105-Installing-OS.md",
+      "completedAt": "2025-06-20T07:24:24.974Z",
+      "index": 230
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\OS_Installation\\ODYSSEY-X86J4105-pfSense.md",
+      "completedAt": "2025-06-20T07:25:59.717Z",
+      "index": 231
+    },
+    {
+      "file": "Edge\\ODYSSEY\\ODYSSEY_X86J4105\\OS_Installation\\ODYSSEY-X86J4105-Updating-Firmware.md",
+      "completedAt": "2025-06-20T07:27:32.069Z",
+      "index": 232
+    },
+    {
+      "file": "Edge\\Quantum_Development_Board\\Quantum-Mini-Linux-Development-Kit.md",
+      "completedAt": "2025-06-20T07:28:31.622Z",
+      "index": 233
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\BalenaOS\\recomputer_r1000_balena.md",
+      "completedAt": "2025-06-20T07:29:24.504Z",
+      "index": 234
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\BalenaOS\\recomputer_r1000_build_seeed_balena_image.md",
+      "completedAt": "2025-06-20T07:30:18.835Z",
+      "index": 235
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Cloud_Solution\\recomputer_r1000_aws.md",
+      "completedAt": "2025-06-20T07:31:08.745Z",
+      "index": 236
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Cloud_Solution\\reTerminal-DM_AWS_first.md",
+      "completedAt": "2025-06-20T07:32:02.150Z",
+      "index": 237
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Cloud_Solution\\reTerminal-DM_Azure_IoT.md",
+      "completedAt": "2025-06-20T07:33:04.355Z",
+      "index": 238
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fin\\recomputer_r1000_install_fin.md",
+      "completedAt": "2025-06-20T07:34:01.973Z",
+      "index": 239
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fin\\recomputer_r1000_with_fin_create_equip_graphic.md",
+      "completedAt": "2025-06-20T07:34:58.939Z",
+      "index": 240
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fin\\recomputer_r1000_with_fin_create_site_graphic.md",
+      "completedAt": "2025-06-20T07:35:51.011Z",
+      "index": 241
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fin\\recomputer_r1000_with_fin_top_level_graphic.md",
+      "completedAt": "2025-06-20T07:36:51.028Z",
+      "index": 242
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fin\\recomputer_r1000_with_fin_use_modbus.md",
+      "completedAt": "2025-06-20T07:37:47.147Z",
+      "index": 243
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fin\\recomputer_r1000_with-_fin_use_logic_to_alarm.md",
+      "completedAt": "2025-06-20T07:38:41.638Z",
+      "index": 244
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fin\\recomputer_r1000_with-fin_create_floor_graphic.md",
+      "completedAt": "2025-06-20T07:39:36.124Z",
+      "index": 245
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fuxa\\recomputer_r1000_with_fuxa_to_achieve_SCADA.md",
+      "completedAt": "2025-06-20T07:40:39.794Z",
+      "index": 246
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fuxa\\recomputer_r1000_with_fuxa_use_modbus.md",
+      "completedAt": "2025-06-20T07:41:40.436Z",
+      "index": 247
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fuxa\\recomputer_r1000_with_fuxa_use_mqtt.md",
+      "completedAt": "2025-06-20T07:42:41.566Z",
+      "index": 248
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fuxa\\recomputer_r1000_with_fuxa_use_opcua.md",
+      "completedAt": "2025-06-20T07:43:40.070Z",
+      "index": 249
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fuxa\\recomputer_r1000_with_fuxa_use_webapi.md",
+      "completedAt": "2025-06-20T07:44:34.222Z",
+      "index": 250
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Fuxa\\reTerminal-DM_intro_FUXA.md",
+      "completedAt": "2025-06-20T07:45:34.210Z",
+      "index": 251
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Home-Assistant\\recomputer-r1000-home-assistant.md",
+      "completedAt": "2025-06-20T07:46:34.928Z",
+      "index": 252
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Home-Assistant\\recomputer-r1000-modbus-home-assistant.md",
+      "completedAt": "2025-06-20T07:47:33.245Z",
+      "index": 253
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Home-Assistant\\reTerminal_Home_Assistant.md",
+      "completedAt": "2025-06-20T07:48:36.024Z",
+      "index": 254
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Home-Assistant\\reTerminal-Home-Assistant-Customize.md",
+      "completedAt": "2025-06-20T07:50:16.408Z",
+      "index": 255
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\Edgebox-rpi-200-n3uron-aws.md",
+      "completedAt": "2025-06-20T07:51:16.934Z",
+      "index": 256
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\Edgebox-rpi-200-n3uron-bacnet.md",
+      "completedAt": "2025-06-20T07:52:15.678Z",
+      "index": 257
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\Edgebox-rpi-200-n3uron-modbus-mqtt.md",
+      "completedAt": "2025-06-20T07:53:18.566Z",
+      "index": 258
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\Edgebox-rpi-200-n3uron.md",
+      "completedAt": "2025-06-20T07:54:16.351Z",
+      "index": 259
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\recomputer_r1000_n3uron_aws.md",
+      "completedAt": "2025-06-20T07:55:13.389Z",
+      "index": 260
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\recomputer_r1000_n3uron_bacnet.md",
+      "completedAt": "2025-06-20T07:56:20.226Z",
+      "index": 261
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\recomputer_r1000_n3uron_getting_started.md",
+      "completedAt": "2025-06-20T07:57:26.262Z",
+      "index": 262
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\recomputer_r1000_n3uron_modbus_mqtt.md",
+      "completedAt": "2025-06-20T08:05:09.585Z",
+      "index": 263
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\reTerminal_DM_N3uron_AWS.md",
+      "completedAt": "2025-06-20T08:06:41.425Z",
+      "index": 264
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\reTerminal_DM_N3uron_Historian.md",
+      "completedAt": "2025-06-20T08:07:31.179Z",
+      "index": 265
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\reTerminal_DM_N3uron_modbus_mqtt.md",
+      "completedAt": "2025-06-20T08:08:49.506Z",
+      "index": 266
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\N3uron\\reTerminalDM_N3uron_Get_Start.md",
+      "completedAt": "2025-06-20T08:09:42.969Z",
+      "index": 267
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\Edge_Box_rpi_200_Node_red_Bacnet_tcp.md",
+      "completedAt": "2025-06-20T08:12:02.676Z",
+      "index": 269
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\Edge_Box_rpi_200_Node_red_Modbus_tcp.md",
+      "completedAt": "2025-06-20T08:17:20.857Z",
+      "index": 273
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\Edge_Box_rpi_200_Node_red_mqtt.md",
+      "completedAt": "2025-06-20T08:18:24.625Z",
+      "index": 274
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\neqto_engine_for_linux_reTerminal.md",
+      "completedAt": "2025-06-20T08:19:20.481Z",
+      "index": 275
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\recomputer_r1000_nodered_modbustcp.md",
+      "completedAt": "2025-06-20T08:20:10.634Z",
+      "index": 276
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\recomputer_r1000_with_node_red_and_bacnet.md",
+      "completedAt": "2025-06-20T08:24:53.915Z",
+      "index": 279
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\recomputer_r1000-grafana.md",
+      "completedAt": "2025-06-20T08:25:57.435Z",
+      "index": 280
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\recomputer-r1000-nodered-getting-start.md",
+      "completedAt": "2025-06-20T08:26:55.905Z",
+      "index": 281
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\recomputer-r1000-with-nodered-mqtt.md",
+      "completedAt": "2025-06-20T08:30:31.916Z",
+      "index": 283
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\reTerminal-DM-Node-Red-canbus.md",
+      "completedAt": "2025-06-20T08:33:39.310Z",
+      "index": 286
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\reTerminal-DM-Node-Red-Modbus-TCP.md",
+      "completedAt": "2025-06-20T08:37:00.253Z",
+      "index": 289
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\reTerminal-DM-Node-Red-mqtt.md",
+      "completedAt": "2025-06-20T08:37:54.960Z",
+      "index": 290
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Node-Red\\reTerminal-DM-Node-Red-RS485.md",
+      "completedAt": "2025-06-20T08:38:49.843Z",
+      "index": 291
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\Edgebox-rpi-200-ignition-edge.md",
+      "completedAt": "2025-06-20T08:39:52.129Z",
+      "index": 292
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\Mender-Client-reTerminal.md",
+      "completedAt": "2025-06-20T08:58:05.953Z",
+      "index": 293
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\recomputer_r1000_flowfuse_getting_start.md",
+      "completedAt": "2025-06-20T08:59:01.989Z",
+      "index": 294
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\recomputer_r1000_install_codesys.md",
+      "completedAt": "2025-06-20T09:00:06.209Z",
+      "index": 295
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\recomputer_r1000_thingsboard_ce.md",
+      "completedAt": "2025-06-20T09:01:18.030Z",
+      "index": 296
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\recomputer_r1000_thingsboard_dashboard.md",
+      "completedAt": "2025-06-20T09:02:18.670Z",
+      "index": 297
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\recomputer_r1000_with_codesys_use_modbus_rtu.md",
+      "completedAt": "2025-06-20T09:03:15.876Z",
+      "index": 298
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\recomputer_use_ups.md",
+      "completedAt": "2025-06-20T09:04:40.293Z",
+      "index": 299
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\reTerminal-DM-Getting-Started-with-Ignition-Edge.md",
+      "completedAt": "2025-06-20T09:06:34.870Z",
+      "index": 301
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\reTerminal-DM-Ignition-Edge-Panel-Builder.md",
+      "completedAt": "2025-06-20T09:07:47.534Z",
+      "index": 302
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\Others\\reterminal-dm-sensecraft-edge-os-intro.md",
+      "completedAt": "2025-06-20T09:07:58.180Z",
+      "index": 303
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\UI_design\\reTerminal-build-UI-using-Electron.md",
+      "completedAt": "2025-06-20T09:08:08.846Z",
+      "index": 304
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\UI_design\\reTerminal-build-UI-using-Flutter.md",
+      "completedAt": "2025-06-20T09:08:17.776Z",
+      "index": 305
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\UI_design\\reTerminal-build-UI-using-LVGL.md",
+      "completedAt": "2025-06-20T09:11:12.870Z",
+      "index": 306
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\UI_design\\reTerminal-build-UI-using-Qt-for-Python.md",
+      "completedAt": "2025-06-20T09:11:22.145Z",
+      "index": 307
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\AIoT\\UI_design\\weather-dashboard-with-Grafana-reTerminal.md",
+      "completedAt": "2025-06-20T09:12:48.802Z",
+      "index": 308
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\Benchmark\\benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8.md",
+      "completedAt": "2025-06-20T09:13:50.059Z",
+      "index": 309
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\Benchmark\\benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit.md",
+      "completedAt": "2025-06-20T09:14:52.846Z",
+      "index": 310
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\clip_application_on_rpi_with_ai_kit.md",
+      "completedAt": "2025-06-20T09:15:49.345Z",
+      "index": 311
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\convert_model_to_edge_tpu_tflite_format_for_google_coral.md",
+      "completedAt": "2025-06-20T09:16:47.493Z",
+      "index": 312
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\frigate_nvr_with_raspberrypi_5.md",
+      "completedAt": "2025-06-20T09:18:01.777Z",
+      "index": 313
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\install_m.2_coral_to_rpi5.md",
+      "completedAt": "2025-06-20T09:20:41.322Z",
+      "index": 314
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\OpenCV\\reTerminal_DM_Color_detection.md",
+      "completedAt": "2025-06-20T09:21:39.194Z",
+      "index": 315
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\OpenCV\\reTerminal_DM_Face_detection.md",
+      "completedAt": "2025-06-20T09:22:39.403Z",
+      "index": 316
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\OpenCV\\reTerminal_DM_Object_detection.md",
+      "completedAt": "2025-06-20T09:25:11.296Z",
+      "index": 317
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\OpenCV\\reTerminal_DM_Shape_detection.md",
+      "completedAt": "2025-06-20T09:28:07.726Z",
+      "index": 319
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\OpenCV\\reTerminal_DM-tracking.md",
+      "completedAt": "2025-06-20T09:29:16.014Z",
+      "index": 320
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\pose_based_light_control_with_nodered_and_rpi_with_aikit.md",
+      "completedAt": "2025-06-20T09:30:50.517Z",
+      "index": 321
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\reterminal_frigate.md",
+      "completedAt": "2025-06-20T09:31:57.036Z",
+      "index": 322
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\reTerminal_ML_Edgeimpulse.md",
+      "completedAt": "2025-06-20T09:33:36.481Z",
+      "index": 323
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\reTerminal_ML_MediaPipe.md",
+      "completedAt": "2025-06-20T09:34:39.880Z",
+      "index": 324
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\reTerminal-DM-edgeimpulse.md",
+      "completedAt": "2025-06-20T09:40:52.561Z",
+      "index": 326
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\reterminal-DM-Frigate.md",
+      "completedAt": "2025-06-20T09:46:55.548Z",
+      "index": 327
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\reTerminal-DM-Yolo5.md",
+      "completedAt": "2025-06-20T09:47:57.766Z",
+      "index": 328
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection.md",
+      "completedAt": "2025-06-20T09:49:11.556Z",
+      "index": 329
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\yolov8_object_detection_on_recomputer_r1000_with_hailo_8l.md",
+      "completedAt": "2025-06-20T09:50:22.124Z",
+      "index": 330
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Computer_Vision\\yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l.md",
+      "completedAt": "2025-06-20T09:52:18.807Z",
+      "index": 331
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Large_language_Model\\deploy_deepseek_on_raspberry_pi_ai_box.md",
+      "completedAt": "2025-06-20T09:53:34.510Z",
+      "index": 332
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Application\\Large_language_Model\\distributed_inference_of_deepseek_model_on_raspberrypi.md",
+      "completedAt": "2025-06-20T09:56:57.684Z",
+      "index": 333
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_AI_Computer\\reComputer_AI_Industrial_R2000\\reComputer_AI_Industrial_R2000_Flash_OS.md",
+      "completedAt": "2025-06-20T09:58:17.313Z",
+      "index": 334
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_AI_Computer\\reComputer_AI_Industrial_R2000\\reComputer_AI_Industrial_R2135_getting_start.md",
+      "completedAt": "2025-06-20T09:59:16.242Z",
+      "index": 335
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_AI_Computer\\reComputer_AI_R2000\\reComputer_AI_R2000_getting_start.md",
+      "completedAt": "2025-06-20T10:00:20.118Z",
+      "index": 336
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\Edge_Box_RPi_200\\Edge_Box_intro.md",
+      "completedAt": "2025-06-20T10:01:31.587Z",
+      "index": 337
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\Edge_Box_RPi_200\\Edgebox-rpi-200-codesys.md",
+      "completedAt": "2025-06-20T10:13:57.997Z",
+      "index": 342
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\Edge_Box_RPi_200\\Hardware\\Edgebox-rpi-200-boot-from-external-media.md",
+      "completedAt": "2025-06-20T10:15:01.594Z",
+      "index": 343
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\Edge_Box_RPi_200\\Hardware\\Edgebox-rpi-200-with-LoRaWAN-modules.md",
+      "completedAt": "2025-06-20T10:16:00.817Z",
+      "index": 344
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1000\\recomputer_r.md",
+      "completedAt": "2025-06-20T10:20:40.477Z",
+      "index": 345
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1000\\recomputer_r1000_assembly_guide.md",
+      "completedAt": "2025-06-20T10:21:40.513Z",
+      "index": 346
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1000\\reComputer_R1000_FAQ.md",
+      "completedAt": "2025-06-20T10:22:42.217Z",
+      "index": 347
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1000\\recomputer_r1000_flash_os.md",
+      "completedAt": "2025-06-20T10:23:46.745Z",
+      "index": 348
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1000\\recomputer_r1000_how_to_use_rs485_modbus.md",
+      "completedAt": "2025-06-20T10:24:49.870Z",
+      "index": 349
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1000\\recomputer_r1000_intro.md",
+      "completedAt": "2025-06-20T10:25:54.082Z",
+      "index": 350
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1000\\recomputer_r1000_pcn.md",
+      "completedAt": "2025-06-20T10:26:57.149Z",
+      "index": 351
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1000\\recomputer_r1000_use_bacnet_mstp.md",
+      "completedAt": "2025-06-20T10:27:59.046Z",
+      "index": 352
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1000\\recomputer_r1000_warranty.md",
+      "completedAt": "2025-06-20T10:29:01.284Z",
+      "index": 353
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1100\\recomputer_r1100_assembly_guide.md",
+      "completedAt": "2025-06-20T10:29:56.042Z",
+      "index": 354
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1100\\recomputer_r1100_configure_system.md",
+      "completedAt": "2025-06-23T01:23:59.370Z",
+      "index": 355
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1100\\recomputer_r1100_flash_os.md",
+      "completedAt": "2025-06-23T01:24:51.333Z",
+      "index": 356
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\reComputer_R1100\\reComputer_R1100.md",
+      "completedAt": "2025-06-23T01:26:54.573Z",
+      "index": 357
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal-DM\\reTerminal-dm_Intro.md",
+      "completedAt": "2025-06-23T01:27:40.321Z",
+      "index": 358
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal-DM\\reterminal-dm-flash-OS.md",
+      "completedAt": "2025-06-23T01:28:28.065Z",
+      "index": 359
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal-DM\\reterminal-dm-hardware-guide.md",
+      "completedAt": "2025-06-23T01:29:19.904Z",
+      "index": 360
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal-DM\\reterminal-dm-warranty.md",
+      "completedAt": "2025-06-23T01:30:12.182Z",
+      "index": 361
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal-DM\\reterminal-dm.md",
+      "completedAt": "2025-06-23T01:37:11.679Z",
+      "index": 362
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\Extension_Board\\reTerminal_Mount_Options.md",
+      "completedAt": "2025-06-23T01:39:14.115Z",
+      "index": 363
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\Extension_Board\\reTerminalBridge.md",
+      "completedAt": "2025-06-23T01:40:09.844Z",
+      "index": 364
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\OS_Installation\\reTerminal-Buildroot-SDK.md",
+      "completedAt": "2025-06-23T01:40:57.972Z",
+      "index": 365
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\OS_Installation\\reTerminal-Yocto.md",
+      "completedAt": "2025-06-23T01:47:12.143Z",
+      "index": 366
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\OS_Installation\\Streampi_OBS_On_reTerminal.md",
+      "completedAt": "2025-06-23T01:48:03.796Z",
+      "index": 367
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\reTerminal_Intro.md",
+      "completedAt": "2025-06-23T01:49:05.090Z",
+      "index": 368
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\reTerminal-FAQ.md",
+      "completedAt": "2025-06-23T01:50:01.284Z",
+      "index": 369
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\reTerminal-hardware-interfaces-usage.md",
+      "completedAt": "2025-06-23T01:50:53.858Z",
+      "index": 370
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\reTerminal-oldFAQ.md",
+      "completedAt": "2025-06-23T01:51:41.531Z",
+      "index": 371
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\reTerminal-piCam.md",
+      "completedAt": "2025-06-23T01:52:35.793Z",
+      "index": 372
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\HMI\\reTerminal\\reTerminal.md",
+      "completedAt": "2025-06-23T01:53:28.843Z",
+      "index": 373
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\M_2_Hat\\m_2_hat_start_with_pi5.md",
+      "completedAt": "2025-06-23T01:54:21.611Z",
+      "index": 374
+    },
+    {
+      "file": "Edge\\Raspberry_Pi_Devices\\RpiDevices.md",
+      "completedAt": "2025-06-23T01:55:15.690Z",
+      "index": 375
+    },
+    {
+      "file": "Edge\\reCamera\\ai_model_deployment\\Custom_model_conversion.md",
+      "completedAt": "2025-06-23T02:02:30.948Z",
+      "index": 376
+    },
+    {
+      "file": "Edge\\reCamera\\ai_model_deployment\\on_device_model.md",
+      "completedAt": "2025-06-23T02:03:35.479Z",
+      "index": 377
+    },
+    {
+      "file": "Edge\\reCamera\\faqs.md",
+      "completedAt": "2025-06-23T02:04:32.219Z",
+      "index": 378
+    },
+    {
+      "file": "Edge\\reCamera\\reCamera 2002 Series\\hardware_and_spec.md",
+      "completedAt": "2025-06-23T02:05:26.508Z",
+      "index": 379
+    },
+    {
+      "file": "Edge\\reCamera\\reCamera 2002 Series\\quick_start_guide.md",
+      "completedAt": "2025-06-23T02:06:21.027Z",
+      "index": 380
+    },
+    {
+      "file": "Edge\\reCamera\\reCamera 2002 Series\\reCamera_warranty.md",
+      "completedAt": "2025-06-23T02:07:16.447Z",
+      "index": 381
+    },
+    {
+      "file": "Edge\\reCamera\\reCamera Gimbal\\get_started.md",
+      "completedAt": "2025-06-23T02:08:13.570Z",
+      "index": 382
+    },
+    {
+      "file": "Edge\\reCamera\\reCamera Gimbal\\gimbal_development_c.md",
+      "completedAt": "2025-06-23T02:09:13.073Z",
+      "index": 383
+    },
+    {
+      "file": "Edge\\reCamera\\reCamera Gimbal\\gimbal_node_red.md",
+      "completedAt": "2025-06-23T02:10:51.350Z",
+      "index": 384
+    },
+    {
+      "file": "Edge\\reCamera\\reCamera Gimbal\\hardware_and_spec.md",
+      "completedAt": "2025-06-23T02:12:28.185Z",
+      "index": 385
+    },
+    {
+      "file": "Edge\\reCamera\\reCamera Gimbal\\PID_adjustment.md",
+      "completedAt": "2025-06-23T02:14:46.207Z",
+      "index": 386
+    },
+    {
+      "file": "Edge\\reCamera\\software_documents\\develop_with_c_cpp.md",
+      "completedAt": "2025-06-23T02:15:46.170Z",
+      "index": 387
+    },
+    {
+      "file": "Edge\\reCamera\\software_documents\\develop_with_nodered.md",
+      "completedAt": "2025-06-23T02:16:48.162Z",
+      "index": 388
+    },
+    {
+      "file": "Edge\\reCamera\\software_documents\\linux_fundamentals.md",
+      "completedAt": "2025-06-23T02:17:46.683Z",
+      "index": 389
+    },
+    {
+      "file": "Edge\\reCamera\\software_documents\\os_structure.md",
+      "completedAt": "2025-06-23T02:18:44.490Z",
+      "index": 390
+    },
+    {
+      "file": "Edge\\reCamera\\software_documents\\os_version_control.md",
+      "completedAt": "2025-06-23T02:19:44.312Z",
+      "index": 391
+    },
+    {
+      "file": "Edge\\reServer\\reServer_X86\\reServer-Getting-Started.md",
+      "completedAt": "2025-06-23T02:20:44.618Z",
+      "index": 392
+    },
+    {
+      "file": "Edge\\reServer\\reServer_X86\\reServer-Update-BIOS-Install-Drivers.md",
+      "completedAt": "2025-06-23T02:22:30.429Z",
+      "index": 393
+    },
+    {
+      "file": "FAQ\\Jetson\\solution_of_insufficient_space.md",
+      "completedAt": "2025-06-23T02:23:33.924Z",
+      "index": 394
+    },
+    {
+      "file": "FAQ\\Jetson\\Troubleshooting_Installation.md",
+      "completedAt": "2025-06-23T02:41:46.375Z",
+      "index": 395
+    },
+    {
+      "file": "FAQ\\ODYSSEY\\Fan_Pinout.md",
+      "completedAt": "2025-06-23T02:42:39.433Z",
+      "index": 396
+    },
+    {
+      "file": "FAQ\\ODYSSEY\\not_recognize-onboard-microcontroller.md",
+      "completedAt": "2025-06-23T02:43:30.910Z",
+      "index": 397
+    },
+    {
+      "file": "FAQ\\ODYSSEY\\Power_button.md",
+      "completedAt": "2025-06-23T02:44:28.264Z",
+      "index": 398
+    },
+    {
+      "file": "FAQ\\ODYSSEY\\power_up.md",
+      "completedAt": "2025-06-23T02:45:21.762Z",
+      "index": 399
+    },
+    {
+      "file": "FAQ\\ODYSSEY\\reinstall_the_Original_Windows.md",
+      "completedAt": "2025-06-23T02:46:16.304Z",
+      "index": 400
+    },
+    {
+      "file": "FAQ\\ODYSSEY\\TPM.md",
+      "completedAt": "2025-06-23T02:47:04.671Z",
+      "index": 401
+    },
+    {
+      "file": "FAQ\\ODYSSEY\\Troubleshooting_BIOS-Related_Issues.md",
+      "completedAt": "2025-06-23T02:47:58.449Z",
+      "index": 402
+    },
+    {
+      "file": "FAQ\\ODYSSEY\\Turn_on_the_Fan.md",
+      "completedAt": "2025-06-23T02:48:48.102Z",
+      "index": 403
+    },
+    {
+      "file": "FAQ\\OpenWrt\\change_default_gateway_IP.md",
+      "completedAt": "2025-06-23T02:49:42.026Z",
+      "index": 404
+    },
+    {
+      "file": "FAQ\\OpenWrt\\fix_device_ReadOnlyRootFilesystem.md",
+      "completedAt": "2025-06-23T02:50:34.509Z",
+      "index": 405
+    },
+    {
+      "file": "FAQ\\OpenWrt\\set_up_Rclone_from_web_UI.md",
+      "completedAt": "2025-06-23T02:51:32.088Z",
+      "index": 406
+    },
+    {
+      "file": "FAQ\\OpenWrt\\use_a_CM4_witout_eMMC.md",
+      "completedAt": "2025-06-23T02:54:48.137Z",
+      "index": 407
+    },
+    {
+      "file": "FAQ\\reComputer_R1000\\R1000_default_username_password.md",
+      "completedAt": "2025-06-23T02:55:39.635Z",
+      "index": 408
+    },
+    {
+      "file": "FAQ\\reTerminal\\black_glue_around_CM4.md",
+      "completedAt": "2025-06-23T02:56:40.441Z",
+      "index": 409
+    },
+    {
+      "file": "FAQ\\reTerminal\\Boot_OS_from_USB_flash_drive.md",
+      "completedAt": "2025-06-23T02:57:42.310Z",
+      "index": 410
+    },
+    {
+      "file": "FAQ\\reTerminal\\buzzer-leds-not-work_by_drivers.md",
+      "completedAt": "2025-06-23T02:58:45.465Z",
+      "index": 411
+    },
+    {
+      "file": "FAQ\\reTerminal\\check_Encryption_Chip.md",
+      "completedAt": "2025-06-23T02:59:37.204Z",
+      "index": 412
+    },
+    {
+      "file": "FAQ\\reTerminal\\disable_screen_rotation_on_reTerminal.md",
+      "completedAt": "2025-06-23T03:00:25.872Z",
+      "index": 413
+    },
+    {
+      "file": "FAQ\\reTerminal\\flash_different_os_to_emmc.md",
+      "completedAt": "2025-06-23T03:01:16.321Z",
+      "index": 414
+    },
+    {
+      "file": "FAQ\\reTerminal\\flashing_os_on_non-eMMC_CM4_replacement.md",
+      "completedAt": "2025-06-23T03:02:04.010Z",
+      "index": 415
+    },
+    {
+      "file": "FAQ\\reTerminal\\Incorrect_screen_orientation_on_RPiOS_Bullseye.md",
+      "completedAt": "2025-06-23T03:02:52.579Z",
+      "index": 416
+    },
+    {
+      "file": "FAQ\\reTerminal\\install-ubuntu-on-reterminal.md",
+      "completedAt": "2025-06-23T03:03:47.516Z",
+      "index": 417
+    },
+    {
+      "file": "FAQ\\reTerminal\\log_rpios_use_ssh_over_wifi_ethernet.md",
+      "completedAt": "2025-06-23T03:04:40.829Z",
+      "index": 418
+    },
+    {
+      "file": "FAQ\\reTerminal\\Logging_in_OS_using_USB_to_serial_converter.md",
+      "completedAt": "2025-06-23T03:05:31.266Z",
+      "index": 419
+    },
+    {
+      "file": "FAQ\\reTerminal\\reterminal_black_screen.md",
+      "completedAt": "2025-06-23T03:06:22.696Z",
+      "index": 420
+    },
+    {
+      "file": "FAQ\\reTerminal\\screen_refresh_rate.md",
+      "completedAt": "2025-06-23T03:07:14.175Z",
+      "index": 421
+    },
+    {
+      "file": "FAQ\\reTerminal\\troubleshooting-touch-screen-inaccuracy.md",
+      "completedAt": "2025-06-23T03:08:12.637Z",
+      "index": 422
+    },
+    {
+      "file": "FAQ\\reTerminal\\upgrade-rpiOS_installed-packages.md",
+      "completedAt": "2025-06-23T03:09:00.254Z",
+      "index": 423
+    },
+    {
+      "file": "FAQ\\reTerminal\\Wakeup_reTerminal_LCD_after_sleep.md",
+      "completedAt": "2025-06-23T03:09:52.776Z",
+      "index": 424
+    },
+    {
+      "file": "FAQ\\wio_terminal\\Program_loss_by_repeated_power.md",
+      "completedAt": "2025-06-23T03:10:42.185Z",
+      "index": 425
+    },
+    {
+      "file": "FAQ\\XIAO\\bat_5vNo_OUTPUT.md",
+      "completedAt": "2025-06-23T03:11:30.091Z",
+      "index": 426
+    },
+    {
+      "file": "FAQ\\XIAO\\battery_charging_considerations.md",
+      "completedAt": "2025-06-23T03:12:14.560Z",
+      "index": 427
+    },
+    {
+      "file": "FAQ\\XIAO\\check_battery_voltage.md",
+      "completedAt": "2025-06-23T03:13:00.737Z",
+      "index": 428
+    },
+    {
+      "file": "FAQ\\XIAO\\DO_NOT_display.md",
+      "completedAt": "2025-06-23T03:13:48.058Z",
+      "index": 429
+    },
+    {
+      "file": "FAQ\\XIAO\\error_when_use_XIAOnRF52840.md",
+      "completedAt": "2025-06-23T03:14:35.831Z",
+      "index": 430
+    },
+    {
+      "file": "FAQ\\XIAO\\error_when_using_the_code.md",
+      "completedAt": "2025-06-23T03:15:22.906Z",
+      "index": 431
+    },
+    {
+      "file": "FAQ\\XIAO\\exp32c3_d9_d6_d8.md",
+      "completedAt": "2025-06-23T03:16:10.670Z",
+      "index": 432
+    },
+    {
+      "file": "FAQ\\XIAO\\in_other_microcontrollers_or_development_boards.md",
+      "completedAt": "2025-06-23T03:16:53.401Z",
+      "index": 433
+    },
+    {
+      "file": "FAQ\\XIAO\\limitations_on_the_maximum_cable_length.md",
+      "completedAt": "2025-06-23T03:33:35.208Z",
+      "index": 434
+    },
+    {
+      "file": "FAQ\\XIAO\\multiple_in_the_same_CAN.md",
+      "completedAt": "2025-06-23T03:34:45.760Z",
+      "index": 435
+    },
+    {
+      "file": "FAQ\\XIAO\\noport_upload_fails.md",
+      "completedAt": "2025-06-23T03:41:30.054Z",
+      "index": 436
+    },
+    {
+      "file": "FAQ\\XIAO\\not_being_flush.md",
+      "completedAt": "2025-06-23T03:42:13.960Z",
+      "index": 437
+    },
+    {
+      "file": "FAQ\\XIAO\\pin_definition_error.md",
+      "completedAt": "2025-06-23T03:43:01.251Z",
+      "index": 438
+    },
+    {
+      "file": "FAQ\\XIAO\\reflash_the_bootloader.md",
+      "completedAt": "2025-06-23T03:46:09.016Z",
+      "index": 439
+    },
+    {
+      "file": "FAQ\\XIAO\\TFT_or_LVGL_program.md",
+      "completedAt": "2025-06-23T03:47:08.975Z",
+      "index": 440
+    },
+    {
+      "file": "FAQ\\XIAO\\the_maximum_baud_rate.md",
+      "completedAt": "2025-06-23T03:48:00.432Z",
+      "index": 441
+    },
+    {
+      "file": "FAQ\\XIAO\\troubleshoot_CAN_communication_issues.md",
+      "completedAt": "2025-06-23T03:48:53.468Z",
+      "index": 442
+    },
+    {
+      "file": "FAQ\\XIAO\\two_TF_card.md",
+      "completedAt": "2025-06-23T03:49:42.865Z",
+      "index": 443
+    },
+    {
+      "file": "FAQ\\XIAO\\uploading_while_an_error-rp2040.md",
+      "completedAt": "2025-06-23T03:50:32.284Z",
+      "index": 444
+    },
+    {
+      "file": "feature.md",
+      "completedAt": "2025-06-23T03:51:03.025Z",
+      "index": 445
+    },
+    {
+      "file": "Getting_Started.md",
+      "completedAt": "2025-06-23T03:51:28.554Z",
+      "index": 446
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_AI\\ja_How_to_Use SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP.md",
+      "completedAt": "2025-06-23T03:52:16.019Z",
+      "index": 447
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_AI\\ja_xiao-esp32c3-sensecapai.md",
+      "completedAt": "2025-06-23T03:53:07.782Z",
+      "index": 448
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_API\\Appendix\\ja_List_of_Device_Status_IDs.md",
+      "completedAt": "2025-06-23T03:53:56.749Z",
+      "index": 449
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_API\\Appendix\\ja_List_of_Error_Code.md",
+      "completedAt": "2025-06-23T03:54:48.969Z",
+      "index": 450
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_API\\Appendix\\ja_List_of_Measurement_IDs.md",
+      "completedAt": "2025-06-23T03:55:39.914Z",
+      "index": 451
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_API\\Appendix\\ja_List_of_Sensor_Types.md",
+      "completedAt": "2025-06-23T03:56:30.271Z",
+      "index": 452
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_API\\Data_OpenStream_API\\ja_Data_OpenStream_API_Quickstart.md",
+      "completedAt": "2025-06-23T03:59:21.036Z",
+      "index": 453
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_API\\Data_OpenStream_API\\ja_Data_OpenStream_API_Reference.md",
+      "completedAt": "2025-06-23T04:00:11.820Z",
+      "index": 454
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_API\\HTTP_API\\ja_HTTP_API_Access_Guide.md",
+      "completedAt": "2025-06-23T04:01:54.022Z",
+      "index": 455
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_API\\HTTP_API\\ja_Quick_Start.md",
+      "completedAt": "2025-06-23T04:02:43.930Z",
+      "index": 456
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_API\\ja_API_pricing.md",
+      "completedAt": "2025-06-23T04:03:37.368Z",
+      "index": 457
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_API\\ja_SenseCAP_API_Introduction.md",
+      "completedAt": "2025-06-23T04:04:24.265Z",
+      "index": 458
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Dashboard\\ja_Dashboard_Basics.md",
+      "completedAt": "2025-06-23T04:05:14.071Z",
+      "index": 459
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Dashboard\\ja_Dashboard_Registration.md",
+      "completedAt": "2025-06-23T04:06:04.438Z",
+      "index": 460
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Dashboard\\ja_Hotspot_Registration.md",
+      "completedAt": "2025-06-23T04:06:56.674Z",
+      "index": 461
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_APP_settings.md",
+      "completedAt": "2025-06-23T04:07:49.807Z",
+      "index": 462
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_Deeplink_Helium_Wallet.md",
+      "completedAt": "2025-06-23T04:08:43.341Z",
+      "index": 463
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_Download_APP.md",
+      "completedAt": "2025-06-23T04:09:31.450Z",
+      "index": 464
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_FAQ.md",
+      "completedAt": "2025-06-23T04:10:18.611Z",
+      "index": 465
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_forget-wifi-profile.md",
+      "completedAt": "2025-06-23T04:11:08.156Z",
+      "index": 466
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_Hotspot_Management.md",
+      "completedAt": "2025-06-23T04:11:57.617Z",
+      "index": 467
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_Hotspot_Onboarding.md",
+      "completedAt": "2025-06-23T04:12:49.294Z",
+      "index": 468
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_Introduction.md",
+      "completedAt": "2025-06-23T04:13:40.412Z",
+      "index": 469
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_Remote Reboot.md",
+      "completedAt": "2025-06-23T04:14:28.799Z",
+      "index": 470
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_Update_antenna.md",
+      "completedAt": "2025-06-23T04:21:57.462Z",
+      "index": 471
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Hotspot_APP\\ja_Update_Hotspot_Location.md",
+      "completedAt": "2025-06-23T04:22:54.142Z",
+      "index": 472
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Mate_APP\\ja_sensecap_mate_app_event.md",
+      "completedAt": "2025-06-23T04:23:51.873Z",
+      "index": 473
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Mate_APP\\ja_sensecraft_app.md",
+      "completedAt": "2025-06-23T04:24:43.390Z",
+      "index": 474
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Mate_APP\\ja_sensecraft_cloud_fee.md",
+      "completedAt": "2025-06-23T04:25:34.969Z",
+      "index": 475
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Portal\\Detail_Introduction\\ja_Dashboard.md",
+      "completedAt": "2025-06-23T04:26:26.260Z",
+      "index": 476
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Portal\\Detail_Introduction\\ja_Data_Management.md",
+      "completedAt": "2025-06-23T04:27:15.442Z",
+      "index": 477
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Portal\\Detail_Introduction\\ja_Device_Management.md",
+      "completedAt": "2025-06-23T04:28:06.399Z",
+      "index": 478
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCAP_Portal\\ja_QuickStart.md",
+      "completedAt": "2025-06-23T04:28:58.838Z",
+      "index": 479
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Application\\ja_grove-vision-ai-v2-ha.md",
+      "completedAt": "2025-06-23T04:29:54.062Z",
+      "index": 480
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\ja_Grove_Vision_AI_v2_Workspace.md",
+      "completedAt": "2025-06-23T04:30:44.900Z",
+      "index": 481
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\ja_SenseCraft_AI_main_page.md",
+      "completedAt": "2025-06-23T04:31:35.600Z",
+      "index": 482
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\ja_SenseCraft_AI_overview.md",
+      "completedAt": "2025-06-23T04:32:22.801Z",
+      "index": 483
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\ja_XIAO_ESP32S3_Workspace.md",
+      "completedAt": "2025-06-23T04:33:15.367Z",
+      "index": 484
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\ja_sensecraft_grove_visionai_output.md",
+      "completedAt": "2025-06-23T04:34:10.589Z",
+      "index": 485
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\recomputer_jetson\\ja_Nvidia_Jetson_Workspace.md",
+      "completedAt": "2025-06-23T04:35:04.002Z",
+      "index": 486
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\recomputer_jetson\\ja_SenseCraft_AI_Jetson.md",
+      "completedAt": "2025-06-23T04:35:57.896Z",
+      "index": 487
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\xiao_esp32s3_sense\\ja_sensecraft_xiao_esp32s3_gpio.md",
+      "completedAt": "2025-06-23T04:36:46.333Z",
+      "index": 488
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\xiao_esp32s3_sense\\ja_sensecraft_xiao_esp32s3_libraries.md",
+      "completedAt": "2025-06-23T04:40:05.861Z",
+      "index": 489
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\xiao_esp32s3_sense\\ja_sensecraft_xiao_esp32s3_mqtt.md",
+      "completedAt": "2025-06-23T04:40:54.662Z",
+      "index": 490
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Output\\xiao_esp32s3_sense\\ja_sensecraft_xiao_esp32s3_sscma.md",
+      "completedAt": "2025-06-23T04:41:45.547Z",
+      "index": 491
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Pretrained_Models\\ja_Deploy_model_to_Jetson.md",
+      "completedAt": "2025-06-23T04:42:35.885Z",
+      "index": 492
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Pretrained_Models\\ja_SenseCraft_Pretrained_Grove_vision_AI_V2.md",
+      "completedAt": "2025-06-23T04:43:23.233Z",
+      "index": 493
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Pretrained_Models\\ja_SenseCraft_Pretrained_Watcher.md",
+      "completedAt": "2025-06-23T04:44:10.505Z",
+      "index": 494
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Pretrained_Models\\ja_SenseCraft_Pretrained_XIAO_ESP32S3.md",
+      "completedAt": "2025-06-23T04:45:00.210Z",
+      "index": 495
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Training\\ja_Classification.md",
+      "completedAt": "2025-06-23T04:45:48.494Z",
+      "index": 496
+    },
+    {
+      "file": "ja\\Cloud_Chain\\SenseCraft\\SenseCraft_AI\\Training\\ja_Object_Detection.md",
+      "completedAt": "2025-06-23T04:46:38.876Z",
+      "index": 497
+    },
+    {
+      "file": "ja\\Contribution\\Contributors\\Contribution-Guide\\ja_Contribution-Guide.md",
+      "completedAt": "2025-06-23T04:47:26.884Z",
+      "index": 498
+    },
+    {
+      "file": "ja\\Contribution\\Contributors\\Contribution-Guide\\ja_full_steps_pull_request.md",
+      "completedAt": "2025-06-23T04:48:14.332Z",
+      "index": 499
+    },
+    {
+      "file": "ja\\Contribution\\Contributors\\Contribution-Guide\\ja_quick_pull_request.md",
+      "completedAt": "2025-06-23T04:49:02.123Z",
+      "index": 500
+    },
+    {
+      "file": "ja\\Contribution\\Contributors\\Deploy_Page_Locally\\ja_Deploy_Page_Locally.md",
+      "completedAt": "2025-06-23T04:51:59.363Z",
+      "index": 501
+    },
+    {
+      "file": "ja\\Contribution\\Contributors\\ja_Scale-up-Your-Creation-with-Fusion.md",
+      "completedAt": "2025-06-23T04:53:01.751Z",
+      "index": 502
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\Application\\ja_BeagleBone_Solutions.md",
+      "completedAt": "2025-06-23T04:53:54.314Z",
+      "index": 503
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\Application\\ja_ChatGPT_and_BeagleBone.md",
+      "completedAt": "2025-06-23T04:54:42.923Z",
+      "index": 504
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\Extension_Board\\ja_BeagleBone_Green_HDMI_Cape.md",
+      "completedAt": "2025-06-23T04:55:30.643Z",
+      "index": 505
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\Extension_Board\\ja_Grove_Base_Cape_for_BeagleBone_v2.md",
+      "completedAt": "2025-06-23T04:57:33.749Z",
+      "index": 506
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\Extension_Board\\ja_Grove_Cape_for_BeagleBone_Series.md",
+      "completedAt": "2025-06-23T05:00:07.070Z",
+      "index": 507
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\Extension_Board\\ja_Motor_Bridge_Cape_v1.0.md",
+      "completedAt": "2025-06-23T05:00:57.016Z",
+      "index": 508
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\Extension_Board\\ja_Seeed-Studio-BeagleBone-Green-LCD-Cape-with-Resistive-Touch.md",
+      "completedAt": "2025-06-23T05:01:47.322Z",
+      "index": 509
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\Extension_Board\\ja_Skeleton_box_for_Beaglebone.md",
+      "completedAt": "2025-06-23T05:24:20.429Z",
+      "index": 510
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\ja_BeagleBone_Blue.md",
+      "completedAt": "2025-06-23T05:26:14.892Z",
+      "index": 511
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\ja_Beaglebone_Case.md",
+      "completedAt": "2025-06-23T05:28:02.881Z",
+      "index": 512
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\ja_BeagleBone_Green_Wireless.md",
+      "completedAt": "2025-06-23T05:28:50.233Z",
+      "index": 513
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\ja_BeagleBone_Green.md",
+      "completedAt": "2025-06-23T05:29:38.053Z",
+      "index": 514
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\ja_BeagleBone-Green-Gateway.md",
+      "completedAt": "2025-06-23T05:30:27.873Z",
+      "index": 515
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\ja_BeagleBone.md",
+      "completedAt": "2025-06-23T05:34:03.033Z",
+      "index": 516
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\Kit_with_Courses\\ja_Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS.md",
+      "completedAt": "2025-06-23T05:34:51.585Z",
+      "index": 517
+    },
+    {
+      "file": "ja\\Edge\\Beagle_Bone\\Kit_with_Courses\\ja_Grove_Starter_Kit_for_BeagleBone_Green.md",
+      "completedAt": "2025-06-23T05:35:48.278Z",
+      "index": 518
+    },
+    {
+      "file": "ja\\Edge\\Edge_Series\\Edge_Box_ESP_100\\ja_Edgebox-ESP-100-Arduino.md",
+      "completedAt": "2025-06-23T05:38:24.031Z",
+      "index": 519
+    },
+    {
+      "file": "ja\\Edge\\Edge_Series\\ja_Edge_series_Intro.md",
+      "completedAt": "2025-06-23T05:39:18.796Z",
+      "index": 520
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_AI-NVR_with_Jetson.md",
+      "completedAt": "2025-06-23T05:40:52.349Z",
+      "index": 521
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_DashCamNet-with-Jetson-Xavier-NX-Multicamera.md",
+      "completedAt": "2025-06-23T05:45:07.653Z",
+      "index": 522
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_deploy_frigate_on_jetson.md",
+      "completedAt": "2025-06-23T05:47:21.034Z",
+      "index": 523
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_How_to_Train_and_Deploy_YOLOv8_on_reComputer.md",
+      "completedAt": "2025-06-23T05:49:01.345Z",
+      "index": 524
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_Jetson-Nano-MaskCam.md",
+      "completedAt": "2025-06-23T05:50:45.081Z",
+      "index": 525
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_reComputer_Jetson_Series_Projects.md",
+      "completedAt": "2025-06-23T05:51:36.995Z",
+      "index": 526
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_reComputer_Jetson_Series_Tutorials_Exercise.md",
+      "completedAt": "2025-06-23T05:52:27.333Z",
+      "index": 527
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_Security_Scan.md",
+      "completedAt": "2025-06-23T05:54:05.955Z",
+      "index": 528
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_Traffic-Management-DeepStream-SDK.md",
+      "completedAt": "2025-06-23T05:55:04.054Z",
+      "index": 529
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_YOLOv5-Object-Detection-Jetson.md",
+      "completedAt": "2025-06-23T05:55:55.839Z",
+      "index": 530
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_YOLOv8_custom_classification_model.md",
+      "completedAt": "2025-06-23T05:58:19.080Z",
+      "index": 531
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_YOLOv8-DeepStream-TRT-Jetson.md",
+      "completedAt": "2025-06-23T05:59:12.271Z",
+      "index": 532
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\ja_YOLOv8-TRT-Jetson.md",
+      "completedAt": "2025-06-23T06:00:02.490Z",
+      "index": 533
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_alwaysAI-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-23T06:02:32.504Z",
+      "index": 534
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_Cochl.Sense-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-23T06:03:26.469Z",
+      "index": 535
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_CVEDIA-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-23T06:04:18.771Z",
+      "index": 536
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_DeciAI-Getting-Started.md",
+      "completedAt": "2025-06-23T06:05:15.916Z",
+      "index": 537
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_Gapi-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-23T06:06:15.096Z",
+      "index": 538
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_HardHat.md",
+      "completedAt": "2025-06-23T06:07:08.247Z",
+      "index": 539
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_Jetson-AI-developer-tools.md",
+      "completedAt": "2025-06-23T06:08:03.810Z",
+      "index": 540
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_jetson-docker-getting-started.md",
+      "completedAt": "2025-06-23T06:08:59.062Z",
+      "index": 541
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_Lumeo-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-23T06:09:58.214Z",
+      "index": 542
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_No-code-Edge-AI-Tool.md",
+      "completedAt": "2025-06-23T06:11:33.383Z",
+      "index": 543
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_NVStreamer_Getting_Started.md",
+      "completedAt": "2025-06-23T06:12:30.326Z",
+      "index": 544
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_reComputer_Jetson_Series_Resource.md",
+      "completedAt": "2025-06-23T06:13:30.738Z",
+      "index": 545
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_Roboflow-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-23T06:14:25.030Z",
+      "index": 546
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\ja_vnc_for_reComputer.md",
+      "completedAt": "2025-06-23T06:15:20.699Z",
+      "index": 547
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_Deploy_DeepSeek_on_reComputer_Jetson_with_MLC.md",
+      "completedAt": "2025-06-23T06:18:35.485Z",
+      "index": 548
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_Deploy_Ollama_and_AnythingLLM_on_Jetson.md",
+      "completedAt": "2025-06-23T06:20:09.028Z",
+      "index": 549
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_Deploy_Riva_and_Llama2_on_reComputer.md",
+      "completedAt": "2025-06-23T06:21:46.715Z",
+      "index": 550
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_Finetune_LLM_by_Llama_Factory_on_Jetson.md",
+      "completedAt": "2025-06-23T06:22:42.190Z",
+      "index": 551
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_Generative_AI_Intro.md",
+      "completedAt": "2025-06-23T06:23:37.716Z",
+      "index": 552
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson.md",
+      "completedAt": "2025-06-23T06:24:31.854Z",
+      "index": 553
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_How_to_run_local_llm_text_to_image_on_reComputer.md",
+      "completedAt": "2025-06-23T06:31:22.134Z",
+      "index": 554
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_How_to_run_VLM_on_reComputer.md",
+      "completedAt": "2025-06-23T06:32:12.564Z",
+      "index": 555
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_How_to_run_zero_shot_detection_on_reComputer.md",
+      "completedAt": "2025-06-23T06:33:03.302Z",
+      "index": 556
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_Local_RAG_based_on_Jetson_with_LlamaIndex.md",
+      "completedAt": "2025-06-23T06:34:37.351Z",
+      "index": 557
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_Quantized_Llama2_7B_with_MLC_LLM_on_Jetson.md",
+      "completedAt": "2025-06-23T06:35:44.406Z",
+      "index": 558
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_Quickly_Deploy_DeepSeek_on_reComputer_Jetson.md",
+      "completedAt": "2025-06-23T06:37:28.178Z",
+      "index": 559
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_Real_Time_Subtitle_Recoder_on_Jetson.md",
+      "completedAt": "2025-06-23T06:39:21.806Z",
+      "index": 560
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\ja_Whisper_on_Jetson_for_Real_Time_Speech_to_Text.md",
+      "completedAt": "2025-06-23T06:40:15.556Z",
+      "index": 561
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\ja_Allxon-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-23T06:41:17.521Z",
+      "index": 562
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\ja_neqto_engine_for_linux_recomputer.md",
+      "completedAt": "2025-06-23T06:42:16.967Z",
+      "index": 563
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\ja_Scailable-Jetson-Getting-Started.md",
+      "completedAt": "2025-06-23T06:43:15.421Z",
+      "index": 564
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\ja_Update-Jetson-Linux-OTA-Using-Allxon.md",
+      "completedAt": "2025-06-23T06:44:13.046Z",
+      "index": 565
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Application\\Multimodal_AI\\ja_Speech_vlm.md",
+      "completedAt": "2025-06-23T06:47:20.180Z",
+      "index": 566
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\A203v2\\ja_reComputer_A203_Flash_System.md",
+      "completedAt": "2025-06-23T06:49:36.193Z",
+      "index": 567
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\A205\\ja_reComputer_A205_Flash_System.md",
+      "completedAt": "2025-06-23T06:51:55.081Z",
+      "index": 568
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\A603\\ja_A603_Flash_JetPack.md",
+      "completedAt": "2025-06-23T07:00:17.334Z",
+      "index": 569
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\A607\\ja_A607_Flash_JetPack.md",
+      "completedAt": "2025-06-23T07:02:40.668Z",
+      "index": 570
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\A608\\ja_A608_Flash_JetPack.md",
+      "completedAt": "2025-06-23T07:06:05.430Z",
+      "index": 571
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\J101\\ja_reComputer_J1010_J101_Flash_Jetpack.md",
+      "completedAt": "2025-06-23T07:08:06.303Z",
+      "index": 572
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\J202\\ja_reComputer_J2021_J202_Flash_Jetpack.md",
+      "completedAt": "2025-06-23T07:09:00.222Z",
+      "index": 573
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\J401\\ja_J401_carrierboard_Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-23T07:09:54.975Z",
+      "index": 574
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\J401\\ja_reComputer_J4012_Flash_Jetpack.md",
+      "completedAt": "2025-06-23T07:18:52.021Z",
+      "index": 575
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\J501\\ja_Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-23T07:19:46.230Z",
+      "index": 576
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\J501\\ja_reServer_Industrial_J501_Getting_Started.md",
+      "completedAt": "2025-06-23T07:20:49.742Z",
+      "index": 577
+    },
+    {
+      "file": "ja\\Edge\\NVIDIA_Jetson\\Carrier_Boards\\Mini_J401\\ja_J401_Mini_carrierboard_Hardware_Interfaces_Usage.md",
+      "completedAt": "2025-06-23T07:22:21.181Z",
+      "index": 578
     }
   ],
-  "lastSkipped": "Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\alwaysAI-Jetson-Getting-Started.md",
-  "lastCompleted": "2025-06-20T03:20:09.033Z"
+  "lastSkipped": "Edge\\Raspberry_Pi_Devices\\Edge_Controller\\Edge_Box_RPi_200\\Edgebox-rpi-200-balena-OS-setup.md",
+  "lastCompleted": "2025-06-23T07:22:21.182Z"
 }
