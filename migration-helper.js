@@ -81,16 +81,16 @@ class MigrationHelper {
 
   moveCurrentFile() {
     const status = this.getStatus();
-    
+
     if (status.completed) {
       console.log(status.message);
       return false;
     }
 
     if (status.exists) {
-      console.log(`⚠️ 文件已存在: ${status.relativePath}`);
-      console.log('请在 Cursor 中询问用户是否要跳过这个文件');
-      return false;
+      console.log(`⚠️ 文件已存在，自动跳过: ${status.relativePath}`);
+      this.skipCurrentFile();
+      return 'skipped';
     }
 
     // 确保目标目录存在
