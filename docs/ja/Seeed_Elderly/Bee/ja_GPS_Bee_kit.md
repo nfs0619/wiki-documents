@@ -227,19 +227,12 @@ GPSモジュールを既存のシールドと簡単に互換性を持たせる�
 1. **汎用GPSシールド**  
    XBee互換のピン配置と電圧を活用することで、GPS BeeはXBeeソケット（XBeeシールドやXBeeエクスプローラーなど）を再利用できます。例えば、XBeeモジュールをXBeeシールドを使ってArduinoプロジェクトに簡単に取り付けることができます。
 
-2.
+2. **Bluetooth GPSモジュール**  
+   UARTSBを使用してUSBポートGPSモジュールとして動作します。強力なUcenterを使用して簡単に実用的なデータを取得できます。また、Bluetoothモジュールを追加して、プロジェクト用のBluetooth GPSモジュールを作成することも可能です。
 
-<table border="0">
-<tr>
-<td width="300">USB</td>
-<td width="300">![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPSBee-exam.jpg)</td>
-</tr></table>
-<table border="0">
-<tr>
-<td width="300">**Bluetooth GPSモジュール**
-UARTSBを使用してUSBポートGPSモジュールとして動作します。強力なUcenterを使用して簡単に実用的なデータを取得できます。また、Bluetoothモジュールを追加して、プロジェクト用のBluetooth GPSモジュールを作成することも可能です。</td>
-<td width="300">![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPSBee-exam-2.jpg)</td>
-</tr></table>
+![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPSBee-exam.jpg)
+
+![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPSBee-exam-2.jpg)
 
 ![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPSBee-exam-3.jpg)
 
@@ -268,40 +261,31 @@ UARTSBを使用してUSBポートGPSモジュールとして動作します。�
 <th>リリース日</th>
 </tr>
 <tr>
-<td width="300">GPS Beeキット（ミニ埋め込みアンテナ付き）
-</td>
-<td width="500">-
-</td>
-<td width="200">2009年11月8日
-</td></tr>
+<td width="300">GPS Beeキット（ミニ埋め込みアンテナ付き）</td>
+<td width="500">-</td>
+<td width="200">2009年11月8日</td>
+</tr>
 <tr>
-<td>v0.91
-</td>
-<td>補足
-</td>
-<td>2011年3月15日
-</td></tr>
+<td>v0.91</td>
+<td>補足</td>
+<td>2011年3月15日</td>
+</tr>
 <tr>
-<td>v1.2
-</td>
-<td>アンテナ
-</td>
-<td>2012年5月18日
-</td></tr>
+<td>v1.2</td>
+<td>アンテナ</td>
+<td>2012年5月18日</td>
+</tr>
 <tr>
-<td>v1.2
-</td>
-<td>GPSモジュールをSIM28に変更
-</td>
-<td>2013年12月5日
-</td></tr>
+<td>v1.2</td>
+<td>GPSモジュールをSIM28に変更</td>
+<td>2013年12月5日</td>
+</tr>
 <tr>
-<td>v1.3
-</td>
-<td>GPSモジュールをSIM28に変更、LEDを底面に変更
-</td>
-<td>2014年1月10日
-</td></tr></table>
+<td>v1.3</td>
+<td>GPSモジュールをSIM28に変更、LEDを底面に変更</td>
+<td>2014年1月10日</td>
+</tr>
+</table>
 
 ## 回路図オンラインビューア
 

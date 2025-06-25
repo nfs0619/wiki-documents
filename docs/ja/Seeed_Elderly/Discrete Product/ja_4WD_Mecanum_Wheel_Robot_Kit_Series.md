@@ -76,1102 +76,722 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/4WD_Mecanum_Wheel_Robot_Kit_Series/img/Left_Mecanum_Wheel_Kit.PNG)
 
-<table cellspacing="0" width="80%">
+<table>
 <tr>
-<th scope="col">
-</th>
-<th scope="col">部品名</th>
-<th scope="col">仕様</th>
-<th scope="col">材質</th>
-<th scope="col">数量</th>
+<th>番号</th>
+<th>部品名</th>
+<th>仕様</th>
+<th>材質</th>
+<th>数量</th>
 </tr>
 <tr>
-<th scope="row">1</th>
+<td>1</td>
 <td>左メカナムホイール</td>
 <td>Φ60mm H32mm</td>
 <td>アルミニウム＆ゴム</td>
 <td>1 個</td>
 </tr>
 <tr>
-<th scope="row">2
-</th>
-<td>DCモーター
-</td>
-<td>25GA 370
-</td>
-<td>金属
-</td>
-<td>1 個
-</td></tr>
+<td>2</td>
+<td>DCモーター</td>
+<td>25GA 370</td>
+<td>金属</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">3
-</th>
-<td>DCモーター用モーターサポート
-</td>
-<td>25シリーズ
-</td>
-<td>金属
-</td>
-<td>1 個
-</td></tr>
+<td>3</td>
+<td>DCモーター用モーターサポート</td>
+<td>25シリーズ</td>
+<td>金属</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">4
-</th>
-<td>シャフトコネクター
-</td>
-<td>Ф13.9mm*23mm/6mm
-</td>
-<td>アルミニウム
-</td>
-<td>1 個
-</td></tr>
+<td>4</td>
+<td>シャフトコネクター</td>
+<td>Ф13.9mm*23mm/6mm</td>
+<td>アルミニウム</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">5
-</th>
-<td>セットスクリュー
-</td>
-<td>M3×5
-</td>
-<td>金属
-</td>
-<td>2 個
-</td></tr>
+<td>5</td>
+<td>セットスクリュー</td>
+<td>M3×5</td>
+<td>金属</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">6
-</th>
-<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ
-</td>
-<td>M4×18
-</td>
-<td>金属
-</td>
-<td>1 個
-</td></tr>
+<td>6</td>
+<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ</td>
+<td>M4×18</td>
+<td>金属</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">7
-</th>
-<td>十字穴付き丸頭スクリュー
-</td>
-<td>M3×8
-</td>
-<td>金属
-</td>
-<td>2 個
-</td></tr>
+<td>7</td>
+<td>十字穴付き丸頭スクリュー</td>
+<td>M3×8</td>
+<td>金属</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">8
-</th>
-<td>ワッシャー付き十字穴付き丸頭スクリュー
-</td>
-<td>M3×8
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>8</td>
+<td>ワッシャー付き十字穴付き丸頭スクリュー</td>
+<td>M3×8</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">9
-</th>
-<td>六角ナット
-</td>
-<td>M3
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr></table>
+<td>9</td>
+<td>六角ナット</td>
+<td>M3</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
+</table>
 
 2. 右メカナムホイールキット
 
 ![](https://files.seeedstudio.com/wiki/4WD_Mecanum_Wheel_Robot_Kit_Series/img/Right_Mecanum_Wheel_Kit.PNG)
 
-<table cellspacing="0" width="80%">
+<table>
 <tr>
-<th scope="col">
-</th>
-<th scope="col">部品名
-</th>
-<th scope="col">仕様
-</th>
-<th scope="col">材質
-</th>
-<th scope="col">数量
-</th></tr>
+<th>番号</th>
+<th>部品名</th>
+<th>仕様</th>
+<th>材質</th>
+<th>数量</th>
+</tr>
 <tr>
-<th scope="row">1
-</th>
-<td>右メカナムホイール
-</td>
-<td>Φ60mm H32mm
-</td>
-<td>アルミニウム＆ゴム
-</td>
-<td>1 個
-</td></tr>
+<td>1</td>
+<td>右メカナムホイール</td>
+<td>Φ60mm H32mm</td>
+<td>アルミニウム＆ゴム</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">2
-</th>
-<td>DCモーター
-</td>
-<td>25GA 370
-</td>
-<td>金属
-</td>
-<td>1 個
-</td></tr>
+<td>2</td>
+<td>DCモーター</td>
+<td>25GA 370</td>
+<td>金属</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">3
-</th>
-<td>DCモーター用モーターサポート
-</td>
-<td>25シリーズ
-</td>
-<td>金属
-</td>
-<td>1 個
-</td></tr>
+<td>3</td>
+<td>DCモーター用モーターサポート</td>
+<td>25シリーズ</td>
+<td>金属</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">4
-</th>
-<td>シャフトコネクター
-</td>
-<td>Ф13.9mm*23mm/6mm
-</td>
-<td>アルミニウム
-</td>
-<td>1 個
-</td></tr>
+<td>4</td>
+<td>シャフトコネクター</td>
+<td>Ф13.9mm*23mm/6mm</td>
+<td>アルミニウム</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">5
-</th>
-<td>セットスクリュー
-</td>
-<td>M3×5
-</td>
-<td>金属
-</td>
-<td>2 個
-</td></tr>
+<td>5</td>
+<td>セットスクリュー</td>
+<td>M3×5</td>
+<td>金属</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">6
-</th>
-<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ
-</td>
-<td>M4×18
-</td>
-<td>金属
-</td>
-<td>1 個
-</td></tr>
+<td>6</td>
+<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ</td>
+<td>M4×18</td>
+<td>金属</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">7
-</th>
-<td>十字穴付き丸頭スクリュー
-</td>
-<td>M3×8
-</td>
-<td>金属
-</td>
-<td>2 個
-</td></tr>
+<td>7</td>
+<td>十字穴付き丸頭スクリュー</td>
+<td>M3×8</td>
+<td>金属</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">8
-</th>
-<td>ワッシャー付き十字穴付き丸頭スクリュー
-</td>
-<td>M3×8
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>8</td>
+<td>ワッシャー付き十字穴付き丸頭スクリュー</td>
+<td>M3×8</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">9
-</th>
-<td>六角ナット
-</td>
-<td>M3
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr></table>
+<td>9</td>
+<td>六角ナット</td>
+<td>M3</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
+</table>
 
 3. 基本バージョン
 
 ![](https://files.seeedstudio.com/wiki/4WD_Mecanum_Wheel_Robot_Kit_Series/img/Part_List_for_Basic_Version.PNG)
 
-<table cellspacing="0" width="80%">
+<table>
 <tr>
-<th scope="col">
-</th>
-<th scope="col">部品名
-</th>
-<th scope="col">仕様
-</th>
-<th scope="col">材質
-</th>
-<th scope="col">数量
-</th></tr>
+<th>番号</th>
+<th>部品名</th>
+<th>仕様</th>
+<th>材質</th>
+<th>数量</th>
+</tr>
 <tr>
-<th scope="row">1
-</th>
-<td>シャーシ
-</td>
-<td>250*145*5mm, 黒
-</td>
-<td>PMMA
-</td>
-<td>1 個
-</td></tr>
+<td>1</td>
+<td>シャーシ</td>
+<td>250*145*5mm, 黒</td>
+<td>PMMA</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">2
-</th>
-<td>上部デッキ
-</td>
-<td>192*145*5mm, 黒
-</td>
-<td>PMMA
-</td>
-<td>1 個
-</td></tr>
+<td>2</td>
+<td>上部デッキ</td>
+<td>192*145*5mm, 黒</td>
+<td>PMMA</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">3
-</th>
-<td>バッテリーカバー
-</td>
-<td>68*47*2mm, 黒
-</td>
-<td>PMMA
-</td>
-<td>1 個
-</td></tr>
+<td>3</td>
+<td>バッテリーカバー</td>
+<td>68*47*2mm, 黒</td>
+<td>PMMA</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">4
-</th>
-<td>左メカナムホイール
-</td>
-<td>Φ60mm H32mm
-</td>
-<td>アルミニウム＆ゴム
-</td>
-<td>2 個
-</td></tr>
+<td>4</td>
+<td>左メカナムホイール</td>
+<td>Φ60mm H32mm</td>
+<td>アルミニウム＆ゴム</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">5
-</th>
-<td>右メカナムホイール
-</td>
-<td>Φ60mm H32mm
-</td>
-<td>アルミニウム＆ゴム
-</td>
-<td>2 個
-</td></tr>
+<td>5</td>
+<td>右メカナムホイール</td>
+<td>Φ60mm H32mm</td>
+<td>アルミニウム＆ゴム</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">6
-</th>
-<td>DCモーター
-</td>
-<td>25GA 370
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>6</td>
+<td>DCモーター</td>
+<td>25GA 370</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">7
-</th>
-<td>DCモーター用モーターサポート
-</td>
-<td>25シリーズ
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>7</td>
+<td>DCモーター用モーターサポート</td>
+<td>25シリーズ</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">8
-</th>
-<td>シャフトコネクター
-</td>
-<td>Ф13.9mm*23mm/6mm
-</td>
-<td>アルミニウム
-</td>
-<td>4 個
-</td></tr>
+<td>8</td>
+<td>シャフトコネクター</td>
+<td>Ф13.9mm*23mm/6mm</td>
+<td>アルミニウム</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">9
-</th>
-<td>セットスクリュー
-</td>
-<td>M3×5
-</td>
-<td>金属
-</td>
-<td>8 個
-</td></tr>
+<td>9</td>
+<td>セットスクリュー</td>
+<td>M3×5</td>
+<td>金属</td>
+<td>8 個</td>
+</tr>
 <tr>
-<th scope="row">10
-</th>
-<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ
-</td>
-<td>M4×18
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>10</td>
+<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ</td>
+<td>M4×18</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">11
-</th>
-<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ
-</td>
-<td>M2×8
-</td>
-<td>金属
-</td>
-<td>20 個
-</td></tr>
+<td>11</td>
+<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ</td>
+<td>M2×8</td>
+<td>金属</td>
+<td>20 個</td>
+</tr>
 <tr>
-<th scope="row">12
-</th>
-<td>十字穴付き丸頭スクリュー
-</td>
-<td>M3×8
-</td>
-<td>金属
-</td>
-<td>26 個
-</td></tr>
+<td>12</td>
+<td>十字穴付き丸頭スクリュー</td>
+<td>M3×8</td>
+<td>金属</td>
+<td>26 個</td>
+</tr>
 <tr>
-<th scope="row">13
-</th>
-<td>ワッシャー付き十字穴付き丸頭スクリュー
-</td>
-<td>M3×8
-</td>
-<td>金属
-</td>
-<td>16 個
-</td></tr>
+<td>13</td>
+<td>ワッシャー付き十字穴付き丸頭スクリュー</td>
+<td>M3×8</td>
+<td>金属</td>
+<td>16 個</td>
+</tr>
 <tr>
-<th scope="row">14
-</th>
-<td>六角ナット
-</td>
-<td>M3
-</td>
-<td>金属
-</td>
-<td>16 個
-</td></tr>
+<td>14</td>
+<td>六角ナット</td>
+<td>M3</td>
+<td>金属</td>
+<td>16 個</td>
+</tr>
 <tr>
-<th scope="row">15
-</th>
-<td>六角距離ホルダー
-</td>
-<td>M3×40
-</td>
-<td>金属
-</td>
-<td>5 個
-</td></tr>
+<td>15</td>
+<td>六角距離ホルダー</td>
+<td>M3×40</td>
+<td>金属</td>
+<td>5 個</td>
+</tr>
 <tr>
-<th scope="row">16
-</th>
-<td>六角距離ホルダー
-</td>
-<td>M3×10
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>16</td>
+<td>六角距離ホルダー</td>
+<td>M3×10</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">17
-</th>
-<td>六角距離ホルダー
-</td>
-<td>M2×15
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>17</td>
+<td>六角距離ホルダー</td>
+<td>M2×15</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">18
-</th>
-<td>六角距離ホルダー
-</td>
-<td>M2×10
-</td>
-<td>金属
-</td>
-<td>6 個
-</td></tr></table>
+<td>18</td>
+<td>六角距離ホルダー</td>
+<td>M2×10</td>
+<td>金属</td>
+<td>6 個</td>
+</tr>
+</table>
 
 4. RFバージョン
 
 ![](https://files.seeedstudio.com/wiki/4WD_Mecanum_Wheel_Robot_Kit_Series/img/Parts_of_Mecanum_Wheel_Robot_Kit-RF_Version-.PNG)
 
-<table cellspacing="0" width="80%">
+<table>
 <tr>
-<th scope="col">
-</th>
-<th scope="col">部品名
-</th>
-<th scope="col">仕様
-</th>
-<th scope="col">材質
-</th>
-<th scope="col">数量
-</th></tr>
+<th>番号</th>
+<th>部品名</th>
+<th>仕様</th>
+<th>材質</th>
+<th>数量</th>
+</tr>
 <tr>
-<th scope="row">1
-</th>
-<td>シャーシ
-</td>
-<td>250*145*5mm, 黒
-</td>
-<td>PMMA
-</td>
-<td>1 個
-</td></tr>
+<td>1</td>
+<td>シャーシ</td>
+<td>250*145*5mm, 黒</td>
+<td>PMMA</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">2
-</th>
-<td>上部デッキ
-</td>
-<td>192*145*5mm, 黒
-</td>
-<td>PMMA
-</td>
-<td>1 個
-</td></tr>
+<td>2</td>
+<td>上部デッキ</td>
+<td>192*145*5mm, 黒</td>
+<td>PMMA</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">3
-</th>
-<td>バッテリーカバー
-</td>
-<td>68*47*2mm, 黒
-</td>
-<td>PMMA
-</td>
-<td>1 個
-</td></tr>
+<td>3</td>
+<td>バッテリーカバー</td>
+<td>68*47*2mm, 黒</td>
+<td>PMMA</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">4
-</th>
-<td>リモートコントロールパネル
-</td>
-<td>165*90*4mm, 透明
-</td>
-<td>PMMA
-</td>
-<td>1 個
-</td></tr>
+<td>4</td>
+<td>リモートコントロールパネル</td>
+<td>165*90*4mm, 透明</td>
+<td>PMMA</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">5
-</th>
-<td>左メカナムホイール
-</td>
-<td>Φ60mm H32mm
-</td>
-<td>アルミニウム＆ゴム
-</td>
-<td>2 個
-</td></tr>
+<td>5</td>
+<td>左メカナムホイール</td>
+<td>Φ60mm H32mm</td>
+<td>アルミニウム＆ゴム</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">6
-</th>
-<td>右メカナムホイール
-</td>
-<td>Φ60mm H32mm
-</td>
-<td>アルミニウム＆ゴム
-</td>
-<td>2 個
-</td></tr>
+<td>6</td>
+<td>右メカナムホイール</td>
+<td>Φ60mm H32mm</td>
+<td>アルミニウム＆ゴム</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">7
-</th>
-<td>DCモーター
-</td>
-<td>25GA 370
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>7</td>
+<td>DCモーター</td>
+<td>25GA 370</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">8
-</th>
-<td>DCモーター用モーターサポート
-</td>
-<td>25シリーズ
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>8</td>
+<td>DCモーター用モーターサポート</td>
+<td>25シリーズ</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">9
-</th>
-<td>シャフトコネクター
-</td>
-<td>Ф13.9mm*23mm/6mm
-</td>
-<td>アルミニウム
-</td>
-<td>4 個
-</td></tr>
+<td>9</td>
+<td>シャフトコネクター</td>
+<td>Ф13.9mm*23mm/6mm</td>
+<td>アルミニウム</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">10
-</th>
-<td>セットスクリュー
-</td>
-<td>M3×5
-</td>
-<td>金属
-</td>
-<td>8 個
-</td></tr>
+<td>10</td>
+<td>セットスクリュー</td>
+<td>M3×5</td>
+<td>金属</td>
+<td>8 個</td>
+</tr>
 <tr>
-<th scope="row">11
-</th>
-<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ
-</td>
-<td>M4×18
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>11</td>
+<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ</td>
+<td>M4×18</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">12
-</th>
-<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ
-</td>
-<td>M2×8
-</td>
-<td>金属
-</td>
-<td>32 個
-</td></tr>
+<td>12</td>
+<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ</td>
+<td>M2×8</td>
+<td>金属</td>
+<td>32 個</td>
+</tr>
 <tr>
-<th scope="row">13
-</th>
-<td>十字穴付き丸頭スクリュー
-</td>
-<td>M3×8
-</td>
-<td>金属
-</td>
-<td>34 個
-</td></tr>
+<td>13</td>
+<td>十字穴付き丸頭スクリュー</td>
+<td>M3×8</td>
+<td>金属</td>
+<td>34 個</td>
+</tr>
 <tr>
-<th scope="row">14
-</th>
-<td>ワッシャー付き十字穴付き丸頭スクリュー
-</td>
-<td>M3×8
-</td>
-<td>金属
-</td>
-<td>16 個
-</td></tr>
+<td>14</td>
+<td>ワッシャー付き十字穴付き丸頭スクリュー</td>
+<td>M3×8</td>
+<td>金属</td>
+<td>16 個</td>
+</tr>
 <tr>
-<th scope="row">15
-</th>
-<td>六角ナット
-</td>
-<td>M3
-</td>
-<td>金属
-</td>
-<td>16 個
-</td></tr>
+<td>15</td>
+<td>六角ナット</td>
+<td>M3</td>
+<td>金属</td>
+<td>16 個</td>
+</tr>
 <tr>
-<th scope="row">16
-</th>
-<td>六角距離ホルダー
-</td>
-<td>M3×40
-</td>
-<td>金属
-</td>
-<td>5 個
-</td></tr>
+<td>16</td>
+<td>六角距離ホルダー</td>
+<td>M3×40</td>
+<td>金属</td>
+<td>5 個</td>
+</tr>
 <tr>
-<th scope="row">17
-</th>
-<td>六角距離ホルダー
-</td>
-<td>M3×10
-</td>
-<td>金属
-</td>
-<td>8 個
-</td></tr>
+<td>17</td>
+<td>六角距離ホルダー</td>
+<td>M3×10</td>
+<td>金属</td>
+<td>8 個</td>
+</tr>
 <tr>
-<th scope="row">18
-</th>
-<td>六角距離ホルダー
-</td>
-<td>M2×15
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>18</td>
+<td>六角距離ホルダー</td>
+<td>M2×15</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">19
-</th>
-<td>六角距離ホルダー
-</td>
-<td>M2×10
-</td>
-<td>金属
-</td>
-<td>12 個
-</td></tr>
+<td>19</td>
+<td>六角距離ホルダー</td>
+<td>M2×10</td>
+<td>金属</td>
+<td>12 個</td>
+</tr>
 <tr>
-<th scope="row">20
-</th>
-<td>[Grove - I2C Motor Driver](https://www.seeedstudio.com/depot/Grove-I2C-Motor-Driver-p-907.html)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>2 個
-</td></tr>
+<td>20</td>
+<td><a href="https://www.seeedstudio.com/depot/Grove-I2C-Motor-Driver-p-907.html">Grove - I2C Motor Driver</a></td>
+<td></td>
+<td></td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">21
-</th>
-<td>[RF Bee](https://www.seeedstudio.com/depot/RFbee-V11-Wireless-arduino-compatible-node-p-614.html?cPath=19_22)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>2 個
-</td></tr>
+<td>21</td>
+<td><a href="https://www.seeedstudio.com/depot/RFbee-V11-Wireless-arduino-compatible-node-p-614.html?cPath=19_22">RF Bee</a></td>
+<td></td>
+<td></td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">22
-</th>
-<td>[Grove - XBee Carrier](https://www.seeedstudio.com/depot/Grove-XBee-Carrier-p-905.html?cPath=98_16)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>2 個
-</td></tr>
+<td>22</td>
+<td><a href="https://www.seeedstudio.com/depot/Grove-XBee-Carrier-p-905.html?cPath=98_16">Grove - XBee Carrier</a></td>
+<td></td>
+<td></td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">23
-</th>
-<td>[Grove - Thumb Joystick](https://www.seeedstudio.com/depot/Grove-Thumb-Joystick-p-935.html?cPath=85_51)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>2 個
-</td></tr>
+<td>23</td>
+<td><a href="https://www.seeedstudio.com/depot/Grove-Thumb-Joystick-p-935.html?cPath=85_51">Grove - Thumb Joystick</a></td>
+<td></td>
+<td></td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">24
-</th>
-<td>[Grove - Universal 4 Pin Buckled 20cm Cable](https://www.seeedstudio.com/depot/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack-p-936.html)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>2 個
-</td></tr>
+<td>24</td>
+<td><a href="https://www.seeedstudio.com/depot/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack-p-936.html">Grove - Universal 4 Pin Buckled 20cm Cable</a></td>
+<td></td>
+<td></td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">25
-</th>
-<td>[Grove - Branch Cable](https://www.seeedstudio.com/depot/Grove-Branch-Cable-5PCs-pack-p-847.html)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1 個
-</td></tr>
+<td>25</td>
+<td><a href="https://www.seeedstudio.com/depot/Grove-Branch-Cable-5PCs-pack-p-847.html">Grove - Branch Cable</a></td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">26
-</th>
-<td>電源ケーブル
-</td>
-<td>100mm, 黒
-</td>
-<td>
-</td>
-<td>3 個
-</td></tr>
+<td>26</td>
+<td>電源ケーブル</td>
+<td>100mm, 黒</td>
+<td></td>
+<td>3 個</td>
+</tr>
 <tr>
-<th scope="row">27
-</th>
-<td>電源ケーブル
-</td>
-<td>100mm, 赤
-</td>
-<td>
-</td>
-<td>3 個
-</td></tr>
+<td>27</td>
+<td>電源ケーブル</td>
+<td>100mm, 赤</td>
+<td></td>
+<td>3 個</td>
+</tr>
 <tr>
-<th scope="row">28
-</th>
-<td>ロッカースイッチ
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1 個
-</td></tr>
+<td>28</td>
+<td>ロッカースイッチ</td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">29
-</th>
-<td>T型プラグ
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1 個
-</td></tr></table>
+<td>29</td>
+<td>T型プラグ</td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
+</table>
 
 ### 5. BLE バージョン
 
 ![](https://files.seeedstudio.com/wiki/4WD_Mecanum_Wheel_Robot_Kit_Series/img/Parts_of_Mecanum_Wheel_Robot_Kit-BLE_Version-.PNG)
 
-<table cellspacing="0" width="80%">
+<table>
 <tr>
-<th scope="col">
-</th>
-<th scope="col">部品名
-</th>
-<th scope="col">仕様
-</th>
-<th scope="col">材質
-</th>
-<th scope="col">数量
-</th></tr>
+<th>番号</th>
+<th>部品名</th>
+<th>仕様</th>
+<th>材質</th>
+<th>数量</th>
+</tr>
 <tr>
-<th scope="row">1
-</th>
-<td>シャーシ
-</td>
-<td>250*145*5mm, ブラック
-</td>
-<td>PMMA
-</td>
-<td>1 個
-</td></tr>
+<td>1</td>
+<td>シャーシ</td>
+<td>250*145*5mm, ブラック</td>
+<td>PMMA</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">2
-</th>
-<td>アッパーデッキ
-</td>
-<td>192*145*5mm, ブラック
-</td>
-<td>PMMA
-</td>
-<td>1 個
-</td></tr>
+<td>2</td>
+<td>アッパーデッキ</td>
+<td>192*145*5mm, ブラック</td>
+<td>PMMA</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">3
-</th>
-<td>バッテリーカバー
-</td>
-<td>68*47*2mm, ブラック
-</td>
-<td>PMMA
-</td>
-<td>1 個
-</td></tr>
+<td>3</td>
+<td>バッテリーカバー</td>
+<td>68*47*2mm, ブラック</td>
+<td>PMMA</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">4
-</th>
-<td>左メカナムホイール
-</td>
-<td>Φ60mm H32mm
-</td>
-<td>アルミニウム＆ゴム
-</td>
-<td>2 個
-</td></tr>
+<td>4</td>
+<td>左メカナムホイール</td>
+<td>Φ60mm H32mm</td>
+<td>アルミニウム＆ゴム</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">5
-</th>
-<td>右メカナムホイール
-</td>
-<td>Φ60mm H32mm
-</td>
-<td>アルミニウム＆ゴム
-</td>
-<td>2 個
-</td></tr>
+<td>5</td>
+<td>右メカナムホイール</td>
+<td>Φ60mm H32mm</td>
+<td>アルミニウム＆ゴム</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">6
-</th>
-<td>DC モーター
-</td>
-<td>25GA 370
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>6</td>
+<td>DC モーター</td>
+<td>25GA 370</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">7
-</th>
-<td>DC モーター用モーターサポート
-</td>
-<td>25 シリーズ
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>7</td>
+<td>DC モーター用モーターサポート</td>
+<td>25 シリーズ</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">8
-</th>
-<td>シャフトコネクタ
-</td>
-<td>Ф13.9mm*23mm/6mm
-</td>
-<td>アルミニウム
-</td>
-<td>4 個
-</td></tr>
+<td>8</td>
+<td>シャフトコネクタ</td>
+<td>Ф13.9mm*23mm/6mm</td>
+<td>アルミニウム</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">9
-</th>
-<td>セットスクリュー
-</td>
-<td>M3×5
-</td>
-<td>金属
-</td>
-<td>8 個
-</td></tr>
+<td>9</td>
+<td>セットスクリュー</td>
+<td>M3×5</td>
+<td>金属</td>
+<td>8 個</td>
+</tr>
 <tr>
-<th scope="row">10
-</th>
-<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ
-</td>
-<td>M4×18
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>10</td>
+<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ</td>
+<td>M4×18</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">11
-</th>
-<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ
-</td>
-<td>M2×8
-</td>
-<td>金属
-</td>
-<td>20 個
-</td></tr>
+<td>11</td>
+<td>スクリュー、スプリングロックワッシャーおよび平ワッシャーアセンブリ</td>
+<td>M2×8</td>
+<td>金属</td>
+<td>20 個</td>
+</tr>
 <tr>
-<th scope="row">12
-</th>
-<td>十字穴付き丸頭スクリュー
-</td>
-<td>M3×8
-</td>
-<td>金属
-</td>
-<td>10 個
-</td></tr>
+<td>12</td>
+<td>十字穴付き丸頭スクリュー</td>
+<td>M3×8</td>
+<td>金属</td>
+<td>10 個</td>
+</tr>
 <tr>
-<th scope="row">13
-</th>
-<td>ワッシャー付き十字穴付き丸頭スクリュー
-</td>
-<td>M3×8
-</td>
-<td>金属
-</td>
-<td>32 個
-</td></tr>
+<td>13</td>
+<td>ワッシャー付き十字穴付き丸頭スクリュー</td>
+<td>M3×8</td>
+<td>金属</td>
+<td>32 個</td>
+</tr>
 <tr>
-<th scope="row">14
-</th>
-<td>六角ナット
-</td>
-<td>M3
-</td>
-<td>金属
-</td>
-<td>16 個
-</td></tr>
+<td>14</td>
+<td>六角ナット</td>
+<td>M3</td>
+<td>金属</td>
+<td>16 個</td>
+</tr>
 <tr>
-<th scope="row">15
-</th>
-<td>六角スペーサー
-</td>
-<td>M3×40
-</td>
-<td>金属
-</td>
-<td>5 個
-</td></tr>
+<td>15</td>
+<td>六角スペーサー</td>
+<td>M3×40</td>
+<td>金属</td>
+<td>5 個</td>
+</tr>
 <tr>
-<th scope="row">16
-</th>
-<td>六角スペーサー
-</td>
-<td>M3×10
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>16</td>
+<td>六角スペーサー</td>
+<td>M3×10</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">17
-</th>
-<td>六角スペーサー
-</td>
-<td>M2×15
-</td>
-<td>金属
-</td>
-<td>4 個
-</td></tr>
+<td>17</td>
+<td>六角スペーサー</td>
+<td>M2×15</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row">18
-</th>
-<td>六角スペーサー
-</td>
-<td>M2×10
-</td>
-<td>金属
-</td>
-<td>6 個
-</td></tr>
+<td>18</td>
+<td>六角スペーサー</td>
+<td>M2×10</td>
+<td>金属</td>
+<td>6 個</td>
+</tr>
 <tr>
-<th scope="row">19
-</th>
-<td>[Grove - I2C モータードライバ](https://www.seeedstudio.com/depot/Grove-I2C-Motor-Driver-p-907.html)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>2 個
-</td></tr>
+<td>19</td>
+<td><a href="https://www.seeedstudio.com/depot/Grove-I2C-Motor-Driver-p-907.html">Grove - I2C モータードライバ</a></td>
+<td></td>
+<td></td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row">20
-</th>
-<td>[Grove - BLE](https://www.seeedstudio.com/depot/Grove-BLE-p-1929.html)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1 個
-</td></tr>
+<td>20</td>
+<td><a href="https://www.seeedstudio.com/depot/Grove-BLE-p-1929.html">Grove - BLE</a></td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">21
-</th>
-<td>[Seeeduino](https://www.seeedstudio.com/depot/Seeeduino-V30-Atmega-328P-p-669.html)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1 個
-</td></tr>
+<td>21</td>
+<td><a href="https://www.seeedstudio.com/depot/Seeeduino-V30-Atmega-328P-p-669.html">Seeeduino</a></td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">22
-</th>
-<td>[Base Shield](https://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1 個
-</td></tr>
+<td>22</td>
+<td><a href="https://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html">Base Shield</a></td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">23
-</th>
-<td>[Grove - ユニバーサル 4 ピンバックル 20cm ケーブル](https://www.seeedstudio.com/depot/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack-p-936.html)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1 個
-</td></tr>
+<td>23</td>
+<td><a href="https://www.seeedstudio.com/depot/Grove-Universal-4-Pin-Buckled-20cm-Cable-5-PCs-pack-p-936.html">Grove - ユニバーサル 4 ピンバックル 20cm ケーブル</a></td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">24
-</th>
-<td>[Grove - ブランチケーブル](https://www.seeedstudio.com/depot/Grove-Branch-Cable-5PCs-pack-p-847.html)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1 個
-</td></tr>
+<td>24</td>
+<td><a href="https://www.seeedstudio.com/depot/Grove-Branch-Cable-5PCs-pack-p-847.html">Grove - ブランチケーブル</a></td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">25
-</th>
-<td>電源ケーブル
-</td>
-<td>100mm, ブラック
-</td>
-<td>
-</td>
-<td>3 個
-</td></tr>
+<td>25</td>
+<td>電源ケーブル</td>
+<td>100mm, ブラック</td>
+<td></td>
+<td>3 個</td>
+</tr>
 <tr>
-<th scope="row">26
-</th>
-<td>電源ケーブル
-</td>
-<td>100mm, レッド
-</td>
-<td>
-</td>
-<td>3 個
-</td></tr>
+<td>26</td>
+<td>電源ケーブル</td>
+<td>100mm, レッド</td>
+<td></td>
+<td>3 個</td>
+</tr>
 <tr>
-<th scope="row">27
-</th>
-<td>ロッカースイッチ
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1 個
-</td></tr>
+<td>27</td>
+<td>ロッカースイッチ</td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row">28
-</th>
-<td>T字型プラグ
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1 個
-</td></tr></table>
+<td>28</td>
+<td>T字型プラグ</td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
+</table>
 
 ## 組み立て手順
 

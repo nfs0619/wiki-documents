@@ -35,63 +35,68 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ---
 
 <table>
-  <tbody><tr>
-      <td>基本パラメータ</td>
-    </tr>
-    <tr>
-      <td>入力電圧</td>
-      <td>6-16V</td>
-    </tr>
-    <tr>
-      <td> 出力電圧 </td>
-      <td> 5V/4V/3.3V/1.8V
-      </td></tr>
-    <tr>
-      <td> 待機電流 </td>
-      <td> 150mA未満
-      </td></tr>
-    <tr>
-      <td> 寸法 </td>
-      <td> 130*110mm
-      </td></tr>
-    <tr>
-      <td> モータードライバー
-      </td></tr>
-    <tr>
-      <td> ドライバーチップ </td>
-      <td> MC33931（Freescale） * 4、独立
-      </td></tr>
-    <tr>
-      <td> 入力電圧 </td>
-      <td> 5-30V
-      </td></tr>
-    <tr>
-      <td> 出力電流</td>
-      <td> 3A（最大）
-      </td></tr>
-    <tr>
-      <td> 保護機能</td>
-      <td> 高温、低電圧、短絡発生時の自動出力停止
-      </td></tr>
-    <tr>
-      <td> 拡張性
-      </td></tr>
-    <tr>
-      <td>I2Cインターフェース </td>
-      <td> 3
-      </td></tr>
-    <tr>
-      <td>SPIインターフェース </td>
-      <td> 1
-      </td></tr>
-    <tr>
-      <td> UARTインターフェース </td>
-      <td> 2
-      </td></tr>
-    <tr>
-      <td> USB OTGインターフェース </td>
-      <td> 1
-      </td></tr></tbody></table>
+<tr>
+<th>項目</th>
+<th>仕様</th>
+</tr>
+<tr>
+<td colspan="2"><strong>基本パラメータ</strong></td>
+</tr>
+<tr>
+<td>入力電圧</td>
+<td>6-16V</td>
+</tr>
+<tr>
+<td>出力電圧</td>
+<td>5V/4V/3.3V/1.8V</td>
+</tr>
+<tr>
+<td>待機電流</td>
+<td>150mA未満</td>
+</tr>
+<tr>
+<td>寸法</td>
+<td>130*110mm</td>
+</tr>
+<tr>
+<td colspan="2"><strong>モータードライバー</strong></td>
+</tr>
+<tr>
+<td>ドライバーチップ</td>
+<td>MC33931（Freescale） * 4、独立</td>
+</tr>
+<tr>
+<td>入力電圧</td>
+<td>5-30V</td>
+</tr>
+<tr>
+<td>出力電流</td>
+<td>3A（最大）</td>
+</tr>
+<tr>
+<td>保護機能</td>
+<td>高温、低電圧、短絡発生時の自動出力停止</td>
+</tr>
+<tr>
+<td colspan="2"><strong>拡張性</strong></td>
+</tr>
+<tr>
+<td>I2Cインターフェース</td>
+<td>3</td>
+</tr>
+<tr>
+<td>SPIインターフェース</td>
+<td>1</td>
+</tr>
+<tr>
+<td>UARTインターフェース</td>
+<td>2</td>
+</tr>
+<tr>
+<td>USB OTGインターフェース</td>
+<td>1</td>
+</tr>
+</table>
 
 ## 応用アイデア
 ---

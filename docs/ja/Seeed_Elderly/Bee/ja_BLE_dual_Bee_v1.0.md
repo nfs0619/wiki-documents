@@ -8,8 +8,8 @@ slug: /ja/BLE_dual_Bee_v1.0
 last_update:
   date: 05/15/2025
   author: shuxu hu
---- 113050013
 ---
+
 :::note
 この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
 https://github.com/Seeed-Studio/wiki-documents/issues
@@ -108,7 +108,7 @@ SeeedのハードウェアUARTはPCとのデバッグに使用されているた
 
 **1. テストコマンド**
 
-<table >
+<table>
 <tr>
 <th>送信</th>
 <th>受信</th>
@@ -118,7 +118,8 @@ SeeedのハードウェアUARTはPCとのデバッグに使用されているた
 <td width="300">AT</td>
 <td width="300">OK/ER/Disconnect link</td>
 <td width="300">なし</td>
-</tr></table>
+</tr>
+</table>
 
 モジュールがリモートデバイスに接続されていない場合、「OK」を受信します。
 
@@ -128,7 +129,7 @@ SeeedのハードウェアUARTはPCとのデバッグに使用されているた
 
 **2. モジュールEDRアドレスの問い合わせ**
 
-<table >
+<table>
 <tr>
 <th>送信</th>
 <th>受信</th>
@@ -138,11 +139,12 @@ SeeedのハードウェアUARTはPCとのデバッグに使用されているた
 <td width="300">AT+ADDE?</td>
 <td width="300">OK+ Get: MAC</td>
 <td width="300">なし</td>
-</tr></table>
+</tr>
+</table>
 
 **3. モジュールBLEアドレスの問い合わせ**
 
-<table >
+<table>
 <tr>
 <th>送信</th>
 <th>受信</th>
@@ -152,11 +154,12 @@ SeeedのハードウェアUARTはPCとのデバッグに使用されているた
 <td width="300">AT+ADDB?</td>
 <td width="300">OK+ Get: MAC</td>
 <td width="300">なし</td>
-</tr></table>
+</tr>
+</table>
 
 **4. 認証モードの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
 <th>送信</th>
 <th>受信</th>
@@ -170,7 +173,8 @@ SeeedのハードウェアUARTはPCとのデバッグに使用されているた
 <tr>
 <td width="300">S: AT+AUTH[P1]</td>
 <td width="300">OK+ Set:[P1]</td>
-</tr></table>
+</tr>
+</table>
 
 AT+AUTH0：安全でない接続を許可します。
 
@@ -178,7 +182,7 @@ AT+AUTH1：すべての接続に認証が必要です。
 
 **5. AからBモードの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
 <th>送信</th>
 <th>受信</th>
@@ -192,13 +196,14 @@ AT+AUTH1：すべての接続に認証が必要です。
 <tr>
 <td width="300">S: AT+ATOB[P1]</td>
 <td width="300">OK+ Set:[P1]</td>
-</tr></table>
+</tr>
+</table>
 
 このコマンドはAT+MODE0コマンドと併用する必要があります。Aデバイス（SPPモード）がモジュールに接続し、Bデバイス（BLEモード）もモジュールに接続されている場合、Aデバイスからモジュールに送信されたデータ文字列はBデバイスに送信されます。Bデバイスからモジュールに送信されたデータ文字列もAデバイスに送信されます。
 
 **6. ボーレートの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
 <th>送信</th>
 <th>受信</th>
@@ -212,11 +217,12 @@ AT+AUTH1：すべての接続に認証が必要です。
 <tr>
 <td width="300">S: AT+BAUD[P1]</td>
 <td width="300">OK+ Set:[P1]</td>
-</tr></table>
+</tr>
+</table>
 
 **7. ボンド情報のクリア**
 
-<table >
+<table>
 <tr>
 <th>送信</th>
 <th>受信</th>
@@ -231,13 +237,14 @@ AT+AUTH1：すべての接続に認証が必要です。
 <td width="300">AT+BONDB</td>
 <td width="300">OK+BONDB</td>
 <td width="300">BLEボンド情報をクリア</td>
-</tr></table>
+</tr>
+</table>
 
 BLEモードはまだサポートされていません。
 
 **8. 最後に接続されたEDRデバイスアドレスのクリア**
 
-<table >
+<table>
 <tr>
 <th>送信</th>
 <th>受信</th>
@@ -247,52 +254,42 @@ BLEモードはまだサポートされていません。
 <td width="300">AT+CLEAE</td>
 <td width="300">OK+CLEAE</td>
 <td width="300">なし</td>
-</tr></table>
+</tr>
+</table>
 
 **9. 最後に接続されたBLEデバイスアドレスのクリア**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+CLEAB
-</td>
-<td width="300">OK+CLEAB
-</td>
-<td width="300">なし
-</td></tr></table>
+<td width="300">AT+CLEAB</td>
+<td width="300">OK+CLEAB</td>
+<td width="300">なし</td>
+</tr>
+</table>
 
 **10. モジュールDUAL動作モードの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+DUAL?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1, (デフォルト: 0)
-
-0 – デュアル接続を許可
-
-1 – 1つの接続のみ許可
-</td></tr>
+<td width="300">Q: AT+DUAL?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1, (デフォルト: 0)<br/>0 – デュアル接続を許可<br/>1 – 1つの接続のみ許可</td>
+</tr>
 <tr>
-<td width="300">S: AT+DUAL[P1]
-</td>
-<td width="300">OK+ Set:[P1]
-</td></tr></table>
+<td width="300">S: AT+DUAL[P1]</td>
+<td width="300">OK+ Set:[P1]</td>
+</tr>
+</table>
 
 AT+DUAL0：同時に2つの接続を許可（SPPとBLE）。
 
@@ -300,57 +297,41 @@ AT+DUAL1：同時に1つの接続のみ許可（SPPまたはBLE）
 
 **11. ハードウェアフロー制御スイッチの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+FIOW?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1,(デフォルト: 0)
-
-0: ハードウェアフロー制御オフ
-
-1: ハードウェアフロー制御オン
-</td></tr>
+<td width="300">AT+FIOW?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1,(デフォルト: 0)<br/>0: ハードウェアフロー制御オフ<br/>1: ハードウェアフロー制御オン</td>
+</tr>
 <tr>
-<td width="300">AT+FIOW[P1]
-</td>
-<td width="300">OK+ Set:[P1]
-</td></tr></table>
+<td width="300">AT+FIOW[P1]</td>
+<td width="300">OK+ Set:[P1]</td>
+</tr>
+</table>
 
 **12. モジュールデータ伝送速度モードの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+HIGH?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1,(デフォルト: 0)
-
-0: バランスモード
-
-1: 高速モード
-</td></tr>
+<td width="300">AT+HIGH?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1,(デフォルト: 0)<br/>0: バランスモード<br/>1: 高速モード</td>
+</tr>
 <tr>
-<td width="300">AT+HIGH[P1]
-</td>
-<td width="300">OK+ Set:[P1]
-</td></tr></table>
+<td width="300">AT+HIGH[P1]</td>
+<td width="300">OK+ Set:[P1]</td>
+</tr>
+</table>
 
 バランスモードでは、SPPとBLEを安定した速度でバランスを取ります。
 
@@ -360,77 +341,58 @@ AT+DUAL1：同時に1つの接続のみ許可（SPPまたはBLE）
 
 **13. システムヘルプ情報**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+HELP?
-</td>
-<td width="300">ヘルプ情報
-</td>
-<td width="300">なし
-</td></tr></table>
+<td width="300">AT+HELP?</td>
+<td width="300">ヘルプ情報</td>
+<td width="300">なし</td>
+</tr>
+</table>
 
 **14. モジュール読み込み通知の問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+INIT?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1,?, (デフォルト: 0)
-
-0: 読み込み通知オフ
-
-1: 読み込み通知オン
-</td></tr>
+<td width="300">AT+INIT?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1,?, (デフォルト: 0)<br/>0: 読み込み通知オフ<br/>1: 読み込み通知オン</td>
+</tr>
 <tr>
-<td width="300">AT+INIT[P1]
-</td>
-<td width="300">OK+ Set:[P1]
-</td></tr></table>
+<td width="300">AT+INIT[P1]</td>
+<td width="300">OK+ Set:[P1]</td>
+</tr>
+</table>
 
 「AT+INIT1」が設定されている場合、モジュール読み込み後、モジュールはUARTを通じて「OK+INIT」文字列を出力します。
 
 **15. モジュール動作モードの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+MODE?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1, (デフォルト: 0)
-
-0 – データ伝送
-
-1 – リモート制御
-</td></tr>
+<td width="300">Q: AT+MODE?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1, (デフォルト: 0)<br/>0 – データ伝送<br/>1 – リモート制御</td>
+</tr>
 <tr>
-<td width="300">S: AT+MODE[P1]
-</td>
-<td width="300">OK+ Set:[ P1]
-</td></tr></table>
+<td width="300">S: AT+MODE[P1]</td>
+<td width="300">OK+ Set:[ P1]</td>
+</tr>
+</table>
 
 AT+MODE0：接続確立時のみデータを転送。
 
@@ -438,30 +400,22 @@ AT+MODE1：データ転送とATコマンドへの応答。
 
 **16. 通知情報の問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+NOTI?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1, (デフォルト: 0)
-
-0: 通知しない
-
-1: 通知する
-</td></tr>
+<td width="300">Q: AT+NOTI?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1, (デフォルト: 0)<br/>0: 通知しない<br/>1: 通知する</td>
+</tr>
 <tr>
-<td width="300">S: AT+NOTI[P1]
-</td>
-<td width="300">OK+ Set:[ P1]
-</td></tr></table>
+<td width="300">S: AT+NOTI[P1]</td>
+<td width="300">OK+ Set:[ P1]</td>
+</tr>
+</table>
 
 AT+NOTI1後、モジュール状態が変更されたときに、モジュールはUARTを通じて接続または切断文字列を送信します：
 
@@ -477,459 +431,324 @@ OK+LSTA ========= 例外切断、モジュールは500ms後にリセットされ
 
 **17. 通知モードの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+NOTP?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1; デフォルト: 0
-
-0: アドレスなし
-
-1: アドレスあり
-</td></tr>
+<td width="300">Q: AT+NOTP?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1; デフォルト: 0<br/>0: アドレスなし<br/>1: アドレスあり</td>
+</tr>
 <tr>
-<td width="300">Q: AT+NOTP[P1]
-</td>
-<td width="300">OK+ Set:[ P1]
-</td></tr></table>
+<td width="300">Q: AT+NOTP[P1]</td>
+<td width="300">OK+ Set:[ P1]</td>
+</tr>
+</table>
 
 このコマンドは「AT+NOTI1」と併用する必要があります。このスイッチが開いている場合、モジュールが接続から切断されたときに、プロンプト文字列にリモートアドレスが含まれます。
 
 **18. モジュールEDR名の問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+NAME?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: モジュールEDR名、
-
-最大長は12。
-
-デフォルト: HMSoft
-</td></tr>
+<td width="300">Q: AT+NAME?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: モジュールEDR名、<br/>最大長は12。<br/>デフォルト: HMSoft</td>
+</tr>
 <tr>
-<td width="300">Q: AT+NAME[P1]
-</td>
-<td width="300">OK+ Set:[ P1]
-</td></tr></table>
+<td width="300">Q: AT+NAME[P1]</td>
+<td width="300">OK+ Set:[ P1]</td>
+</tr>
+</table>
 
 **19. モジュールBLE名の問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+NAMB?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: モジュールBLE名、
-
-最大長は12。
-
-デフォルト: HMSoft
-</td></tr>
+<td width="300">Q: AT+NAMB?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: モジュールBLE名、<br/>最大長は12。<br/>デフォルト: HMSoft</td>
+</tr>
 <tr>
-<td width="300">S: AT+NAMB[P1]
-</td>
-<td width="300">OK+ Set:[ P1]
-</td></tr></table>
+<td width="300">S: AT+NAMB[P1]</td>
+<td width="300">OK+ Set:[ P1]</td>
+</tr>
+</table>
 
 **20. PIO1出力状態の問い合わせ/設定（システムLED）**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+PIO1?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1
-
-0: 未接続時500msハイ500msロー出力、接続時ハイ出力。
-
-1: 未接続時ロー出力、接続時ハイ出力。
-
-デフォルト: 0
-</td></tr>
+<td width="300">Q: AT+PIO1?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1<br/>0: 未接続時500msハイ500msロー出力、接続時ハイ出力。<br/>1: 未接続時ロー出力、接続時ハイ出力。<br/>デフォルト: 0</td>
+</tr>
 <tr>
-<td width="300">S: AT+ PIO1 [P1]
-</td>
-<td width="300">OK+ Set:[ P1]
-</td></tr></table>
+<td width="300">S: AT+ PIO1 [P1]</td>
+<td width="300">OK+ Set:[ P1]</td>
+</tr>
+</table>
 
 **21. PIO出力状態の問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+PIO[P1]?
-</td>
-<td width="300">OK+ Get:[P1][P2]
-</td>
-<td rowspan="2" width="300">P1: 2~B (HM-12)
-
-P2: 2~3 (HM-13)
-
-0: ロー出力
-
-1: ハイ出力
-
-?: 問い合わせ
-</td></tr>
+<td width="300">Q: AT+PIO[P1]?</td>
+<td width="300">OK+ Get:[P1][P2]</td>
+<td rowspan="2" width="300">P1: 2~B (HM-12)<br/>P2: 2~3 (HM-13)<br/>0: ロー出力<br/>1: ハイ出力<br/>?: 問い合わせ</td>
+</tr>
 <tr>
-<td width="300">S: AT+ PIO[P1][P2]
-</td>
-<td width="300">OK+ Set:[P1][P2]
-</td></tr></table>
+<td width="300">S: AT+ PIO[P1][P2]</td>
+<td width="300">OK+ Set:[P1][P2]</td>
+</tr>
+</table>
 
 **22. EDR PINコードの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+PINE?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: モジュールEDRコード
-
-最大長: 6
-
-デフォルト: 1234
-</td></tr>
+<td width="300">Q: AT+PINE?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: モジュールEDRコード<br/>最大長: 6<br/>デフォルト: 1234</td>
+</tr>
 <tr>
-<td width="300">S: AT+PINE[P1]
-</td>
-<td width="300">OK+ Set:[P1]
-</td></tr></table>
+<td width="300">S: AT+PINE[P1]</td>
+<td width="300">OK+ Set:[P1]</td>
+</tr>
+</table>
 
 **23. BLE PINコードの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+PINB?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: モジュールBLEコード
-
-000000~999999
-
-デフォルト: 000000
-</td></tr>
+<td width="300">Q: AT+PINB?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: モジュールBLEコード<br/>000000~999999<br/>デフォルト: 000000</td>
+</tr>
 <tr>
-<td width="300">S: AT+PINB[P1]
-</td>
-<td width="300">OK+ Set:[P1]
-</td></tr></table>
+<td width="300">S: AT+PINB[P1]</td>
+<td width="300">OK+ Set:[P1]</td>
+</tr>
+</table>
 
 **24. UARTパリティビットの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+PARI?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1, 2, (デフォルト: 0)
-
-0: パリティなし
-
-1: 偶数パリティ
-
-2: 奇数パリティ
-</td></tr>
+<td width="300">Q: AT+PARI?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1, 2, (デフォルト: 0)<br/>0: パリティなし<br/>1: 偶数パリティ<br/>2: 奇数パリティ</td>
+</tr>
 <tr>
-<td width="300">S: AT+PARI[P1]
-</td>
-<td width="300">OK+ Set:[P1]
-</td></tr></table>
+<td width="300">S: AT+PARI[P1]</td>
+<td width="300">OK+ Set:[P1]</td>
+</tr>
+</table>
 
 **25. すべての設定値を工場出荷時設定に復元**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+RENEW
-</td>
-<td width="300">OK+RENEW
-</td>
-<td width="300">なし
-</td></tr></table>
+<td width="300">AT+RENEW</td>
+<td width="300">OK+RENEW</td>
+<td width="300">なし</td>
+</tr>
+</table>
 
 **26. モジュール再起動**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+RESET
-</td>
-<td width="300">OK+RESET
-</td>
-<td width="300">なし
-</td></tr></table>
+<td width="300">AT+RESET</td>
+<td width="300">OK+RESET</td>
+<td width="300">なし</td>
+</tr>
+</table>
 
 **27. BLE RSSI値の問い合わせ**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+RSSB?
-</td>
-<td width="300">OK+RSSB: [P1]
-</td>
-<td width="300">P1: RSSI値
-
-9999: 接続なし
-
-9998: 後で試行
-
-9997: 読み取りエラー
-
-Xxxx: RSSI値
-</td></tr></table>
+<td width="300">AT+RSSB?</td>
+<td width="300">OK+RSSB: [P1]</td>
+<td width="300">P1: RSSI値<br/>9999: 接続なし<br/>9998: 後で試行<br/>9997: 読み取りエラー<br/>Xxxx: RSSI値</td>
+</tr>
+</table>
 
 このコマンドは「AT+MODE1」設定後に使用する必要があります。
 このコマンドはリモートBluetoothデバイスのみが使用します。
 
 **28. EDR RSSI値の問い合わせ**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+RSSE?
-</td>
-<td width="300">OK+RSSE: [P1]
-</td>
-<td width="300">P1: RSSI値
-
-9999: 接続なし
-
-9998: 後で試行
-
-9997: 読み取りエラー
-
-Xxxx: RSSI値
-</td></tr></table>
+<td width="300">AT+RSSE?</td>
+<td width="300">OK+RSSE: [P1]</td>
+<td width="300">P1: RSSI値<br/>9999: 接続なし<br/>9998: 後で試行<br/>9997: 読み取りエラー<br/>Xxxx: RSSI値</td>
+</tr>
+</table>
 
 **29. 最後に接続されたEDRデバイスアドレスの問い合わせ**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+RADE?
-</td>
-<td width="300">OK+Get:MACアドレス
-</td>
-<td width="300">なし
-</td></tr></table>
+<td width="300">AT+RADE?</td>
+<td width="300">OK+Get:MACアドレス</td>
+<td width="300">なし</td>
+</tr>
+</table>
 
 **30. 最後に接続されたBLEデバイスアドレスの問い合わせ**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+RADB?
-</td>
-<td width="300">OK+Get:MACアドレス
-</td>
-<td width="300">なし
-</td></tr></table>
+<td width="300">AT+RADB?</td>
+<td width="300">OK+Get:MACアドレス</td>
+<td width="300">なし</td>
+</tr>
+</table>
 
 **31. マスターとスレーブ役割の問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+ROLB?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1 (デフォルト: 0)
-
-0: ペリフェラル
-
-1: セントラル
-</td></tr>
+<td width="300">AT+ROLB?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1 (デフォルト: 0)<br/>0: ペリフェラル<br/>1: セントラル</td>
+</tr>
 <tr>
-<td width="300">AT+ROLB[P1]
-</td>
-<td width="300">OK+ Set:[P1]
-</td></tr></table>
+<td width="300">AT+ROLB[P1]</td>
+<td width="300">OK+ Set:[P1]</td>
+</tr>
+</table>
 
 このコマンドはモジュールの次回電源オンまたはリセット後に有効になります。
 
 **32. EDR動作モードの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+SCAN?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1, (デフォルト: 0)
-
-0: 検出可能と接続可能
-
-1: 接続可能のみ
-</td></tr>
+<td width="300">Q: AT+SCAN?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1, (デフォルト: 0)<br/>0: 検出可能と接続可能<br/>1: 接続可能のみ</td>
+</tr>
 <tr>
-<td width="300">S: AT+SCAN[P1]
-</td>
-<td width="300">OK+ Set:[P1]
-</td></tr></table>
+<td width="300">S: AT+SCAN[P1]</td>
+<td width="300">OK+ Set:[P1]</td>
+</tr>
+</table>
 
 **33. UARTストップビットの問い合わせ/設定**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">Q: AT+STOP?
-</td>
-<td width="300">OK+ Get:[P1]
-</td>
-<td rowspan="2" width="300">P1: 0, 1, (デフォルト: 0)
-
-0: 1ストップビット
-
-1: 2ストップビット
-</td></tr>
+<td width="300">Q: AT+STOP?</td>
+<td width="300">OK+ Get:[P1]</td>
+<td rowspan="2" width="300">P1: 0, 1, (デフォルト: 0)<br/>0: 1ストップビット<br/>1: 2ストップビット</td>
+</tr>
 <tr>
-<td width="300">S: AT+STOP[P1]
-</td>
-<td width="300">OK+ Set:[P1]
-</td></tr></table>
+<td width="300">S: AT+STOP[P1]</td>
+<td width="300">OK+ Set:[P1]</td>
+</tr>
+</table>
 
 **34. ソフトウェアバージョンの問い合わせ**
 
-<table >
+<table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<td width="300">AT+VERR?
-
-AT+VERS?
-</td>
-<td width="300">バージョン情報
-</td>
-<td width="300">なし
-</td></tr></table>
+<td width="300">AT+VERR?<br/>AT+VERS?</td>
+<td width="300">バージョン情報</td>
+<td width="300">なし</td>
+</tr>
+</table>
 
 ##   プログラミング
 ---
