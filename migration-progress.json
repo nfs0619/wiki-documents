@@ -1,5 +1,5 @@
 {
-  "currentIndex": 1031,
+  "currentIndex": 1032,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -4948,8 +4948,13 @@
       "file": "ja\\Seeed_Elderly\\Discrete Product\\ja_Edison_4WD_Auto_Robotic_Platform_2.0.md",
       "completedAt": "2025-06-25T10:04:29.553Z",
       "index": 1030
+    },
+    {
+      "file": "ja\\Seeed_Elderly\\Discrete Product\\ja_Edison_4WD_Auto_Robotic_Platform.md",
+      "completedAt": "2025-06-26T01:31:11.742Z",
+      "index": 1031
     }
   ],
   "lastSkipped": "ja\\Network\\SenseCAP_Network\\SenseCAP_M2_Multi_Platform\\ja_SenseCAP_M2_MP_Gateway_LNS_Configuration.md",
-  "lastCompleted": "2025-06-25T10:04:29.554Z"
+  "lastCompleted": "2025-06-26T01:31:11.743Z"
 }
