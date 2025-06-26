@@ -1,5 +1,5 @@
 {
-  "currentIndex": 1026,
+  "currentIndex": 1031,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -4923,8 +4923,33 @@
       "file": "ja\\Seeed_Elderly\\Discrete Product\\ja_BLE_Micro.md",
       "completedAt": "2025-06-25T05:18:08.718Z",
       "index": 1025
+    },
+    {
+      "file": "ja\\Seeed_Elderly\\Discrete Product\\ja_BLE_Nitrogen.md",
+      "completedAt": "2025-06-25T09:40:32.964Z",
+      "index": 1026
+    },
+    {
+      "file": "ja\\Seeed_Elderly\\Discrete Product\\ja_Bugduino.md",
+      "completedAt": "2025-06-25T09:47:52.230Z",
+      "index": 1027
+    },
+    {
+      "file": "ja\\Seeed_Elderly\\Discrete Product\\ja_CUI32Stem.md",
+      "completedAt": "2025-06-25T09:48:59.820Z",
+      "index": 1028
+    },
+    {
+      "file": "ja\\Seeed_Elderly\\Discrete Product\\ja_Danger_Shield_Complete_Kits.md",
+      "completedAt": "2025-06-25T10:01:55.393Z",
+      "index": 1029
+    },
+    {
+      "file": "ja\\Seeed_Elderly\\Discrete Product\\ja_Edison_4WD_Auto_Robotic_Platform_2.0.md",
+      "completedAt": "2025-06-25T10:04:29.553Z",
+      "index": 1030
     }
   ],
   "lastSkipped": "ja\\Network\\SenseCAP_Network\\SenseCAP_M2_Multi_Platform\\ja_SenseCAP_M2_MP_Gateway_LNS_Configuration.md",
-  "lastCompleted": "2025-06-25T05:18:08.719Z"
+  "lastCompleted": "2025-06-25T10:04:29.554Z"
 }
