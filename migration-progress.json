@@ -1,5 +1,5 @@
 {
-  "currentIndex": 1192,
+  "currentIndex": 1205,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -5688,8 +5688,73 @@
       "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_5V-3.3V_Breadboard_Power_Supply_v1.1.md",
       "completedAt": "2025-06-27T01:39:29.556Z",
       "index": 1191
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_5V-3.3V_Breadboard_Power_Supply.md",
+      "completedAt": "2025-06-27T01:50:11.310Z",
+      "index": 1192
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Battery_Detector_with_Polymer_Lithium_Ion_1050mAh_3.7V.md",
+      "completedAt": "2025-06-27T01:51:33.307Z",
+      "index": 1193
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Battery_Detector_with_Polymer_Lithium_Ion_5100mAh_3.8V.md",
+      "completedAt": "2025-06-27T01:53:44.123Z",
+      "index": 1194
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Battery_kit_3.7V_520_mAh.md",
+      "completedAt": "2025-06-27T02:11:43.579Z",
+      "index": 1195
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Bicycle_Dynamo_With_Bracket-6V_3W.md",
+      "completedAt": "2025-06-27T02:13:11.073Z",
+      "index": 1196
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_DC_framework_miniature_solenoid_VL-0063.md",
+      "completedAt": "2025-06-27T02:14:23.321Z",
+      "index": 1197
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_DC_framework_solenoid_HCNE1-0520.md",
+      "completedAt": "2025-06-27T02:16:58.980Z",
+      "index": 1198
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_DC_framework_solenoid_HCNE1-0630.md",
+      "completedAt": "2025-06-27T02:19:00.459Z",
+      "index": 1199
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Essentials.md",
+      "completedAt": "2025-06-27T02:20:09.988Z",
+      "index": 1200
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Lipo_Rider_Pro.md",
+      "completedAt": "2025-06-27T02:22:43.062Z",
+      "index": 1201
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Lipo_Rider_V1.1.md",
+      "completedAt": "2025-06-27T02:32:48.200Z",
+      "index": 1202
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Lipo_Rider_V1.3.md",
+      "completedAt": "2025-06-27T02:34:53.213Z",
+      "index": 1203
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Lipo_Rider.md",
+      "completedAt": "2025-06-27T02:36:03.437Z",
+      "index": 1204
     }
   ],
   "lastSkipped": "ja\\Sensor\\Beyond_Grove\\Accessories\\Case\\ja_Shield-MaTrix-V0.9b.md",
-  "lastCompleted": "2025-06-27T01:39:29.557Z"
+  "lastCompleted": "2025-06-27T02:36:03.438Z"
 }
