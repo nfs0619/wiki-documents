@@ -1,5 +1,5 @@
 {
-  "currentIndex": 1205,
+  "currentIndex": 1230,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -5753,8 +5753,128 @@
       "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Lipo_Rider.md",
       "completedAt": "2025-06-27T02:36:03.437Z",
       "index": 1204
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Lipo-Rider-Plus.md",
+      "completedAt": "2025-06-27T02:40:53.440Z",
+      "index": 1205
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Logic_DC_Jack.md",
+      "completedAt": "2025-06-27T02:42:44.977Z",
+      "index": 1206
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_Qi_Wireless_Charger_Transmitter.md",
+      "completedAt": "2025-06-27T02:43:55.321Z",
+      "index": 1207
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Current\\ja_Adjustable_DC_DC_Power_Converter_1V-12V-1.5A.md",
+      "completedAt": "2025-06-27T02:44:59.039Z",
+      "index": 1208
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Current\\ja_Capacitance_Meter_Kit.md",
+      "completedAt": "2025-06-27T02:47:48.713Z",
+      "index": 1209
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Current\\ja_RS-232_To_TTL_Conveter-MAX3232IDR.md",
+      "completedAt": "2025-06-27T02:48:45.803Z",
+      "index": 1210
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Display\\ja_1-47inch_LCD_SPI_display.md",
+      "completedAt": "2025-06-27T02:49:43.250Z",
+      "index": 1211
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Display\\ja_1-69inch_LCD_SPI_display.md",
+      "completedAt": "2025-06-27T02:52:27.572Z",
+      "index": 1212
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Display\\ja_LCD_16-2_Characters-Green_Yellow_back_light.md",
+      "completedAt": "2025-06-27T02:52:51.944Z",
+      "index": 1213
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Display\\ja_LCD_8-2_Characters-Blue_back_light.md",
+      "completedAt": "2025-06-27T02:53:23.530Z",
+      "index": 1214
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Input_Output\\ja_125Khz_RFID_module-UART.md",
+      "completedAt": "2025-06-27T03:19:45.365Z",
+      "index": 1215
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Input_Output\\ja_13.56Mhz_RFID_module-IOS-IEC_14443_type_a.md",
+      "completedAt": "2025-06-27T03:20:02.340Z",
+      "index": 1216
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Input_Output\\ja_2.8inch-TFT_Touch_Shield_V1.0.md",
+      "completedAt": "2025-06-27T03:20:16.490Z",
+      "index": 1217
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Input_Output\\ja_AVR_USB_Programmer.md",
+      "completedAt": "2025-06-27T05:12:43.462Z",
+      "index": 1218
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Input_Output\\ja_Bus_Pirate_v3_assembled.md",
+      "completedAt": "2025-06-27T05:13:36.515Z",
+      "index": 1219
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Input_Output\\ja_Codec-Adaptive_Wireless_Relay.md",
+      "completedAt": "2025-06-27T05:14:30.403Z",
+      "index": 1220
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Input_Output\\ja_Scream_out_loud-110dBA_fixed_tone_Siren.md",
+      "completedAt": "2025-06-27T05:17:13.874Z",
+      "index": 1221
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Input_Output\\ja_USB_To_Uart_3V3.md",
+      "completedAt": "2025-06-27T05:18:13.937Z",
+      "index": 1222
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Input_Output\\ja_USB_To_Uart_5V_3V3.md",
+      "completedAt": "2025-06-27T05:19:13.361Z",
+      "index": 1223
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Input_Output\\ja_USB_To_Uart_5V.md",
+      "completedAt": "2025-06-27T05:20:13.014Z",
+      "index": 1224
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\LED\\ja_FSM-55.md",
+      "completedAt": "2025-06-27T05:31:44.868Z",
+      "index": 1225
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_Bluetooth_Multimeter.md",
+      "completedAt": "2025-06-27T05:35:14.286Z",
+      "index": 1226
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_Dfu-util.md",
+      "completedAt": "2025-06-27T05:36:29.345Z",
+      "index": 1227
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Nano-Development.md",
+      "completedAt": "2025-06-27T05:37:13.720Z",
+      "index": 1229
     }
   ],
-  "lastSkipped": "ja\\Sensor\\Beyond_Grove\\Accessories\\Case\\ja_Shield-MaTrix-V0.9b.md",
-  "lastCompleted": "2025-06-27T02:36:03.438Z"
+  "lastSkipped": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Nano_v3.md",
+  "lastCompleted": "2025-06-27T05:37:13.720Z"
 }
