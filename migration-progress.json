@@ -1,5 +1,5 @@
 {
-  "currentIndex": 1230,
+  "currentIndex": 1281,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -5873,8 +5873,263 @@
       "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Nano-Development.md",
       "completedAt": "2025-06-27T05:37:13.720Z",
       "index": 1229
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Nano-gcc.md",
+      "completedAt": "2025-06-27T05:42:46.351Z",
+      "index": 1230
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Nano-OpenOCD_gdb.md",
+      "completedAt": "2025-06-27T05:43:57.921Z",
+      "index": 1231
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Nano-Qemu_gdb.md",
+      "completedAt": "2025-06-27T05:45:19.827Z",
+      "index": 1232
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Nano.md",
+      "completedAt": "2025-06-27T05:49:13.535Z",
+      "index": 1233
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Quad_Manual_by_the_community.md",
+      "completedAt": "2025-06-27T06:06:34.949Z",
+      "index": 1234
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Quad-Beta_HW.md",
+      "completedAt": "2025-06-27T06:17:29.752Z",
+      "index": 1235
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Quad-Building_Firmware.md",
+      "completedAt": "2025-06-27T06:20:03.156Z",
+      "index": 1236
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Quad-Calibration.md",
+      "completedAt": "2025-06-27T06:21:22.571Z",
+      "index": 1237
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Quad.md",
+      "completedAt": "2025-06-27T06:30:51.399Z",
+      "index": 1238
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_Mini_Soldering_Iron.md",
+      "completedAt": "2025-06-27T07:02:32.735Z",
+      "index": 1239
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_Replacement_LCD_Screen_for_DSO_nano.md",
+      "completedAt": "2025-06-27T07:03:48.806Z",
+      "index": 1240
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_RF_Explorer_Software.md",
+      "completedAt": "2025-06-27T07:05:15.292Z",
+      "index": 1241
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\EcoEye_Embedded_Vison_Camera\\ja_Get_Started_with_EcoEye.md",
+      "completedAt": "2025-06-27T07:09:27.691Z",
+      "index": 1242
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensor_Network\\ja_2KM_Long_Range_RF_link_kits_w_encoder_and_decoder.md",
+      "completedAt": "2025-06-27T07:10:46.771Z",
+      "index": 1243
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensor_Network\\ja_315Mhz_remote_relay_switch_kits-2_channels.md",
+      "completedAt": "2025-06-27T07:14:50.322Z",
+      "index": 1244
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensor_Network\\ja_315Mhz_RF_link_kit.md",
+      "completedAt": "2025-06-27T07:16:03.392Z",
+      "index": 1245
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensor_Network\\ja_315MHz_Simple_RF_Link_Kit.md",
+      "completedAt": "2025-06-27T07:28:07.173Z",
+      "index": 1246
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensor_Network\\ja_315Mhz_Wireless_car_key_fob_with_key_chain.md",
+      "completedAt": "2025-06-27T07:30:21.020Z",
+      "index": 1247
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensor_Network\\ja_433Mhz_RF_Link_Kit.md",
+      "completedAt": "2025-06-27T07:31:50.288Z",
+      "index": 1248
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensor_Network\\ja_SDLogger-Open_Hardware_Data_Logger.md",
+      "completedAt": "2025-06-27T07:36:03.919Z",
+      "index": 1249
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensor_Network\\ja_WiFi_Serial_Transceiver_Module.md",
+      "completedAt": "2025-06-27T07:37:24.248Z",
+      "index": 1250
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensor_Network\\ja_Wireless_Sensor_Node-Solar_Kit.md",
+      "completedAt": "2025-06-27T07:40:05.919Z",
+      "index": 1251
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_G1_and_2_inch_Water_Flow_Sensor.md",
+      "completedAt": "2025-06-27T07:43:16.109Z",
+      "index": 1252
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_G1_Water_Flow_Sensor.md",
+      "completedAt": "2025-06-27T07:51:55.237Z",
+      "index": 1253
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_G1-8_Water_Flow_Sensor.md",
+      "completedAt": "2025-06-27T07:58:00.373Z",
+      "index": 1254
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_G3-4_Water_Flow_sensor.md",
+      "completedAt": "2025-06-27T08:04:35.891Z",
+      "index": 1255
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_Gear_Stepper_Motor_Driver_Pack.md",
+      "completedAt": "2025-06-27T08:10:44.838Z",
+      "index": 1256
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_M11_1.25_Water_flow_Sensor.md",
+      "completedAt": "2025-06-27T08:19:15.548Z",
+      "index": 1257
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_Photo_interrupter_OS25B10.md",
+      "completedAt": "2025-06-27T08:23:53.385Z",
+      "index": 1258
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_Photo_Reflective_Sensor.md",
+      "completedAt": "2025-06-27T08:30:30.365Z",
+      "index": 1259
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_Piezo_Sensor-MiniSense_100.md",
+      "completedAt": "2025-06-27T08:34:36.070Z",
+      "index": 1260
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_PIR_Motion_Sensor_Large_Lens_version.md",
+      "completedAt": "2025-06-27T08:36:23.122Z",
+      "index": 1261
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_RF-Transmitter-and-Receiver-Link-Kit-315MHz-433MHz.md",
+      "completedAt": "2025-06-27T08:37:47.485Z",
+      "index": 1262
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_Ultra_Sonic_range_measurement_module.md",
+      "completedAt": "2025-06-27T08:40:33.166Z",
+      "index": 1263
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_Water-Flow-Sensor.md",
+      "completedAt": "2025-06-27T08:49:41.726Z",
+      "index": 1264
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Sensors\\ja_Weight_Sensor_Load_Cell_0-500g.md",
+      "completedAt": "2025-06-27T08:53:57.624Z",
+      "index": 1265
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove_Recorder.md",
+      "completedAt": "2025-06-27T09:05:21.488Z",
+      "index": 1266
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-16-Channel_PWM_Driver-PCA9685.md",
+      "completedAt": "2025-06-27T09:06:53.236Z",
+      "index": 1267
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-2-Channel_Solid_State_Relay.md",
+      "completedAt": "2025-06-27T09:08:04.902Z",
+      "index": 1268
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-2-Channel_SPDT_Relay.md",
+      "completedAt": "2025-06-27T09:09:22.024Z",
+      "index": 1269
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-2-Coil_Latching_Relay.md",
+      "completedAt": "2025-06-27T09:22:13.102Z",
+      "index": 1270
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-4-Channel_Solid_State_Relay.md",
+      "completedAt": "2025-06-27T09:23:46.065Z",
+      "index": 1271
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-4-Channel_SPDT_Relay.md",
+      "completedAt": "2025-06-27T09:25:30.047Z",
+      "index": 1272
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-8-Channel_Solid_State_Relay.md",
+      "completedAt": "2025-06-27T09:31:25.467Z",
+      "index": 1273
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-Buzzer.md",
+      "completedAt": "2025-06-27T09:38:07.327Z",
+      "index": 1274
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-Chainable_RGB_LED.md",
+      "completedAt": "2025-06-27T09:39:33.433Z",
+      "index": 1275
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-Dry-Reed_Relay.md",
+      "completedAt": "2025-06-27T09:41:47.078Z",
+      "index": 1276
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-EL_Driver.md",
+      "completedAt": "2025-06-27T09:43:17.387Z",
+      "index": 1277
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-Hall_Sensor.md",
+      "completedAt": "2025-06-27T09:45:07.489Z",
+      "index": 1278
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-Haptic_Motor.md",
+      "completedAt": "2025-06-27T09:49:08.651Z",
+      "index": 1279
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-I2C_Motor_Driver_V1.2.md",
+      "completedAt": "2025-06-29T04:19:54.984Z",
+      "index": 1280
     }
   ],
   "lastSkipped": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Nano_v3.md",
-  "lastCompleted": "2025-06-27T05:37:13.720Z"
+  "lastCompleted": "2025-06-29T04:19:54.985Z"
 }
