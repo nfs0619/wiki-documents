@@ -1,5 +1,5 @@
 {
-  "currentIndex": 1600,
+  "currentIndex": 1616,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -7718,8 +7718,88 @@
       "file": "ja\\Sensor\\mmWave_radar_sensor\\mmwave-for-XIAO\\ja_mmwave-for-xiao-connect-to-HA.md",
       "completedAt": "2025-06-29T16:10:29.915Z",
       "index": 1599
+    },
+    {
+      "file": "ja\\Sensor\\mmWave_radar_sensor\\mmwave-for-XIAO\\ja_mmwave-for-xiao.md",
+      "completedAt": "2025-06-30T01:48:16.617Z",
+      "index": 1600
+    },
+    {
+      "file": "ja\\Sensor\\mmWave_radar_sensor\\mr24hpc1-mmwave-kit\\ja_mr24hpc1-mmwave_human_kit.md",
+      "completedAt": "2025-06-30T01:50:11.605Z",
+      "index": 1601
+    },
+    {
+      "file": "ja\\Sensor\\mmWave_radar_sensor\\mr24hpc1-mmwave-kit\\ja_mr24hpc1-mmWave_Kit_And_Grove_Connect_To_ESPHome.md",
+      "completedAt": "2025-06-30T01:51:59.196Z",
+      "index": 1602
+    },
+    {
+      "file": "ja\\Sensor\\mmWave_radar_sensor\\mr60bha2-mmwave-kit\\ja_getting_started_with_mr60bha2.md",
+      "completedAt": "2025-06-30T01:56:18.530Z",
+      "index": 1603
+    },
+    {
+      "file": "ja\\Sensor\\mmWave_radar_sensor\\mr60bha2-mmwave-kit\\ja_ha_with_mr60bha2.md",
+      "completedAt": "2025-06-30T01:57:54.776Z",
+      "index": 1604
+    },
+    {
+      "file": "ja\\Sensor\\mmWave_radar_sensor\\mr60fda2-mmwave-kit\\ja_getting_started_with_mr60fda2.md",
+      "completedAt": "2025-06-30T02:00:56.064Z",
+      "index": 1605
+    },
+    {
+      "file": "ja\\Sensor\\mmWave_radar_sensor\\mr60fda2-mmwave-kit\\ja_ha_with_mr60fda2.md",
+      "completedAt": "2025-06-30T02:04:03.572Z",
+      "index": 1606
+    },
+    {
+      "file": "ja\\Sensor\\Pi_Pico\\ja_Grove-Starter-Kit-for-Raspberry-Pi-Pico.md",
+      "completedAt": "2025-06-30T02:10:47.790Z",
+      "index": 1607
+    },
+    {
+      "file": "ja\\Sensor\\ReSpeaker_2-Mics_Pi_HAT\\ja_ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions.md",
+      "completedAt": "2025-06-30T02:16:19.995Z",
+      "index": 1608
+    },
+    {
+      "file": "ja\\Sensor\\ReSpeaker_2-Mics_Pi_HAT\\ja_ReSpeaker_2_Mics_Pi_HAT.md",
+      "completedAt": "2025-06-30T02:26:04.753Z",
+      "index": 1609
+    },
+    {
+      "file": "ja\\Sensor\\ReSpeaker_2-Mics_Pi_HAT\\v1-deprecated\\ja_ReSpeaker_2_Mics_Pi_HAT_Jetson.md",
+      "completedAt": "2025-06-30T02:34:50.412Z",
+      "index": 1610
+    },
+    {
+      "file": "ja\\Sensor\\ReSpeaker_2-Mics_Pi_HAT\\v1-deprecated\\ja_ReSpeaker_2_Mics_Pi_HAT_Raspberry.md",
+      "completedAt": "2025-06-30T02:48:58.519Z",
+      "index": 1611
+    },
+    {
+      "file": "ja\\Sensor\\ReSpeaker_2-Mics_Pi_HAT\\v2\\ja_ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2.md",
+      "completedAt": "2025-06-30T02:52:17.745Z",
+      "index": 1612
+    },
+    {
+      "file": "ja\\Sensor\\ReSpeaker_2-Mics_Pi_HAT\\v2\\ja_ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition.md",
+      "completedAt": "2025-06-30T02:53:48.676Z",
+      "index": 1613
+    },
+    {
+      "file": "ja\\Sensor\\ReSpeaker_Lite\\Application\\ja_respeaker_lite_ha.md",
+      "completedAt": "2025-06-30T02:55:10.409Z",
+      "index": 1614
+    },
+    {
+      "file": "ja\\Sensor\\ReSpeaker_Lite\\Application\\ja_respeaker_lite_pi5.md",
+      "completedAt": "2025-06-30T03:00:03.489Z",
+      "index": 1615
     }
   ],
   "lastSkipped": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-Vibration_Motor.md",
-  "lastCompleted": "2025-06-29T16:10:29.916Z"
+  "lastCompleted": "2025-06-30T03:00:03.489Z"
 }
