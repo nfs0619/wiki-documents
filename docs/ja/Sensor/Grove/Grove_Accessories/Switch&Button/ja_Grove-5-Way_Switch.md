@@ -263,7 +263,7 @@ void loop()
 
 - **ステップ 5.** Arduino IDEの**シリアルモニター**を開くには、**Tool-> Serial Monitor**をクリックします。または++ctrl+shift+m++キーを同時に押します。ボーレートを**115200**に設定します。
 
-:::tipsuccess
+:::tip
 すべてが正常に動作すれば、結果が得られます。**KEY E**を押すと、**KEY E: RAW - LOW PRESSED**がトリガーされます。
 :::
 

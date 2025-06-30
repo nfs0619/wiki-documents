@@ -160,7 +160,7 @@ Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用する
 
 プログラムをArduino/Seeeduinoにアップロードします。
 
-:::tipsuccess
+:::tip
 コードのアップロードが完了すると、シリアルモニターにXとYの座標が表示されます。
 :::
 
@@ -252,7 +252,7 @@ if __name__ == '__main__':
 
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作すれば、以下のような結果が表示されます。
 :::
 

@@ -239,7 +239,7 @@ Grove Dual ButtonはGroveシールドの「D2」インターフェースに接�
 curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s -
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に進行すると、以下の通知が表示されます。
 
 ```

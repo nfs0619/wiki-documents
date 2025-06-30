@@ -183,7 +183,7 @@ Codecraft を初めて使用する場合は、[Arduino 用 Codecraft ガイド](
 
 プログラムを Arduino/Seeeduino にアップロードします。
 
-:::tipsuccess
+:::tip
 コードのアップロードが完了すると、シリアルモニターに湿度値が表示されます。
 :::
 
@@ -314,7 +314,7 @@ if __name__ == '__main__':
     main()
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作すれば、以下の結果が表示されます:
 :::
 

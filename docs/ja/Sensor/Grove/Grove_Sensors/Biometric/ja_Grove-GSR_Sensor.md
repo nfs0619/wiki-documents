@@ -208,7 +208,7 @@ if __name__ == '__main__':
 python grove_gsr_sensor.py 0
 ```
 
-:::tip success
+:::tip
 すべてが正常に動作すれば、以下の結果が表示されます。
 :::
 

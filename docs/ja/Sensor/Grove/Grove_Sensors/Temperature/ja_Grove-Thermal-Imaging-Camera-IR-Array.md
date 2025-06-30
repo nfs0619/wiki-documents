@@ -650,7 +650,7 @@ void DrawLegend() {
 }
 ```
 
-:::tipsuccess
+:::tip
  すべてが正常に動作すれば、Wio Terminal の画面に可視化結果が表示されます。
 :::
 
@@ -716,7 +716,7 @@ ls /dev/i2c*
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/90641-raspi.png" /></div>
 
-:::tipsuccess
+:::tip
      すべてが正常に動作すれば、上記のような結果が表示されます。
 :::
 
@@ -749,7 +749,7 @@ sudo reboot
 sudo ircamera I2C MLX90641
 ```
 
-:::tipsuccess
+:::tip
      すべてが正常に動作すれば、以下のような結果が表示されます。
 :::
 

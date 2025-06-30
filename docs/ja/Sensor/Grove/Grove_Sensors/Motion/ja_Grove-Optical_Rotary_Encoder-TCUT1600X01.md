@@ -396,7 +396,7 @@ if __name__ == '__main__':
 （env）pi@raspberrypi:~ grove_optical_rotary_encoder
 ```
 
-:::tip success
+:::tip
 コマンドが正常に実行されると、毎秒値を出力し、動きを検知します。
 :::
 

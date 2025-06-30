@@ -459,7 +459,7 @@ Codecraft を初めて使用する場合は、[Codecraft を Arduino で使用�
 
 プログラムを Arduino/Seeeduino にアップロードします。
 
-:::tipsuccess
+:::tip
 コードのアップロードが完了すると、Serial Monitor に温度と湿度が表示されます。
 :::
 
@@ -532,7 +532,7 @@ if __name__ == '__main__':
     main()
 ```
 
-:::tipsuccess
+:::tip
     すべてが正常に動作すれば、以下の結果が表示されるはずです。
 :::
 

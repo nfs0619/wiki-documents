@@ -245,7 +245,7 @@ void loop()
 
 - **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
-:::tipsuccess
+:::tip
     すべてが正常に動作すれば、TFTスクリーンに温度マップが表示されます。
 :::
 
@@ -329,7 +329,7 @@ driver.pyc  Seeed_AMG8833.py  thermal_cam.py
 pi@raspberrypi:~/Seeed_AMG8833_Raspberry_Python $ python thermal_cam.py
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作していれば、以下のような結果が表示されます。
 :::
 

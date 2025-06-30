@@ -154,7 +154,7 @@ Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftの
 
 プログラムをArduino/Seeeduinoにアップロードします。
 
-:::tipsuccess
+:::tip
 コードのアップロードが完了したら、鉄製品を電磁石に近づけてみてください。電磁石が動作しているとき、Arduinoの13ピンに接続されたLEDが点灯します。
 :::
 

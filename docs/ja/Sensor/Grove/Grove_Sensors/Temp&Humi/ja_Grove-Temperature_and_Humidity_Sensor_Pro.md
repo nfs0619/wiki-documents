@@ -224,7 +224,7 @@ if __name__ == '__main__':
     main()
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作していれば、`python dht_simpleread.py` を実行することで以下の結果が表示されます。
 :::
 

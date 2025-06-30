@@ -124,7 +124,7 @@ Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftの
 
 プログラムをArduino/Seeeduinoにアップロードしてください。
 
-:::tipsuccess
+:::tip
 コードのアップロードが完了すると、Touch Sensorに触れるとLEDが点灯します。
 :::
 
@@ -257,7 +257,7 @@ if __name__ == '__main__':
 
 ```
 
-:::tipsuccess
+:::tip
     すべてが正常に動作すれば、以下の結果が表示されるはずです。
 :::
 

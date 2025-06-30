@@ -274,7 +274,7 @@ Codecraftを初めて使用する場合は、[Codecraftを使用したArduinoガ
 
 プログラムをArduino/Seeeduinoにアップロードします。
 
-:::tip success
+:::tip
 コードのアップロードが完了すると、Flame Sensorが炎を検出したときにLEDが点灯します。
 :::
 

@@ -572,7 +572,7 @@ if __name__ == '__main__':
 ```python
 （env）pi@raspberrypi:~ grove_lcd_1.2inches
 ```
-:::tip success
+:::tip
 
 すべてが正常に動作していれば、以下の結果が表示されるはずです。
 

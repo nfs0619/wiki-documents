@@ -216,7 +216,7 @@ Codecraftを初めて使用する場合は、[ArduinoでのCodecraft使用ガイ
 
 Arduino/Seeeduinoにプログラムをアップロードします。
 
-:::tipSuccess
+:::tip
 コードのアップロードが完了すると、Hall Sensorが磁場の変化を検出した際にLEDが点灯します。
 :::
 

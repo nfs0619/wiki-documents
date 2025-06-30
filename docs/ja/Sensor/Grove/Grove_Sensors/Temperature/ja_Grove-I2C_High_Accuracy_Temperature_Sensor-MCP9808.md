@@ -403,7 +403,7 @@ class TemperMCP9808(Temper):
         return data / 16.0
 ```
 
-:::tip success
+:::tip
 すべてが正常に動作すれば、以下の結果が表示されます。
 :::
 

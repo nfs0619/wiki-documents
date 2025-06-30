@@ -115,7 +115,7 @@ Codecraft を初めて使用する場合は、[Arduino を使用した Codecraft
 
 プログラムを Arduino/Seeeduino にアップロードします。
 
-:::tipsuccess
+:::tip
 コードのアップロードが完了すると、シリアルモニターでどのチャンネルに触れたかが表示されます。
 :::
 

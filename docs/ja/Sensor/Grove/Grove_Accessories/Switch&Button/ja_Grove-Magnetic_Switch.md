@@ -329,7 +329,7 @@ Codecraftを初めて使用する場合は、[Arduino用Codecraftガイド](http
 
 プログラムをArduino/Seeeduinoにアップロードします。
 
-:::tipsuccess
+:::tip
 コードのアップロードが完了したら、磁石を磁気スイッチに近づけると、Arduinoの13ピンのLEDが点灯します。
 :::
 

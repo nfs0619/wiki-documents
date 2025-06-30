@@ -361,7 +361,7 @@ cd Seeed_Python_SI114X-Si115x
 python3 examples/BasicRead.py 
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作している場合、以下のように結果が表示されます：
 :::
 
@@ -422,7 +422,7 @@ cd Seeed_Python_SI114X-Si115x
 python3 seeed_si115x.py
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作している場合、以下のように結果が表示されます：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Raspberry-Pi-4/img/Sunlighttu.png" /></div>

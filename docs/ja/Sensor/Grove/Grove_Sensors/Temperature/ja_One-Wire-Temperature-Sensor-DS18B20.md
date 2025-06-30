@@ -177,7 +177,7 @@ void loop(void)
 }
 ```
 
-:::tipsuccess
+:::tip
   すべてが正常に動作すれば、**シリアルモニター**で以下のような結果を確認できます：
 :::
 
@@ -264,7 +264,7 @@ cd Seeed_Python_DS18B20
 python3 examples/BasicRead.py 
 ```
 
-:::tipsuccess
+:::tip
           すべてが正常に動作している場合、以下のような結果が表示されます：
 :::
 
