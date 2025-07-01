@@ -9,6 +9,10 @@ class MigrationHelper {
     this.progressFile = './migration-progress.json';
   }
 
+  /**
+   * 获取所有需要迁移的文件列表
+   * @returns {string[]} 排序后的文件路径数组
+   */
   getAllFiles() {
     const files = [];
     this.walkDirectory(this.backupDir, files);
@@ -16,18 +20,23 @@ class MigrationHelper {
       const relativeA = path.relative(this.backupDir, a);
       const relativeB = path.relative(this.backupDir, b);
       return relativeA.localeCompare(relativeB);
-    });
+    }).reverse();
   }
 
+  /**
+   * 递归遍历目录，收集 .md 和 .mdx 文件
+   * @param {string} dir - 目录路径
+   * @param {string[]} fileList - 文件列表数组
+   */
   walkDirectory(dir, fileList) {
     if (!fs.existsSync(dir)) return;
-    
+
     const items = fs.readdirSync(dir).sort();
-    
+
     for (const item of items) {
       const fullPath = path.join(dir, item);
       const stat = fs.statSync(fullPath);
-      
+
       if (stat.isDirectory()) {
         this.walkDirectory(fullPath, fileList);
       } else if (item.match(/\.(md|mdx)$/)) {
@@ -36,6 +45,10 @@ class MigrationHelper {
     }
   }
 
+  /**
+   * 加载迁移进度
+   * @returns {Object} 进度对象
+   */
   loadProgress() {
     if (fs.existsSync(this.progressFile)) {
       try {
@@ -47,14 +60,22 @@ class MigrationHelper {
     return { currentIndex: 0, completed: [] };
   }
 
+  /**
+   * 保存迁移进度
+   * @param {Object} progress - 进度对象
+   */
   saveProgress(progress) {
     fs.writeFileSync(this.progressFile, JSON.stringify(progress, null, 2));
   }
 
+  /**
+   * 获取当前迁移状态
+   * @returns {Object} 状态对象
+   */
   getStatus() {
     const allFiles = this.getAllFiles();
     const progress = this.loadProgress();
-    
+
     if (progress.currentIndex >= allFiles.length) {
       return {
         completed: true,
@@ -79,9 +100,13 @@ class MigrationHelper {
     };
   }
 
+  /**
+   * 移动当前文件到目标位置
+   * @returns {boolean} 是否成功移动
+   */
   moveCurrentFile() {
     const status = this.getStatus();
-    
+
     if (status.completed) {
       console.log(status.message);
       return false;
@@ -102,11 +127,14 @@ class MigrationHelper {
     // 复制文件
     fs.copyFileSync(status.currentFile, status.targetPath);
     console.log(`✅ 已移动: ${status.relativePath}`);
-    
+
     return true;
   }
 
-  // 新增：自动处理单个文件的完整流程
+  /**
+   * 自动处理单个文件的完整流程
+   * @returns {Promise<Object>} 处理结果
+   */
   async processCurrentFile() {
     const status = this.getStatus();
 
@@ -150,12 +178,14 @@ class MigrationHelper {
     }
   }
 
-  // 新增：使用yarn build进行快速编译测试
+  /**
+   * 使用 yarn build 进行快速编译测试
+   * @returns {Promise<Object>} 编译结果
+   */
   async testBuild() {
     return new Promise((resolve) => {
       console.log('⚡ 运行 yarn build...');
 
-      const { spawn } = require('child_process');
       const buildProcess = spawn('yarn', ['build'], {
         stdio: ['ignore', 'pipe', 'pipe'],
         shell: true
@@ -212,16 +242,19 @@ class MigrationHelper {
     });
   }
 
-  // 新增：自动测试编译功能（解决yarn start不退出问题）
+  /**
+   * 自动测试编译功能（解决 yarn start 不退出问题）
+   * @returns {Promise<Object>} 编译测试结果
+   */
   async testCompilation() {
     return new Promise((resolve) => {
       console.log('⚡ 开始编译测试...');
-      
+
       // 检测可用的包管理器
       const useYarn = this.checkYarn();
       const cmd = useYarn ? 'yarn' : 'npm';
       const args = useYarn ? ['start', '--no-open'] : ['run', 'start', '--', '--no-open'];
-      
+
       const startProcess = spawn(cmd, args, {
         stdio: ['ignore', 'pipe', 'pipe'],
         shell: true
@@ -230,7 +263,6 @@ class MigrationHelper {
       let output = '';
       let hasStarted = false;
       let hasError = false;
-      const errors = [];
 
       // 超时保护：10秒后强制结束
       const timeout = setTimeout(() => {
@@ -245,10 +277,10 @@ class MigrationHelper {
       startProcess.stdout.on('data', (data) => {
         const text = data.toString();
         output += text;
-        
+
         // 检测编译成功
-        if (text.includes('webpack compiled successfully') || 
-            text.includes('Local:') || 
+        if (text.includes('webpack compiled successfully') ||
+            text.includes('Local:') ||
             text.includes('ready - started server')) {
           hasStarted = true;
           // 检测到编译成功，立即停止进程
@@ -260,10 +292,10 @@ class MigrationHelper {
       startProcess.stderr.on('data', (data) => {
         const text = data.toString();
         output += text;
-        
+
         // 检测编译错误
-        if (text.includes('ERROR') || 
-            text.includes('MDX compilation failed') || 
+        if (text.includes('ERROR') ||
+            text.includes('MDX compilation failed') ||
             text.includes('Module build failed')) {
           hasError = true;
           // 检测到错误，也立即停止进程
@@ -274,10 +306,10 @@ class MigrationHelper {
 
       startProcess.on('close', (code) => {
         clearTimeout(timeout);
-        
+
         // 解析错误信息
         const parsedErrors = this.parseCompilationErrors(output);
-        
+
         const result = {
           success: hasStarted && !hasError && parsedErrors.length === 0,
           hasStarted: hasStarted,
@@ -286,11 +318,11 @@ class MigrationHelper {
           output: output,
           exitCode: code
         };
-        
-        console.log(hasStarted && !hasError ? 
-          '✅ 编译成功' : 
+
+        console.log(hasStarted && !hasError ?
+          '✅ 编译成功' :
           `❌ 编译失败 (${parsedErrors.length} 个错误)`);
-        
+
         resolve(result);
       });
 
@@ -309,7 +341,10 @@ class MigrationHelper {
     });
   }
 
-  // 检查yarn是否可用
+  /**
+   * 检查 yarn 是否可用
+   * @returns {boolean} yarn 是否可用
+   */
   checkYarn() {
     try {
       require('child_process').execSync('yarn --version', { stdio: 'ignore' });
@@ -319,15 +354,19 @@ class MigrationHelper {
     }
   }
 
-  // 解析编译错误
+  /**
+   * 解析编译错误信息
+   * @param {string} output - 编译输出
+   * @returns {Array} 错误信息数组
+   */
   parseCompilationErrors(output) {
     const errors = [];
     const lines = output.split('\n');
-    
+
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
-      
-      // MDX编译错误
+
+      // MDX 编译错误
       if (line.includes('MDX compilation failed')) {
         const nextLines = lines.slice(i, i + 10);
         const errorInfo = this.extractMDXError(nextLines);
@@ -335,7 +374,7 @@ class MigrationHelper {
           errors.push(errorInfo);
         }
       }
-      
+
       // 一般编译错误
       if (line.includes('Module build failed') && !line.includes('MDX')) {
         errors.push({
@@ -345,17 +384,22 @@ class MigrationHelper {
         });
       }
     }
-    
+
     return errors;
   }
 
+  /**
+   * 提取 MDX 错误详细信息
+   * @param {string[]} lines - 错误信息行数组
+   * @returns {Object|null} 错误信息对象或 null
+   */
   extractMDXError(lines) {
     const errorText = lines.join('\n');
-    
+
     const fileMatch = errorText.match(/file "([^"]+)"/);
     const causeMatch = errorText.match(/Cause: (.+)/);
     const lineMatch = errorText.match(/\((\d+):(\d+)/);
-    
+
     if (fileMatch && causeMatch) {
       return {
         type: 'MDX_ERROR',
@@ -366,18 +410,22 @@ class MigrationHelper {
         fullError: errorText
       };
     }
-    
+
     return null;
   }
 
+  /**
+   * 标记当前文件为已完成
+   * @returns {boolean} 是否成功标记
+   */
   completeCurrentFile() {
     const progress = this.loadProgress();
     const allFiles = this.getAllFiles();
-    
+
     if (progress.currentIndex < allFiles.length) {
       const currentFile = allFiles[progress.currentIndex];
       const relativePath = path.relative(this.backupDir, currentFile);
-      
+
       progress.completed.push({
         file: relativePath,
         completedAt: new Date().toISOString(),
@@ -385,18 +433,22 @@ class MigrationHelper {
       });
       progress.currentIndex++;
       progress.lastCompleted = new Date().toISOString();
-      
+
       this.saveProgress(progress);
-      
+
       console.log(`✅ 已完成: ${relativePath}`);
       console.log(`📊 进度: ${progress.currentIndex}/${allFiles.length}`);
-      
+
       return true;
     }
-    
+
     return false;
   }
 
+  /**
+   * 跳过当前文件
+   * @returns {boolean} 是否成功跳过
+   */
   skipCurrentFile() {
     const progress = this.loadProgress();
     const allFiles = this.getAllFiles();
@@ -418,32 +470,34 @@ class MigrationHelper {
   }
 }
 
-// 命令行接口
+/**
+ * 命令行接口
+ */
 if (require.main === module) {
   const helper = new MigrationHelper();
   const command = process.argv[2];
-  
+
   switch (command) {
     case 'status':
       const status = helper.getStatus();
       console.log(JSON.stringify(status, null, 2));
       break;
-      
+
     case 'move':
       helper.moveCurrentFile();
       break;
-      
+
     case 'test':
-      // 新增：自动测试命令
+      // 自动测试命令
       helper.testCompilation().then(result => {
         console.log(JSON.stringify(result, null, 2));
       });
       break;
-      
+
     case 'complete':
       helper.completeCurrentFile();
       break;
-      
+
     case 'skip':
       helper.skipCurrentFile();
       break;
