@@ -1,5 +1,5 @@
 {
-  "currentIndex": 1770,
+  "currentIndex": 1778,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -8568,8 +8568,48 @@
       "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\ja_Seeeduino-XIAO-by-Nanase.md",
       "completedAt": "2025-06-30T10:00:08.363Z",
       "index": 1769
+    },
+    {
+      "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\ja_Seeeduino-XIAO-CircuitPython.md",
+      "completedAt": "2025-07-01T01:13:27.488Z",
+      "index": 1770
+    },
+    {
+      "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\ja_Seeeduino-XIAO-TinyUSB.md",
+      "completedAt": "2025-07-01T01:44:58.581Z",
+      "index": 1771
+    },
+    {
+      "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\ja_Seeeduino-XIAO.md",
+      "completedAt": "2025-07-01T01:45:33.505Z",
+      "index": 1772
+    },
+    {
+      "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\ja_XIAO_SAMD21_with_PlatformIO.md",
+      "completedAt": "2025-07-01T02:57:05.905Z",
+      "index": 1773
+    },
+    {
+      "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\ja_XIAO-SAMD21-MicroPython.md",
+      "completedAt": "2025-07-01T03:34:34.613Z",
+      "index": 1774
+    },
+    {
+      "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\ja_XIAO-SAMD21-Zephyr-RTOS.md",
+      "completedAt": "2025-07-01T03:37:35.174Z",
+      "index": 1775
+    },
+    {
+      "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\ja_XIAO-SPI-Communication-Interface.md",
+      "completedAt": "2025-07-01T03:41:31.426Z",
+      "index": 1776
+    },
+    {
+      "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\TuTorial\\ja_How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI.md",
+      "completedAt": "2025-07-01T04:27:50.376Z",
+      "index": 1777
     }
   ],
   "lastSkipped": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-Vibration_Motor.md",
-  "lastCompleted": "2025-06-30T10:00:08.364Z"
+  "lastCompleted": "2025-07-01T04:27:50.377Z"
 }
