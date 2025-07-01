@@ -1,5 +1,5 @@
 {
-  "currentIndex": 1909,
+  "currentIndex": 1990,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -9263,8 +9263,413 @@
       "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\ja_Trackpac_Integrated.md",
       "completedAt": "2025-07-01T08:03:20.149Z",
       "index": 1908
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\ja_Ubidots_Integrated.md",
+      "completedAt": "2025-07-01T08:07:29.452Z",
+      "index": 1909
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\ja_Ubidots_Integrated(Helium).md",
+      "completedAt": "2025-07-01T08:07:34.643Z",
+      "index": 1910
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\ja_FAQ.md",
+      "completedAt": "2025-07-01T08:07:44.249Z",
+      "index": 1911
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\ja_Firmware_release_note.md",
+      "completedAt": "2025-07-01T08:07:50.102Z",
+      "index": 1912
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\ja_Lambda_code.md",
+      "completedAt": "2025-07-01T08:07:55.480Z",
+      "index": 1913
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\ja_SenseCAP_T1000_intro.md",
+      "completedAt": "2025-07-01T08:09:21.763Z",
+      "index": 1914
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\ja_SenseCAP_T1000_Tracker_Introduction.md",
+      "completedAt": "2025-07-01T08:09:27.467Z",
+      "index": 1915
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\User_Guide\\ja_E5_Bluetooth_Location_Beacon.md",
+      "completedAt": "2025-07-01T08:09:38.508Z",
+      "index": 1916
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\User_Guide\\ja_Get_Started.md",
+      "completedAt": "2025-07-01T08:09:44.039Z",
+      "index": 1917
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\User_Guide\\ja_Indoor_Positioning_Guide.md",
+      "completedAt": "2025-07-01T08:09:49.751Z",
+      "index": 1918
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\User_Guide\\ja_Payload.md",
+      "completedAt": "2025-07-01T08:33:39.673Z",
+      "index": 1919
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\User_Guide\\ja_Tracker_WiFi_Geolocation.md",
+      "completedAt": "2025-07-01T08:37:16.411Z",
+      "index": 1920
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_T1000-P\\ja_get_started_with_t1000_p.md",
+      "completedAt": "2025-07-01T08:37:28.158Z",
+      "index": 1921
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Applications\\development\\ja_watcher_train_model.md",
+      "completedAt": "2025-07-01T08:37:40.384Z",
+      "index": 1922
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Applications\\ja_use_case.md",
+      "completedAt": "2025-07-01T08:37:53.681Z",
+      "index": 1923
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Applications\\Watcher-Agent\\ja_Device Network Setup Guide.md",
+      "completedAt": "2025-07-01T08:38:04.706Z",
+      "index": 1924
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Applications\\Watcher-Agent\\ja_Flash Watcher Agent Firmware.md",
+      "completedAt": "2025-07-01T08:39:36.185Z",
+      "index": 1925
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Applications\\Watcher-Agent\\ja_Web Control Panel.md",
+      "completedAt": "2025-07-01T08:39:51.884Z",
+      "index": 1926
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Firmware_architecture_Overview\\ja_watcher_architecture.md",
+      "completedAt": "2025-07-01T08:40:11.270Z",
+      "index": 1927
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Firmware_architecture_Overview\\ja_watcher_function_module_dev_guide.md",
+      "completedAt": "2025-07-01T08:40:27.034Z",
+      "index": 1928
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Firmware_architecture_Overview\\ja_watcher_idf_installation.md",
+      "completedAt": "2025-07-01T08:40:41.370Z",
+      "index": 1929
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Firmware_architecture_Overview\\ja_watcher_ui_intergration_guide.md",
+      "completedAt": "2025-07-01T08:43:50.570Z",
+      "index": 1930
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\ja_sensecap_watcher_getting_started.md",
+      "completedAt": "2025-07-01T08:44:05.364Z",
+      "index": 1931
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\ja_sensecap_watcher_price.md",
+      "completedAt": "2025-07-01T08:44:20.299Z",
+      "index": 1932
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\ja_watcher_main_page.md",
+      "completedAt": "2025-07-01T08:44:34.332Z",
+      "index": 1933
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\ja_watcher_node_red_to_ifttt.md",
+      "completedAt": "2025-07-01T08:44:47.875Z",
+      "index": 1934
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\ja_watcher_node_red_to_kafka.md",
+      "completedAt": "2025-07-01T08:46:24.724Z",
+      "index": 1935
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\ja_watcher_node_red_to_open_interpreter.md",
+      "completedAt": "2025-07-01T08:46:34.966Z",
+      "index": 1936
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\ja_watcher_node_red_to_p5js.md",
+      "completedAt": "2025-07-01T08:46:40.749Z",
+      "index": 1937
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\ja_watcher_node_red_to_telegram.md",
+      "completedAt": "2025-07-01T08:46:51.059Z",
+      "index": 1938
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\ja_watcher_node_red_to_twilio.md",
+      "completedAt": "2025-07-01T08:47:06.092Z",
+      "index": 1939
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\ja_watcher_node_red.md",
+      "completedAt": "2025-07-01T08:56:52.634Z",
+      "index": 1940
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\ja_watcher_to_discord.md",
+      "completedAt": "2025-07-01T08:56:57.960Z",
+      "index": 1941
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\ja_watcher_to_mongodb.md",
+      "completedAt": "2025-07-01T08:57:09.054Z",
+      "index": 1942
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\ja_watcher_to_whatsapp.md",
+      "completedAt": "2025-07-01T08:57:15.022Z",
+      "index": 1943
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\smart_home\\ja_integrate_watcher_to_ha.md",
+      "completedAt": "2025-07-01T08:57:21.532Z",
+      "index": 1944
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\ja_watcher_uart_output.md",
+      "completedAt": "2025-07-01T09:00:14.615Z",
+      "index": 1945
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Product_Overview\\ja_sensecap_watcher_tasks.md",
+      "completedAt": "2025-07-01T09:00:39.801Z",
+      "index": 1946
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Product_Overview\\ja_watcher_hardware_overview.md",
+      "completedAt": "2025-07-01T09:19:02.994Z",
+      "index": 1947
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Product_Overview\\ja_watcher_operation_guideline.md",
+      "completedAt": "2025-07-01T09:19:10.474Z",
+      "index": 1948
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Software_Framework_Overview\\ja_sensecap_app_introduction.md",
+      "completedAt": "2025-07-01T09:19:16.249Z",
+      "index": 1949
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Software_Framework_Overview\\ja_sensecap_watcher_local_deploy.md",
+      "completedAt": "2025-07-01T09:20:47.976Z",
+      "index": 1950
+    },
+    {
+      "file": "ja\\Sensor\\SenseCAP\\SenseCAP_Watcher\\Software_Framework_Overview\\ja_sensecap_watcher_software_service_framework.md",
+      "completedAt": "2025-07-01T09:20:53.611Z",
+      "index": 1951
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\ja_Wio.md",
+      "completedAt": "2025-07-01T09:21:03.627Z",
+      "index": 1952
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\LPWAN_Dev_Kit_for_Sidewalk\\ja_LPWAN_Dev_Kit_for_Sidewalk.md",
+      "completedAt": "2025-07-01T09:21:09.501Z",
+      "index": 1953
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\LPWAN_Dev_Kit_for_Sidewalk\\ja_Switch_to_Wio_Tracker.md",
+      "completedAt": "2025-07-01T09:21:15.498Z",
+      "index": 1954
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Link\\ja_Wio_Link_Bootcamp_Kit.md",
+      "completedAt": "2025-07-01T09:22:45.166Z",
+      "index": 1955
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Link\\ja_Wio_Link_Deluxe_Kit.md",
+      "completedAt": "2025-07-01T09:22:51.441Z",
+      "index": 1956
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Link\\ja_Wio_Link_Deluxe_Plus_Kit.md",
+      "completedAt": "2025-07-01T09:23:04.609Z",
+      "index": 1957
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Link\\ja_Wio_Link_Environment_Kit.md",
+      "completedAt": "2025-07-01T09:23:10.941Z",
+      "index": 1958
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Link\\ja_Wio_Link_Event_Kit.md",
+      "completedAt": "2025-07-01T09:23:17.323Z",
+      "index": 1959
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Link\\ja_Wio_Link_Starter_Kit.md",
+      "completedAt": "2025-07-01T09:26:16.721Z",
+      "index": 1960
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Link\\ja_Wio_Link.md",
+      "completedAt": "2025-07-01T09:26:22.983Z",
+      "index": 1961
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Lite\\ja_Grove_Base_Shield_for_NodeMCU_V1.0.md",
+      "completedAt": "2025-07-01T09:26:33.340Z",
+      "index": 1962
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Lite\\ja_Grove-Shield-for-Wio-Lite.md",
+      "completedAt": "2025-07-01T09:26:39.648Z",
+      "index": 1963
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Lite\\ja_Wio_Lite_RISC_V_GD32VF103_with_ESP8266.md",
+      "completedAt": "2025-07-01T09:26:46.095Z",
+      "index": 1964
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Lite\\ja_Wio-Lite-AI-Getting-Started.md",
+      "completedAt": "2025-07-01T09:28:24.045Z",
+      "index": 1965
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Lite\\ja_Wio-Lite-MG126.md",
+      "completedAt": "2025-07-01T09:28:30.637Z",
+      "index": 1966
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Lite\\ja_Wio-Lite-W600.md",
+      "completedAt": "2025-07-01T09:28:41.942Z",
+      "index": 1967
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Node\\ja_Wio_Node.md",
+      "completedAt": "2025-07-01T09:28:48.565Z",
+      "index": 1968
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\Application\\ja_Use_MQTT_to_remotely_light_up_LED_lights.md",
+      "completedAt": "2025-07-01T09:28:55.352Z",
+      "index": 1969
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\Application\\ja_Use_Socket_to_connect_to_the_forum.md",
+      "completedAt": "2025-07-01T09:32:31.934Z",
+      "index": 1970
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\Application\\ja_Wireless-desktop-atmosphere-lamp.md",
+      "completedAt": "2025-07-01T09:32:47.455Z",
+      "index": 1971
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\Application\\ja_Wireless-Fall-Detection-Device.md",
+      "completedAt": "2025-07-01T09:33:03.128Z",
+      "index": 1972
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\ja_LAN_Communications.md",
+      "completedAt": "2025-07-01T09:33:17.023Z",
+      "index": 1973
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\ja_Wio_RP2040_mini_Dev_Board-Onboard_Wifi.md",
+      "completedAt": "2025-07-01T09:33:32.135Z",
+      "index": 1974
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\ja_Wio-RP2040-with-Arduino-WIFI.md",
+      "completedAt": "2025-07-01T09:36:19.245Z",
+      "index": 1975
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_Module\\ja_Wio_RP2040_Module_Build-in_Wireless_2.4G.md",
+      "completedAt": "2025-07-01T09:36:55.182Z",
+      "index": 1976
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Tracker\\ja_Grove_Starter_Kit_for_Wio_LTE.md",
+      "completedAt": "2025-07-01T09:37:41.668Z",
+      "index": 1977
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Tracker\\ja_LTE_Cat_1_Pi_HAT.md",
+      "completedAt": "2025-07-01T09:37:56.589Z",
+      "index": 1978
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Tracker\\ja_wio_gps_board.md",
+      "completedAt": "2025-07-01T09:38:09.995Z",
+      "index": 1979
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Tracker\\ja_Wio_LTE_Cat_M1_NB-IoT_Tracker.md",
+      "completedAt": "2025-07-01T09:46:52.833Z",
+      "index": 1980
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Tracker\\ja_Wio_LTE_Cat.1.md",
+      "completedAt": "2025-07-01T09:47:12.717Z",
+      "index": 1981
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Tracker\\ja_Wio_Tracker.md",
+      "completedAt": "2025-07-01T09:53:41.412Z",
+      "index": 1982
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Series\\Wio_Tracker\\ja_Wio-Extension-RTC.md",
+      "completedAt": "2025-07-01T09:54:07.655Z",
+      "index": 1983
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Terminal\\Application\\Easy_IoT\\ja_Connect-Wio-Terminal-to-Google-Cloud-IoT-Core.md",
+      "completedAt": "2025-07-01T09:54:23.375Z",
+      "index": 1984
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Terminal\\Application\\Easy_IoT\\ja_Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central.md",
+      "completedAt": "2025-07-01T10:00:59.927Z",
+      "index": 1985
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Terminal\\Application\\Easy_IoT\\ja_CyberDeck_Wio-Terminal.md",
+      "completedAt": "2025-07-01T10:01:09.400Z",
+      "index": 1986
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Terminal\\Application\\Easy_IoT\\ja_Get-Started-with-Wio-Terminal-and-Wappsto-IoT.md",
+      "completedAt": "2025-07-01T10:01:16.444Z",
+      "index": 1987
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Terminal\\Application\\Easy_IoT\\ja_Wio-Terminal-Azure-IOT.md",
+      "completedAt": "2025-07-01T10:01:24.613Z",
+      "index": 1988
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Terminal\\Application\\Embedded_ML\\ja_AIoTs_GPS_state_tester.md",
+      "completedAt": "2025-07-01T10:01:36.322Z",
+      "index": 1989
     }
   ],
   "lastSkipped": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-Vibration_Motor.md",
-  "lastCompleted": "2025-07-01T08:03:20.151Z"
+  "lastCompleted": "2025-07-01T10:01:36.323Z"
 }
