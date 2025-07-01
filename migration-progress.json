@@ -1,5 +1,5 @@
 {
-  "currentIndex": 1778,
+  "currentIndex": 1779,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -8608,8 +8608,13 @@
       "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\TuTorial\\ja_How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI.md",
       "completedAt": "2025-07-01T04:27:50.376Z",
       "index": 1777
+    },
+    {
+      "file": "ja\\Sensor\\SeeedStudio_XIAO\\SeeedStudio_XIAO_SAMD21\\TuTorial\\ja_Seeeduino-XIAO-DAPLink.md",
+      "completedAt": "2025-07-01T04:48:55.490Z",
+      "index": 1778
     }
   ],
   "lastSkipped": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-Vibration_Motor.md",
-  "lastCompleted": "2025-07-01T04:27:50.377Z"
+  "lastCompleted": "2025-07-01T04:48:55.491Z"
 }
