@@ -32,7 +32,7 @@ Raspberry Pi Compute Module 4 (CM4)は、人気のRaspberry Pi 4 Model Bの計�
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/0/102991421_front-05_2_1.png" alt="pir" width={650} height="auto" /></p>
 
 :::note
-埋め込み用途向けのコンパクトなフォームファクターにRaspberry Pi 4のパワーを搭載。Raspberry Pi Compute Module 4は、クアッドコアARM Cortex-A72プロセッサ、デュアルビデオ出力、および幅広いインターフェースを組み込んでいます。32種類のバリエーションがあり、RAMやeMMCフラッシュのオプション、無線接続の有無を選択できます。 -- [Raspberry Pi CM4](https://www.raspberrypi.com/products/compute-module-4/?variant=raspberry-pi-cm4001000){target=_blank}
+埋め込み用途向けのコンパクトなフォームファクターにRaspberry Pi 4のパワーを搭載。Raspberry Pi Compute Module 4は、クアッドコアARM Cortex-A72プロセッサ、デュアルビデオ出力、および幅広いインターフェースを組み込んでいます。32種類のバリエーションがあり、RAMやeMMCフラッシュのオプション、無線接続の有無を選択できます。 -- [Raspberry Pi CM4](https://www.raspberrypi.com/products/compute-module-4/?variant=raspberry-pi-cm4001000)
 :::
 
 ## Seeed Studio Compute Module 4製品
@@ -59,7 +59,7 @@ Raspberry Pi Compute Module 4 (CM4)は、人気のRaspberry Pi 4 Model Bの計�
 | <a href="https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html" target="_blank"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/r/e/reterminal-cover-1.png" alt="pir" width="650" height="auto"/></a>  | <a href="https://www.seeedstudio.com/Dual-GbE-Carrier-Board-with-4GB-RAM-32GB-eMMC-RPi-CM4-Case-p-5029.html" target="_blank"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/110110110_preview-16.png" alt="pir" width="650" height="auto"/></a> | <a href="https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html" target="_blank"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/110110090_preview-07-min.png" alt="pir" width="650" height="auto"/></a> |
 
 :::note
-このプロセスでは、CM4 eMMCストレージを「USBマスストレージ」モードにする必要があります。これは現在、reRouterおよびreTerminalでのみ適用可能です。Edgebox-RPI-200またはEdgeLogix-RPI-1000をお持ちの場合、CM4 eMMCストレージをUSBストレージモードにすることができるCM4開発ボードが必要です。例えば、[デュアルギガビットイーサネットNICキャリアボード](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html){target=_blank}などです。
+このプロセスでは、CM4 eMMCストレージを「USBマスストレージ」モードにする必要があります。これは現在、reRouterおよびreTerminalでのみ適用可能です。Edgebox-RPI-200またはEdgeLogix-RPI-1000をお持ちの場合、CM4 eMMCストレージをUSBストレージモードにすることができるCM4開発ボードが必要です。例えば、[デュアルギガビットイーサネットNICキャリアボード](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html)などです。
 :::
 
 ### CM4 eMMCストレージをUSBマスストレージモードにする
@@ -94,7 +94,7 @@ Raspberry Pi Compute Module 4 (CM4)は、人気のRaspberry Pi 4 Model Bの計�
 Raspberry PiのEEPROMを更新するにはLinuxベースのオペレーティングシステムが必要です。以下の手順は**Ubuntu 22.04を搭載したPC**および**Raspberry Pi OS（64ビット）を搭載したRaspberry Pi 4B（フラッシュツール）**でのみテストされています。
 :::
 
-* **ステップ1:** 必要なシステムソフトウェアパッケージをインストールします。**`Terminal`**アプリを開き、以下のコマンドを入力してください:
+* **ステップ1:** 必要なシステムソフトウェアパッケージをインストールします。`Terminal` アプリを開き、以下のコマンドを入力してください:
 
 ```bash
 sudo apt-get update
@@ -102,7 +102,7 @@ sudo apt-get update
 sudo apt install git pkg-config make gcc libusb-1.0-0-dev
 ```
 
-* **ステップ2:** **`usbboot`**ツールリポジトリをクローンします。
+* **ステップ2:** `usbboot` ツールリポジトリをクローンします。
 
 ```bash
 cd ~/
@@ -112,7 +112,7 @@ git clone --depth=1 https://github.com/raspberrypi/usbboot
 cd usbboot
 ```
 
-* **ステップ3:** **`usbboot`**ツールをビルドします。
+* **ステップ3:** `usbboot` ツールをビルドします。
 
 ```bash
 make
@@ -121,7 +121,7 @@ make
 * **ステップ4:** EEPROMを更新します。
 
 :::note
-**`usbboot`** GitHubリポジトリには最新のEEPROMブートローダーファームウェアが含まれているはずです。以下の手順で最新のEEPROMブートローダーファームウェアに更新されます。
+`usbboot` GitHubリポジトリには最新のEEPROMブートローダーファームウェアが含まれているはずです。以下の手順で最新のEEPROMブートローダーファームウェアに更新されます。
 :::
 
 ```bash
@@ -133,7 +133,7 @@ cd recovery
 以下のようなメッセージが表示されるはずです:
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Mini_Router/eeprom_update_log.png" alt="pir" width={1000} height="auto" /></p>
 
-**オプション:** 特定のリリースのブートローダーファームウェアを使用したい場合は、[rpi-eeprom](https://github.com/raspberrypi/rpi-eeprom/tree/master/firmware/){target=_blank}リポジトリのファームウェアフォルダを訪問し、ファームウェアbinファイルを選択して**`pieeprom.original.bin`**ファイルを置き換えることができます。例えば:
+**オプション:** 特定のリリースのブートローダーファームウェアを使用したい場合は、[rpi-eeprom](https://github.com/raspberrypi/rpi-eeprom/tree/master/firmware/)リポジトリのファームウェアフォルダを訪問し、ファームウェアbinファイルを選択して**`pieeprom.original.bin`**ファイルを置き換えることができます。例えば:
 
 :::note
 このオプションの手順では、執筆時点での最新の`stable`ビルドである**`pieeprom-2023-01-11.bin`**で**`pieeprom.original.bin`**ファイルを置き換えます。
@@ -152,7 +152,7 @@ curl -L -o pieeprom.original.bin https://github.com/raspberrypi/rpi-eeprom/blob/
 以下のようなメッセージが表示されるはずです:
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Mini_Router/eeprom_update_log.png" alt="pir" width={1000} height="auto" /></p>
 
-* **ステップ5:** USB Type-Cケーブルを使用して、CM4デバイス（**`reTerminal`**、**`reRouter`**、**`デュアルギガビットイーサネットNICキャリアボード`**）と**`ホストPC/Raspberry Pi 4B（フラッシュツール）`**デバイスを接続します。このとき、**CM4デバイス**は**USBマスストレージモード**に設定されている必要があります。
+* **ステップ5:** USB Type-Cケーブルを使用して、CM4デバイス（`reTerminal`、`reRouter`、`デュアルギガビットイーサネットNICキャリアボード`）と `ホストPC/Raspberry Pi 4B（フラッシュツール）` デバイスを接続します。このとき、CM4デバイスは **USBマスストレージモード** に設定されている必要があります。
 
 * **ステップ6:** EEPROMファームウェアを適用して更新します。
 
@@ -165,12 +165,12 @@ cd ~/usbboot
 以下のようなメッセージが表示されるはずです:
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Mini_Router/update_log.png" alt="pir" width={600} height="auto" /></p>
 
-この時点で、**`CM4デバイス`**には新しいブートオーダーが設定され、EEPROMファームウェアが更新されています。
+この時点で、`CM4デバイス` には新しいブートオーダーが設定され、EEPROMファームウェアが更新されています。
 
 ### ブートオーダーの変更とEEPROMの更新
 
 :::note
-上記のセットアップ手順を**`ステップ3`**まで完了している必要があります。
+上記のセットアップ手順を `ステップ3` まで完了している必要があります。
 :::
 
 * **ステップ1:** `boot.conf`を編集します。
@@ -197,20 +197,19 @@ BOOT_ORDER=0xf25641
 ENABLE_SELF_UPDATE=1
 ```
 
-**`BOOT_ORDER=0xf25641`** 行はブート順設定を示しており、現在のブート順設定は `SD CARD/eMMC > USB-MSD > NVME > BCM-USB-MSD > NETWORK > RESTART` です。ブート順を `NVME > USB-MSD > BCM-USB-MSD > SD CARD/eMMC > NETWORK > RESTART` に変更したい場合、ブート順設定は **`BOOT_ORDER=0xf21564`** にする必要があります。
+`BOOT_ORDER=0xf25641` 行はブート順設定を示しており、現在のブート順設定は `SD CARD/eMMC > USB-MSD > NVME > BCM-USB-MSD > NETWORK > RESTART` です。ブート順を `NVME > USB-MSD > BCM-USB-MSD > SD CARD/eMMC > NETWORK > RESTART` に変更したい場合、ブート順設定は `BOOT_ORDER=0xf21564` にする必要があります。
 
 したがって、新しいブート順設定を含む `boot.conf` は以下のようになります：
 
 ```bash
-
 [all]
 BOOT_UART=0
 WAKE_ON_GPIO=1
 POWER_OFF_ON_HALT=0
- 
+
 # 最初にSDを試し（1）、次にUSB PCIe、NVMe PCIe、USB SoC XHCI、そしてネットワーク
 BOOT_ORDER=0xf21564
- 
+
 # USB/ネットワークブートからのブートローダー更新を防ぐには0に設定
 # リモートユニットではEEPROMハードウェア書き込み保護を使用する必要があります。
 ENABLE_SELF_UPDATE=1
@@ -238,18 +237,16 @@ ENABLE_SELF_UPDATE=1
 * **ステップ 2:** 最新のファームウェアを取得
 
 ```bash
-
 wget -O pieeprom.original.bin https://github.com/raspberrypi/rpi-eeprom/blob/master/firmware/stable/pieeprom-2023-01-11.bin
 ```
 
 * **ステップ 3:** 新しい `boot.conf` を使用してEEPROMファームウェアを更新
 
 ```bash
-
 ./update-pieeprom.sh
 ```
 
-* **ステップ 4:** USB Type-CをCM4デバイス（**`reTerminal`** \ **`reRouter`** \ **`Dual Gigabit Ethernet NICs Carrier Board`**）と**`ホストPC/Raspberry Pi 4B（フラッシュツール）`**デバイスに接続します。この際、**CM4デバイス**は**USBマスストレージモード**に設定する必要があります。
+* **ステップ 4:** USB Type-CをCM4デバイス（`reTerminal`、`reRouter`、`Dual Gigabit Ethernet NICs Carrier Board`）と `ホストPC/Raspberry Pi 4B（フラッシュツール）` デバイスに接続します。この際、CM4デバイスは **USBマスストレージモード** に設定する必要があります。
 
 * **ステップ 5:** デバイスにファームウェアを適用
 
@@ -262,7 +259,7 @@ sudo ./rpiboot -d recovery
 以下のようなメッセージが表示されるはずです：
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Mini_Router/update_log.png" alt="pir" width={600} height="auto" /></p>
 
-この時点で、**`CM4デバイス`** は新しいブート順設定と更新されたEEPROMファームウェアを持つようになります。
+この時点で、`CM4デバイス` は新しいブート順設定と更新されたEEPROMファームウェアを持つようになります。
 
 ## 技術サポートと製品に関する議論
 

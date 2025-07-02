@@ -1,5 +1,5 @@
 {
-  "currentIndex": 2319,
+  "currentIndex": 2335,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -11188,8 +11188,88 @@
       "file": "Network\\Meshtastic_Network\\wio_tracker_kit\\meshtastic_kit_wio_tracker_1110.md",
       "completedAt": "2025-07-02T08:24:14.512Z",
       "index": 2316
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\4g_lte_hotspot_on_rpi_os.md",
+      "completedAt": "2025-07-02T14:55:18.296Z",
+      "index": 2319
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\4g_lte_rpi_hat_mbim.md",
+      "completedAt": "2025-07-02T14:57:00.320Z",
+      "index": 2320
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\4g_lte_rpi_hat_openwrt.md",
+      "completedAt": "2025-07-02T14:57:24.261Z",
+      "index": 2321
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\4g_lte_rpi_hat_qmi.md",
+      "completedAt": "2025-07-02T14:57:43.215Z",
+      "index": 2322
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\4g_lte_rpi_hat_rndis.md",
+      "completedAt": "2025-07-02T14:58:03.789Z",
+      "index": 2323
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\ftp_on_rpi_4g_lte_hat.md",
+      "completedAt": "2025-07-02T15:27:11.568Z",
+      "index": 2324
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss.md",
+      "completedAt": "2025-07-02T15:27:28.842Z",
+      "index": 2325
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\mobile_internet_for_your_pi_ecm_set_up.md",
+      "completedAt": "2025-07-02T15:27:45.993Z",
+      "index": 2326
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\mqtt_on_rpi_4g_lte_hat.md",
+      "completedAt": "2025-07-02T15:28:01.175Z",
+      "index": 2327
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\send_text_massages_lte_cat_hat_for_rpi.md",
+      "completedAt": "2025-07-02T15:28:16.196Z",
+      "index": 2328
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Applications\\tcp_ip_rpi_4g_lte_hat.md",
+      "completedAt": "2025-07-02T15:28:30.528Z",
+      "index": 2329
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi\\Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi.md",
+      "completedAt": "2025-07-02T15:33:18.020Z",
+      "index": 2330
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\reRouter\\Application\\Mender-Client-dual-GbE-CM4.md",
+      "completedAt": "2025-07-02T15:33:36.966Z",
+      "index": 2331
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\reRouter\\Application\\OpenWrt-Getting-Started.md",
+      "completedAt": "2025-07-02T15:33:51.311Z",
+      "index": 2332
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\reRouter\\Application\\OpenWrt-Plex-Media-Server-on-Docker.md",
+      "completedAt": "2025-07-02T15:34:05.374Z",
+      "index": 2333
+    },
+    {
+      "file": "Network\\RaspberryPi_Devices\\reRouter\\Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4.md",
+      "completedAt": "2025-07-02T15:34:21.196Z",
+      "index": 2334
     }
   ],
   "lastSkipped": "Network\\Meshtastic_Network\\XIAO_ESP32S3_&_SX1262_Kit\\nrf52840_1262.md",
-  "lastCompleted": "2025-07-02T08:24:14.513Z"
+  "lastCompleted": "2025-07-02T15:34:21.197Z"
 }
