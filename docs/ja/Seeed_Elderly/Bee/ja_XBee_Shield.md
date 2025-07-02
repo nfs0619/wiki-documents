@@ -94,60 +94,60 @@ XBee® シールドのサイズは 3.1cm x 4.1cm です。
 <th>Xbee Rx 接続先</th>
 </tr>
 <tr>
-<td width="200"> 左</td>
-<td width="200"> 左</td>
-<td width="300"> デジタルピン 11</td>
-<td width="300"> デジタルピン 12</td>
+<td width="200">左</td>
+<td width="200">左</td>
+<td width="300">デジタルピン 11</td>
+<td width="300">デジタルピン 12</td>
 </tr>
 <tr>
-<td> 左</td>
-<td> 右</td>
-<td> FT232 RxD</td>
-<td> FT232 TxD</td>
+<td>左</td>
+<td>右</td>
+<td>FT232 RxD</td>
+<td>FT232 TxD</td>
 </tr>
 <tr>
-<td> 右</td>
-<td> 左</td>
-<td> デジタルピン 11</td>
-<td> デジタルピン 12</td>
+<td>右</td>
+<td>左</td>
+<td>デジタルピン 11</td>
+<td>デジタルピン 12</td>
 </tr>
 <tr>
-<td> 右</td>
-<td> 右</td>
-<td> Atmege RxD</td>
-<td> Atmege TxD</td>
+<td>右</td>
+<td>右</td>
+<td>Atmege RxD</td>
+<td>Atmege TxD</td>
 </tr></table>
 <table>
 <caption> Arduino Mega</caption>
 <tr>
-<th> TOG_1</th>
-<th> TOG_2</th>
-<th> Xbee Tx 接続先</th>
-<th> Xbee Rx 接続先</th>
+<th>TOG_1</th>
+<th>TOG_2</th>
+<th>Xbee Tx 接続先</th>
+<th>Xbee Rx 接続先</th>
 </tr>
 <tr>
-<td width="200"> 左</td>
-<td width="200"> 左</td>
-<td width="300"> デジタルピン 51</td>
-<td width="300"> デジタルピン 50</td>
+<td width="200">左</td>
+<td width="200">左</td>
+<td width="300">デジタルピン 51</td>
+<td width="300">デジタルピン 50</td>
 </tr>
 <tr>
-<td> 左</td>
-<td> 右</td>
-<td> FT232 RxD</td>
-<td> FT232 TxD</td>
+<td>左</td>
+<td>右</td>
+<td>FT232 RxD</td>
+<td>FT232 TxD</td>
 </tr>
 <tr>
-<td> 右</td>
-<td> 左</td>
-<td> デジタルピン 51</td>
-<td> デジタルピン 50</td>
+<td>右</td>
+<td>左</td>
+<td>デジタルピン 51</td>
+<td>デジタルピン 50</td>
 </tr>
 <tr>
-<td> 右</td>
-<td> 右</td>
-<td> Atmege RxD0</td>
-<td> Atmege TxD0</td>
+<td>右</td>
+<td>右</td>
+<td>Atmege RxD0</td>
+<td>Atmege TxD0</td>
 </tr></table>
 
 ### Bee の AT コマンドのテスト  
@@ -338,14 +338,14 @@ void sendBlueToothCommand(char command[])
 
 <table>
   <tbody><tr>
-      <th> リビジョン</th>
-      <th> 説明</th>
-      <th> リリース日</th>
+      <th>リビジョン</th>
+      <th>説明</th>
+      <th>リリース日</th>
     </tr>
     <tr style={{fontSize: '90%'}}>
-      <td width={300}> XBee® Shield V1.1</td>
-      <td width={500}> Seeedstudioによる新バージョン</td>
-      <td width={200}> 2009年7月6日</td>
+      <td width={300}>XBee® Shield V1.1</td>
+      <td width={500}>Seeedstudioによる新バージョン</td>
+      <td width={200}>2009年7月6日</td>
     </tr></tbody></table>
 
 ## バグトラッカー  

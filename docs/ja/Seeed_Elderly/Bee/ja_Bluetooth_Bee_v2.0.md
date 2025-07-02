@@ -126,18 +126,13 @@ SeeedinoのハードウェアUARTはPCとのデバッグに使用されるため
 
 <!-- <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+BAUD?
-</td>
-<td width="300">OK+Set:[para1]
-</td>
-<td rowspan="2" width="300"> Para1: ボーレート番号
+<td width="300">AT+BAUD?</td>
+<td width="300">OK+Set:[para1]</td>
+<td rowspan="2" width="300">Para1: ボーレート番号
 
 <dl>1---------1200
 
@@ -163,32 +158,23 @@ SeeedinoのハードウェアUARTはPCとのデバッグに使用されるため
 
 <dl>C---------1382400
 
-<dl>デフォルト: 4(9600)
-
-</td></tr>
+<dl>デフォルト: 4(9600)</td></tr>
 
 <tr>
-<td width="300">AT+BAUD[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table> -->
+<td width="300">AT+BAUD[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table> -->
 
 **3. パリティビットのクエリ/設定**
 
 <!-- <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">クエリ: AT+CHK?
-</td>
-<td width="300">OK+CHK:[para1]
-</td>
-<td rowspan="2" width="300"> Para1: 0,1,2
+<td width="300">クエリ: AT+CHK?</td>
+<td width="300">OK+CHK:[para1]</td>
+<td rowspan="2" width="300">Para1: 0,1,2
 
 <dl>0:なし
 
@@ -196,61 +182,43 @@ SeeedinoのハードウェアUARTはPCとのデバッグに使用されるため
 
 <dl>2:偶数
 
-<dl>デフォルト: 0 (なし)
-
-</td></tr>
+<dl>デフォルト: 0 (なし)</td></tr>
 <tr>
-<td width="300">設定: AT+CHK[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table> -->
+<td width="300">設定: AT+CHK[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table> -->
 
 **4. ストップビットのクエリ/設定**
 
 <!-- <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+STOP?
-</td>
-<td width="300">OK+STOP:[para1]
-</td>
-<td rowspan="2" width="300"> Para1:1, 2
+<td width="300">AT+STOP?</td>
+<td width="300">OK+STOP:[para1]</td>
+<td rowspan="2" width="300">Para1:1, 2
 
 <dl>1: 1ストップビット
 
 <dl>2: 2ストップビット
 
-<dl>デフォルト: 1 (1ストップビット)
-
-</td></tr>
+<dl>デフォルト: 1 (1ストップビット)</td></tr>
 <tr>
-<td width="300">AT+STOP[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table> -->
+<td width="300">AT+STOP[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table> -->
 
 **5. ボーレート、パリティビット、ストップビットのクエリ/設定**
 
 <!-- <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+UART?
-</td>
-<td width="300">OK+UART:[para1],[para2],[para3]
-</td>
-<td rowspan="2" width="300"> Para1: ボーレート
+<td width="300">AT+UART?</td>
+<td width="300">OK+UART:[para1],[para2],[para3]</td>
+<td rowspan="2" width="300">Para1: ボーレート
 
 <dl>値: 1~C
 
@@ -266,89 +234,62 @@ SeeedinoのハードウェアUARTはPCとのデバッグに使用されるため
 
 <dl>値: 1, 2
 
-<dl>デフォルト: 1(1ビット)
-
-</td></tr>
+<dl>デフォルト: 1(1ビット)</td></tr>
 <tr>
-<td width="300">AT+UART[para1][para2][para3]
-</td>
-<td width="300">OK+Set:[para1] [para2] [para3]
-</td></tr></table> -->
+<td width="300">AT+UART[para1][para2][para3]</td>
+<td width="300">OK+Set:[para1] [para2] [para3]</td></tr></table> -->
 
 **6. モジュール自己診断コマンド**
 
 <!-- <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+SECH?
-</td>
+<td width="300">AT+SECH?</td>
 <td width="300">OK+SECH:OKAY または
 
-OK+SECH:FAIL
-</td>
-<td width="300">なし
-</td></tr></table>
+OK+SECH:FAIL</td>
+<td width="300">なし</td></tr></table>
 
 **7. モジュールアプリケーションセクタ診断コマンド**
 
 <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+APCH?
-</td>
+<td width="300">AT+APCH?</td>
 <td width="300">OK+APCH:OKAY または
 
-OK+APCH:FAIL
-</td>
-<td width="300">なし
-</td></tr></table> -->
+OK+APCH:FAIL</td>
+<td width="300">なし</td></tr></table> -->
 
 **8. モジュール温度クエリコマンド**
 
 <!-- <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+TEMP?
-</td>
-<td width="300">OK+TEMP:[temp value]
-</td>
-<td width="300">なし
-</td></tr></table>
+<td width="300">AT+TEMP?</td>
+<td width="300">OK+TEMP:[temp value]</td>
+<td width="300">なし</td></tr></table>
 
 **9. モジュールの検出可能状態のクエリ/設定**
 
 <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+DISC?
-</td>
-<td width="300">OK+DISC:[para1]
-</td>
-<td rowspan="2" width="300"> Para1: 0,1,2
+<td width="300">AT+DISC?</td>
+<td width="300">OK+DISC:[para1]</td>
+<td rowspan="2" width="300">Para1: 0,1,2
 
 <dl>0: 検出可能かつ接続可能
 
@@ -356,648 +297,443 @@ OK+APCH:FAIL
 
 <dl>2: 接続可能のみ
 
-<dl>デフォルト: 0
-
-</td></tr>
+<dl>デフォルト: 0</td></tr>
 <tr>
-<td width="300">AT+DISC [para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table> -->
+<td width="300">AT+DISC [para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table> -->
 
 **10. PIO0機能（システムキー）のクエリ/設定**
 
 <!-- <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+KEY?
-</td>
-<td width="300">OK+KEY:[para1]
-</td>
-<td rowspan="2" width="300"> Para1: 0, 1
+<td width="300">AT+KEY?</td>
+<td width="300">OK+KEY:[para1]</td>
+<td rowspan="2" width="300">Para1: 0, 1
 
 <dl>0: 現在の状態をキャンセル。
 
 <dl>1: 現在の状態をキャンセルし、工場出荷時設定に戻す。
 
-<dl>デフォルト: 0
-
-</td></tr>
+<dl>デフォルト: 0</td></tr>
 <tr>
-<td width="300">AT+ KEY[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table>
+<td width="300">AT+ KEY[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table>
 
 **11. PIO1出力状態（システムLED）のクエリ/設定**
 
 <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+LED?
-</td>
-<td width="300">OK+LED:[para1]
-</td>
-<td rowspan="2" width="300"> Para1: 0, 1
+<td width="300">AT+LED?</td>
+<td width="300">OK+LED:[para1]</td>
+<td rowspan="2" width="300">Para1: 0, 1
 
 <dl>0: 未接続時は500ms高、500ms低、接続時は高出力。
 
 <dl>1: 未接続時は低出力、接続時は高出力。
 
-<dl>デフォルト: 0
-
-</td></tr>
+<dl>デフォルト: 0</td></tr>
 <tr>
-<td width="300">AT+ LED [para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table> -->
+<td width="300">AT+ LED [para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table> -->
 
 **12. モジュールPIOピン出力状態のクエリ/設定**
 
 <!-- <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+PIO?
-</td>
-<td width="300">OK+PIO:[para1]
-</td>
-<td rowspan="2" width="300"> Para1: 長さ10、各ビット値は1または0。
+<td width="300">AT+PIO?</td>
+<td width="300">OK+PIO:[para1]</td>
+<td rowspan="2" width="300">Para1: 長さ10、各ビット値は1または0。
 
 <dl>0: 低出力; 1: 高出力
 
-<dl>デフォルト: 0000000000
-
-</td></tr>
+<dl>デフォルト: 0000000000</td></tr>
 <tr>
-<td width="300">AT+PIO[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table>
+<td width="300">AT+PIO[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table>
 
 **13. PIOピンの高低出力のクエリ/設定**
 
 <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+PIO[para1]?
-</td>
-<td width="300">OK+PIO:[para1][para2]
-</td>
-<td rowspan="2" width="300"> Para1: 2~B Para2: 0, 1
+<td width="300">AT+PIO[para1]?</td>
+<td width="300">OK+PIO:[para1][para2]</td>
+<td rowspan="2" width="300">Para1: 2~B Para2: 0, 1
 
 <dl>Para1はクエリ/設定したいPIOピンを指定します。値:2,3,4,5,6,7,8,9,A,B。
 
-<dl>Para2はクエリまたは設定値を指定します。0は低、1は高。
-
-</td></tr>
+<dl>Para2はクエリまたは設定値を指定します。0は低、1は高。</td></tr>
 <tr>
-<td width="300">AT+PIO[para1][para2]
-</td>
-<td width="300">OK+Set:[para1][para2]
-</td></tr></table>
+<td width="300">AT+PIO[para1][para2]</td>
+<td width="300">OK+Set:[para1][para2]</td></tr></table>
 
 **14. モジュール名のクエリ/設定**
 
 <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+NAME?
-</td>
-<td width="300">OK+NAME[para1]
-</td>
+<td width="300">AT+NAME?</td>
+<td width="300">OK+NAME[para1]</td>
 <td rowspan="2" width="300">Para1: モジュール名、最大長は12。
 
-デフォルト: HMSoft
-</td></tr>
+デフォルト: HMSoft</td></tr>
 <tr>
-<td width="300">AT+NAME[para1]
-</td>
-<td width="300">OK+Set[para1]
-</td></tr></table>
+<td width="300">AT+NAME[para1]</td>
+<td width="300">OK+Set[para1]</td></tr></table>
 
 **15. すべての設定値を工場出荷時設定に戻す**
 
 <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+DEFAULT
-</td>
-<td width="300">OK+DEFAULT
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+<td width="300">AT+DEFAULT</td>
+<td width="300">OK+DEFAULT</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **16. モジュールを再起動する**
 
 <table >
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+RESTART
-</td>
-<td width="300">OK+RESTART
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+<td width="300">AT+RESTART</td>
+<td width="300">OK+RESTART</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **17. マスターおよびスレーブロールのクエリ/設定**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+ROLE?
-</td>
-<td width="300">OK+ROLE:[para1]
-</td>
-<td rowspan="2" width="300"> Para1: M, S
+<td width="300">AT+ROLE?</td>
+<td width="300">OK+ROLE:[para1]</td>
+<td rowspan="2" width="300">Para1: M, S
 
 <dl>M: マスター
 
 <dl>S: スレーブ
 
-<dl>デフォルト: S
-
-</td></tr>
+<dl>デフォルト: S</td></tr>
 <tr>
-<td width="300">AT+ROLE[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table>
+<td width="300">AT+ROLE[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table>
 
 **18. ピンコードのクエリ/設定**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+PIN?
-</td>
-<td width="300">OK+PIN:[para1]
-</td>
+<td width="300">AT+PIN?</td>
+<td width="300">OK+PIN:[para1]</td>
 <td rowspan="2" width="300">Para1はピンコードで、最大長は12文字、A~Z、a~z、0~9を許可
 
-デフォルト: 1234
-</td></tr>
+デフォルト: 1234</td></tr>
 <tr>
-<td width="300">AT+PIN[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table>
+<td width="300">AT+PIN[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table>
 
 **19. 接続されたデバイスアドレスのクリア**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+CLEAR
-</td>
-<td width="300">OK+CLEAR
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+<td width="300">AT+CLEAR</td>
+<td width="300">OK+CLEAR</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **20. スレーブデバイスのスキャン**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+SCAN?
-</td>
+<td width="300">AT+SCAN?</td>
 <td width="300">OK+SCANS
 
 OK+SCAN[MAC]
 
 ……………
 
-OK+SCANE
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+OK+SCANE</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **21. スレーブデバイスのMACアドレスに接続**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+LNK[para1]
-</td>
-<td width="300"> OK+CONNS(接続開始)
+<td width="300">AT+LNK[para1]</td>
+<td width="300">OK+CONNS(接続開始)
 
 <dl>OK+CONN(接続成功)
 
-<dl>OK+CONNF(接続失敗)
-
-</td>
-<td rowspan="2" width="300">Para1はMACアドレス文字列です。
-</td></tr></table>
+<dl>OK+CONNF(接続失敗)</td>
+<td rowspan="2" width="300">Para1はMACアドレス文字列です。</td></tr></table>
 
 **22. ソフトウェアバージョンのクエリ**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
 <td width="300">AT+VERSION
 
-AT+VERSION?
-</td>
-<td width="300">バージョン情報
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+AT+VERSION?</td>
+<td width="300">バージョン情報</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **23. システムヘルプ情報**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+HELP?
-</td>
-<td width="300">ヘルプ情報
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+<td width="300">AT+HELP?</td>
+<td width="300">ヘルプ情報</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **24. 最後に接続されたデバイスアドレスのクエリ**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+RADD?
-</td>
-<td width="300">OK+ADDR:MACアドレス
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+<td width="300">AT+RADD?</td>
+<td width="300">OK+ADDR:MACアドレス</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **25. モジュールアドレスのクエリ**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300"> AT+LADD?
+<td width="300">AT+LADD?
 
-<dl>AT+ADDR?
-
-</td>
-<td width="300">OK+LADD:MACアドレス
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+<dl>AT+ADDR?</td>
+<td width="300">OK+LADD:MACアドレス</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **26. モジュール動作タイプのクエリ/設定**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+IMME?
-</td>
-<td width="300">OOK+IMME:[para1]
-</td>
-<td rowspan="2" width="300"> Para1: 0, 1
+<td width="300">AT+IMME?</td>
+<td width="300">OOK+IMME:[para1]</td>
+<td rowspan="2" width="300">Para1: 0, 1
 
 <dl>0: モジュールが電源オン時、ATコマンドにのみ応答し、AT+WORKを受信するまで何もしない。
 
 <dl>1: 電源オン時に即座に動作
 
-<dl>デフォルト: 1
-
-</td></tr>
+<dl>デフォルト: 1</td></tr>
 <tr>
-<td width="300">AT+IMME[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table>
+<td width="300">AT+IMME[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table>
 
 **27. 即座に動作**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+WORK
-</td>
-<td width="300">OK+WORK
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+<td width="300">AT+WORK</td>
+<td width="300">OK+WORK</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **28. モジュールがリモートデバイスに接続するタイムアウト値のクエリ/設定**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+TCON?
-</td>
-<td width="300">OK+TCON:[para1]
-</td>
-<td rowspan="2" width="300"> Para1はタイムアウト値です。時間が切れるとモジュールはこのアドレスに接続しなくなり、検索モードに入ります。
+<td width="300">AT+TCON?</td>
+<td width="300">OK+TCON:[para1]</td>
+<td rowspan="2" width="300">Para1はタイムアウト値です。時間が切れるとモジュールはこのアドレスに接続しなくなり、検索モードに入ります。
 
 <dl>Para1許容値: 0000~9999 単位は秒。
 
-<dl>デフォルト: 0000 永続的に接続
-
-</td></tr>
+<dl>デフォルト: 0000 永続的に接続</td></tr>
 <tr>
-<td width="300">AT+TCON[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table>
+<td width="300">AT+TCON[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table>
 
 **27. 即座に動作**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+WORK
-</td>
-<td width="300">OK+WORK
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+<td width="300">AT+WORK</td>
+<td width="300">OK+WORK</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **29. モジュール動作モードのクエリ/設定**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+TYPE?
-</td>
-<td width="300">OK+TYPE:[para1]
-</td>
-<td rowspan="2" width="300"> Para1: 0~2
+<td width="300">AT+TYPE?</td>
+<td width="300">OK+TYPE:[para1]</td>
+<td rowspan="2" width="300">Para1: 0~2
 
 <dl>0: 伝送モード
 
 <dl>1: リモートコントロールモード
 
 <dl>2: PIO収集モード
-デフォルト: 0
-
-</td></tr>
+デフォルト: 0</td></tr>
 <tr>
-<td width="300">AT+TYPE[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table>
+<td width="300">AT+TYPE[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table>
 
 **30. PIO状態文字列の遅延時間(単位ms)のクエリ/設定**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+TPIO?
-</td>
-<td width="300">OK+TPIO:[para1]
-</td>
-<td rowspan="2" width="300"> Para1値は0000から9999msの間です。値が0より大きい場合、PIO状態が変更されると、モジュールはこの値の遅延後にリモートデバイスにPIO状態文字列を送信します。
+<td width="300">AT+TPIO?</td>
+<td width="300">OK+TPIO:[para1]</td>
+<td rowspan="2" width="300">Para1値は0000から9999msの間です。値が0より大きい場合、PIO状態が変更されると、モジュールはこの値の遅延後にリモートデバイスにPIO状態文字列を送信します。
 
-<dl>デフォルト: 0 一度だけ送信
-
-</td></tr>
+<dl>デフォルト: 0 一度だけ送信</td></tr>
 <tr>
-<td width="300">AT+TPIO[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table>
+<td width="300">AT+TPIO[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table>
 
 **31. リモートコントロールモードを伝送モードに切り替え(今回のみ)**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+START
-</td>
-<td width="300">OK+START
-</td>
-<td rowspan="2" width="300">なし
-</td></tr></table>
+<td width="300">AT+START</td>
+<td width="300">OK+START</td>
+<td rowspan="2" width="300">なし</td></tr></table>
 
 **32. バッファ保存パラメータのクエリ/設定**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+BUFF?
-</td>
-<td width="300">OK+BUFF:[para1]
-</td>
-<td width="300">なし
-</td></tr>
+<td width="300">AT+BUFF?</td>
+<td width="300">OK+BUFF:[para1]</td>
+<td width="300">なし</td></tr>
 <tr>
-<td width="300">AT+BUFF[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td>
-<td width="300"> Para1: 0~1
+<td width="300">AT+BUFF[para1]</td>
+<td width="300">OK+Set:[para1]</td>
+<td width="300">Para1: 0~1
 
 <dl>0: 保存しない
 
 <dl>1: 保存する
 
-<dl>デフォルト: 0
-
-</td></tr></table>
+<dl>デフォルト: 0</td></tr></table>
 
 **33. 検索フィルターのクエリ/設定**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+FILT?
-</td>
-<td width="300">OK+FILT:[para1]
-</td>
-<td rowspan="2" width="300"> Para1: 許容タイプ
+<td width="300">AT+FILT?</td>
+<td width="300">OK+FILT:[para1]</td>
+<td rowspan="2" width="300">Para1: 許容タイプ
 
 <dl>値: 0~C
 
-<dl>デフォルト: C (すべて)
-
-</td></tr>
+<dl>デフォルト: C (すべて)</td></tr>
 <tr>
-<td width="300">AT+FILT[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td></tr></table>
+<td width="300">AT+FILT[para1]</td>
+<td width="300">OK+Set:[para1]</td></tr></table>
 
 **34. モジュール通知のクエリ/設定**
 
 <table>
 <tr>
-<th>送信
-</th>
-<th>受信
-</th>
-<th>パラメータ
-</th></tr>
+<th>送信</th>
+<th>受信</th>
+<th>パラメータ</th></tr>
 <tr>
-<td width="300">AT+NOTI?
-</td>
-<td width="300">OK+NOTI:[para1]
-</td>
-<td width="300">なし
-</td></tr>
+<td width="300">AT+NOTI?</td>
+<td width="300">OK+NOTI:[para1]</td>
+<td width="300">なし</td></tr>
 <tr>
-<td width="300">AT+NOTI[para1]
-</td>
-<td width="300">OK+Set:[para1]
-</td>
-<td width="300"> Para1値は0, 1。
+<td width="300">AT+NOTI[para1]</td>
+<td width="300">OK+Set:[para1]</td>
+<td width="300">Para1値は0, 1。
 
 <dl>0: 通知しない(デフォルト)
 
-<dl>1: 接続または切断時に通知する
-</td></tr></table>
-
-</td></tr></table>
+<dl>1: 接続または切断時に通知する</td></tr></table></td></tr></table>
 
 **35. モジュールのデバイスクラスのクエリ/設定**
 
@@ -1019,9 +755,7 @@ AT+VERSION?
 
 <dl>値: 0000~0xFFFF
 
-<dl>デフォルト: 0x1F00 (不明なデバイス)
-
-</td>
+<dl>デフォルト: 0x1F00 (不明なデバイス)</td>
 </tr>
 </table>
 
