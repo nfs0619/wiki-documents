@@ -1,5 +1,5 @@
 {
-  "currentIndex": 801,
+  "currentIndex": 921,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -3938,8 +3938,608 @@
       "file": "Topics\\TinyML\\ModelAssistant\\deploy\\overview.md",
       "completedAt": "2025-07-02T09:52:59.541Z",
       "index": 800
+    },
+    {
+      "file": "Topics\\TinyML\\ModelAssistant\\deploy\\ma_deploy_yolov8.md",
+      "completedAt": "2025-07-03T02:10:53.846Z",
+      "index": 801
+    },
+    {
+      "file": "Topics\\TinyML\\ModelAssistant\\deploy\\ma_deploy_yolov8_pose.md",
+      "completedAt": "2025-07-03T02:11:09.361Z",
+      "index": 802
+    },
+    {
+      "file": "Topics\\TinyML\\ModelAssistant\\deploy\\ma_deploy_yolov5.md",
+      "completedAt": "2025-07-03T02:15:16.385Z",
+      "index": 803
+    },
+    {
+      "file": "Topics\\Open_Source\\Open_Source_Topic.md",
+      "completedAt": "2025-07-03T02:15:29.060Z",
+      "index": 804
+    },
+    {
+      "file": "Topics\\Home_Assistant\\Home_Assistant_Tutorials\\sensecraft_homeassistant_userguide.md",
+      "completedAt": "2025-07-03T02:17:44.396Z",
+      "index": 805
+    },
+    {
+      "file": "Topics\\Home_Assistant\\Home_Assistant_Tutorials\\home_assistant_sensecap.md",
+      "completedAt": "2025-07-03T02:30:40.257Z",
+      "index": 806
+    },
+    {
+      "file": "Topics\\Home_Assistant\\Home_Assistant_Tutorials\\Extend_Home_Assistant_with_LoRaWAN_device.md",
+      "completedAt": "2025-07-03T02:42:39.299Z",
+      "index": 807
+    },
+    {
+      "file": "Topics\\Home_Assistant\\Home_Assistant_Topic.md",
+      "completedAt": "2025-07-03T02:42:56.558Z",
+      "index": 808
+    },
+    {
+      "file": "Topics\\Edge_AI\\Edge_AI_Topic.md",
+      "completedAt": "2025-07-03T02:43:14.306Z",
+      "index": 809
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Raspberry_Pi.mdx",
+      "completedAt": "2025-07-03T02:43:31.271Z",
+      "index": 810
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\two-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi.md",
+      "completedAt": "2025-07-03T02:43:48.533Z",
+      "index": 811
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\RS-485_Shield_for_Raspberry_Pi.md",
+      "completedAt": "2025-07-03T03:03:12.265Z",
+      "index": 812
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\Raspberry_Pi_Relay_Board_v1.0.md",
+      "completedAt": "2025-07-03T03:03:32.825Z",
+      "index": 813
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\Raspberry_Pi_R232_Board_v1.0.md",
+      "completedAt": "2025-07-03T03:03:51.918Z",
+      "index": 814
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\Raspberry_Pi_Motor_Driver_Board_v1.0.md",
+      "completedAt": "2025-07-03T03:04:11.872Z",
+      "index": 815
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\Raspberry_Pi_Breakout_Board_v1.0.md",
+      "completedAt": "2025-07-03T03:04:31.888Z",
+      "index": 816
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\Pi_RTC-DS1307.md",
+      "completedAt": "2025-07-03T03:08:50.703Z",
+      "index": 817
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\High_Accuracy_Pi_RTC-DS3231.md",
+      "completedAt": "2025-07-03T03:09:09.838Z",
+      "index": 818
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\GrovePi_Plus.md",
+      "completedAt": "2025-07-03T03:09:32.166Z",
+      "index": 819
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\Grove_Base_HAT.md",
+      "completedAt": "2025-07-03T03:09:59.325Z",
+      "index": 820
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\Grove_Base_Hat_for_Raspberry_Pi.md",
+      "completedAt": "2025-07-03T03:10:19.010Z",
+      "index": 821
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\Grove_Base_Hat_for_Raspberry_Pi_Zero.md",
+      "completedAt": "2025-07-03T03:12:34.275Z",
+      "index": 822
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\Grove_AI_HAT_for_Edge_Computing.md",
+      "completedAt": "2025-07-03T03:12:46.142Z",
+      "index": 823
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\four-Channel_16-Bit_ADC_for_Raspberry_Pi-ADS1115.md",
+      "completedAt": "2025-07-03T03:12:59.913Z",
+      "index": 824
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\eight-Channel_12-Bit_ADC_for_Raspberry_Pi-STM32F030.md",
+      "completedAt": "2025-07-03T03:13:13.407Z",
+      "index": 825
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Pi_HAT\\3D-Gesture-Tracking-Shield-for-Raspberry-Pi-MGC3130.md",
+      "completedAt": "2025-07-03T03:13:25.764Z",
+      "index": 826
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Official_Raspberry_Pi_Module\\Raspberry_pi_CM4_update_eeprom.md",
+      "completedAt": "2025-07-03T03:18:41.013Z",
+      "index": 827
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Official_Raspberry_Pi_Board\\remote_connect.md",
+      "completedAt": "2025-07-03T03:18:55.210Z",
+      "index": 828
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Official_Raspberry_Pi_Board\\Raspberry_Pi_3_Model_B.md",
+      "completedAt": "2025-07-03T03:20:49.880Z",
+      "index": 829
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Kit\\LoRa_LoRaWan_Gateway_Kit.md",
+      "completedAt": "2025-07-03T03:21:12.096Z",
+      "index": 830
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Kit\\Grove_Starter_Kit_for_IoT_based_on_Raspberry_Pi.md",
+      "completedAt": "2025-07-03T03:21:27.352Z",
+      "index": 831
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Kit\\Grove_Base_Kit_for_Raspberry_Pi.md",
+      "completedAt": "2025-07-03T03:27:24.769Z",
+      "index": 832
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Cooler_Device\\Water_Cooling_Kit.md",
+      "completedAt": "2025-07-03T03:27:47.523Z",
+      "index": 833
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Application\\Raspberry_Pi_as_a_NAS.md",
+      "completedAt": "2025-07-03T03:28:07.915Z",
+      "index": 834
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Accessories\\Skeleton_Box_for_Raspberry_Pi_Compute_Module_Development_Kit.md",
+      "completedAt": "2025-07-03T03:28:26.942Z",
+      "index": 835
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Accessories\\Skeleton_box_for_Rasberry_Pi.md",
+      "completedAt": "2025-07-03T03:28:45.064Z",
+      "index": 836
+    },
+    {
+      "file": "Top_Brand\\Raspberry_Pi\\Accessories\\Raspberry_PI_Bplus_Case.md",
+      "completedAt": "2025-07-03T03:32:38.287Z",
+      "index": 837
+    },
+    {
+      "file": "Top_Brand\\PopularPlatforms.md",
+      "completedAt": "2025-07-03T03:32:55.911Z",
+      "index": 838
+    },
+    {
+      "file": "Top_Brand\\Micro_bit\\Microsoft_MakeCode.md",
+      "completedAt": "2025-07-03T03:33:13.770Z",
+      "index": 839
+    },
+    {
+      "file": "Top_Brand\\Micro_bit\\microbit_wiki_page.md",
+      "completedAt": "2025-07-03T03:33:32.929Z",
+      "index": 840
+    },
+    {
+      "file": "Top_Brand\\Micro_bit\\Grove_Inventor_Kit_for_microbit.md",
+      "completedAt": "2025-07-03T03:33:52.431Z",
+      "index": 841
+    },
+    {
+      "file": "Top_Brand\\Micro_bit\\expansion_board\\BitWear.md",
+      "completedAt": "2025-07-03T03:37:23.828Z",
+      "index": 842
+    },
+    {
+      "file": "Top_Brand\\Micro_bit\\expansion_board\\BitPlayer.md",
+      "completedAt": "2025-07-03T03:37:35.835Z",
+      "index": 843
+    },
+    {
+      "file": "Top_Brand\\Micro_bit\\expansion_board\\BitMaker.md",
+      "completedAt": "2025-07-03T03:37:51.422Z",
+      "index": 844
+    },
+    {
+      "file": "Top_Brand\\Micro_bit\\expansion_board\\BitMaker_Lite.md",
+      "completedAt": "2025-07-03T03:38:05.662Z",
+      "index": 845
+    },
+    {
+      "file": "Top_Brand\\Micro_bit\\expansion_board\\BitCar.md",
+      "completedAt": "2025-07-03T03:38:18.683Z",
+      "index": 846
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Compiling_Platform\\Software-PlatformIO.md",
+      "completedAt": "2025-07-03T03:43:15.923Z",
+      "index": 847
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Compiling_Platform\\Compiling_MicroPython_for_embedded_devices.md",
+      "completedAt": "2025-07-03T03:43:30.280Z",
+      "index": 848
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Compiling_Platform\\Codecraft_Platform_for_Arduino\\Guide_for_Codecraft_using_Arduino.md",
+      "completedAt": "2025-07-03T03:46:06.101Z",
+      "index": 849
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Compiling_Platform\\Codecraft_Platform_for_Arduino\\Codecraft_Grove_Compatible_List.md",
+      "completedAt": "2025-07-03T03:46:19.792Z",
+      "index": 850
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Enhanced_Usage\\Xadow_IO_pin_mapping.md",
+      "completedAt": "2025-07-03T03:46:35.845Z",
+      "index": 851
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Enhanced_Usage\\Suli.md",
+      "completedAt": "2025-07-03T04:49:08.524Z",
+      "index": 852
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Enhanced_Usage\\Software-SWD.md",
+      "completedAt": "2025-07-03T04:49:22.074Z",
+      "index": 853
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Enhanced_Usage\\Seeed_Arduino_Serial.md",
+      "completedAt": "2025-07-03T04:49:35.776Z",
+      "index": 854
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Enhanced_Usage\\ODYSSEY-X86J4105-Firmata.md",
+      "completedAt": "2025-07-03T04:49:49.326Z",
+      "index": 855
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Enhanced_Usage\\I2C_And_I2C_Address_of_Seeed_Product.md",
+      "completedAt": "2025-07-03T04:50:09.910Z",
+      "index": 856
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Enhanced_Usage\\Flashing-Arduino-Bootloader-DAPLink.md",
+      "completedAt": "2025-07-03T04:51:32.298Z",
+      "index": 857
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Enhanced_Usage\\Arduino-DAPLink.md",
+      "completedAt": "2025-07-03T04:52:03.482Z",
+      "index": 858
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Enhanced_Usage\\Arduino-AWS-IOT-Bridge.md",
+      "completedAt": "2025-07-03T04:52:19.101Z",
+      "index": 859
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\temperature_sensor.md",
+      "completedAt": "2025-07-03T04:52:34.066Z",
+      "index": 860
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Sound_Sensor_And_LED_Bar.md",
+      "completedAt": "2025-07-03T04:52:58.204Z",
+      "index": 861
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\RFID_Control_LED.md",
+      "completedAt": "2025-07-03T06:22:51.209Z",
+      "index": 862
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Relay_Control_LED.md",
+      "completedAt": "2025-07-03T06:37:04.312Z",
+      "index": 863
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Project_Two-Digital_Input.md",
+      "completedAt": "2025-07-03T06:37:13.048Z",
+      "index": 864
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Project_Two-Digital_Input_v1.0b.md",
+      "completedAt": "2025-07-03T06:37:21.347Z",
+      "index": 865
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Project_Three-Analog_Input_v1b.md",
+      "completedAt": "2025-07-03T06:39:16.680Z",
+      "index": 866
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Project_Six-LCD_Demonstration.md",
+      "completedAt": "2025-07-03T06:40:20.601Z",
+      "index": 867
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Project_Seven-Temperature.md",
+      "completedAt": "2025-07-03T06:40:30.282Z",
+      "index": 868
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Project_One-Double_Blink.md",
+      "completedAt": "2025-07-03T06:40:37.782Z",
+      "index": 869
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Project_One-Blink.md",
+      "completedAt": "2025-07-03T06:41:25.062Z",
+      "index": 870
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Project_Four-Noise_Maker.md",
+      "completedAt": "2025-07-03T06:44:04.709Z",
+      "index": 871
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Project_Five-Relay_Control.md",
+      "completedAt": "2025-07-03T06:44:16.398Z",
+      "index": 872
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Project_Eight-Thermostat.md",
+      "completedAt": "2025-07-03T06:44:27.907Z",
+      "index": 873
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\LightView_201k_Digital_display_module.md",
+      "completedAt": "2025-07-03T06:44:42.215Z",
+      "index": 874
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Light_Sensor_and_LED_Bar.md",
+      "completedAt": "2025-07-03T06:44:55.082Z",
+      "index": 875
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\Joystick_Control_RGB_Led.md",
+      "completedAt": "2025-07-03T06:48:36.439Z",
+      "index": 876
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Boards_Projects\\IR_Remote.md",
+      "completedAt": "2025-07-03T06:48:50.725Z",
+      "index": 877
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Use_External_Editor.md",
+      "completedAt": "2025-07-03T06:49:09.928Z",
+      "index": 878
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Upload_Code.md",
+      "completedAt": "2025-07-03T06:49:23.482Z",
+      "index": 879
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Software-Static-Library.md",
+      "completedAt": "2025-07-03T06:49:36.447Z",
+      "index": 880
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Software-SPI.md",
+      "completedAt": "2025-07-03T07:00:33.267Z",
+      "index": 881
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Software-Serial.md",
+      "completedAt": "2025-07-03T07:00:46.605Z",
+      "index": 882
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Sketchbook_of_Sidekick_Advanced_Kit.md",
+      "completedAt": "2025-07-03T07:01:07.463Z",
+      "index": 883
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Seeed_Relay_Page.md",
+      "completedAt": "2025-07-03T07:01:22.314Z",
+      "index": 884
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\How-to-Choose-A-Gas-Sensor.md",
+      "completedAt": "2025-07-03T07:01:34.946Z",
+      "index": 885
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\How_To_Use_Sketchbook.md",
+      "completedAt": "2025-07-03T07:12:44.894Z",
+      "index": 886
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\How_to_use_and_write_a_library.md",
+      "completedAt": "2025-07-03T07:13:06.374Z",
+      "index": 887
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\How_to_install_Arduino_Library.md",
+      "completedAt": "2025-07-03T07:13:26.916Z",
+      "index": 888
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\How_to_detect_finger_touch.md",
+      "completedAt": "2025-07-03T07:13:43.078Z",
+      "index": 889
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\How_To_Choose_The_Right_Cable.md",
+      "completedAt": "2025-07-03T07:14:08.557Z",
+      "index": 890
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Guide_to_use_demos_downloaded_from_Seeed-s_Github.md",
+      "completedAt": "2025-07-03T07:15:24.840Z",
+      "index": 891
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\GPS-Modules-Selection-Guide.md",
+      "completedAt": "2025-07-03T07:16:02.022Z",
+      "index": 892
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Download-Arduino-and-install-Arduino_Driver.md",
+      "completedAt": "2025-07-03T07:16:32.752Z",
+      "index": 893
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Barometer-Selection-Guide.md",
+      "completedAt": "2025-07-03T07:17:02.159Z",
+      "index": 894
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Arduino_Software_I2C_user_guide.md",
+      "completedAt": "2025-07-03T07:17:29.946Z",
+      "index": 895
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\Arduino_Common_Error.md",
+      "completedAt": "2025-07-03T08:02:24.018Z",
+      "index": 896
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\A_Handy_Serial_Library.md",
+      "completedAt": "2025-07-03T08:02:48.448Z",
+      "index": 897
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\A_Comparison_of_Different_Grove_Temperature_Sensors.md",
+      "completedAt": "2025-07-03T08:03:12.188Z",
+      "index": 898
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\WireLess_Gate_Shield_V1.0.md",
+      "completedAt": "2025-07-03T08:03:42.679Z",
+      "index": 899
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Wifi_Shield.md",
+      "completedAt": "2025-07-03T08:04:02.477Z",
+      "index": 900
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Wifi_Shield_V2.0.md",
+      "completedAt": "2025-07-03T08:17:01.539Z",
+      "index": 901
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Wifi_Shield_V1.2.md",
+      "completedAt": "2025-07-03T08:17:18.154Z",
+      "index": 902
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Wifi_Shield_V1.1.md",
+      "completedAt": "2025-07-03T08:17:34.898Z",
+      "index": 903
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Wifi_Shield_V1.0.md",
+      "completedAt": "2025-07-03T08:17:54.573Z",
+      "index": 904
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Wifi_Shield_Fi250_V1.1.md",
+      "completedAt": "2025-07-03T08:18:23.137Z",
+      "index": 905
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\W5500_Ethernet_Shield_v1.0.md",
+      "completedAt": "2025-07-03T09:37:29.582Z",
+      "index": 906
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\TFT_Touch_Shield_V1.0.md",
+      "completedAt": "2025-07-03T09:37:38.932Z",
+      "index": 907
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Starter_Shield_EN.md",
+      "completedAt": "2025-07-03T09:37:49.981Z",
+      "index": 908
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Spartan_Edge_Accelerator_Board.md",
+      "completedAt": "2025-07-03T09:38:08.864Z",
+      "index": 909
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Solar_Charger_Shield.md",
+      "completedAt": "2025-07-03T09:38:27.292Z",
+      "index": 910
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Solar_Charger_Shield_V2.2.md",
+      "completedAt": "2025-07-03T09:54:29.853Z",
+      "index": 911
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Small_e-Paper_Shield.md",
+      "completedAt": "2025-07-03T09:54:37.767Z",
+      "index": 912
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Small_e-Paper_Shield_V2.md",
+      "completedAt": "2025-07-03T09:54:46.532Z",
+      "index": 913
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Shield.md",
+      "completedAt": "2025-07-03T09:54:55.551Z",
+      "index": 914
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Shield_Introduction.md",
+      "completedAt": "2025-07-03T09:55:05.496Z",
+      "index": 915
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Shield_Bot_V1.2.md",
+      "completedAt": "2025-07-03T09:59:36.397Z",
+      "index": 916
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Shield_Bot_V1.1.md",
+      "completedAt": "2025-07-03T09:59:44.970Z",
+      "index": 917
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Seeed_BLE_Shield.md",
+      "completedAt": "2025-07-03T09:59:53.823Z",
+      "index": 918
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\SD_Card_Shield.md",
+      "completedAt": "2025-07-03T10:00:04.258Z",
+      "index": 919
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\SD_Card_shield_V4.0.md",
+      "completedAt": "2025-07-03T10:00:13.507Z",
+      "index": 920
     }
   ],
   "lastSkipped": "weekly_wiki.md",
-  "lastCompleted": "2025-07-02T09:52:59.542Z"
+  "lastCompleted": "2025-07-03T10:00:13.508Z"
 }
