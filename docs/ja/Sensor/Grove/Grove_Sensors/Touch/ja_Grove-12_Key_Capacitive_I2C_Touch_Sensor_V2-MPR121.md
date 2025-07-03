@@ -105,7 +105,7 @@ CH0～CH11については、電極の静電容量データが取得されると�
 
 ![](https://files.seeedstudio.com/wiki/Grove-12_Key_Capacitive_I2C_Touch_Sensor_V2-MPR121/img/pin_map_back_1.jpg)
 
-:::cautionDanger
+:::caution
 中央パッドはアドレスワイヤに接続されています。ワイヤを切断して再溶接することでI2Cアドレスを変更できます。ナイフや溶接ガンを使用する際は、自分や他人の安全に十分注意してください。
 :::
 

@@ -320,7 +320,7 @@ void loop()
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Wearable_Kit_For_Edison/img/Xadow_Wearable_Kit_For_Edison32.jpg)
 
-:::tips
+:::tip
     Xadow-Barometerモジュールを温めることで、温度が安全範囲を超えた場合に何が起こるか確認できます。
 :::
 3. 温度が上昇するにつれてLEDが1つずつ点灯し、色が青から赤に変化します。

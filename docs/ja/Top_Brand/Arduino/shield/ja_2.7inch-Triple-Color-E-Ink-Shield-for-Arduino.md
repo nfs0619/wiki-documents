@@ -102,7 +102,7 @@ Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い�
 
 - **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
-:::tipsuccess
+:::tip success
 すべてが正常に動作すれば、ディスプレイが点滅し、Seeedのロゴが表示されます。
 :::
 

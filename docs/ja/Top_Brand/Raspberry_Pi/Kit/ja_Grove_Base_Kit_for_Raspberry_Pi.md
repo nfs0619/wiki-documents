@@ -602,7 +602,7 @@ sudo chmod +x lesson_2.py
 sudo ./lesson_2.py
 ```
 
-:::tipsuccess
+:::tip success
 すべてが正常に動作すれば、LEDボタンを長押しするとLEDが消灯し、ブザーが長い「ド」の音を発します。一方、ボタンを短く押すとLEDが点灯し、ブザーが短い「ド」の音を発します。
 :::
 

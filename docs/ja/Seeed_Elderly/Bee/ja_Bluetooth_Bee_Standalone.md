@@ -60,7 +60,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 * Bluetooth通信を備えたArduino互換モジュール
 <!-- *   Bluetooth Serial Port for PC when connected with [UartSBee](/UartSBee_V4) and uploading SoftSerial program to **ATMEGA168**. -->
 
-:::cautions
+:::caution
     *3.3V電源が必要です。
     *   UartSBeeと使用する場合、動作電圧を3.3Vに設定してください。
     *   ボーレートを変更するコマンドはリセット後も保持されます。そのため、次回使用時のボーレートを覚えておいてください。

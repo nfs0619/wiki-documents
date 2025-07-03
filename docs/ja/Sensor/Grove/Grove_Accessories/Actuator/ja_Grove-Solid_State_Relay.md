@@ -64,7 +64,7 @@ Grove – ソリッドステートリレーは、リレー機能を備えた非�
 
 ![](https://files.seeedstudio.com/wiki/Grove-Solid_State_Relay/img/Ssr_interface.jpg)
 
-:::cautions
+:::caution
         **1.** 出力電圧が36Vを超える場合、ネジを操作する前にモジュールがオフ状態であることを確認してください。
 
         **2.** ヒートシンクは非常に高温になる可能性があるため、使用中に触れないでください。

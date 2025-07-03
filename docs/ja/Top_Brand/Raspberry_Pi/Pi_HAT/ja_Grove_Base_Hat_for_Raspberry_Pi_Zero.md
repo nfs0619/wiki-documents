@@ -158,7 +158,7 @@ Groveセンサーを操作するために、grove.pyはmraa/smbus2/rpi.gpi/rpi_w
 curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s -
 ```
 
-:::tipsuccess
+:::tip success
 すべてが正常に進むと、以下の通知が表示されます。
 
 ```text

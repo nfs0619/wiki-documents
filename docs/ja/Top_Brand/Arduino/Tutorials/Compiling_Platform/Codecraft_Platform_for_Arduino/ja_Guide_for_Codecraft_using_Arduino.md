@@ -154,7 +154,7 @@ setColorブロックのR、G、B値を変更し、printブロックで"hello, wo
 
 ![lcd_demo](https://files.seeedstudio.com/wiki/Guide_for_Codecraft_using_Arduino/img/lcd_demo.png)
 
-:::tipsuccess
+:::tip success
 コードのアップロードが完了すると、LCDのバックライトの色が設定した色に変わり、"hello, world!"とシステムの稼働時間が表示されます。
 :::
 
@@ -204,7 +204,7 @@ OKをクリックすると、buttonStateブロックがVariablesタブに表示�
 
 ![relay demo](https://files.seeedstudio.com/wiki/Guide_for_Codecraft_using_Arduino/img/relay_demo.png)
 
-:::tipsuccess
+:::tip success
 コードのアップロードが完了すると、ボタンを押すとリレーがオンになり、それ以外の場合はリレーがオフになります。
 :::
 
@@ -244,7 +244,7 @@ OKをクリックすると、buttonStateブロックがVariablesタブに表示�
 
 ![sound demo](https://files.seeedstudio.com/wiki/Guide_for_Codecraft_using_Arduino/img/sound_demo.png)
 
-:::tipsuccess
+:::tip success
 コードのアップロードが完了すると、環境内の音が大きすぎる場合、LEDが点滅します。
 :::
 
@@ -278,7 +278,7 @@ Grove - Touch Sensorを使用してGrove - Red LEDを制御します。センサ
 
 ![touch demo](https://files.seeedstudio.com/wiki/Guide_for_Codecraft_using_Arduino/img/touch_demo.png)
 
-:::tipsuccess
+:::tip success
 コードのアップロードが完了すると、センサーが触れられた場合、LEDが点灯します。そうでない場合はLEDが消灯します。
 :::
 
@@ -324,7 +324,7 @@ Grove - Rotary Angle Sensorの回転をSerialに表示します。
 
 ![serial monitor](https://files.seeedstudio.com/wiki/Guide_for_Codecraft_using_Arduino/img/serial_monitor.png)
 
-:::tipsuccess
+:::tip success
 Grove - Rotary Angle Sensorを回転させると、モニターでデータの変化を見ることができます。
 :::
 
@@ -372,7 +372,7 @@ LEDブロックはデジタルOUTPUTまたはアナログOUTPUTとして動作�
 
 ![led demo](https://files.seeedstudio.com/wiki/Guide_for_Codecraft_using_Arduino/img/led_demo.png)
 
-:::tipsuccess
+:::tip success
 コードのアップロードが完了すると、LEDが呼吸するように点滅するのが見えます。
 :::
 
@@ -408,7 +408,7 @@ LEDブロックはデジタルOUTPUTまたはアナログOUTPUTとして動作�
 
 ![lighe demo](https://files.seeedstudio.com/wiki/Guide_for_Codecraft_using_Arduino/img/light_demo.png)
 
-:::tipsuccess
+:::tip success
 コードのアップロードが完了すると、光センサーに光を遮るとLEDが点灯します。
 :::
 
@@ -444,7 +444,7 @@ Grove - ボタンを使用してGrove - Red LEDを制御します。ボタンが
 
 ![button demo](https://files.seeedstudio.com/wiki/Guide_for_Codecraft_using_Arduino/img/button_demo.png)
 
-:::tipsuccess
+:::tip success
 コードのアップロードが完了すると、ボタンが押された場合はLEDが点灯し、それ以外の場合は消灯します。
 :::
 
@@ -480,7 +480,7 @@ Grove - ロータリー角度センサーを使用してGrove - サーボを制�
 
 ![servo demo](https://files.seeedstudio.com/wiki/Guide_for_Codecraft_using_Arduino/img/servo_demo.png)
 
-:::tipsuccess
+:::tip success
 コードのアップロードが完了すると、ロータリー角度センサーを回転させると、サーボモーターの角度が変化します。
 :::
 

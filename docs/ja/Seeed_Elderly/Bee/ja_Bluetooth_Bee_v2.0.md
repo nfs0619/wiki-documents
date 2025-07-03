@@ -67,7 +67,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 * 接続範囲外で切断された場合、30分以内に自動再接続。
 
-:::cautions
+:::caution
     このモジュールの供給電圧は3.3Vです。これを超えるとデバイスが永久的に損傷する可能性があります。
 c;;;
 ## ハードウェアのインストール

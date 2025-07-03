@@ -140,7 +140,7 @@ void boot(void)
 
 - 「検索」をクリックしてデバイスを見つけます。Xadow BLE スレーブデバイスを見つけて、Bluetooth デバイスの接続を開始します。
 
-:::tips
+:::tip
     'BlueSPP' が BLE モジュールを見つけられない場合は、スマートフォンのデバイスマネージャーで BLE モジュールとペアリングする必要があります。
 :::
 ![](https://files.seeedstudio.com/wiki/Xadow_BLE_Slave/img/Search_device.jpg)

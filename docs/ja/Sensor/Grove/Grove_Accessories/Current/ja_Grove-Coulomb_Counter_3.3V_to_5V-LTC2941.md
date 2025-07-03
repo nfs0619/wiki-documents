@@ -55,7 +55,7 @@ Grove - クーロンカウンター 3.3V to 5V (LTC2941) は、LTC2941 をベー
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Coulomb_Counter_3.3V_to_5V-LTC2941/img/pin-out/pin-out_0.jpg" /></div>
 
-:::cautionDanger
+:::caution
 3番と4番は電源入力インターフェースです。1つを電源入力として選択してください。同時に2つを使用しないでください。また、電圧が5Vを超えないようにしてください。そうしないと、モジュールが損傷する可能性があります。
 :::
 ___
