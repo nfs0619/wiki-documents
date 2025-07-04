@@ -1,5 +1,5 @@
 {
-  "currentIndex": 921,
+  "currentIndex": 1117,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -4538,8 +4538,988 @@
       "file": "Top_Brand\\Arduino\\shield\\SD_Card_shield_V4.0.md",
       "completedAt": "2025-07-03T10:00:13.507Z",
       "index": 920
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\SD_Card_Shield_V3.0.md",
+      "completedAt": "2025-07-04T00:58:30.274Z",
+      "index": 921
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\RS232_Shield.md",
+      "completedAt": "2025-07-04T00:58:42.609Z",
+      "index": 922
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\RGBW_Stripe_WireLess_Shield_V1.0.md",
+      "completedAt": "2025-07-04T00:58:54.592Z",
+      "index": 923
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Renbotics_ServoShield_Rev.md",
+      "completedAt": "2025-07-04T00:59:04.906Z",
+      "index": 924
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Relay_Shield.md",
+      "completedAt": "2025-07-04T01:08:32.560Z",
+      "index": 925
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Relay_Shield_v3.md",
+      "completedAt": "2025-07-04T01:11:39.928Z",
+      "index": 926
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Relay_Shield_V2.md",
+      "completedAt": "2025-07-04T01:11:53.641Z",
+      "index": 927
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Relay_Shield_V1.md",
+      "completedAt": "2025-07-04T01:12:06.266Z",
+      "index": 928
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Protoshield_Kit_for_Arduino.md",
+      "completedAt": "2025-07-04T01:12:19.281Z",
+      "index": 929
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\NFC_Shield.md",
+      "completedAt": "2025-07-04T01:12:32.516Z",
+      "index": 930
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\NFC_Shield_V2.0.md",
+      "completedAt": "2025-07-04T01:27:17.102Z",
+      "index": 931
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\NFC_Shield_V1.0.md",
+      "completedAt": "2025-07-04T01:29:33.066Z",
+      "index": 932
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Music_Shield.md",
+      "completedAt": "2025-07-04T01:30:22.427Z",
+      "index": 933
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Music_Shield_V2.2.md",
+      "completedAt": "2025-07-04T01:30:31.918Z",
+      "index": 934
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Music_Shield_V1.0.md",
+      "completedAt": "2025-07-04T01:30:41.358Z",
+      "index": 935
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Motor_Shield.md",
+      "completedAt": "2025-07-04T01:32:07.642Z",
+      "index": 936
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Motor_Shield_V2.0.md",
+      "completedAt": "2025-07-04T01:32:17.567Z",
+      "index": 937
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Motor_Shield_V1.0.md",
+      "completedAt": "2025-07-04T01:32:30.332Z",
+      "index": 938
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Grove-Mega_Shield.md",
+      "completedAt": "2025-07-04T01:32:40.132Z",
+      "index": 939
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Grove_Shield_for_Arduino_Nano.md",
+      "completedAt": "2025-07-04T01:58:37.442Z",
+      "index": 940
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\GPRS-Shield.md",
+      "completedAt": "2025-07-04T02:01:44.589Z",
+      "index": 941
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\GPRS_Shield_V3.0.md",
+      "completedAt": "2025-07-04T02:02:01.528Z",
+      "index": 942
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\GPRS_Shield_V2.0.md",
+      "completedAt": "2025-07-04T02:02:17.393Z",
+      "index": 943
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\GPRS_Shield_v1.0.md",
+      "completedAt": "2025-07-04T02:02:33.764Z",
+      "index": 944
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Ethernet_Shield.md",
+      "completedAt": "2025-07-04T02:02:53.252Z",
+      "index": 945
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Ethernet_Shield_V2.0.md",
+      "completedAt": "2025-07-04T02:09:23.081Z",
+      "index": 946
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Ethernet_Shield_V1.0.md",
+      "completedAt": "2025-07-04T02:09:41.448Z",
+      "index": 947
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Energy_Shield.md",
+      "completedAt": "2025-07-04T02:10:03.596Z",
+      "index": 948
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Energy_Monitor_Shield_V0.9b.md",
+      "completedAt": "2025-07-04T02:10:22.954Z",
+      "index": 949
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\EL_Shield.md",
+      "completedAt": "2025-07-04T02:10:44.386Z",
+      "index": 950
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\CAN-BUS_Shield_V2.0.md",
+      "completedAt": "2025-07-04T02:19:33.248Z",
+      "index": 951
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\CAN-BUS_Shield_V1.2.md",
+      "completedAt": "2025-07-04T02:19:48.568Z",
+      "index": 952
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Camera_Shield.md",
+      "completedAt": "2025-07-04T02:19:58.623Z",
+      "index": 953
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Brushless_Motor_Shield_TB6605FTG.md",
+      "completedAt": "2025-07-04T02:20:10.513Z",
+      "index": 954
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Bluetooth_Shield.md",
+      "completedAt": "2025-07-04T02:20:20.502Z",
+      "index": 955
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Bluetooth_Shield_V2.md",
+      "completedAt": "2025-07-04T02:32:50.497Z",
+      "index": 956
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\Base_Shield_V2.md",
+      "completedAt": "2025-07-04T02:33:03.080Z",
+      "index": 957
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\4A_Motor_Shield.md",
+      "completedAt": "2025-07-04T02:33:14.003Z",
+      "index": 958
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\2.8inch_TFT_Touch_Shield_v2.0.md",
+      "completedAt": "2025-07-04T02:33:24.559Z",
+      "index": 959
+    },
+    {
+      "file": "Top_Brand\\Arduino\\shield\\2.7inch-Triple-Color-E-Ink-Shield-for-Arduino.md",
+      "completedAt": "2025-07-04T02:33:35.192Z",
+      "index": 960
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Techbox_Tricks.md",
+      "completedAt": "2025-07-04T02:37:32.220Z",
+      "index": 961
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Sidekick_Basic_Kit_for_Arduino_V2.md",
+      "completedAt": "2025-07-04T02:37:46.264Z",
+      "index": 962
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible.md",
+      "completedAt": "2025-07-04T02:40:16.156Z",
+      "index": 963
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS.md",
+      "completedAt": "2025-07-04T02:40:30.559Z",
+      "index": 964
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS.md",
+      "completedAt": "2025-07-04T02:40:42.003Z",
+      "index": 965
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove-Toy_Kit.md",
+      "completedAt": "2025-07-04T02:40:54.362Z",
+      "index": 966
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove-Mixer_Pack_V2.md",
+      "completedAt": "2025-07-04T02:51:28.268Z",
+      "index": 967
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove-Creator-Kit-1.md",
+      "completedAt": "2025-07-04T02:51:48.209Z",
+      "index": 968
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove_Starter_Kit_v3.md",
+      "completedAt": "2025-07-04T02:52:08.845Z",
+      "index": 969
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove_Starter_Kit_Plus.md",
+      "completedAt": "2025-07-04T02:52:28.495Z",
+      "index": 970
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove_Starter_kit_for_Arduino_101.md",
+      "completedAt": "2025-07-04T02:52:48.986Z",
+      "index": 971
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove_Speech_Recognizer_Kit_for_Arduino.md",
+      "completedAt": "2025-07-04T02:57:14.310Z",
+      "index": 972
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove_Smart_Plant_Care_Kit.md",
+      "completedAt": "2025-07-04T02:57:36.138Z",
+      "index": 973
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove_Indoor_Environment_Kit_for_Edison.md",
+      "completedAt": "2025-07-04T02:57:57.872Z",
+      "index": 974
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove Beginner Kit for Arduino\\Grove-Beginner-Kit-For-Arduino.md",
+      "completedAt": "2025-07-04T02:58:17.272Z",
+      "index": 975
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove Beginner Kit for Arduino\\Grove-Beginner-Kit-for-Arduino-Upverter-Guide.md",
+      "completedAt": "2025-07-04T02:58:40.395Z",
+      "index": 976
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove Beginner Kit for Arduino\\Grove-Beginner-Kit-for-Arduino-education-pack.md",
+      "completedAt": "2025-07-04T03:06:28.994Z",
+      "index": 977
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Kit with Courses\\Grove Beginner Kit for Arduino\\Grove_Beginner_Kit_for_Arduino.md",
+      "completedAt": "2025-07-04T03:06:47.347Z",
+      "index": 978
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Getting_Started_with_Arduino.md",
+      "completedAt": "2025-07-04T03:07:03.111Z",
+      "index": 979
+    },
+    {
+      "file": "Top_Brand\\Arduino\\Arduino.md",
+      "completedAt": "2025-07-04T03:07:23.131Z",
+      "index": 980
+    },
+    {
+      "file": "template_file\\template.md",
+      "completedAt": "2025-07-04T03:07:43.701Z",
+      "index": 981
+    },
+    {
+      "file": "template_file\\_TEMPLATE.md",
+      "completedAt": "2025-07-04T03:11:56.029Z",
+      "index": 982
+    },
+    {
+      "file": "template_file\\_cn_template.md",
+      "completedAt": "2025-07-04T03:12:17.930Z",
+      "index": 983
+    },
+    {
+      "file": "Spanish\\Top_Brand\\Arduino\\Kit_with_Courses\\Grove_Beginner_Kit_for_Arduino\\_Grove-Beginner-Kit-For-Arduino_Espaคol.md",
+      "completedAt": "2025-07-04T03:12:40.742Z",
+      "index": 984
+    },
+    {
+      "file": "Spanish\\Top_Brand\\Arduino\\Kit_with_Courses\\_Grove-Creator-Kit-Wiki-landing_Español.md",
+      "completedAt": "2025-07-04T03:13:02.881Z",
+      "index": 985
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_SAMD21\\TuTorial\\es_Seeeduino-XIAO-DAPLink.md",
+      "completedAt": "2025-07-04T03:13:26.405Z",
+      "index": 986
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_SAMD21\\TuTorial\\es_How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI.md",
+      "completedAt": "2025-07-04T03:14:36.641Z",
+      "index": 987
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_SAMD21\\es_XIAO-SPI-Communication-Interface.md",
+      "completedAt": "2025-07-04T03:14:53.652Z",
+      "index": 988
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_SAMD21\\es_XIAO-SAMD21-Zephyr-RTOS.md",
+      "completedAt": "2025-07-04T03:15:14.649Z",
+      "index": 989
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_SAMD21\\es_XIAO-SAMD21-MicroPython.md",
+      "completedAt": "2025-07-04T03:15:38.860Z",
+      "index": 990
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_SAMD21\\es_Seeeduino-XIAO.md",
+      "completedAt": "2025-07-04T03:16:00.815Z",
+      "index": 991
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_SAMD21\\es_Seeeduino-XIAO-TinyUSB.md",
+      "completedAt": "2025-07-04T03:19:07.308Z",
+      "index": 992
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_SAMD21\\es_Seeeduino-XIAO-CircuitPython.md",
+      "completedAt": "2025-07-04T03:19:31.859Z",
+      "index": 993
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_SAMD21\\es_Seeeduino-XIAO-by-Nanase.md",
+      "completedAt": "2025-07-04T03:19:56.824Z",
+      "index": 994
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_SAMD21\\Embedded ML\\es_Seeeduino-XIAO-TinyML.md",
+      "completedAt": "2025-07-04T03:20:20.033Z",
+      "index": 995
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2350\\es_XIAO-RP2350.md",
+      "completedAt": "2025-07-04T03:20:45.048Z",
+      "index": 996
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2350\\es_XIAO-RP2350-with-SDK.md",
+      "completedAt": "2025-07-04T03:39:39.935Z",
+      "index": 997
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2350\\es_XIAO-RP2350-with-Arduino.md",
+      "completedAt": "2025-07-04T03:45:42.505Z",
+      "index": 998
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2350\\es_XIAO_RP2350_Pin_multiplexing.md",
+      "completedAt": "2025-07-04T03:46:58.571Z",
+      "index": 999
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2040\\es_XIAO-RP2040.md",
+      "completedAt": "2025-07-04T03:47:22.826Z",
+      "index": 1000
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2040\\es_XIAO-RP2040-Zephyr-RTOS.md",
+      "completedAt": "2025-07-04T03:47:38.378Z",
+      "index": 1001
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2040\\es_XIAO-RP2040-with-NuttX-RTOS.md",
+      "completedAt": "2025-07-04T03:48:48.373Z",
+      "index": 1002
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2040\\es_XIAO-RP2040-with-MicroPython.md",
+      "completedAt": "2025-07-04T03:48:59.984Z",
+      "index": 1003
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2040\\es_XIAO-RP2040-with-CircuitPython.md",
+      "completedAt": "2025-07-04T03:49:20.076Z",
+      "index": 1004
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2040\\es_XIAO-RP2040-with-Arduino.md",
+      "completedAt": "2025-07-04T03:49:31.765Z",
+      "index": 1005
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RP2040\\Embedded ML\\es_XIAO-RP2040-EI.md",
+      "completedAt": "2025-07-04T03:49:43.835Z",
+      "index": 1006
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RA4M1\\es_XIAO-RA4M1.md",
+      "completedAt": "2025-07-04T03:50:36.782Z",
+      "index": 1007
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RA4M1\\es_XIAO_RA4M1_Pin_Multiplexing.md",
+      "completedAt": "2025-07-04T03:50:51.360Z",
+      "index": 1008
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RA4M1\\Application\\es_XIAO_RA4M1_Mouse.md",
+      "completedAt": "2025-07-04T03:51:04.891Z",
+      "index": 1009
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_RA4M1\\Application\\es_XIAO_RA4M1_Clock.md",
+      "completedAt": "2025-07-04T03:51:18.936Z",
+      "index": 1010
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\es_XIAO-nRF52840-Zephyr-RTOS.md",
+      "completedAt": "2025-07-04T03:51:32.391Z",
+      "index": 1011
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\es_XIAO-nRF52840_PlatformIO.md",
+      "completedAt": "2025-07-04T04:44:00.169Z",
+      "index": 1012
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\es_XIAO-BLE-Sense-Pin-Multiplexing.md",
+      "completedAt": "2025-07-04T04:44:09.648Z",
+      "index": 1013
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\es_XIAO-BLE-Sense-PDM-Usage.md",
+      "completedAt": "2025-07-04T04:44:25.130Z",
+      "index": 1014
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\es_XIAO-BLE-Sense-NFC-Usage.md",
+      "completedAt": "2025-07-04T04:44:38.085Z",
+      "index": 1015
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\es_XIAO-BLE-Sense-IMU-Usage.md",
+      "completedAt": "2025-07-04T04:44:50.839Z",
+      "index": 1016
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\es_XIAO-BLE_QSPI-Usage.md",
+      "completedAt": "2025-07-04T04:45:05.852Z",
+      "index": 1017
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\es_XIAO-BLE_CircutPython.md",
+      "completedAt": "2025-07-04T04:46:55.505Z",
+      "index": 1018
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\es_XIAO_BLE.md",
+      "completedAt": "2025-07-04T04:47:10.160Z",
+      "index": 1019
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\Embedded ML\\es_XIAOEI.md",
+      "completedAt": "2025-07-04T04:47:24.412Z",
+      "index": 1020
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\Embedded ML\\es_XIAO-BLE-Sense-TFLite-Mic.md",
+      "completedAt": "2025-07-04T04:47:40.866Z",
+      "index": 1021
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\Embedded ML\\es_XIAO-BLE-Sense-TFLite-Getting-Started.md",
+      "completedAt": "2025-07-04T04:47:55.460Z",
+      "index": 1022
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\Embedded ML\\es_XIAO-BLE-PDM-EI.md",
+      "completedAt": "2025-07-04T04:48:08.391Z",
+      "index": 1023
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\Bluetooth Libraries\\es_XIAO-BLE-Sense-Bluetooth-Usage.md",
+      "completedAt": "2025-07-04T06:01:51.760Z",
+      "index": 1024
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\Bluetooth Libraries\\es_XIAO-BLE-Sense-Bluetooth_Usage.md",
+      "completedAt": "2025-07-04T06:02:09.220Z",
+      "index": 1025
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\Application\\es_XIAO-BLE-sidewalk.md",
+      "completedAt": "2025-07-04T06:02:21.819Z",
+      "index": 1026
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_nRF52840-Sense\\Application\\es_XIAO_BLE_HA.md",
+      "completedAt": "2025-07-04T06:02:41.839Z",
+      "index": 1027
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_MG24\\es_XIAO-MG24-Example-Matter.md",
+      "completedAt": "2025-07-04T06:05:17.151Z",
+      "index": 1028
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_MG24\\es_XIAO-MG24-Built-in-Sensor.md",
+      "completedAt": "2025-07-04T06:05:35.375Z",
+      "index": 1029
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_MG24\\es_XIAO_MG24_Pin_Multiplexing.md",
+      "completedAt": "2025-07-04T06:06:09.850Z",
+      "index": 1030
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_MG24\\es_XIAO_MG24_Getting_Started.md",
+      "completedAt": "2025-07-04T06:06:24.137Z",
+      "index": 1031
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\Round-display-for-XIAO\\es_SeeedStudio_RoundDisplay_Usage.md",
+      "completedAt": "2025-07-04T06:12:35.689Z",
+      "index": 1032
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\Round-display-for-XIAO\\es_SeeedStudio_Round_Display_for_XIAO.md",
+      "completedAt": "2025-07-04T06:17:08.836Z",
+      "index": 1033
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\Round-display-for-XIAO\\es_Draw_dials_with_Display_and_lvgl.md",
+      "completedAt": "2025-07-04T06:18:24.991Z",
+      "index": 1034
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\Round-display-for-XIAO\\Application\\es_SeeedStudio_Round_Display_Christmas_ball.md",
+      "completedAt": "2025-07-04T06:24:03.292Z",
+      "index": 1035
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\GPS_Module_For_XIAO\\es_L76K_GNSS_Ubidots_Map_Track.md",
+      "completedAt": "2025-07-04T06:25:16.089Z",
+      "index": 1036
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\GPS_Module_For_XIAO\\es_L76K_GNSS_Module.md",
+      "completedAt": "2025-07-04T06:34:01.241Z",
+      "index": 1037
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\es_XIAO-RS485-Expansion-Board.md",
+      "completedAt": "2025-07-04T06:34:22.416Z",
+      "index": 1038
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\es_xiao-rgb-matrix.md",
+      "completedAt": "2025-07-04T06:35:55.974Z",
+      "index": 1039
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\es_XIAO-eInk-Expansion-Board.md",
+      "completedAt": "2025-07-04T06:39:41.673Z",
+      "index": 1040
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\es_XIAO-CAN-Bus-Expansion-Board.md",
+      "completedAt": "2025-07-04T06:49:25.792Z",
+      "index": 1041
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\es_xiao_eink_expansion_board_v2.md",
+      "completedAt": "2025-07-04T06:49:37.258Z",
+      "index": 1042
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\es_Seeeduino-XIAO-Expansion-Board.md",
+      "completedAt": "2025-07-04T06:49:48.065Z",
+      "index": 1043
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\es_Grove-Shield-for-Seeeduino-XIAO-embedded-battery-management-chip.md",
+      "completedAt": "2025-07-04T06:49:59.103Z",
+      "index": 1044
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\es_gpio_expander_for_xiao.md",
+      "completedAt": "2025-07-04T06:50:15.372Z",
+      "index": 1045
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_Expansion_board\\es_gnss-for-xiao.md",
+      "completedAt": "2025-07-04T06:54:56.848Z",
+      "index": 1046
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO-ESP32S3-Zephyr-RTOS.md",
+      "completedAt": "2025-07-04T06:56:14.191Z",
+      "index": 1047
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO-ESP32S3-FreeRTOS.md",
+      "completedAt": "2025-07-04T07:00:19.425Z",
+      "index": 1048
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO_ESP32S3_with_MicroPython.md",
+      "completedAt": "2025-07-04T07:01:35.331Z",
+      "index": 1049
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO_ESP32S3_WiFi_Usage.md",
+      "completedAt": "2025-07-04T07:03:22.173Z",
+      "index": 1050
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO_ESP32S3_Sense_Consumption.md",
+      "completedAt": "2025-07-04T07:03:35.423Z",
+      "index": 1051
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO_ESP32S3_Pin_Multiplexing.md",
+      "completedAt": "2025-07-04T07:03:48.588Z",
+      "index": 1052
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO_ESP32S3_Micropython.md",
+      "completedAt": "2025-07-04T07:04:05.923Z",
+      "index": 1053
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO_ESP32S3_Getting_Started.md",
+      "completedAt": "2025-07-04T07:05:46.746Z",
+      "index": 1054
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO_ESP32S3_EdgeLab.md",
+      "completedAt": "2025-07-04T07:06:01.279Z",
+      "index": 1055
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO_ESP32S3_CircuitPython.md",
+      "completedAt": "2025-07-04T07:06:16.382Z",
+      "index": 1056
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\es_XIAO_ESP32S3_Bluetooth_Usage.md",
+      "completedAt": "2025-07-04T07:06:34.499Z",
+      "index": 1057
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\Application\\es_XIAO_ESP32S3_SSCMA.md",
+      "completedAt": "2025-07-04T07:06:51.375Z",
+      "index": 1058
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\Application\\es_XIAO_ESP32S3_Speech2chatgpt.md",
+      "completedAt": "2025-07-04T07:07:05.963Z",
+      "index": 1059
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\Application\\es_XIAO_ESP32S3_Keyword_Spotting.md",
+      "completedAt": "2025-07-04T07:09:55.685Z",
+      "index": 1060
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\Application\\es_XIAO_ESP32S3_Geolocation.md",
+      "completedAt": "2025-07-04T07:10:10.153Z",
+      "index": 1061
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\Application\\es_XIAO_ESP32S3_ESPNOW.md",
+      "completedAt": "2025-07-04T07:10:25.177Z",
+      "index": 1062
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\Application\\es_XIAO_ESP32S3_ESPHome.md",
+      "completedAt": "2025-07-04T07:10:41.977Z",
+      "index": 1063
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\Application\\Edgeimpulse\\es_Key_Word_Spotting.md",
+      "completedAt": "2025-07-04T07:11:01.102Z",
+      "index": 1064
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\Application\\Edgeimpulse\\es_Image_classification_project.md",
+      "completedAt": "2025-07-04T07:17:27.028Z",
+      "index": 1065
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3\\Application\\Edgeimpulse\\es_EdgeImpulse.md",
+      "completedAt": "2025-07-04T07:19:41.659Z",
+      "index": 1066
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3_Sense\\es_XIAO_ESP32S3_Sense_tf_and_filesystem.md",
+      "completedAt": "2025-07-04T07:27:03.901Z",
+      "index": 1067
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3_Sense\\es_XIAO_ESP32S3_Sense_mic.md",
+      "completedAt": "2025-07-04T07:27:17.716Z",
+      "index": 1068
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32S3_Sense\\es_XIAO_ESP32S3_Sense_camera.md",
+      "completedAt": "2025-07-04T07:27:31.112Z",
+      "index": 1069
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\Zigbee\\es_xiaoc6_zigbee_led_ha.md",
+      "completedAt": "2025-07-04T07:27:45.236Z",
+      "index": 1070
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\Zigbee\\es_xiao_esp32c6_zigbee.md",
+      "completedAt": "2025-07-04T08:25:21.698Z",
+      "index": 1071
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\Zigbee\\es_xiao_esp32c6_zigbee_arduino.md",
+      "completedAt": "2025-07-04T08:25:34.236Z",
+      "index": 1072
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\es_XIAO_ESP32C6_with_PlatformIO.md",
+      "completedAt": "2025-07-04T08:25:44.843Z",
+      "index": 1073
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\es_XIAO_ESP32C6_with_MicroPython.md",
+      "completedAt": "2025-07-04T08:25:55.477Z",
+      "index": 1074
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\es_XIAO_ESP32C6_with_CircuitPython.md",
+      "completedAt": "2025-07-04T08:26:05.595Z",
+      "index": 1075
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\es_XIAO_ESP32C6_WiFi_Usage.md",
+      "completedAt": "2025-07-04T08:27:15.932Z",
+      "index": 1076
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\es_XIAO_ESP32C6_Pin_Multiplexing.md",
+      "completedAt": "2025-07-04T08:27:26.189Z",
+      "index": 1077
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\es_XIAO_ESP32C6_Getting_Started.md",
+      "completedAt": "2025-07-04T08:27:41.503Z",
+      "index": 1078
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\es_XIAO_ESP32C6_Embedded_Swift.md",
+      "completedAt": "2025-07-04T08:27:53.348Z",
+      "index": 1079
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\es_XIAO_ESP32C6_Bluetooth_Usage_spanish.md",
+      "completedAt": "2025-07-04T08:28:04.220Z",
+      "index": 1080
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\Application\\es_xiao_esp32c6_kafka.md",
+      "completedAt": "2025-07-04T08:35:37.842Z",
+      "index": 1081
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\Application\\es_XIAO_ESP32C6_ESPNOW.md",
+      "completedAt": "2025-07-04T08:35:49.685Z",
+      "index": 1082
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C6\\Application\\es_xiao_esp32c6_aws_iot.md",
+      "completedAt": "2025-07-04T08:39:58.794Z",
+      "index": 1083
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\es_XIAO-ESP32C3-Zephyr.md",
+      "completedAt": "2025-07-04T08:40:26.910Z",
+      "index": 1084
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\es_XIAO_ESP32C3_with_MicroPython.md",
+      "completedAt": "2025-07-04T08:40:56.479Z",
+      "index": 1085
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\es_XIAO_ESP32C3_with_CircuitPython.md",
+      "completedAt": "2025-07-04T08:46:52.177Z",
+      "index": 1086
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\es_XIAO_ESP32C3_WiFi_Usage.md",
+      "completedAt": "2025-07-04T08:47:05.423Z",
+      "index": 1087
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\es_XIAO_ESP32C3_Pin_Multiplexing.md",
+      "completedAt": "2025-07-04T08:47:15.137Z",
+      "index": 1088
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\es_XIAO_ESP32C3_MicroPython.md",
+      "completedAt": "2025-07-04T08:47:29.642Z",
+      "index": 1089
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\es_XIAO_ESP32C3_Getting_Started.md",
+      "completedAt": "2025-07-04T08:47:39.691Z",
+      "index": 1090
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\es_XIAO_ESP32C3_Bluetooth_Usage.md",
+      "completedAt": "2025-07-04T09:13:49.901Z",
+      "index": 1091
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\Application\\es_xiaoesp32c3-flash-storage.md",
+      "completedAt": "2025-07-04T09:14:01.619Z",
+      "index": 1092
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\Application\\es_xiaoesp32c3-chatgpt.md",
+      "completedAt": "2025-07-04T09:14:17.410Z",
+      "index": 1093
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\Application\\es_xiao-esp32c3-prism-display.md",
+      "completedAt": "2025-07-04T09:14:37.682Z",
+      "index": 1094
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\Application\\es_XIAO-ESP32C3-for-ESPHome-Support.md",
+      "completedAt": "2025-07-04T09:52:49.071Z",
+      "index": 1095
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\Application\\es_xiao-esp32c3-esphome.md",
+      "completedAt": "2025-07-04T09:53:09.117Z",
+      "index": 1096
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\Application\\es_XIAO_ESP32C3_ESPNOW.md",
+      "completedAt": "2025-07-04T09:53:22.455Z",
+      "index": 1097
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\SeeedStudio_XIAO_ESP32C3\\Application\\es_ESP32C3_Smart_Thermostat.md",
+      "completedAt": "2025-07-04T09:53:34.067Z",
+      "index": 1098
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\Matter\\es_xiao_esp32_matter_env.md",
+      "completedAt": "2025-07-04T09:55:22.081Z",
+      "index": 1099
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\Matter\\es_xiao_esp32_idf_env.md",
+      "completedAt": "2025-07-04T09:55:31.929Z",
+      "index": 1100
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\Matter\\es_matter_development_framework_overview.md",
+      "completedAt": "2025-07-04T09:55:42.368Z",
+      "index": 1101
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\Matter\\es_getting_started_with_matter.md",
+      "completedAt": "2025-07-04T09:55:52.612Z",
+      "index": 1102
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\Kit_with_Courses\\es_kit_with_courses.md",
+      "completedAt": "2025-07-04T09:56:02.473Z",
+      "index": 1103
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\es_XIAO_FAQ.md",
+      "completedAt": "2025-07-04T09:58:28.074Z",
+      "index": 1104
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\es_XIAO_ESPNOW.md",
+      "completedAt": "2025-07-04T09:58:44.411Z",
+      "index": 1105
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\es_SeeedStudio_XIAO_Series_Projects.md",
+      "completedAt": "2025-07-04T09:58:56.233Z",
+      "index": 1106
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\es_SeeedStudio_XIAO_Series_Introduction.md",
+      "completedAt": "2025-07-04T09:59:08.002Z",
+      "index": 1107
+    },
+    {
+      "file": "Spanish\\Sensor\\SeeedStudio_XIAO_Spanish\\es_PCB_Design_XIAO.md",
+      "completedAt": "2025-07-04T10:03:30.397Z",
+      "index": 1108
+    },
+    {
+      "file": "Spanish\\Sensor\\Grove\\Grove_Sensor\\Touch\\_Grove-Touch_Sensor_Spanish.md",
+      "completedAt": "2025-07-04T10:03:44.849Z",
+      "index": 1109
+    },
+    {
+      "file": "Spanish\\Sensor\\Grove\\Grove_Sensor\\Temperature\\_Grove-Temperature_Sensor_V1.2_Spanish.md",
+      "completedAt": "2025-07-04T10:03:55.438Z",
+      "index": 1110
+    },
+    {
+      "file": "Spanish\\Sensor\\Grove\\Grove_Sensor\\Temp&Humi\\_Grove-TemperatureAndHumidity_Sensor_Spanish.md",
+      "completedAt": "2025-07-04T10:04:07.646Z",
+      "index": 1111
+    },
+    {
+      "file": "Spanish\\Sensor\\Grove\\Grove_Sensor\\Sound\\_Grove-Loudness_Sensor_Spanish.md",
+      "completedAt": "2025-07-04T10:05:30.700Z",
+      "index": 1112
+    },
+    {
+      "file": "Spanish\\Sensor\\Grove\\Grove_Sensor\\Soli_Humidity\\_Grove-Moisture_Sensor_Spanish.md",
+      "completedAt": "2025-07-04T10:05:43.101Z",
+      "index": 1113
+    },
+    {
+      "file": "Spanish\\Sensor\\Grove\\Grove_Sensor\\Proximity\\_Grove-Ultrasonic_Ranger_Spanish.md",
+      "completedAt": "2025-07-04T10:05:54.811Z",
+      "index": 1114
+    },
+    {
+      "file": "Spanish\\Sensor\\Grove\\Grove_Sensor\\Motion\\_Grove-Vibration_Sensor_SW-420_Spanish.md",
+      "completedAt": "2025-07-04T10:06:06.371Z",
+      "index": 1115
+    },
+    {
+      "file": "Spanish\\Sensor\\Grove\\Grove_Sensor\\Motion\\_Grove-Tilt_Switch_Spanish.md",
+      "completedAt": "2025-07-04T10:06:17.372Z",
+      "index": 1116
     }
   ],
   "lastSkipped": "weekly_wiki.md",
-  "lastCompleted": "2025-07-03T10:00:13.508Z"
+  "lastCompleted": "2025-07-04T10:06:17.373Z"
 }
