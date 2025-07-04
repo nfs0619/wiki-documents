@@ -1,5 +1,5 @@
 {
-  "currentIndex": 2659,
+  "currentIndex": 2735,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -12878,8 +12878,383 @@
       "file": "Seeed_Elderly\\weekly_wiki\\wiki250519.md",
       "completedAt": "2025-07-04T10:04:19.037Z",
       "index": 2658
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki250526.md",
+      "completedAt": "2025-07-04T14:14:05.562Z",
+      "index": 2659
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki250602.md",
+      "completedAt": "2025-07-04T14:16:38.729Z",
+      "index": 2660
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki306.md",
+      "completedAt": "2025-07-04T14:16:44.442Z",
+      "index": 2661
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki313.md",
+      "completedAt": "2025-07-04T14:16:58.141Z",
+      "index": 2662
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki320.md",
+      "completedAt": "2025-07-04T14:17:04.760Z",
+      "index": 2663
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki327.md",
+      "completedAt": "2025-07-04T14:22:55.705Z",
+      "index": 2664
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki403.md",
+      "completedAt": "2025-07-04T14:23:13.517Z",
+      "index": 2665
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki410.md",
+      "completedAt": "2025-07-04T14:23:23.550Z",
+      "index": 2666
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki417.md",
+      "completedAt": "2025-07-04T14:24:05.440Z",
+      "index": 2667
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki424.md",
+      "completedAt": "2025-07-04T14:24:15.999Z",
+      "index": 2668
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki515.md",
+      "completedAt": "2025-07-04T14:25:44.036Z",
+      "index": 2669
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki522.md",
+      "completedAt": "2025-07-04T14:25:53.759Z",
+      "index": 2670
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki529.md",
+      "completedAt": "2025-07-04T14:26:03.296Z",
+      "index": 2671
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki605.md",
+      "completedAt": "2025-07-04T14:26:13.845Z",
+      "index": 2672
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki612.md",
+      "completedAt": "2025-07-04T14:26:59.585Z",
+      "index": 2673
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki619.md",
+      "completedAt": "2025-07-04T14:27:09.994Z",
+      "index": 2674
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki703.md",
+      "completedAt": "2025-07-04T14:27:20.400Z",
+      "index": 2675
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki710.md",
+      "completedAt": "2025-07-04T14:27:31.414Z",
+      "index": 2676
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki717.md",
+      "completedAt": "2025-07-04T14:27:45.581Z",
+      "index": 2677
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki724.md",
+      "completedAt": "2025-07-04T14:27:57.949Z",
+      "index": 2678
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki731.md",
+      "completedAt": "2025-07-04T14:28:09.284Z",
+      "index": 2679
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki807.md",
+      "completedAt": "2025-07-04T14:29:20.071Z",
+      "index": 2680
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki814.md",
+      "completedAt": "2025-07-04T14:29:32.785Z",
+      "index": 2681
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki821.md",
+      "completedAt": "2025-07-04T14:29:44.144Z",
+      "index": 2682
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki828.md",
+      "completedAt": "2025-07-04T14:29:55.441Z",
+      "index": 2683
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki903.md",
+      "completedAt": "2025-07-04T14:30:06.390Z",
+      "index": 2684
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki911.md",
+      "completedAt": "2025-07-04T14:30:49.545Z",
+      "index": 2685
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki918.md",
+      "completedAt": "2025-07-04T14:30:59.821Z",
+      "index": 2686
+    },
+    {
+      "file": "Seeed_Elderly\\weekly_wiki\\wiki925.md",
+      "completedAt": "2025-07-04T14:31:08.993Z",
+      "index": 2687
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xado_OLED_128multiply64.md",
+      "completedAt": "2025-07-04T14:31:17.883Z",
+      "index": 2688
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_3_Aixs_Accelerometer.md",
+      "completedAt": "2025-07-04T14:32:49.520Z",
+      "index": 2690
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_3_Aixs_Digital_Accelerometer_plusandminus_400g.md",
+      "completedAt": "2025-07-04T14:32:59.263Z",
+      "index": 2691
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Audio.md",
+      "completedAt": "2025-07-04T14:33:08.868Z",
+      "index": 2692
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Barometer_BMP180.md",
+      "completedAt": "2025-07-04T14:33:21.010Z",
+      "index": 2693
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Barometer.md",
+      "completedAt": "2025-07-04T14:33:30.815Z",
+      "index": 2694
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Basic_Sensors.md",
+      "completedAt": "2025-07-04T14:34:14.243Z",
+      "index": 2695
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_BLE_Dual_Model_V1.0.md",
+      "completedAt": "2025-07-04T14:34:25.323Z",
+      "index": 2696
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_BLE_Slave.md",
+      "completedAt": "2025-07-04T14:34:35.550Z",
+      "index": 2697
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_BLE.md",
+      "completedAt": "2025-07-04T14:37:54.792Z",
+      "index": 2698
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Breakout.md",
+      "completedAt": "2025-07-04T14:38:59.690Z",
+      "index": 2699
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Buzzer.md",
+      "completedAt": "2025-07-04T14:39:10.124Z",
+      "index": 2700
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Compass.md",
+      "completedAt": "2025-07-04T14:39:50.198Z",
+      "index": 2701
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Duino.md",
+      "completedAt": "2025-07-04T14:40:00.818Z",
+      "index": 2702
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Edison_Kit.md",
+      "completedAt": "2025-07-04T14:40:16.391Z",
+      "index": 2703
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Gesture_v1.0.md",
+      "completedAt": "2025-07-04T14:40:26.249Z",
+      "index": 2704
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_GPS_V2.md",
+      "completedAt": "2025-07-04T14:40:38.109Z",
+      "index": 2705
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_GPS.md",
+      "completedAt": "2025-07-04T15:01:50.778Z",
+      "index": 2706
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Grove_Adaptor.md",
+      "completedAt": "2025-07-04T15:02:41.882Z",
+      "index": 2707
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_GSM_Breakout.md",
+      "completedAt": "2025-07-04T15:02:51.638Z",
+      "index": 2708
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_GSMPlusBLE.md",
+      "completedAt": "2025-07-04T15:03:01.041Z",
+      "index": 2709
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_IMU_10DOF.md",
+      "completedAt": "2025-07-04T15:03:12.378Z",
+      "index": 2710
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_IMU_6DOF.md",
+      "completedAt": "2025-07-04T15:03:24.620Z",
+      "index": 2711
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_IMU_9DOF.md",
+      "completedAt": "2025-07-04T15:05:19.235Z",
+      "index": 2712
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_LED_5_multiply_7_v1.0.md",
+      "completedAt": "2025-07-04T15:11:56.672Z",
+      "index": 2713
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_LED_5x7.md",
+      "completedAt": "2025-07-04T15:13:56.725Z",
+      "index": 2714
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_M0.md",
+      "completedAt": "2025-07-04T15:14:04.534Z",
+      "index": 2715
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Main_Board.md",
+      "completedAt": "2025-07-04T15:14:12.669Z",
+      "index": 2716
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Metal_Frame.md",
+      "completedAt": "2025-07-04T15:14:24.391Z",
+      "index": 2717
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Motor_Driver.md",
+      "completedAt": "2025-07-04T15:14:32.581Z",
+      "index": 2718
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Multichannel_Gas_Sensor.md",
+      "completedAt": "2025-07-04T15:14:40.803Z",
+      "index": 2719
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_NFC_tag.md",
+      "completedAt": "2025-07-04T15:14:50.617Z",
+      "index": 2720
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_NFC_v2.md",
+      "completedAt": "2025-07-04T15:15:00.046Z",
+      "index": 2721
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_NFC.md",
+      "completedAt": "2025-07-04T15:15:08.329Z",
+      "index": 2722
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Pebble_Time_Adapter.md",
+      "completedAt": "2025-07-04T15:15:17.114Z",
+      "index": 2723
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Q_Touch_Sensor.md",
+      "completedAt": "2025-07-04T15:15:26.206Z",
+      "index": 2724
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_RGB_OLED_96multiply64.md",
+      "completedAt": "2025-07-04T15:50:39.931Z",
+      "index": 2725
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_RTC.md",
+      "completedAt": "2025-07-04T15:51:02.212Z",
+      "index": 2726
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Storage.md",
+      "completedAt": "2025-07-04T15:56:44.070Z",
+      "index": 2727
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Tutorial_Acceleration_Detector.md",
+      "completedAt": "2025-07-04T15:56:58.425Z",
+      "index": 2728
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Tutorial_Communicate_via_BLE.md",
+      "completedAt": "2025-07-04T15:57:51.935Z",
+      "index": 2729
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Tutorial_Shaking_Shaking.md",
+      "completedAt": "2025-07-04T15:59:07.748Z",
+      "index": 2730
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_UV_Sensor.md",
+      "completedAt": "2025-07-04T15:59:25.474Z",
+      "index": 2731
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Vibrator_Motor.md",
+      "completedAt": "2025-07-04T16:00:33.869Z",
+      "index": 2732
+    },
+    {
+      "file": "Seeed_Elderly\\Xadow\\Xadow_Wearable_Kit_For_Edison.md",
+      "completedAt": "2025-07-04T16:01:02.072Z",
+      "index": 2733
+    },
+    {
+      "file": "Sensing_test.md",
+      "completedAt": "2025-07-04T16:01:13.499Z",
+      "index": 2734
     }
   ],
-  "lastSkipped": "Network\\SenseCAP_K1100\\Contributors_Project\\IoT-into-the-wild-contest.md",
-  "lastCompleted": "2025-07-04T10:04:19.037Z"
+  "lastSkipped": "Seeed_Elderly\\Xadow\\Xadow_1.54_inch_Touchscreen.md",
+  "lastCompleted": "2025-07-04T16:01:13.499Z"
 }
