@@ -1,5 +1,5 @@
 {
-  "currentIndex": 2860,
+  "currentIndex": 2865,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -13873,8 +13873,33 @@
       "file": "Sensor\\Grove\\Grove_Accessories\\Actuator\\Grove-MP3-v3.md",
       "completedAt": "2025-07-07T10:08:35.648Z",
       "index": 2859
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Accessories\\Actuator\\Grove-mp3-v4.md",
+      "completedAt": "2025-07-07T13:28:45.506Z",
+      "index": 2860
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Accessories\\Actuator\\Grove-Optocoupler_Relay-M281.md",
+      "completedAt": "2025-07-07T13:39:56.075Z",
+      "index": 2861
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Accessories\\Actuator\\Grove-Passive-Buzzer.md",
+      "completedAt": "2025-07-07T13:40:34.839Z",
+      "index": 2862
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Accessories\\Actuator\\Grove-Recorder_v3.0.md",
+      "completedAt": "2025-07-07T13:40:48.044Z",
+      "index": 2863
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Accessories\\Actuator\\Grove-Relay.md",
+      "completedAt": "2025-07-07T13:51:50.125Z",
+      "index": 2864
     }
   ],
   "lastSkipped": "Sensor\\Arch\\Arch_BLE.md",
-  "lastCompleted": "2025-07-07T10:08:35.649Z"
+  "lastCompleted": "2025-07-07T13:51:50.126Z"
 }

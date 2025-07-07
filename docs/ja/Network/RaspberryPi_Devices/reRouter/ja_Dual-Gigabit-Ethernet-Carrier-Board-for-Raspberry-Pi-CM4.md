@@ -55,7 +55,7 @@ MIPI CSI、MIPI DSI、micro-HDMIを使用してディスプレイやカメラを
 | 寸法 | 75x64x21mm |
 | 重量 | 43g |
 
-:::cautionDanger
+:::caution Danger
 この製品は高い統合度を持つため、[CM4ヒートシンク](https://www.seeedstudio.com/Aluminum-Alloy-CNC-Heat-Sink-with-Fan-for-Raspberry-Pi-CM4-Module-p-4923.html)と一緒に使用する必要があります。そうしない場合、USBやイーサネットの不安定性を引き起こす可能性があります。
 :::
 

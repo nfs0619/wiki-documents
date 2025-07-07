@@ -96,7 +96,7 @@ The Initial Firmware of Arch Mix is RT-Thread which is depreciated, please follo
 
 Please supply power through the Micro-USB **OTG** port.
 
-:::cautionDanger
+:::caution Danger
 
 - The input power supply voltage is 5V, can not exceed 5.5V.  
 - All digital and analog IO interface levels are 3.3V. Please do not input more than 3.3V, otherwise the CPU may be damaged.  
