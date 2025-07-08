@@ -32,14 +32,14 @@ En esta wiki, te mostraremos cómo flashear Jetpack OS a la Carrier Board A205E 
         <td align="center"><a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank"><span>Carrier Baord A205E</span></a></td>
         <td align="center"><a href="https://www.seeedstudio.com/A205E-Mini-PC-with-128GB-SSD-p-5495.html" target="_blank"><span>A205E Mini PC</span></a></td>
     </tr>
-    <tr>
+      <tr>
         <td align="center">
           <a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank" rel="noopener"><img width={350} src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/5/_/5_7_1.png" alt /></a>
         </td>
         <td align="center">
           <a href="https://www.seeedstudio.com/A205E-Mini-PC-with-128GB-SSD-p-5495.html" target="_blank" rel="noopener"><img width={380} src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/1/_/1_9_2.png" alt /></a>
         </td>
-    </tr>
+      </tr>
     </tbody></table>
 </div>
 
@@ -73,14 +73,14 @@ Antes de continuar con los pasos de instalación, debemos asegurarnos de que la 
         <td align="center">Carrier Board A205E</td>
         <td align="center">A205E Mini PC</td>
     </tr>
-    <tr>
+      <tr>
         <td align="center">
           <a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank" rel="noopener"><img width={350} src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/a/n/antenna_dc_jack_io_controller_20_pin_1_.png" alt /></a>
         </td>
         <td align="center">
           <a href="https://www.seeedstudio.com/A205E-Mini-PC-with-128GB-SSD-p-5495.html" target="_blank" rel="noopener"><img width={380} src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/2/_/2_8_3.png" alt /></a>
         </td>
-    </tr>
+      </tr>
     </tbody></table>
 </div>
 

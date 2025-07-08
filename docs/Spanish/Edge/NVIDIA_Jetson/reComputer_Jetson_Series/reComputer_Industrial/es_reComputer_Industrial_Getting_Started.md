@@ -38,18 +38,18 @@ La reComputer industrial tiene 2 puertos RJ45 GbE, uno de los cuales es un puert
 <table>
   <thead>
     <tr>
-      <th colSpan={2}>Nombre del producto</th>
+      <th colSpan="2">Nombre del producto</th>
       <th>reComputer Industrial J4012</th>
       <th>reComputer Industrial J4011</th>
-      <th> reComputer Industrial J3011 </th>
-      <th> reComputer Industrial J3010</th>
+      <th>reComputer Industrial J3011</th>
+      <th>reComputer Industrial J3010</th>
       <th>reComputer Industrial J2012</th>
       <th>reComputer Industrial J2011</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td colSpan={2}>Módulo NVIDIA Jetson</td>
+      <td colSpan="2">Módulo NVIDIA Jetson</td>
       <td>Orin NX 16GB</td>
       <td>Orin NX 8GB</td>
       <td>Orin Nano 8GB</td>
@@ -58,7 +58,7 @@ La reComputer industrial tiene 2 puertos RJ45 GbE, uno de los cuales es un puert
       <td>Xavier NX 8GB</td>
     </tr>
     <tr>
-      <td colSpan={2}>SKU</td>
+      <td colSpan="2">SKU</td>
       <td><a href="https://www.seeedstudio.com/reComputer-Industrial-J4012-p-5684.html">110110191</a></td>
       <td><a href="https://www.seeedstudio.com/reComputer-Industrial-J4011-p-5681.html">110110190</a></td>
       <td><a href="https://www.seeedstudio.com/reComputer-Industrial-J3011-p-5682.html">110110193</a></td>
@@ -67,25 +67,25 @@ La reComputer industrial tiene 2 puertos RJ45 GbE, uno de los cuales es un puert
       <td><a href="https://www.seeedstudio.com/reComputer-Industrial-J2011-p-5683.html">110110188</a></td>
     </tr>
     <tr>
-      <td rowSpan={6}>Sistema de procesamiento</td>
+      <td rowSpan="6">Sistema de procesamiento</td>
       <td>Rendimiento IA</td>
       <td>100 TOPS</td>
       <td>70 TOPS</td>
       <td>40 TOPS</td>
       <td>20 TOPS</td>
-      <td colSpan={2}>21 TOPS</td>
+      <td colSpan="2">21 TOPS</td>
     </tr>
     <tr>
       <td>GPU</td>
-      <td colSpan={3}>1024-core Arquitectura GPU NVIDIA Ampere con 32 núcleos Tensor</td>
+      <td colSpan="3">1024-core Arquitectura GPU NVIDIA Ampere con 32 núcleos Tensor</td>
       <td>512-core Arquitectra GPU NVIDIA Ampere con 16 núcleos Tensor</td>
-      <td colSpan={2}>384-core NVIDIA Volta™ GPU con 48 núcleos Tensor</td>
+      <td colSpan="2">384-core NVIDIA Volta™ GPU con 48 núcleos Tensor</td>
     </tr>
     <tr>
       <td>CPU</td>
       <td>8-core Arm® Cortex®-A78AE v8.2 64-bit CPU<br />2MB L2 + 4MB L3</td>
-      <td colSpan={3}>6-core Arm® Cortex®-A78AE v8.2 64-bit CPU<br />1.5MB L2 + 4MB L3</td>
-      <td colSpan={2}>6-core NVIDIA Carmel ARM®v8.2 64-bit CPU, 6MB L2 + 4MB L3</td>
+      <td colSpan="3">6-core Arm® Cortex®-A78AE v8.2 64-bit CPU<br />1.5MB L2 + 4MB L3</td>
+      <td colSpan="2">6-core NVIDIA Carmel ARM®v8.2 64-bit CPU, 6MB L2 + 4MB L3</td>
     </tr>
     <tr>
       <td>Memoria</td>
@@ -98,133 +98,133 @@ La reComputer industrial tiene 2 puertos RJ45 GbE, uno de los cuales es un puert
     </tr>
     <tr>
       <td>Encoder de video</td>
-      <td colSpan={2}>1×4K60 (H.265) | 3×4K30 (H.265) | 6×1080p60 (H.265) | 12×1080p30 (H.265)</td>
-      <td colSpan={2}>1080p30 supported by 1-2 CPU cores</td>
-      <td colSpan={2}>2×4K60 | 4×4K30 | 10×1080p60 | 22×1080p30 (H.265)<br /> 2×4K60 | 4×4K30 | 10×1080p60 | 20×108p30 (H.264)</td>
+      <td colSpan="2">1×4K60 (H.265) | 3×4K30 (H.265) | 6×1080p60 (H.265) | 12×1080p30 (H.265)</td>
+      <td colSpan="2">1080p30 supported by 1-2 CPU cores</td>
+      <td colSpan="2">2×4K60 | 4×4K30 | 10×1080p60 | 22×1080p30 (H.265)<br /> 2×4K60 | 4×4K30 | 10×1080p60 | 20×108p30 (H.264)</td>
     </tr>
     <tr>
       <td>Decodificador de video</td>
-      <td colSpan={2}>1×8K30 (H.265) | 2×4K60 (H.265) | 4×4K30 (H.265) | 9×1080p60 (H.265) | 18×1080p30 (H.265)</td>
-      <td colSpan={2}>1×4K60 (H.265) | 2×4K30 (H.265) | 5×1080p60 (H.265) | 11×1080p30 (H.265)</td>
-      <td colSpan={2}>2×8K30 | 6×4K60 | 12×4K30 | 22×1080p60 | 44×1080p30 (H.265)<br /> 2×4K60 | 6×4K30 | 10×1080p60 | 22×1080p30 (H.264)</td>
+      <td colSpan="2">1×8K30 (H.265) | 2×4K60 (H.265) | 4×4K30 (H.265) | 9×1080p60 (H.265) | 18×1080p30 (H.265)</td>
+      <td colSpan="2">1×4K60 (H.265) | 2×4K30 (H.265) | 5×1080p60 (H.265) | 11×1080p30 (H.265)</td>
+      <td colSpan="2">2×8K30 | 6×4K60 | 12×4K30 | 22×1080p60 | 44×1080p30 (H.265)<br /> 2×4K60 | 6×4K30 | 10×1080p60 | 22×1080p30 (H.264)</td>
     </tr>
     <tr>
-      <td rowSpan={2}>Almacenamiento</td>
+      <td rowSpan="2">Almacenamiento</td>
       <td>eMMC<br /></td>
       <td><br />-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td colSpan={2}>16GB eMMC 5.1</td>
+      <td colSpan="2">16GB eMMC 5.1</td>
     </tr>
     <tr>
       <td>Expansión</td>
-      <td colSpan={6}>M.2 Key M PCIe Gen4.0 SSD (M.2 NVMe 2280 SSD 128G incluido)</td>
+      <td colSpan="6">M.2 Key M PCIe Gen4.0 SSD (M.2 NVMe 2280 SSD 128G incluido)</td>
     </tr>
     <tr>
-      <td rowSpan={6}>I/O</td>
+      <td rowSpan="6">I/O</td>
       <td>Redes</td>
-      <td colSpan={6}>1× LAN1 RJ45 GbE PoE(PSE 802.3 af 15 W)<br />1× LAN2 RJ45 GbE (10/100/1000Mbps) </td>
+      <td colSpan="6">1× LAN1 RJ45 GbE PoE(PSE 802.3 af 15 W)<br />1× LAN2 RJ45 GbE (10/100/1000Mbps) </td>
     </tr>
     <tr>
       <td>USB</td>
-      <td colSpan={6}>3× USB3.2 Gen1, 1× USB2.0 Tipo-C(Modo dispositivo), 1× USB2.0 Tipo-C depuración UART &amp; RP2040</td>
+      <td colSpan="6">3× USB3.2 Gen1, 1× USB2.0 Tipo-C(Modo dispositivo), 1× USB2.0 Tipo-C depuración UART &amp; RP2040</td>
     </tr>
     <tr>
       <td>DI/DO</td>
-      <td colSpan={6}>4×DI,4×DO,3×GND_DI,2×GND_DO,1×GND_ISO,1×CAN<br /></td>
+      <td colSpan="6">4×DI,4×DO,3×GND_DI,2×GND_DO,1×GND_ISO,1×CAN<br /></td>
     </tr>
     <tr>
       <td>COM</td>
-      <td colSpan={6}>1× DB9 (RS232/RS422/RS485)</td>
+      <td colSpan="6">1× DB9 (RS232/RS422/RS485)</td>
     </tr>
     <tr>
       <td>Pantalla</td>
-      <td colSpan={6}>1×HDMI 2.0 Tipo-A</td>
+      <td colSpan="6">1×HDMI 2.0 Tipo-A</td>
     </tr>
     <tr>
       <td>SIM</td>
-      <td colSpan={6}>1× slot para tarjeta Nano SIM</td>
+      <td colSpan="6">1× slot para tarjeta Nano SIM</td>
     </tr>
     <tr>
-      <td rowSpan={7}>Expansión</td>
+      <td rowSpan="7">Expansión</td>
       <td>Mini PCIe</td>
-      <td colSpan={6}>Mini PCIe for 4G/LoRaWAN®&nbsp;&nbsp;(Módulo opcional) <br /></td>
+      <td colSpan="6">Mini PCIe for 4G/LoRaWAN®&nbsp;&nbsp;(Módulo opcional) <br /></td>
     </tr>
     <tr>
       <td>Wi-Fi</td>
-      <td colSpan={6}>Soporte SMD Wi-Fi/Bluetooth (Módulo opcional) </td>
+      <td colSpan="6">Soporte SMD Wi-Fi/Bluetooth (Módulo opcional) </td>
     </tr>
     <tr>
       <td>M.2 Key B </td>
-      <td colSpan={6}>M.2 Key B soporte 4G/5G (Módulo opcional) </td>
+      <td colSpan="6">M.2 Key B soporte 4G/5G (Módulo opcional) </td>
     </tr>
     <tr>
       <td>Ventilador</td>
-      <td colSpan={6}>Sin ventilador, disipador pasivo<br />1×Conector para ventilador(5V PWM)</td>
+      <td colSpan="6">Sin ventilador, disipador pasivo<br />1×Conector para ventilador(5V PWM)</td>
     </tr>
     <tr>
       <td>TPM</td>
-      <td colSpan={6}>1× Conector TPM 2.0 (Módulo opcional) </td>
+      <td colSpan="6">1× Conector TPM 2.0 (Módulo opcional) </td>
     </tr>
     <tr>
       <td>RTC</td>
-      <td colSpan={6}>1× RTC socket (CR1220 incluido), 1× RTC 2-pin</td>
+      <td colSpan="6">1× RTC socket (CR1220 incluido), 1× RTC 2-pin</td>
     </tr>
     <tr>
       <td>Cámara</td>
-      <td colSpan={6}>2× CSI (2-lane 15pin)</td>
+      <td colSpan="6">2× CSI (2-lane 15pin)</td>
     </tr>
     <tr>
-      <td rowSpan={2}>Alimentación</td>
+      <td rowSpan="2">Alimentación</td>
       <td>Fuente de alimentación</td>
-      <td colSpan={6}>Bloque DC 12V-24V con 2 pines</td>
+      <td colSpan="6">Bloque DC 12V-24V con 2 pines</td>
     </tr>
     <tr>
       <td>Adaptador de alimentación</td>
-      <td colSpan={6}>Adaptador de alimentación de 19V (sin cable de alimentación) </td>
+      <td colSpan="6">Adaptador de alimentación de 19V (sin cable de alimentación) </td>
     </tr>
     <tr>
-      <td rowSpan={3}>Mecánica<br /></td>
+      <td rowSpan="3">Mecánica<br /></td>
       <td>Dimensiones (W x D x H)</td>
-      <td colSpan={6}>159mm×155mm×57mm</td>
+      <td colSpan="6">159mm×155mm×57mm</td>
     </tr>
     <tr>
       <td>Peso</td>
-      <td colSpan={6}>1.57kg</td>
+      <td colSpan="6">1.57kg</td>
     </tr>
     <tr>
       <td>Instalación</td>
-      <td colSpan={6}>Escritorio, riel DIN, muro, VESA</td>
+      <td colSpan="6">Escritorio, riel DIN, muro, VESA</td>
     </tr>
     <tr>
-      <td rowSpan={4}>Entorno</td>
+      <td rowSpan="4">Entorno</td>
       <td>Temperatura de operación</td>
-      <td colSpan={6}> -20 ~ 60°C con 0.7m/s</td>
+      <td colSpan="6"> -20 ~ 60°C con 0.7m/s</td>
     </tr>
     <tr>
       <td>Humedad de operación</td>
-      <td colSpan={6}>95% @ 40 °C (sin condensación)</td>
+      <td colSpan="6">95% @ 40 °C (sin condensación)</td>
     </tr>
     <tr>
       <td>Vibración</td>
-      <td colSpan={6}>3 Grms @ 5 ~ 500 Hz, random, 1 hr/axis</td>
+      <td colSpan="6">3 Grms @ 5 ~ 500 Hz, random, 1 hr/axis</td>
     </tr>
     <tr>
       <td>Shock</td>
-      <td colSpan={6}> 50G Aceleración máxima (11 msec)</td>
+      <td colSpan="6"> 50G Aceleración máxima (11 msec)</td>
     </tr>
     <tr>
-      <td colSpan={2}>OS</td>
-      <td colSpan={6}>Jetpack 5.1 (o superior) pre-instalado</td>
+      <td colSpan="2">OS</td>
+      <td colSpan="6">Jetpack 5.1 (o superior) pre-instalado</td>
     </tr>
     <tr>
-      <td colSpan={2}>Certificaciones</td>
-      <td colSpan={6}>FCC, CE, RoHS, UKCA</td>
+      <td colSpan="2">Certificaciones</td>
+      <td colSpan="6">FCC, CE, RoHS, UKCA</td>
     </tr>
     <tr>
-      <td colSpan={2}>Garantía</td>
-      <td colSpan={6}>2 años</td>
+      <td colSpan="2">Garantía</td>
+      <td colSpan="6">2 años</td>
     </tr>
   </tbody>
 </table>
@@ -334,56 +334,57 @@ La descarga del primer método es de aproximadamente 14 GB y la descarga del seg
 <TabItem value="Method 1" label="Method 1">
 
 - **Paso 1:** Descarga la imagen del sistema a tu PC con Ubuntu correspondiente a la placa que estás utilizando
-  <div class="table-center">
-    <table style={{textAlign: 'center'}}>
-      <thead>
-        <tr>
-          <th>Dispositivo</th>
-          <th>Link de imágen 1</th>
-          <th>Link de imágen 2</th>
-          <th>SHA256</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>reComputer industrial J4012</td>
-          <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUhr3fzFqx9DmH83QrXmFAwBEpfC-VGsyBnqHSoOPPAzGQ?e=Wv7d8f" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EcXVegQs83tJpv3kmJPMmSEB8M9djK_gWgJapIJnOJQeUw?e=ntbXLi" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td>F6623A277E538F309999107297405E1<br />378CF3791EA9FD19F91D263E3B4C88333</td>
-        </tr>
-        <tr>
-          <td>reComputer industrial J4011</td>
-          <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbaTHCLEwfNOqAR1DH-IAWYB20HBEPG2G-IkPJ1dJJcWJw?e=2VYQXJ" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EStCSSWeyUtLkJXMj5Y6tXcBru2PIQNHLl6p2BZsRbzxjA?e=Gaaa6m" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td>414DFE16703D0A2EE972DF1C77FCE2E<br />8B44BC71726BB6EE4B1439C2D0F19A653</td>
-        </tr>
-        <tr>
-          <td>reComputer industrial J3011</td>
-          <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbQu844dGA5Fjn3n-320hmoBt6wngMrIv6fErKLEZI1GyQ?e=uSU6qb" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ERgyc60CqY9Aog6BMW9-yqQBj8pMaakSFTzHHvb4edt_eg?e=9qFHKp" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td>347AB7247ED83286BDFAEF84B49B84C<br />5F5B871AEE68192339EDE4773149D8737</td>
-        </tr>
-        <tr>
-          <td>reComputer industrial J3010</td>
-          <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ETnL5lrC6IBPqm6Lafx1nCMBJJjml1IrCagrHPGhxFpzxA?e=BBM0kl" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb7J_TSNsDBCrvc1RbSOmnoBqmjR9jYhkvZpdQJOzkH5KA?e=h4r74v" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td>860EC8EB3245CB91E7C5C321B26333B<br />59456A3418731FEF73AE0188DF655EE46</td>
-        </tr>
-        <tr>
-          <td>reComputer industrial J2012</td>
-          <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EeD01G8dJ8pIm187oS_VX-sBu3SmD4LhaBmwVz7X4-n_Gw?e=x9ULSq" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Ef_fEAq0aA5JksfnEz62JKABfYTUzlTdOxkiKwoThp17xg?e=UlSs7A" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td>821CF92AF1FE8A785689FAF4751615A<br />A30E7F0770B4FA23327DFAF2C8B53FDD7</td>
-        </tr>
-        <tr>
-          <td>reComputer industrial J2011</td>
-          <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EVYQRYavCVRJrHGz12qUPlIBdmK3hrjEyglRkuLhBSlYuA?e=SBnrTU" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EVVUAexfVKxDnjbUGtYrJhEB1He6ZXIAD4uriNP76fxbMg?e=kGYF6h" target="_blank" rel="noopener noreferrer">Descargar</a></td>
-          <td>DAB8FC069E4C62434C77AE3A6BA13EE<br />FB30003C9A14BFE82DE879B88ACDD85FA</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+
+<div class="table-center">
+  <table style={{textAlign: 'center'}}>
+    <thead>
+      <tr>
+        <th>Dispositivo</th>
+        <th>Link de imágen 1</th>
+        <th>Link de imágen 2</th>
+        <th>SHA256</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>reComputer industrial J4012</td>
+        <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUhr3fzFqx9DmH83QrXmFAwBEpfC-VGsyBnqHSoOPPAzGQ?e=Wv7d8f" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EcXVegQs83tJpv3kmJPMmSEB8M9djK_gWgJapIJnOJQeUw?e=ntbXLi" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td>F6623A277E538F309999107297405E1<br />378CF3791EA9FD19F91D263E3B4C88333</td>
+      </tr>
+      <tr>
+        <td>reComputer industrial J4011</td>
+        <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbaTHCLEwfNOqAR1DH-IAWYB20HBEPG2G-IkPJ1dJJcWJw?e=2VYQXJ" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EStCSSWeyUtLkJXMj5Y6tXcBru2PIQNHLl6p2BZsRbzxjA?e=Gaaa6m" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td>414DFE16703D0A2EE972DF1C77FCE2E<br />8B44BC71726BB6EE4B1439C2D0F19A653</td>
+      </tr>
+      <tr>
+        <td>reComputer industrial J3011</td>
+        <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbQu844dGA5Fjn3n-320hmoBt6wngMrIv6fErKLEZI1GyQ?e=uSU6qb" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ERgyc60CqY9Aog6BMW9-yqQBj8pMaakSFTzHHvb4edt_eg?e=9qFHKp" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td>347AB7247ED83286BDFAEF84B49B84C<br />5F5B871AEE68192339EDE4773149D8737</td>
+      </tr>
+      <tr>
+        <td>reComputer industrial J3010</td>
+        <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ETnL5lrC6IBPqm6Lafx1nCMBJJjml1IrCagrHPGhxFpzxA?e=BBM0kl" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb7J_TSNsDBCrvc1RbSOmnoBqmjR9jYhkvZpdQJOzkH5KA?e=h4r74v" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td>860EC8EB3245CB91E7C5C321B26333B<br />59456A3418731FEF73AE0188DF655EE46</td>
+      </tr>
+      <tr>
+        <td>reComputer industrial J2012</td>
+        <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EeD01G8dJ8pIm187oS_VX-sBu3SmD4LhaBmwVz7X4-n_Gw?e=x9ULSq" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Ef_fEAq0aA5JksfnEz62JKABfYTUzlTdOxkiKwoThp17xg?e=UlSs7A" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td>821CF92AF1FE8A785689FAF4751615A<br />A30E7F0770B4FA23327DFAF2C8B53FDD7</td>
+      </tr>
+      <tr>
+        <td>reComputer industrial J2011</td>
+        <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EVYQRYavCVRJrHGz12qUPlIBdmK3hrjEyglRkuLhBSlYuA?e=SBnrTU" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EVVUAexfVKxDnjbUGtYrJhEB1He6ZXIAD4uriNP76fxbMg?e=kGYF6h" target="_blank" rel="noopener noreferrer">Descargar</a></td>
+        <td>DAB8FC069E4C62434C77AE3A6BA13EE<br />FB30003C9A14BFE82DE879B88ACDD85FA</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>
   * Los archivos de imagen de Descarga1 y Descarga2 son los mismos. Puedes elegir el enlace con la velocidad de descarga más rápida.
@@ -455,10 +456,10 @@ sudo ./tools/l4t_flash_prerequisites.sh
   </thead>
   <tbody>
     <tr>
-      <td rowSpan={2}>Jetson Orin NX 8GB/ 16GB,<br />Orin Nano 8GB</td>
-      <td rowSpan={2}><a href="https://sourceforge.net/projects/nvidia-jetson/files/reComputer-Industrial/orin-nx-8-16-nano-8-recomputer-industrial.zip/download" target="_blank" rel="noopener noreferrer">Descarga</a></td>
-      <td rowSpan={4}>5.1.1</td>
-      <td rowSpan={4}>35.3.1</td>
+      <td rowSpan="2">Jetson Orin NX 8GB/ 16GB,<br />Orin Nano 8GB</td>
+      <td rowSpan="2"><a href="https://sourceforge.net/projects/nvidia-jetson/files/reComputer-Industrial/orin-nx-8-16-nano-8-recomputer-industrial.zip/download" target="_blank" rel="noopener noreferrer">Descarga</a></td>
+      <td rowSpan="4">5.1.1</td>
+      <td rowSpan="4">35.3.1</td>
     </tr>
     <tr>
     </tr>

@@ -1,5 +1,5 @@
 {
-  "currentIndex": 1325,
+  "currentIndex": 1678,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -6558,8 +6558,1773 @@
       "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Robotics\\Software\\es_A_Loam.md",
       "completedAt": "2025-07-07T10:02:12.347Z",
       "index": 1324
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Robotics\\Projects\\es_Lerobot_SO100Arm.md",
+      "completedAt": "2025-07-08T01:15:58.685Z",
+      "index": 1325
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Robotics\\Projects\\es_Lerobot_SO100Arm_Isaacsim.md",
+      "completedAt": "2025-07-08T01:16:15.722Z",
+      "index": 1326
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Robotics\\Hardware\\es_Robosense_Lidar.md",
+      "completedAt": "2025-07-08T01:16:27.148Z",
+      "index": 1327
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Robotics\\Hardware\\es_Orbbec_Depth_Camera.md",
+      "completedAt": "2025-07-08T01:16:35.495Z",
+      "index": 1328
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Robotics\\Hardware\\es_MID360.md",
+      "completedAt": "2025-07-08T01:20:35.948Z",
+      "index": 1329
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Robotics\\Hardware\\es_CSI_Camera.md",
+      "completedAt": "2025-07-08T01:22:21.952Z",
+      "index": 1330
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Multimodal_AI\\es_Speech_vlm.md",
+      "completedAt": "2025-07-08T01:22:34.670Z",
+      "index": 1331
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\es_Update-Jetson-Linux-OTA-Using-Allxon.md",
+      "completedAt": "2025-07-08T01:22:46.740Z",
+      "index": 1332
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\es_Scailable-Jetson-Getting-Started.md",
+      "completedAt": "2025-07-08T01:22:59.596Z",
+      "index": 1333
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\es_neqto_engine_for_linux_recomputer.md",
+      "completedAt": "2025-07-08T01:23:13.010Z",
+      "index": 1334
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Managed_Services\\es_Allxon-Jetson-Getting-Started.md",
+      "completedAt": "2025-07-08T01:25:01.982Z",
+      "index": 1335
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_Whisper_on_Jetson_for_Real_Time_Speech_to_Text.md",
+      "completedAt": "2025-07-08T01:25:14.503Z",
+      "index": 1336
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_Real_Time_Subtitle_Recoder_on_Jetson.md",
+      "completedAt": "2025-07-08T01:25:27.370Z",
+      "index": 1337
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_Quantized_Llama2_7B_with_MLC_LLM_on_Jetson.md",
+      "completedAt": "2025-07-08T01:25:42.410Z",
+      "index": 1338
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_Local_RAG_based_on_Jetson_with_LlamaIndex.md",
+      "completedAt": "2025-07-08T01:25:54.837Z",
+      "index": 1339
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_How_to_run_zero_shot_detection_on_reComputer.md",
+      "completedAt": "2025-07-08T01:29:18.648Z",
+      "index": 1340
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_How_to_run_VLM_on_reComputer.md",
+      "completedAt": "2025-07-08T01:29:31.992Z",
+      "index": 1341
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_How_to_run_local_llm_text_to_image_on_reComputer.md",
+      "completedAt": "2025-07-08T01:29:44.613Z",
+      "index": 1342
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson.md",
+      "completedAt": "2025-07-08T01:29:58.749Z",
+      "index": 1343
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_Generative_AI_Intro.md",
+      "completedAt": "2025-07-08T01:30:12.355Z",
+      "index": 1344
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_Finetune_LLM_by_Llama_Factory_on_Jetson.md",
+      "completedAt": "2025-07-08T01:34:36.085Z",
+      "index": 1345
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_Deploy_Riva_and_Llama2_on_reComputer.md",
+      "completedAt": "2025-07-08T01:34:50.153Z",
+      "index": 1346
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Generative_AI\\es_Deploy_Ollama_and_AnythingLLM_on_Jetson.md",
+      "completedAt": "2025-07-08T01:35:04.484Z",
+      "index": 1347
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_vnc_for_reComputer.md",
+      "completedAt": "2025-07-08T01:35:17.701Z",
+      "index": 1348
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_Roboflow-Jetson-Getting-Started.md",
+      "completedAt": "2025-07-08T01:35:31.234Z",
+      "index": 1349
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_reComputer_Jetson_Series_Resource.md",
+      "completedAt": "2025-07-08T01:37:44.759Z",
+      "index": 1350
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_NVStreamer_Getting_Started.md",
+      "completedAt": "2025-07-08T01:38:03.922Z",
+      "index": 1351
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_No-code-Edge-AI-Tool.md",
+      "completedAt": "2025-07-08T01:38:22.543Z",
+      "index": 1352
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_Lumeo-Jetson-Getting-Started.md",
+      "completedAt": "2025-07-08T01:44:47.269Z",
+      "index": 1353
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_jetson-docker-getting-started.md",
+      "completedAt": "2025-07-08T01:45:08.740Z",
+      "index": 1354
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_Jetson-AI-developer-tools.md",
+      "completedAt": "2025-07-08T01:46:53.097Z",
+      "index": 1355
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_HardHat.md",
+      "completedAt": "2025-07-08T01:48:31.077Z",
+      "index": 1356
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_Gapi-Jetson-Getting-Started.md",
+      "completedAt": "2025-07-08T01:48:45.970Z",
+      "index": 1357
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_DeciAI-Getting-Started.md",
+      "completedAt": "2025-07-08T01:55:07.193Z",
+      "index": 1358
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_CVEDIA-Jetson-Getting-Started.md",
+      "completedAt": "2025-07-08T01:55:38.331Z",
+      "index": 1359
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_Cochl.Sense-Jetson-Getting-Started.md",
+      "completedAt": "2025-07-08T01:56:00.049Z",
+      "index": 1360
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Developer_Tools\\es_alwaysAI-Jetson-Getting-Started.md",
+      "completedAt": "2025-07-08T01:56:20.715Z",
+      "index": 1361
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_YOLOv8-TRT-Jetson.md",
+      "completedAt": "2025-07-08T01:56:37.790Z",
+      "index": 1362
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_YOLOv8-DeepStream-TRT-Jetson.md",
+      "completedAt": "2025-07-08T02:03:40.790Z",
+      "index": 1363
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_YOLOv8_custom_classification_model.md",
+      "completedAt": "2025-07-08T02:04:31.060Z",
+      "index": 1364
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_YOLOv5-Object-Detection-Jetson.md",
+      "completedAt": "2025-07-08T02:05:32.109Z",
+      "index": 1365
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_Traffic-Management-DeepStream-SDK.md",
+      "completedAt": "2025-07-08T02:05:43.177Z",
+      "index": 1366
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_Security_Scan.md",
+      "completedAt": "2025-07-08T02:14:18.960Z",
+      "index": 1367
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_reComputer_Jetson_Series_Tutorials_Exercise.md",
+      "completedAt": "2025-07-08T02:15:11.705Z",
+      "index": 1368
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_reComputer_Jetson_Series_Projects.md",
+      "completedAt": "2025-07-08T02:15:29.750Z",
+      "index": 1369
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_Jetson-Nano-MaskCam.md",
+      "completedAt": "2025-07-08T02:15:38.044Z",
+      "index": 1370
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_How_to_Train_and_Deploy_YOLOv8_on_reComputer.md",
+      "completedAt": "2025-07-08T02:16:14.776Z",
+      "index": 1371
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_deploy_frigate_on_jetson.md",
+      "completedAt": "2025-07-08T02:22:10.055Z",
+      "index": 1372
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_DashCamNet-with-Jetson-Xavier-NX-Multicamera.md",
+      "completedAt": "2025-07-08T02:22:29.433Z",
+      "index": 1373
+    },
+    {
+      "file": "Spanish\\Edge\\NVIDIA_Jetson\\Application\\Computer_Vision\\es_AI-NVR_with_Jetson.md",
+      "completedAt": "2025-07-08T02:22:48.071Z",
+      "index": 1374
+    },
+    {
+      "file": "Solutions.md",
+      "completedAt": "2025-07-08T02:22:59.531Z",
+      "index": 1375
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Wio-Terminal-Getting-Started.md",
+      "completedAt": "2025-07-08T02:23:16.963Z",
+      "index": 1376
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Wio-Terminal-CircuitPython.md",
+      "completedAt": "2025-07-08T02:28:45.831Z",
+      "index": 1377
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Wio_Terminal_Intro.md",
+      "completedAt": "2025-07-08T02:28:58.181Z",
+      "index": 1378
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\wio_terminal_faq.md",
+      "completedAt": "2025-07-08T02:30:15.479Z",
+      "index": 1379
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-Thermal-Camera.md",
+      "completedAt": "2025-07-08T02:30:27.105Z",
+      "index": 1380
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-Storting-Analog-Data.md",
+      "completedAt": "2025-07-08T02:30:46.178Z",
+      "index": 1381
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-Sound-Meter.md",
+      "completedAt": "2025-07-08T02:37:08.477Z",
+      "index": 1382
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-Reading-Github.md",
+      "completedAt": "2025-07-08T02:37:19.792Z",
+      "index": 1383
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-Reading-COVID19.md",
+      "completedAt": "2025-07-08T02:37:32.466Z",
+      "index": 1384
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-Interactive-Face.md",
+      "completedAt": "2025-07-08T02:37:44.737Z",
+      "index": 1385
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-HMI.md",
+      "completedAt": "2025-07-08T02:37:57.008Z",
+      "index": 1386
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-Firmware.md",
+      "completedAt": "2025-07-08T02:39:29.099Z",
+      "index": 1387
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-Displaying-Photos.md",
+      "completedAt": "2025-07-08T02:39:39.671Z",
+      "index": 1388
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-Displaying-Gyro.md",
+      "completedAt": "2025-07-08T02:39:52.555Z",
+      "index": 1389
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio-Terminal-8720-dev.md",
+      "completedAt": "2025-07-08T02:40:06.104Z",
+      "index": 1390
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Host\\Wio-Terminal-USBH-Xbox.md",
+      "completedAt": "2025-07-08T02:40:19.711Z",
+      "index": 1391
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Host\\Wio-Terminal-USBH-Overview.md",
+      "completedAt": "2025-07-08T02:44:56.734Z",
+      "index": 1392
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Host\\Wio-Terminal-USBH-Mouse.md",
+      "completedAt": "2025-07-08T02:45:13.134Z",
+      "index": 1393
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Host\\Wio-Terminal-USBH-Keyboard.md",
+      "completedAt": "2025-07-08T02:45:24.600Z",
+      "index": 1394
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Client\\Wio-Terminal-USBCLIENT-Overview.md",
+      "completedAt": "2025-07-08T02:45:35.611Z",
+      "index": 1395
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Client\\Wio-Terminal-USBCLIENT-Mouse.md",
+      "completedAt": "2025-07-08T02:45:47.377Z",
+      "index": 1396
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Client\\Wio-Terminal-USBCLIENT-MIDI.md",
+      "completedAt": "2025-07-08T02:47:48.504Z",
+      "index": 1397
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Client\\Wio-Terminal-USBCLIENT-Keyboard.md",
+      "completedAt": "2025-07-08T02:48:08.203Z",
+      "index": 1398
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Client\\Wio-Terminal-Reading-Raspberry-Pi.md",
+      "completedAt": "2025-07-08T02:48:20.553Z",
+      "index": 1399
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Client\\Wio-Terminal-HMI-Usermode-SDK.md",
+      "completedAt": "2025-07-08T02:48:33.667Z",
+      "index": 1400
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Wio_Terminal_USB_Client\\Wio-Terminal-DAPLink.md",
+      "completedAt": "2025-07-08T02:50:59.897Z",
+      "index": 1401
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Getting_started_wizard.md",
+      "completedAt": "2025-07-08T02:51:30.935Z",
+      "index": 1402
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Edge-Impulse-Tuner.md",
+      "completedAt": "2025-07-08T02:51:48.136Z",
+      "index": 1403
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Blynk_for_Wio_Terminal\\Wio-Terminal-Blynk.md",
+      "completedAt": "2025-07-08T02:51:59.381Z",
+      "index": 1404
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Blynk_for_Wio_Terminal\\Blynk-wireless-OTA-functionality-to-Wio-Terminal.md",
+      "completedAt": "2025-07-08T02:52:10.591Z",
+      "index": 1405
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Barometric-Pressure-sensor-using-the-Wio-terminal.md",
+      "completedAt": "2025-07-08T02:56:39.887Z",
+      "index": 1406
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Tutorial\\Azure_IoT_CC.md",
+      "completedAt": "2025-07-08T02:56:54.842Z",
+      "index": 1407
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Software-FreeRTOS.md",
+      "completedAt": "2025-07-08T02:57:07.610Z",
+      "index": 1408
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Kit_with_Courses\\Wio-Terminal-TinyML.md",
+      "completedAt": "2025-07-08T02:57:18.853Z",
+      "index": 1409
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Kit_with_Courses\\Wio-Terminal-TinyML-Kit-Course.md",
+      "completedAt": "2025-07-08T02:57:29.707Z",
+      "index": 1410
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Kit_with_Courses\\Introduction_to_Artificial_Intelligence_for_Makers.md",
+      "completedAt": "2025-07-08T03:00:26.841Z",
+      "index": 1411
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Wi-Fi\\Wio-Terminal-Wi-Fi.md",
+      "completedAt": "2025-07-08T03:00:46.930Z",
+      "index": 1412
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Wi-Fi\\Wio-Terminal-Network-Overview.md",
+      "completedAt": "2025-07-08T03:01:05.169Z",
+      "index": 1413
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Wi-Fi\\Wio-Terminal-Advanced-Wi-Fi.md",
+      "completedAt": "2025-07-08T03:01:23.057Z",
+      "index": 1414
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\SD_Card\\Wio-Terminal-FS-ReadWrite.md",
+      "completedAt": "2025-07-08T03:05:44.894Z",
+      "index": 1415
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\SD_Card\\Wio-Terminal-FS-Overview.md",
+      "completedAt": "2025-07-08T03:07:01.504Z",
+      "index": 1416
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\RTC\\Wio-Terminal-RTC.md",
+      "completedAt": "2025-07-08T03:07:18.207Z",
+      "index": 1417
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Microphone\\Wio-Terminal-Mic.md",
+      "completedAt": "2025-07-08T03:07:32.024Z",
+      "index": 1418
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Light_Sensor\\Wio-Terminal-Light.md",
+      "completedAt": "2025-07-08T03:07:44.847Z",
+      "index": 1419
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\LCD_Usage\\Wio-Terminal-LVGL.md",
+      "completedAt": "2025-07-08T03:07:57.836Z",
+      "index": 1420
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\LCD_Usage\\Wio-Terminal-LCD-Overview.md",
+      "completedAt": "2025-07-08T03:09:45.301Z",
+      "index": 1421
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\LCD_Usage\\Wio-Terminal-LCD-Loading-Image.md",
+      "completedAt": "2025-07-08T03:09:57.702Z",
+      "index": 1422
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\LCD_Usage\\Wio-Terminal-LCD-Linecharts.md",
+      "completedAt": "2025-07-08T03:10:11.880Z",
+      "index": 1423
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\LCD_Usage\\Wio-Terminal-LCD-Histogram.md",
+      "completedAt": "2025-07-08T03:10:24.278Z",
+      "index": 1424
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\LCD_Usage\\Wio-Terminal-LCD-Graphics.md",
+      "completedAt": "2025-07-08T03:10:36.090Z",
+      "index": 1425
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\LCD_Usage\\Wio-Terminal-LCD-Fonts.md",
+      "completedAt": "2025-07-08T03:14:45.708Z",
+      "index": 1426
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\LCD_Usage\\Wio-Terminal-LCD-Basic.md",
+      "completedAt": "2025-07-08T03:15:03.534Z",
+      "index": 1427
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\LCD_Usage\\Wio-Terminal-LCD-APIs.md",
+      "completedAt": "2025-07-08T03:15:13.961Z",
+      "index": 1428
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\LCD_Usage\\Wio-Terminal-LCD-Anti-aliased-Fonts.md",
+      "completedAt": "2025-07-08T03:15:28.147Z",
+      "index": 1429
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Input&Output\\Wio-Terminal-IO-SPI.md",
+      "completedAt": "2025-07-08T03:15:39.315Z",
+      "index": 1430
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Input&Output\\Wio-Terminal-IO-Overview.md",
+      "completedAt": "2025-07-08T03:15:52.253Z",
+      "index": 1431
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Input&Output\\Wio-Terminal-IO-I2C.md",
+      "completedAt": "2025-07-08T03:17:38.121Z",
+      "index": 1432
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Input&Output\\Wio-Terminal-IO-Digital.md",
+      "completedAt": "2025-07-08T03:17:49.413Z",
+      "index": 1433
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Input&Output\\Wio-Terminal-IO-Analog.md",
+      "completedAt": "2025-07-08T03:18:00.359Z",
+      "index": 1434
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Input&Output\\Wio-Terminal-Grove.md",
+      "completedAt": "2025-07-08T03:18:12.090Z",
+      "index": 1435
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Infrared_Emitter\\Wio-Terminal-Infrared-Emitter.md",
+      "completedAt": "2025-07-08T03:24:34.504Z",
+      "index": 1436
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\IMU\\Wio-Terminal-IMU-Tapping.md",
+      "completedAt": "2025-07-08T03:26:38.553Z",
+      "index": 1437
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\IMU\\Wio-Terminal-IMU-Overview.md",
+      "completedAt": "2025-07-08T03:26:57.928Z",
+      "index": 1438
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\IMU\\Wio-Terminal-IMU-Basic.md",
+      "completedAt": "2025-07-08T03:27:16.494Z",
+      "index": 1439
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\five_Way_Switch\\Wio-Terminal-Switch.md",
+      "completedAt": "2025-07-08T03:27:32.363Z",
+      "index": 1440
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Buzzer\\Wio-Terminal-Buzzer.md",
+      "completedAt": "2025-07-08T03:30:48.652Z",
+      "index": 1441
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Buttons\\Wio-Terminal-Buttons.md",
+      "completedAt": "2025-07-08T03:30:59.653Z",
+      "index": 1442
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Bluetooth\\Wio-Terminal-Web-Bluetooth.md",
+      "completedAt": "2025-07-08T03:31:08.782Z",
+      "index": 1443
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Bluetooth\\Wio-Terminal-Bluetooth-Overview.md",
+      "completedAt": "2025-07-08T03:31:17.708Z",
+      "index": 1444
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Bluetooth\\Wio-terminal-BLE-introduction.md",
+      "completedAt": "2025-07-08T03:32:00.294Z",
+      "index": 1445
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Hardware_Overview\\Bluetooth\\BLE-ibeacon-using-Wio-terminal.md",
+      "completedAt": "2025-07-08T03:32:40.710Z",
+      "index": 1446
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Extension_Board\\Wio-Terminal-Ethernet.md",
+      "completedAt": "2025-07-08T03:32:50.425Z",
+      "index": 1447
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Extension_Board\\Wio-Terminal-Chassis-Battery_650mAh.md",
+      "completedAt": "2025-07-08T03:33:00.980Z",
+      "index": 1448
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Extension_Board\\Wio-Terminal-Battery-Chassis.md",
+      "completedAt": "2025-07-08T03:33:09.121Z",
+      "index": 1449
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Extension_Board\\Wio_Terminal_LoRaWan_Chassis_with_Antenna-built-in_LoRa-E5_and_GNSS_EU868_US915.md",
+      "completedAt": "2025-07-08T03:33:19.521Z",
+      "index": 1450
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Extension_Board\\Audio_Extension_Board\\Wio-Terminal-Audio-Play-Record.md",
+      "completedAt": "2025-07-08T03:36:12.841Z",
+      "index": 1451
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Extension_Board\\Audio_Extension_Board\\Wio-Terminal-Audio-Overview.md",
+      "completedAt": "2025-07-08T03:36:24.374Z",
+      "index": 1452
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Extension_Board\\Audio_Extension_Board\\Wio-Terminal-Audio-GUI.md",
+      "completedAt": "2025-07-08T03:36:36.475Z",
+      "index": 1453
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\ArduPy\\ArduPy.md",
+      "completedAt": "2025-07-08T03:36:55.443Z",
+      "index": 1454
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\ArduPy\\ArduPy-Libraries.md",
+      "completedAt": "2025-07-08T03:37:10.633Z",
+      "index": 1455
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\ArduPy\\ArduPy-LCD.md",
+      "completedAt": "2025-07-08T03:37:59.123Z",
+      "index": 1456
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\Projects_based_TensorFlow_Lite\\Wio-Terminal-TinyML-TFLM-3.md",
+      "completedAt": "2025-07-08T03:38:28.483Z",
+      "index": 1457
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\Projects_based_TensorFlow_Lite\\Wio-Terminal-TinyML-TFLM-2.md",
+      "completedAt": "2025-07-08T03:39:07.660Z",
+      "index": 1458
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\Projects_based_TensorFlow_Lite\\Wio-Terminal-TinyML-TFLM-1.md",
+      "completedAt": "2025-07-08T03:39:23.322Z",
+      "index": 1459
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\Projects_based_TensorFlow_Lite\\Wio-Terminal-Gesture-Recognition.md",
+      "completedAt": "2025-07-08T03:39:46.619Z",
+      "index": 1460
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\Projects_based_Edge_Impulse\\Wio-Terminal-TinyML-EI-6.md",
+      "completedAt": "2025-07-08T03:40:47.764Z",
+      "index": 1461
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\Projects_based_Edge_Impulse\\Wio-Terminal-TinyML-EI-5.md",
+      "completedAt": "2025-07-08T03:40:57.275Z",
+      "index": 1462
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\Projects_based_Edge_Impulse\\Wio-Terminal-TinyML-EI-4.md",
+      "completedAt": "2025-07-08T03:41:09.640Z",
+      "index": 1463
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\Projects_based_Edge_Impulse\\Wio-Terminal-TinyML-EI-3.md",
+      "completedAt": "2025-07-08T03:41:20.631Z",
+      "index": 1464
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\Projects_based_Edge_Impulse\\Wio-Terminal-TinyML-EI-2.md",
+      "completedAt": "2025-07-08T03:41:29.891Z",
+      "index": 1465
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\Projects_based_Edge_Impulse\\Wio-Terminal-TinyML-EI-1.md",
+      "completedAt": "2025-07-08T03:42:57.628Z",
+      "index": 1466
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Embedded_ML\\AIoTs_GPS_state_tester.md",
+      "completedAt": "2025-07-08T03:43:06.065Z",
+      "index": 1467
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Easy_IoT\\Wio-Terminal-Azure-IOT.md",
+      "completedAt": "2025-07-08T03:43:21.203Z",
+      "index": 1468
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Easy_IoT\\Get-Started-with-Wio-Terminal-and-Wappsto-IoT.md",
+      "completedAt": "2025-07-08T03:43:32.125Z",
+      "index": 1469
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Easy_IoT\\CyberDeck_Wio-Terminal.md",
+      "completedAt": "2025-07-08T03:43:44.950Z",
+      "index": 1470
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Easy_IoT\\Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central.md",
+      "completedAt": "2025-07-08T05:32:46.684Z",
+      "index": 1471
+    },
+    {
+      "file": "Sensor\\Wio_Terminal\\Application\\Easy_IoT\\Connect-Wio-Terminal-to-Google-Cloud-IoT-Core.md",
+      "completedAt": "2025-07-08T05:33:02.552Z",
+      "index": 1472
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio.md",
+      "completedAt": "2025-07-08T05:33:19.825Z",
+      "index": 1473
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Tracker\\Wio-Extension-RTC.md",
+      "completedAt": "2025-07-08T05:33:50.773Z",
+      "index": 1474
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Tracker\\Wio_Tracker.md",
+      "completedAt": "2025-07-08T05:34:08.325Z",
+      "index": 1475
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Tracker\\Wio_LTE_Cat.1.md",
+      "completedAt": "2025-07-08T05:35:00.158Z",
+      "index": 1476
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Tracker\\Wio_LTE_Cat_M1_NB-IoT_Tracker.md",
+      "completedAt": "2025-07-08T05:35:04.539Z",
+      "index": 1477
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Tracker\\wio_gps_board.md",
+      "completedAt": "2025-07-08T05:35:08.891Z",
+      "index": 1478
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Tracker\\LTE_Cat_1_Pi_HAT.md",
+      "completedAt": "2025-07-08T05:35:13.308Z",
+      "index": 1479
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Tracker\\Grove_Starter_Kit_for_Wio_LTE.md",
+      "completedAt": "2025-07-08T05:35:17.591Z",
+      "index": 1480
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_Module\\Wio_RP2040_Module_Build-in_Wireless_2.4G.md",
+      "completedAt": "2025-07-08T05:35:22.269Z",
+      "index": 1481
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\Wio-RP2040-with-Arduino-WIFI.md",
+      "completedAt": "2025-07-08T05:35:27.103Z",
+      "index": 1482
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\Wio_RP2040_mini_Dev_Board-Onboard_Wifi.md",
+      "completedAt": "2025-07-08T05:35:31.842Z",
+      "index": 1483
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\LAN_Communications.md",
+      "completedAt": "2025-07-08T05:44:33.582Z",
+      "index": 1484
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\Application\\Wireless-Fall-Detection-Device.md",
+      "completedAt": "2025-07-08T05:45:38.875Z",
+      "index": 1485
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\Application\\Wireless-desktop-atmosphere-lamp.md",
+      "completedAt": "2025-07-08T05:45:50.065Z",
+      "index": 1486
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\Application\\Use_Socket_to_connect_to_the_forum.md",
+      "completedAt": "2025-07-08T05:46:00.509Z",
+      "index": 1487
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_RP2040\\Wio_RP2040_mini_Dev_Board\\Application\\Use_MQTT_to_remotely_light_up_LED_lights.md",
+      "completedAt": "2025-07-08T05:46:13.396Z",
+      "index": 1488
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Node\\Wio_Node.md",
+      "completedAt": "2025-07-08T05:47:26.078Z",
+      "index": 1489
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Lite\\Wio-Lite-W600.md",
+      "completedAt": "2025-07-08T05:47:38.327Z",
+      "index": 1490
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Lite\\Wio-Lite-MG126.md",
+      "completedAt": "2025-07-08T05:50:09.264Z",
+      "index": 1491
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Lite\\Wio-Lite-AI-Getting-Started.md",
+      "completedAt": "2025-07-08T05:50:34.199Z",
+      "index": 1492
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Lite\\Wio_Lite_RISC_V_GD32VF103_with_ESP8266.md",
+      "completedAt": "2025-07-08T05:51:06.796Z",
+      "index": 1493
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Lite\\Grove-Shield-for-Wio-Lite.md",
+      "completedAt": "2025-07-08T05:53:23.318Z",
+      "index": 1494
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Lite\\Grove_Base_Shield_for_NodeMCU_V1.0.md",
+      "completedAt": "2025-07-08T05:54:06.208Z",
+      "index": 1495
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Link\\Wio_Link.md",
+      "completedAt": "2025-07-08T05:54:18.131Z",
+      "index": 1496
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Link\\Wio_Link_Starter_Kit.md",
+      "completedAt": "2025-07-08T05:54:28.855Z",
+      "index": 1497
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Link\\Wio_Link_Event_Kit.md",
+      "completedAt": "2025-07-08T05:54:41.859Z",
+      "index": 1498
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Link\\Wio_Link_Environment_Kit.md",
+      "completedAt": "2025-07-08T05:55:02.811Z",
+      "index": 1499
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Link\\Wio_Link_Deluxe_Plus_Kit.md",
+      "completedAt": "2025-07-08T05:55:13.001Z",
+      "index": 1500
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Link\\Wio_Link_Deluxe_Kit.md",
+      "completedAt": "2025-07-08T05:55:20.581Z",
+      "index": 1501
+    },
+    {
+      "file": "Sensor\\Wio_Series\\Wio_Link\\Wio_Link_Bootcamp_Kit.md",
+      "completedAt": "2025-07-08T06:04:31.601Z",
+      "index": 1502
+    },
+    {
+      "file": "Sensor\\Wio_Series\\LPWAN_Dev_Kit_for_Sidewalk\\Switch_to_Wio_Tracker.md",
+      "completedAt": "2025-07-08T06:04:44.286Z",
+      "index": 1503
+    },
+    {
+      "file": "Sensor\\Wio_Series\\LPWAN_Dev_Kit_for_Sidewalk\\LPWAN_Dev_Kit_for_Sidewalk.md",
+      "completedAt": "2025-07-08T06:05:01.442Z",
+      "index": 1504
+    },
+    {
+      "file": "Sensor\\SenseCAP\\wiki.md",
+      "completedAt": "2025-07-08T06:05:08.177Z",
+      "index": 1505
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\watcher_main_page.md",
+      "completedAt": "2025-07-08T06:05:16.296Z",
+      "index": 1506
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Software_Framework_Overview\\sensecap_watcher_software_service_framework.md",
+      "completedAt": "2025-07-08T06:05:24.764Z",
+      "index": 1507
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Software_Framework_Overview\\sensecap_watcher_local_deploy.md",
+      "completedAt": "2025-07-08T06:05:32.037Z",
+      "index": 1508
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Software_Framework_Overview\\sensecap_app_introduction.md",
+      "completedAt": "2025-07-08T06:07:13.293Z",
+      "index": 1509
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\sensecap_watcher_price.md",
+      "completedAt": "2025-07-08T06:07:26.376Z",
+      "index": 1510
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\sensecap_watcher_getting_started.md",
+      "completedAt": "2025-07-08T06:07:50.867Z",
+      "index": 1511
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Product_Overview\\watcher_operation_guideline.md",
+      "completedAt": "2025-07-08T06:08:01.482Z",
+      "index": 1512
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Product_Overview\\watcher_hardware_overview.md",
+      "completedAt": "2025-07-08T06:08:14.346Z",
+      "index": 1513
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Product_Overview\\sensecap_watcher_tasks.md",
+      "completedAt": "2025-07-08T06:08:23.504Z",
+      "index": 1514
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\watcher_uart_output.md",
+      "completedAt": "2025-07-08T06:08:31.505Z",
+      "index": 1515
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\smart_home\\integrate_watcher_to_ha.md",
+      "completedAt": "2025-07-08T06:08:40.641Z",
+      "index": 1516
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\watcher_to_whatsapp.md",
+      "completedAt": "2025-07-08T06:10:13.287Z",
+      "index": 1517
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\watcher_to_mongodb.md",
+      "completedAt": "2025-07-08T06:10:33.122Z",
+      "index": 1518
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\watcher_to_discord.md",
+      "completedAt": "2025-07-08T06:10:42.693Z",
+      "index": 1519
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\watcher_node_red.md",
+      "completedAt": "2025-07-08T06:10:57.116Z",
+      "index": 1520
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\watcher_node_red_to_twilio.md",
+      "completedAt": "2025-07-08T06:11:10.847Z",
+      "index": 1521
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\watcher_node_red_to_telegram.md",
+      "completedAt": "2025-07-08T06:11:35.978Z",
+      "index": 1522
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\watcher_node_red_to_p5js.md",
+      "completedAt": "2025-07-08T06:11:48.700Z",
+      "index": 1523
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\watcher_node_red_to_open_interpreter.md",
+      "completedAt": "2025-07-08T06:11:57.608Z",
+      "index": 1524
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\watcher_node_red_to_kafka.md",
+      "completedAt": "2025-07-08T06:15:51.878Z",
+      "index": 1525
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Notifications\\Http_Proxy_Application\\node_red_integration\\watcher_node_red_to_ifttt.md",
+      "completedAt": "2025-07-08T06:16:05.289Z",
+      "index": 1526
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Firmware_architecture_Overview\\watcher_ui_intergration_guide.md",
+      "completedAt": "2025-07-08T06:16:14.009Z",
+      "index": 1527
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Firmware_architecture_Overview\\watcher_idf_installation.md",
+      "completedAt": "2025-07-08T06:16:31.592Z",
+      "index": 1528
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Firmware_architecture_Overview\\watcher_function_module_dev_guide.md",
+      "completedAt": "2025-07-08T06:16:48.960Z",
+      "index": 1529
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Firmware_architecture_Overview\\watcher_architecture.md",
+      "completedAt": "2025-07-08T06:17:15.714Z",
+      "index": 1530
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Applications\\Watcher-Agent\\Web Control Panel.md",
+      "completedAt": "2025-07-08T06:17:25.980Z",
+      "index": 1531
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Applications\\Watcher-Agent\\Flash Watcher Agent Firmware.md",
+      "completedAt": "2025-07-08T06:21:23.042Z",
+      "index": 1532
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Applications\\Watcher-Agent\\Device Network Setup Guide.md",
+      "completedAt": "2025-07-08T06:21:35.793Z",
+      "index": 1533
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Applications\\use_case.md",
+      "completedAt": "2025-07-08T06:22:56.742Z",
+      "index": 1534
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Watcher\\Applications\\development\\watcher_train_model.md",
+      "completedAt": "2025-07-08T06:23:07.193Z",
+      "index": 1535
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000-P\\get_started_with_t1000_p.md",
+      "completedAt": "2025-07-08T06:23:15.029Z",
+      "index": 1536
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\User_Guide\\Tracker_WiFi_Geolocation.md",
+      "completedAt": "2025-07-08T06:23:24.563Z",
+      "index": 1537
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\User_Guide\\Payload.md",
+      "completedAt": "2025-07-08T06:23:35.558Z",
+      "index": 1538
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\User_Guide\\Indoor_Positioning_Guide.md",
+      "completedAt": "2025-07-08T06:23:46.190Z",
+      "index": 1539
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\User_Guide\\Get_Started.md",
+      "completedAt": "2025-07-08T06:23:54.278Z",
+      "index": 1540
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\User_Guide\\BC01_Indoor_Bluetooth_Beacon.md",
+      "completedAt": "2025-07-08T06:30:56.051Z",
+      "index": 1541
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\SenseCAP_T1000_Tracker_Introduction.md",
+      "completedAt": "2025-07-08T06:31:31.652Z",
+      "index": 1542
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\SenseCAP_T1000_intro.md",
+      "completedAt": "2025-07-08T06:33:56.947Z",
+      "index": 1543
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Lambda_code.md",
+      "completedAt": "2025-07-08T06:34:03.561Z",
+      "index": 1544
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\Ubidots_Integrated(Helium).md",
+      "completedAt": "2025-07-08T06:34:10.543Z",
+      "index": 1545
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\Ubidots_Integrated.md",
+      "completedAt": "2025-07-08T06:34:17.860Z",
+      "index": 1546
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\Trackpac_Integrated.md",
+      "completedAt": "2025-07-08T06:34:24.781Z",
+      "index": 1547
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\thingsboard_integrated.md",
+      "completedAt": "2025-07-08T06:34:31.596Z",
+      "index": 1548
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\TagoIO_Integrated.md",
+      "completedAt": "2025-07-08T06:34:39.132Z",
+      "index": 1549
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\sensecap_t1000_tracker_wialon.md",
+      "completedAt": "2025-07-08T06:34:56.374Z",
+      "index": 1550
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\Qubitro_Integrated.md",
+      "completedAt": "2025-07-08T06:35:03.022Z",
+      "index": 1551
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\InfluxDB_Integrated.md",
+      "completedAt": "2025-07-08T06:35:10.821Z",
+      "index": 1552
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\Datacake_Integrated.md",
+      "completedAt": "2025-07-08T06:35:17.214Z",
+      "index": 1553
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_Popular_Dashboard\\Akenza_Integrated.md",
+      "completedAt": "2025-07-08T06:38:20.668Z",
+      "index": 1554
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_LoRaWAN_Network_Server\\TTN_Mapper.md",
+      "completedAt": "2025-07-08T06:39:12.604Z",
+      "index": 1555
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_LoRaWAN_Network_Server\\Connect_to_The_Things_Network.md",
+      "completedAt": "2025-07-08T06:39:25.127Z",
+      "index": 1556
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_LoRaWAN_Network_Server\\Connect_to_Loriot.md",
+      "completedAt": "2025-07-08T06:39:43.766Z",
+      "index": 1557
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_LoRaWAN_Network_Server\\Connect_to_Helium.md",
+      "completedAt": "2025-07-08T06:39:58.489Z",
+      "index": 1558
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Integrated_with_LoRaWAN_Network_Server\\AWS_Service.md",
+      "completedAt": "2025-07-08T06:40:18.407Z",
+      "index": 1559
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\Firmware_release_note.md",
+      "completedAt": "2025-07-08T06:40:35.929Z",
+      "index": 1560
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_T1000_Tracker\\FAQ.md",
+      "completedAt": "2025-07-08T06:40:52.315Z",
+      "index": 1561
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Sensor_Builder\\SenseCAP_Builder_build_LoRaWAN_Sensors.md",
+      "completedAt": "2025-07-08T06:41:06.116Z",
+      "index": 1562
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Sensor_Builder\\list_of_seeed_grove_for_builder.md",
+      "completedAt": "2025-07-08T06:41:19.817Z",
+      "index": 1563
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Sensor_Builder\\Build-LoRaWAN-Sensors-SenseCAP-XIAO-Controller-Data-Logger.md",
+      "completedAt": "2025-07-08T07:13:48.619Z",
+      "index": 1564
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\Water-Leak-Detector.md",
+      "completedAt": "2025-07-08T07:14:05.858Z",
+      "index": 1565
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\Total_Solar_Radiation_Sensor.md",
+      "completedAt": "2025-07-08T07:14:17.293Z",
+      "index": 1566
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\Soil-Moisture-Temperature-Sensor.md",
+      "completedAt": "2025-07-08T07:14:26.683Z",
+      "index": 1567
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\Soil-Moisture-Temperature-EC-Sensor.md",
+      "completedAt": "2025-07-08T07:15:06.751Z",
+      "index": 1568
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\SenseCAP_Sensor_Probes_Product_Catalogue.md",
+      "completedAt": "2025-07-08T07:15:15.252Z",
+      "index": 1569
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\RS485_Air_Temperature_Humidity_and_Barometric_Pressure_Sensor(S-THP-01A).md",
+      "completedAt": "2025-07-08T07:15:24.692Z",
+      "index": 1570
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\RS485_750cm_Ultrasonic_Sensor-1.md",
+      "completedAt": "2025-07-08T07:15:32.224Z",
+      "index": 1571
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\RS485_500cm_Ultrasonic_Sensor.md",
+      "completedAt": "2025-07-08T07:15:39.346Z",
+      "index": 1572
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\Probe_intro.md",
+      "completedAt": "2025-07-08T07:15:46.542Z",
+      "index": 1573
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\Liquid-Level-Sensor.md",
+      "completedAt": "2025-07-08T07:29:17.778Z",
+      "index": 1574
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Probe\\Industrial-ph-Sensor.md",
+      "completedAt": "2025-07-08T07:29:31.223Z",
+      "index": 1575
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_ONE_Weather_Station\\SenseCAP-One-Series-Meteorological-Sensors.md",
+      "completedAt": "2025-07-08T07:33:43.108Z",
+      "index": 1576
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_ONE_Weather_Station\\SenseCAP_ONE_Compact_Weather_Station\\Tutorials-Getting Started with SenseCAP ONE Compact Weather Sensor.md",
+      "completedAt": "2025-07-08T07:33:59.158Z",
+      "index": 1577
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_ONE_Weather_Station\\SenseCAP_ONE_Compact_Weather_Station\\Introduction.md",
+      "completedAt": "2025-07-08T07:34:12.281Z",
+      "index": 1578
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_ONE_Weather_Station\\SenseCAP_ONE_Compact_Weather_Station\\Benchmark_Labs_Forecast_Integration_for_Seeed_Weather_Stations.md",
+      "completedAt": "2025-07-08T07:34:23.372Z",
+      "index": 1579
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_ONE_Weather_Station\\ORCH-S4-Weather-Station.md",
+      "completedAt": "2025-07-08T07:34:31.857Z",
+      "index": 1580
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_ONE_Weather_Station\\ONE_intro.md",
+      "completedAt": "2025-07-08T07:34:40.980Z",
+      "index": 1581
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP-SOLO-CO2-Sensor.md",
+      "completedAt": "2025-07-08T07:34:48.971Z",
+      "index": 1582
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor\\Tutorials-Getting_Started_with_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor.md",
+      "completedAt": "2025-07-08T07:35:07.932Z",
+      "index": 1583
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor\\SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor_Introduction.md",
+      "completedAt": "2025-07-08T07:37:48.478Z",
+      "index": 1584
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_S210X_Series\\tutorial\\How-to-Connect-SenseCAP-S210X-to-The-Things-Network.md",
+      "completedAt": "2025-07-08T07:37:56.463Z",
+      "index": 1585
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_S210X_Series\\tutorial\\How-to-Connect-SenseCAP-S210X-to-Helium-Network.md",
+      "completedAt": "2025-07-08T07:44:55.150Z",
+      "index": 1586
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_S210X_Series\\tutorial\\Connect-S210X-Sensor-to-Microsoft-Azure-IoT-Central.md",
+      "completedAt": "2025-07-08T07:46:44.123Z",
+      "index": 1587
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_S210X_Series\\SenseCAP_S2107.md",
+      "completedAt": "2025-07-08T07:47:06.874Z",
+      "index": 1588
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_S210X_Series\\SenseCAP_LoRaWAN_S210X_Series_Sensor.md",
+      "completedAt": "2025-07-08T07:47:26.158Z",
+      "index": 1589
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_A1102\\TrainAI_With_A1102.md",
+      "completedAt": "2025-07-08T07:47:40.542Z",
+      "index": 1590
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_A1102\\Getting_Start_With_A1102.md",
+      "completedAt": "2025-07-08T07:50:19.017Z",
+      "index": 1591
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_A1101\\Train-Water-Meter-Digits-Recognition-Model-with-SenseCAP-A1101.md",
+      "completedAt": "2025-07-08T07:50:32.434Z",
+      "index": 1592
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_A1101\\Train-Deploy-AI-Model-A1101.md",
+      "completedAt": "2025-07-08T07:50:48.452Z",
+      "index": 1593
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_A1101\\SenseCAP-Vision-AI-Get-Started.md",
+      "completedAt": "2025-07-08T07:51:05.721Z",
+      "index": 1594
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_LoRaWAN_Sensor\\SenseCAP_A1101\\One-Stop-Model-Training-with-Edge-Impulse.md",
+      "completedAt": "2025-07-08T07:51:20.621Z",
+      "index": 1595
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Intro\\SenseCAP_Sensor_Intro.md",
+      "completedAt": "2025-07-08T07:57:20.661Z",
+      "index": 1596
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Intro\\SenseCAP_Data_Logger_Intro.md",
+      "completedAt": "2025-07-08T07:57:41.316Z",
+      "index": 1597
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Setup_Guide\\OpenAI_X_SenseCAP_Indicator\\Overview.md",
+      "completedAt": "2025-07-08T07:58:09.159Z",
+      "index": 1598
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Setup_Guide\\OpenAI_X_SenseCAP_Indicator\\How_to_Set_the_API_Key.md",
+      "completedAt": "2025-07-08T07:58:16.512Z",
+      "index": 1599
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Setup_Guide\\OpenAI_X_SenseCAP_Indicator\\DALL·E_AI_Picture_Generator.md",
+      "completedAt": "2025-07-08T07:58:23.546Z",
+      "index": 1600
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Setup_Guide\\OpenAI_X_SenseCAP_Indicator\\ChatGPT_Indicator.md",
+      "completedAt": "2025-07-08T07:58:32.596Z",
+      "index": 1601
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Setup_Guide\\Native_Firmware.md",
+      "completedAt": "2025-07-08T07:58:40.261Z",
+      "index": 1602
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Introduction.md",
+      "completedAt": "2025-07-08T07:58:50.529Z",
+      "index": 1603
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\How_To_Flash_The_Default_Firmware.md",
+      "completedAt": "2025-07-08T07:59:06.661Z",
+      "index": 1604
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\SenseCAP_Indicator_Arduino.md",
+      "completedAt": "2025-07-08T07:59:15.105Z",
+      "index": 1605
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\How_to_Create_your_own_UI.md",
+      "completedAt": "2025-07-08T08:10:49.932Z",
+      "index": 1606
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Dive_into_the_Hardware.md",
+      "completedAt": "2025-07-08T08:10:59.816Z",
+      "index": 1607
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_RP2040\\tVOC_Sensor_Built-in.md",
+      "completedAt": "2025-07-08T08:11:06.133Z",
+      "index": 1608
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_RP2040\\Micro_SD.md",
+      "completedAt": "2025-07-08T08:11:13.250Z",
+      "index": 1609
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_RP2040\\Grove\\Grove_IIC.md",
+      "completedAt": "2025-07-08T08:11:19.842Z",
+      "index": 1610
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_RP2040\\Grove\\Grove_ADC.md",
+      "completedAt": "2025-07-08T08:11:26.167Z",
+      "index": 1611
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_RP2040\\CO2_Sensor_Built-in.md",
+      "completedAt": "2025-07-08T08:11:32.543Z",
+      "index": 1612
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_RP2040\\Buzzer.md",
+      "completedAt": "2025-07-08T08:11:39.701Z",
+      "index": 1613
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_ESP32S3\\Wi-Fi.md",
+      "completedAt": "2025-07-08T08:11:46.616Z",
+      "index": 1614
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_ESP32S3\\LoRa.md",
+      "completedAt": "2025-07-08T08:11:57.102Z",
+      "index": 1615
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_ESP32S3\\Four-inch_Touch_Screen.md",
+      "completedAt": "2025-07-08T08:16:01.382Z",
+      "index": 1616
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_ESP32S3\\Button.md",
+      "completedAt": "2025-07-08T08:16:09.916Z",
+      "index": 1617
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Develop_with_ESP32S3\\BLE.md",
+      "completedAt": "2025-07-08T08:16:18.486Z",
+      "index": 1618
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Development_Tutorial\\Create_project_indicator.md",
+      "completedAt": "2025-07-08T08:16:29.666Z",
+      "index": 1619
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Application\\Single_Channel_Gateway.md",
+      "completedAt": "2025-07-08T08:16:38.257Z",
+      "index": 1620
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Application\\OpenAI.md",
+      "completedAt": "2025-07-08T08:16:46.734Z",
+      "index": 1621
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Application\\Matter.md",
+      "completedAt": "2025-07-08T08:17:00.018Z",
+      "index": 1622
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Application\\LoRaWAN.md",
+      "completedAt": "2025-07-08T08:17:14.219Z",
+      "index": 1623
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Application\\LoRa.md",
+      "completedAt": "2025-07-08T08:17:29.903Z",
+      "index": 1624
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Indicator\\Application\\Home_Assistant.md",
+      "completedAt": "2025-07-08T08:17:44.015Z",
+      "index": 1625
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Decoder.md",
+      "completedAt": "2025-07-08T08:20:41.629Z",
+      "index": 1626
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Data_Logger\\tutorial\\How_to_Configure_the_Counter&GPIO_Sensor_for_S2100_Data_Logger.md",
+      "completedAt": "2025-07-08T08:20:50.035Z",
+      "index": 1627
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Data_Logger\\tutorial\\How_to_Configure_the_Analog_Sensor_for_S2100_Data_Logger.md",
+      "completedAt": "2025-07-08T08:20:58.631Z",
+      "index": 1628
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Data_Logger\\tutorial\\How_to_Configure_the_12V_RS485_Sensor_for_S2100_Data_Logger.md",
+      "completedAt": "2025-07-08T08:21:07.447Z",
+      "index": 1629
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Data_Logger\\SenseCAP-Sensor-Hub-Data-Logger.md",
+      "completedAt": "2025-07-08T08:21:18.236Z",
+      "index": 1630
+    },
+    {
+      "file": "Sensor\\SenseCAP\\SenseCAP_Data_Logger\\Data_Logger.md",
+      "completedAt": "2025-07-08T08:21:26.919Z",
+      "index": 1631
+    },
+    {
+      "file": "Sensor\\SenseCAP\\LoRaWAN_Tracker\\tracker_at_command.md",
+      "completedAt": "2025-07-08T08:21:45.827Z",
+      "index": 1632
+    },
+    {
+      "file": "Sensor\\SenseCAP\\LoRaWAN_Tracker\\Open_Source_FW\\t1000_e_arduino_examples.md",
+      "completedAt": "2025-07-08T08:21:54.291Z",
+      "index": 1633
+    },
+    {
+      "file": "Sensor\\SenseCAP\\LoRaWAN_Tracker\\Open_Source_FW\\lorawan_tracker_with_ses.md",
+      "completedAt": "2025-07-08T08:22:04.365Z",
+      "index": 1634
+    },
+    {
+      "file": "Sensor\\SenseCAP\\LoRaWAN_Tracker\\get_started_with_lorawan_tracker.md",
+      "completedAt": "2025-07-08T08:22:13.366Z",
+      "index": 1635
+    },
+    {
+      "file": "Sensor\\SenseCAP\\Learn\\How_to_Select_the_LoRaWAN_Network.md",
+      "completedAt": "2025-07-08T08:27:44.167Z",
+      "index": 1636
+    },
+    {
+      "file": "Sensor\\SenseCAP\\Industrial-IoT-SenseCAP-Introduction.md",
+      "completedAt": "2025-07-08T08:27:52.654Z",
+      "index": 1637
+    },
+    {
+      "file": "Sensor\\SenseCAP\\Applications\\Home_Assistant_X_SenseCAP_LoRaWAN_Sensors.md",
+      "completedAt": "2025-07-08T08:28:01.803Z",
+      "index": 1638
+    },
+    {
+      "file": "Sensor\\SenseCAP\\Applications\\Develop_an_Industrial_LoRaWAN_Sensor.md",
+      "completedAt": "2025-07-08T08:28:10.389Z",
+      "index": 1639
+    },
+    {
+      "file": "Sensor\\SenseCAP\\Accessories\\Optical-Rain-Gauge-RG-9.md",
+      "completedAt": "2025-07-08T08:28:19.437Z",
+      "index": 1640
+    },
+    {
+      "file": "Sensor\\SenseCAP\\Accessories\\Industrial-Grade-Optical-Rain-Gauge-RG-15.md",
+      "completedAt": "2025-07-08T08:28:27.393Z",
+      "index": 1641
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino\\Seeeduino.md",
+      "completedAt": "2025-07-08T08:28:36.718Z",
+      "index": 1642
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino\\Seeeduino_v4.2.md",
+      "completedAt": "2025-07-08T08:28:45.854Z",
+      "index": 1643
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino\\Seeeduino_v4.0.md",
+      "completedAt": "2025-07-08T08:28:54.704Z",
+      "index": 1644
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino\\Seeeduino_v3.0.md",
+      "completedAt": "2025-07-08T08:29:07.374Z",
+      "index": 1645
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino\\Seeeduino_v2.21.md",
+      "completedAt": "2025-07-08T08:42:45.220Z",
+      "index": 1646
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino\\Seeeduino_V2.2.md",
+      "completedAt": "2025-07-08T08:43:00.133Z",
+      "index": 1647
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino\\Seeeduino_V2.2_Atmega-168P.md",
+      "completedAt": "2025-07-08T08:43:23.054Z",
+      "index": 1648
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino-Nano.md",
+      "completedAt": "2025-07-08T08:43:40.354Z",
+      "index": 1649
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino-Crypto-ATmega4809-ECC608.md",
+      "completedAt": "2025-07-08T08:43:54.521Z",
+      "index": 1650
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino-Cortex-M0.md",
+      "completedAt": "2025-07-08T08:45:28.599Z",
+      "index": 1651
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_Mega.md",
+      "completedAt": "2025-07-08T08:45:46.613Z",
+      "index": 1652
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_Mega_Protoshield_Kit.md",
+      "completedAt": "2025-07-08T08:46:04.194Z",
+      "index": 1653
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_Lotus.md",
+      "completedAt": "2025-07-08T08:46:22.198Z",
+      "index": 1654
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_Lotus_Cortex-M0-.md",
+      "completedAt": "2025-07-08T08:46:38.911Z",
+      "index": 1655
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_LoRAWAN.md",
+      "completedAt": "2025-07-08T08:53:48.737Z",
+      "index": 1656
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_Lite.md",
+      "completedAt": "2025-07-08T08:54:52.374Z",
+      "index": 1657
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_GPRS.md",
+      "completedAt": "2025-07-08T08:56:17.163Z",
+      "index": 1658
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_Ethernet.md",
+      "completedAt": "2025-07-08T08:57:22.779Z",
+      "index": 1659
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_Cloud.md",
+      "completedAt": "2025-07-08T08:57:53.293Z",
+      "index": 1660
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_Buying_Guide.md",
+      "completedAt": "2025-07-08T08:58:28.559Z",
+      "index": 1661
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_Arch.md",
+      "completedAt": "2025-07-08T09:00:23.921Z",
+      "index": 1662
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_Arch_V1.0.md",
+      "completedAt": "2025-07-08T09:00:46.567Z",
+      "index": 1663
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino_ADK_Main_Board.md",
+      "completedAt": "2025-07-08T09:01:06.378Z",
+      "index": 1664
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino Stalker\\Seeeduino-Stalker_v3.md",
+      "completedAt": "2025-07-08T09:01:26.466Z",
+      "index": 1665
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino Stalker\\Seeeduino_Stalker.md",
+      "completedAt": "2025-07-08T09:10:40.284Z",
+      "index": 1666
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino Stalker\\Seeeduino_Stalker_V3.1.md",
+      "completedAt": "2025-07-08T09:11:28.727Z",
+      "index": 1667
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino Stalker\\Seeeduino_Stalker_V3-Waterproof_Solar_Kit.md",
+      "completedAt": "2025-07-08T09:43:11.234Z",
+      "index": 1668
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino Stalker\\Seeeduino_Stalker_v3_enclosure.md",
+      "completedAt": "2025-07-08T09:43:19.239Z",
+      "index": 1669
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino Stalker\\Seeeduino_Stalker_v2.3.md",
+      "completedAt": "2025-07-08T09:43:28.517Z",
+      "index": 1670
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeeduino Stalker\\Seeeduino_Stalker_v1.0.md",
+      "completedAt": "2025-07-08T09:43:37.603Z",
+      "index": 1671
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\SeeedStudio-GD32-RISC-V-Dev-Board.md",
+      "completedAt": "2025-07-08T09:43:45.895Z",
+      "index": 1672
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Seeed_Arduino_Boards.md",
+      "completedAt": "2025-07-08T09:43:54.546Z",
+      "index": 1673
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Kit with Courses\\Seeeduino_Cloud_and_Grove_IoT_Starter_Kit_Powered_by_AWS.md",
+      "completedAt": "2025-07-08T09:44:03.201Z",
+      "index": 1674
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Kit with Courses\\Grove_IoT_Starter_Kits_Powered_by_AWS.md",
+      "completedAt": "2025-07-08T09:44:11.410Z",
+      "index": 1675
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Getting_Started_with_Seeeduino.md",
+      "completedAt": "2025-07-08T09:44:20.421Z",
+      "index": 1676
+    },
+    {
+      "file": "Sensor\\Seeeduino Series\\Application\\Grove-SGP41-with-AHT20.md",
+      "completedAt": "2025-07-08T09:44:28.869Z",
+      "index": 1677
     }
   ],
   "lastSkipped": "weekly_wiki.md",
-  "lastCompleted": "2025-07-07T10:02:12.348Z"
+  "lastCompleted": "2025-07-08T09:44:28.870Z"
 }
