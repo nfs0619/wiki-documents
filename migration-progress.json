@@ -1,5 +1,5 @@
 {
-  "currentIndex": 3093,
+  "currentIndex": 3152,
   "completed": [
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Device_Status_IDs.md",
     "Cloud_Chain\\SenseCAP_API\\Appendix\\List_of_Error_Code.md",
@@ -15013,8 +15013,303 @@
       "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-PIR_Motion_Sensor.md",
       "completedAt": "2025-07-08T09:51:21.631Z",
       "index": 3092
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-Encoder.md",
+      "completedAt": "2025-07-09T06:49:39.986Z",
+      "index": 3093
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-Mini_Track_Ball.md",
+      "completedAt": "2025-07-09T06:49:47.416Z",
+      "index": 3094
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-Mouse_Encoder.md",
+      "completedAt": "2025-07-09T06:52:20.779Z",
+      "index": 3095
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-Optical_Rotary_Encoder-TCUT1600X01.md",
+      "completedAt": "2025-07-09T06:52:27.231Z",
+      "index": 3096
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-Piezo_Vibration_Sensor.md",
+      "completedAt": "2025-07-09T06:52:34.497Z",
+      "index": 3097
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-PIR_Motion_Sensor.md",
+      "completedAt": "2025-07-09T06:52:45.152Z",
+      "index": 3098
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-Slide_Potentiometer.md",
+      "completedAt": "2025-07-09T06:52:53.993Z",
+      "index": 3099
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-Step_Counter-BMA456.md",
+      "completedAt": "2025-07-09T06:53:27.231Z",
+      "index": 3100
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-Tilt_Switch.md",
+      "completedAt": "2025-07-09T06:53:52.889Z",
+      "index": 3101
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Grove-Vibration_Sensor_SW-420.md",
+      "completedAt": "2025-07-09T06:54:03.217Z",
+      "index": 3102
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Motion\\Sensor_motion.md",
+      "completedAt": "2025-07-09T06:54:23.167Z",
+      "index": 3103
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Grove-80cm_Infrared_Proximity_Sensor.md",
+      "completedAt": "2025-07-09T07:01:11.969Z",
+      "index": 3104
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Grove-Adjustable_PIR_Motion_Sensor.md",
+      "completedAt": "2025-07-09T07:01:25.998Z",
+      "index": 3105
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F.md",
+      "completedAt": "2025-07-09T07:01:47.022Z",
+      "index": 3106
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Grove-Doppler-Radar.md",
+      "completedAt": "2025-07-09T07:16:36.764Z",
+      "index": 3107
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Grove-Gesture_v1.0.md",
+      "completedAt": "2025-07-09T07:17:23.669Z",
+      "index": 3108
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Grove-IR_Distance_Interrupter_v1.2.md",
+      "completedAt": "2025-07-09T07:17:44.154Z",
+      "index": 3109
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Grove-TF_Mini_LiDAR.md",
+      "completedAt": "2025-07-09T07:17:56.838Z",
+      "index": 3110
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Grove-Time_of_Flight_Distance_Sensor-VL53L0X.md",
+      "completedAt": "2025-07-09T07:18:12.623Z",
+      "index": 3111
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Grove-Ultrasonic_Ranger.md",
+      "completedAt": "2025-07-09T07:18:26.262Z",
+      "index": 3112
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Grove-Ultrasonic_Sensor_SMS812.md",
+      "completedAt": "2025-07-09T07:18:39.653Z",
+      "index": 3113
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Proximity\\Sensor_distance.md",
+      "completedAt": "2025-07-09T07:18:52.590Z",
+      "index": 3114
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Soli_Humidity\\Grove-Capacitive_Moisture_Sensor-Corrosion-Resistant.md",
+      "completedAt": "2025-07-09T07:19:03.992Z",
+      "index": 3115
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Soli_Humidity\\Grove-Moisture_Sensor.md",
+      "completedAt": "2025-07-09T07:19:23.222Z",
+      "index": 3116
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Sound\\Grove-Analog-Microphone.md",
+      "completedAt": "2025-07-09T07:26:20.075Z",
+      "index": 3117
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Sound\\Grove-Loudness_Sensor.md",
+      "completedAt": "2025-07-09T07:27:22.083Z",
+      "index": 3118
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Sound\\Grove-Offline-Voice-Recognition.md",
+      "completedAt": "2025-07-09T07:27:51.637Z",
+      "index": 3119
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Sound\\Grove-Recorder_v2.0.md",
+      "completedAt": "2025-07-09T07:28:02.947Z",
+      "index": 3120
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Sound\\Grove-Sound_Recorder.md",
+      "completedAt": "2025-07-09T07:28:16.209Z",
+      "index": 3121
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Sound\\Grove-Sound_Sensor.md",
+      "completedAt": "2025-07-09T07:28:30.959Z",
+      "index": 3122
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Sound\\Grove-Speech_Recognizer.md",
+      "completedAt": "2025-07-09T07:28:43.217Z",
+      "index": 3123
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Sound\\Sensor_sound.md",
+      "completedAt": "2025-07-09T07:28:57.389Z",
+      "index": 3124
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temp&Humi\\Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor.md",
+      "completedAt": "2025-07-09T07:29:29.051Z",
+      "index": 3125
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temp&Humi\\Grove-I2C_High_Accuracy_Temp&Humi_Sensor-SHT35.md",
+      "completedAt": "2025-07-09T07:29:46.314Z",
+      "index": 3126
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temp&Humi\\Grove-SHT4x.md",
+      "completedAt": "2025-07-09T07:30:04.254Z",
+      "index": 3127
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temp&Humi\\Grove-TempAndHumi_Sensor-SHT31.md",
+      "completedAt": "2025-07-09T07:37:38.940Z",
+      "index": 3128
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temp&Humi\\Grove-Temperature_and_Humidity_Sensor_Pro.md",
+      "completedAt": "2025-07-09T07:38:03.988Z",
+      "index": 3129
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temp&Humi\\Grove-Temperature-Humidity-Sensor-DH20.md",
+      "completedAt": "2025-07-09T07:42:59.554Z",
+      "index": 3130
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temp&Humi\\Grove-TemperatureAndHumidity_Sensor-HDC1000.md",
+      "completedAt": "2025-07-09T07:43:12.439Z",
+      "index": 3131
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temp&Humi\\Grove-TemperatureAndHumidity_Sensor.md",
+      "completedAt": "2025-07-09T07:44:25.633Z",
+      "index": 3132
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temp&Humi\\Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0.md",
+      "completedAt": "2025-07-09T07:44:53.417Z",
+      "index": 3133
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\Grove-1-Wire_Thermocouple_Amplifier-MAX31850K.md",
+      "completedAt": "2025-07-09T07:45:05.547Z",
+      "index": 3134
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\Grove-Digital_Infrared_Temperature_Sensor.md",
+      "completedAt": "2025-07-09T07:45:25.085Z",
+      "index": 3135
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\Grove-High_Temperature_Sensor.md",
+      "completedAt": "2025-07-09T07:45:38.902Z",
+      "index": 3136
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808.md",
+      "completedAt": "2025-07-09T07:46:05.396Z",
+      "index": 3137
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\Grove-I2C_Thermocouple_Amplifier-MCP9600.md",
+      "completedAt": "2025-07-09T07:58:34.588Z",
+      "index": 3138
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\Grove-Infrared_Temperature_Sensor_Array-AMG8833.md",
+      "completedAt": "2025-07-09T07:58:51.776Z",
+      "index": 3139
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\Grove-Infrared_Temperature_Sensor.md",
+      "completedAt": "2025-07-09T07:59:24.130Z",
+      "index": 3140
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\Grove-Temperature_Sensor_V1.2.md",
+      "completedAt": "2025-07-09T07:59:34.381Z",
+      "index": 3141
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\Grove-Temperature_Sensor.md",
+      "completedAt": "2025-07-09T07:59:44.627Z",
+      "index": 3142
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\Grove-Thermal-Imaging-Camera-IR-Array.md",
+      "completedAt": "2025-07-09T07:59:54.374Z",
+      "index": 3143
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Temperature\\One-Wire-Temperature-Sensor-DS18B20.md",
+      "completedAt": "2025-07-09T08:00:07.530Z",
+      "index": 3144
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Touch\\Grove-12_Key_Capacitive_I2C_Touch_Sensor_V2-MPR121.md",
+      "completedAt": "2025-07-09T08:00:19.209Z",
+      "index": 3145
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Touch\\Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616-.md",
+      "completedAt": "2025-07-09T08:00:28.794Z",
+      "index": 3146
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Touch\\Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121.md",
+      "completedAt": "2025-07-09T08:00:39.048Z",
+      "index": 3147
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Touch\\Grove-2_Channel_Inductive_Sensor-LDC1612.md",
+      "completedAt": "2025-07-09T08:00:50.241Z",
+      "index": 3148
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Touch\\Grove-Capacitive_Touch_Slide_Sensor-CY8C4014LQI.md",
+      "completedAt": "2025-07-09T08:01:02.698Z",
+      "index": 3149
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Touch\\Grove-I2C_Touch_Sensor.md",
+      "completedAt": "2025-07-09T08:01:13.926Z",
+      "index": 3150
+    },
+    {
+      "file": "Sensor\\Grove\\Grove_Sensors\\Touch\\Grove-Rotary_Angle_Sensor.md",
+      "completedAt": "2025-07-09T08:01:24.805Z",
+      "index": 3151
     }
   ],
   "lastSkipped": "Sensor\\Grove\\Grove_Sensors\\Biometric\\Grove-GSR_Sensor.md",
-  "lastCompleted": "2025-07-08T09:51:21.633Z"
+  "lastCompleted": "2025-07-09T08:01:24.807Z"
 }
