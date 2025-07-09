@@ -1,0 +1,10 @@
+position: 7 # float position is supported
+label: '通知'
+collapsible: true # make the category collapsible
+collapsed: true # keep the category open by default
+className: notification_with_watcher
+link:
+  type: generated-index
+  slug: ja/notifications_with_watcher_main_page
+  title: SenseCAP Watcher 通知シリーズ
+  description: SenseCAP Watcher のウィキ内の「通知」セクションでは、ウォッチャーからのさまざまな通知方法を示します。アラームがトリガーされた際に、RGBライトを見たり、音を聞いたり、アプリ通知を受け取ることができます。さらに、UARTやHTTPプロトコルを使用して、これらのアラームメッセージを異なるデバイスやプラットフォームに送信することも可能です。

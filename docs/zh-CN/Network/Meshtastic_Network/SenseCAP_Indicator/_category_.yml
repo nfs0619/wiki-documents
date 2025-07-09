@@ -1,0 +1,10 @@
+position: 5 # 支持浮点排序位置
+label: 'SenseCAP 指示器'
+collapsible: true # 允许分类折叠
+collapsed: true # 默认折叠该分类
+className: sensecap_indicator 
+link:
+  type: generated-index
+  slug: cn/sensecap_indicator_meshtastic_main_page
+  title: SenseCAP Indicator
+  description: SenseCAP Indicator Meshtastic 应用程序。

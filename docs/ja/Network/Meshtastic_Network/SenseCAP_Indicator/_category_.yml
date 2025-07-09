@@ -1,0 +1,10 @@
+position: 4 # float position is supported
+label: 'SenseCAP インジケーター'
+collapsible: true # カテゴリを折りたたみ可能にする
+collapsed: true # デフォルトでカテゴリを開いた状態にする
+className: sensecap_indicator 
+link:
+  type: generated-index
+  slug: ja/sensecap_indicator_meshtastic_main_page
+  title: SenseCAP インジケーター
+  description: SenseCAP インジケーター Meshtastic アプリケーション。

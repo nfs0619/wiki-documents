@@ -1,39 +1,133 @@
 const fs = require('fs');
 const path = require('path');
+const csv = require('csv-parser');
 const { spawn, exec } = require('child_process');
 
 class MigrationHelper {
-  constructor() {
+  constructor(csvFilePath = 'file_comparison.csv') {
+    this.csvFilePath = csvFilePath;
     this.backupDir = './docs_backup';
     this.targetDir = './docs';
     this.progressFile = './migration-progress.json';
+    this.fileList = null;
   }
 
-  getAllFiles() {
-    const files = [];
-    this.walkDirectory(this.backupDir, files);
-    return files.sort((a, b) => {
-      const relativeA = path.relative(this.backupDir, a);
-      const relativeB = path.relative(this.backupDir, b);
-      return relativeA.localeCompare(relativeB);
-    });
-  }
-
-  walkDirectory(dir, fileList) {
-    if (!fs.existsSync(dir)) return;
-    
-    const items = fs.readdirSync(dir).sort();
-    
-    for (const item of items) {
-      const fullPath = path.join(dir, item);
-      const stat = fs.statSync(fullPath);
-      
-      if (stat.isDirectory()) {
-        this.walkDirectory(fullPath, fileList);
-      } else if (item.match(/\.(md|mdx)$/)) {
-        fileList.push(fullPath);
-      }
+  // 从CSV文件获取所有需要处理的文件
+  async getAllFiles() {
+    if (this.fileList) {
+      return this.fileList;
     }
+
+    return new Promise((resolve, reject) => {
+      if (!fs.existsSync(this.csvFilePath)) {
+        reject(new Error(`CSV文件不存在: ${this.csvFilePath}`));
+        return;
+      }
+
+      const files = [];
+      let lineNumber = 0;
+      let headerShown = false;
+      
+      console.log(`📖 正在读取CSV文件: ${this.csvFilePath}`);
+      
+      // 先读取文件的原始内容进行调试
+      const rawContent = fs.readFileSync(this.csvFilePath, 'utf8');
+      const lines = rawContent.split('\n');
+      console.log(`📋 CSV文件前3行原始内容:`);
+      lines.slice(0, 3).forEach((line, index) => {
+        console.log(`行 ${index + 1}: "${line}"`);
+      });
+      
+      fs.createReadStream(this.csvFilePath, { encoding: 'utf8' })
+        .pipe(csv({
+          skipEmptyLines: true,
+          skipLinesWithError: true
+        }))
+        .on('data', (row) => {
+          lineNumber++;
+          
+          // 显示CSV的列名（只显示一次）
+          if (!headerShown) {
+            console.log(`📋 CSV列名:`, Object.keys(row));
+            headerShown = true;
+          }
+          
+          // 调试：显示前几行的完整数据
+          if (lineNumber <= 3) {
+            console.log(`行 ${lineNumber} 完整数据:`, JSON.stringify(row, null, 2));
+          }
+          
+          // 直接从对象中获取字段值，不依赖属性访问
+          const rowKeys = Object.keys(row);
+          const relativePathKey = rowKeys.find(key => key.includes('relative_path') || key.includes('path'));
+          const relativePath = row[relativePathKey];
+          
+          if (lineNumber <= 5) {
+            console.log(`行 ${lineNumber} 调试:`);
+            console.log(`  找到的路径字段: "${relativePathKey}"`);
+            console.log(`  路径值: "${relativePath}"`);
+            console.log(`  路径类型: ${typeof relativePath}`);
+          }
+          
+          if (relativePath && relativePath.trim() !== '') {
+            const cleanPath = relativePath.trim();
+            // 处理Windows风格的路径分隔符
+            const normalizedPath = cleanPath.replace(/\\/g, '/');
+            const fullPath = path.join(this.backupDir, normalizedPath);
+            
+            if (lineNumber <= 5) {
+              console.log(`  检查文件: "${cleanPath}" -> "${normalizedPath}" -> "${fullPath}"`);
+            }
+            
+            // 检查文件是否存在于backup目录中，支持md/mdx/yml文件
+            if (fs.existsSync(fullPath) && normalizedPath.match(/\.(md|mdx|yml)$/)) {
+              files.push(fullPath);
+              if (lineNumber <= 5) {
+                console.log(`  ✅ 添加文件: ${normalizedPath}`);
+              }
+            } else {
+              if (lineNumber <= 5) {
+                console.log(`  ❌ 文件不存在或不支持的格式: ${normalizedPath}`);
+                console.log(`    文件存在: ${fs.existsSync(fullPath)}`);
+                console.log(`    匹配扩展名: ${normalizedPath.match(/\.(md|mdx|yml)$/) ? true : false}`);
+              }
+            }
+          } else {
+            if (lineNumber <= 5) {
+              console.log(`⚠️ 行 ${lineNumber}: 未找到有效的路径字段`);
+              console.log(`   所有字段:`, rowKeys);
+            }
+          }
+        })
+        .on('end', () => {
+          console.log(`📊 CSV读取完成，共处理 ${lineNumber} 行`);
+          
+          // 按相对路径排序
+          files.sort((a, b) => {
+            const relativeA = path.relative(this.backupDir, a);
+            const relativeB = path.relative(this.backupDir, b);
+            return relativeA.localeCompare(relativeB);
+          });
+          
+          this.fileList = files;
+          console.log(`📊 从CSV加载了 ${files.length} 个文件`);
+          
+          // 显示前几个文件
+          if (files.length > 0) {
+            console.log(`📋 前5个文件:`);
+            files.slice(0, 5).forEach((file, index) => {
+              const relativePath = path.relative(this.backupDir, file);
+              console.log(`  ${index + 1}. ${relativePath}`);
+            });
+          }
+          
+          resolve(files);
+        })
+        .on('error', (error) => {
+          console.error(`❌ CSV读取错误:`, error);
+          reject(error);
+        });
+    });
   }
 
   loadProgress() {
@@ -51,8 +145,8 @@ class MigrationHelper {
     fs.writeFileSync(this.progressFile, JSON.stringify(progress, null, 2));
   }
 
-  getStatus() {
-    const allFiles = this.getAllFiles();
+  async getStatus() {
+    const allFiles = await this.getAllFiles();
     const progress = this.loadProgress();
     
     if (progress.currentIndex >= allFiles.length) {
@@ -79,8 +173,8 @@ class MigrationHelper {
     };
   }
 
-  moveCurrentFile() {
-    const status = this.getStatus();
+  async moveCurrentFile() {
+    const status = await this.getStatus();
 
     if (status.completed) {
       console.log(status.message);
@@ -106,9 +200,9 @@ class MigrationHelper {
     return true;
   }
 
-  // 新增：自动处理单个文件的完整流程
+  // 自动处理单个文件的完整流程
   async processCurrentFile() {
-    const status = this.getStatus();
+    const status = await this.getStatus();
 
     if (status.completed) {
       console.log('🎉 所有文件迁移完成！');
@@ -126,7 +220,7 @@ class MigrationHelper {
 
     // 移动文件
     console.log('📋 移动文件...');
-    const moved = this.moveCurrentFile();
+    const moved = await this.moveCurrentFile();
     if (!moved) {
       return { error: '文件移动失败' };
     }
@@ -150,7 +244,7 @@ class MigrationHelper {
     }
   }
 
-  // 新增：使用yarn build进行快速编译测试
+  // 使用yarn build进行快速编译测试
   async testBuild() {
     return new Promise((resolve) => {
       console.log('⚡ 运行 yarn build...');
@@ -212,7 +306,7 @@ class MigrationHelper {
     });
   }
 
-  // 新增：自动测试编译功能（解决yarn start不退出问题）
+  // 自动测试编译功能（解决yarn start不退出问题）
   async testCompilation() {
     return new Promise((resolve) => {
       console.log('⚡ 开始编译测试...');
@@ -372,61 +466,65 @@ class MigrationHelper {
 
   completeCurrentFile() {
     const progress = this.loadProgress();
-    const allFiles = this.getAllFiles();
     
-    if (progress.currentIndex < allFiles.length) {
-      const currentFile = allFiles[progress.currentIndex];
-      const relativePath = path.relative(this.backupDir, currentFile);
+    return this.getAllFiles().then(allFiles => {
+      if (progress.currentIndex < allFiles.length) {
+        const currentFile = allFiles[progress.currentIndex];
+        const relativePath = path.relative(this.backupDir, currentFile);
+        
+        progress.completed.push({
+          file: relativePath,
+          completedAt: new Date().toISOString(),
+          index: progress.currentIndex
+        });
+        progress.currentIndex++;
+        progress.lastCompleted = new Date().toISOString();
+        
+        this.saveProgress(progress);
+        
+        console.log(`✅ 已完成: ${relativePath}`);
+        console.log(`📊 进度: ${progress.currentIndex}/${allFiles.length}`);
+        
+        return true;
+      }
       
-      progress.completed.push({
-        file: relativePath,
-        completedAt: new Date().toISOString(),
-        index: progress.currentIndex
-      });
-      progress.currentIndex++;
-      progress.lastCompleted = new Date().toISOString();
-      
-      this.saveProgress(progress);
-      
-      console.log(`✅ 已完成: ${relativePath}`);
-      console.log(`📊 进度: ${progress.currentIndex}/${allFiles.length}`);
-      
-      return true;
-    }
-    
-    return false;
+      return false;
+    });
   }
 
   skipCurrentFile() {
     const progress = this.loadProgress();
-    const allFiles = this.getAllFiles();
+    
+    return this.getAllFiles().then(allFiles => {
+      if (progress.currentIndex < allFiles.length) {
+        const currentFile = allFiles[progress.currentIndex];
+        const relativePath = path.relative(this.backupDir, currentFile);
 
-    if (progress.currentIndex < allFiles.length) {
-      const currentFile = allFiles[progress.currentIndex];
-      const relativePath = path.relative(this.backupDir, currentFile);
+        progress.currentIndex++;
+        progress.lastSkipped = relativePath;
 
-      progress.currentIndex++;
-      progress.lastSkipped = relativePath;
+        this.saveProgress(progress);
 
-      this.saveProgress(progress);
+        console.log(`⏭️ 已跳过: ${relativePath}`);
+        return true;
+      }
 
-      console.log(`⏭️ 已跳过: ${relativePath}`);
-      return true;
-    }
-
-    return false;
+      return false;
+    });
   }
 }
 
 // 命令行接口
 if (require.main === module) {
-  const helper = new MigrationHelper();
+  const csvPath = process.argv[3] || 'file_comparison.csv';
+  const helper = new MigrationHelper(csvPath);
   const command = process.argv[2];
   
   switch (command) {
     case 'status':
-      const status = helper.getStatus();
-      console.log(JSON.stringify(status, null, 2));
+      helper.getStatus().then(status => {
+        console.log(JSON.stringify(status, null, 2));
+      });
       break;
       
     case 'move':
@@ -434,7 +532,7 @@ if (require.main === module) {
       break;
       
     case 'test':
-      // 新增：自动测试命令
+      // 自动测试命令
       helper.testCompilation().then(result => {
         console.log(JSON.stringify(result, null, 2));
       });
@@ -448,13 +546,23 @@ if (require.main === module) {
       helper.skipCurrentFile();
       break;
 
+    case 'process':
+      // 新增：自动处理当前文件
+      helper.processCurrentFile().then(result => {
+        console.log(JSON.stringify(result, null, 2));
+      });
+      break;
+
     default:
       console.log('可用命令:');
-      console.log('  node migration-helper.js status    # 查看当前状态');
-      console.log('  node migration-helper.js move      # 移动当前文件');
-      console.log('  node migration-helper.js test      # 测试编译(自动启动和停止yarn start)');
-      console.log('  node migration-helper.js complete  # 标记当前文件完成');
-      console.log('  node migration-helper.js skip      # 跳过当前文件');
+      console.log('  node migration-helper.js status [csv文件]     # 查看当前状态');
+      console.log('  node migration-helper.js move [csv文件]       # 移动当前文件');
+      console.log('  node migration-helper.js test [csv文件]       # 测试编译');
+      console.log('  node migration-helper.js complete [csv文件]   # 标记当前文件完成');
+      console.log('  node migration-helper.js skip [csv文件]       # 跳过当前文件');
+      console.log('  node migration-helper.js process [csv文件]    # 自动处理当前文件');
+      console.log('');
+      console.log('默认CSV文件: file_comparison.csv');
   }
 }
 

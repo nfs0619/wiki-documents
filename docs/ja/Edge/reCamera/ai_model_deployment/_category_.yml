@@ -1,0 +1,10 @@
+position: 4 # float position is supported
+label: 'AIモデルデプロイメントの概要'
+collapsible: true # make the category collapsible
+collapsed: true # keep the category open by default
+className: recamera_ai_model_deployment
+link:
+  type: generated-index
+  slug: ja/recamera_ai_model_deployment
+  title: AIモデルデプロイメントの概要
+  description: このセクションでは、reCameraのAIモデルのトレーニング、ファインチューニング、およびデプロイメントプロセスについて簡潔に概説します。モデル選択から始まり、YOLO v5/v8/11などのオプションや、さまざまなシナリオに基づいて適切なモデルを選択するための基準、現在の典型的なモデルおよび利用可能なフレームワークについて説明します。その後、パラメーター設定に触れ、モデル適応やミドルウェア変換を含むモデル形式変換の複雑な手順について説明します。次に、モデルの量子化と圧縮について取り上げます。最後に、デプロイメントとテストフェーズ、後処理に関する考慮事項を含めて説明します。

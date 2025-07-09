@@ -1,0 +1,5 @@
+position: 3 # 浮動小数点の位置がサポートされています
+label: 'アプリケーション'
+collapsible: true # カテゴリを折りたたみ可能にする
+collapsed: true # デフォルトでカテゴリを開いた状態にする
+className: application

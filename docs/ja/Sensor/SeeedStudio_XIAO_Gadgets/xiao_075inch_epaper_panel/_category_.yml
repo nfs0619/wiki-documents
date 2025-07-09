@@ -1,0 +1,5 @@
+position: 1 # 浮動小数点の位置がサポートされています
+label: 'XIAO 75インチ E-Paper パネル'
+collapsible: true # カテゴリを折りたたみ可能にする
+collapsed: true # デフォルトでカテゴリを開いた状態にする
+className: xiao_075inch_epaper_panel

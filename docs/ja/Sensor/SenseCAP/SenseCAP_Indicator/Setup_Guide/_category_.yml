@@ -1,0 +1,13 @@
+position: 1.5
+label: 'セットアップガイド'
+collapsible: true
+collapsed: true
+className: indicator_application
+link:
+  type: generated-index
+  title: 初期セットアップガイド
+  keywords: 
+    guides
+  slug: ja/SenseCAP_Indicator_Setup_Guide
+  description: |+
+    SenseCAP Indicator を使用して、ネイティブファームウェアと OpenAI ファームウェアの両方を利用する方法を始めましょう。

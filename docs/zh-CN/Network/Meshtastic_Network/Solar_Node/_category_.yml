@@ -1,0 +1,10 @@
+position: 3 # 支持浮点排序位置
+label: 'Solar Node 太阳能节点'
+collapsible: true # 允许折叠该分类
+collapsed: true # 默认折叠该分类
+className: solar_node
+link:
+  type: generated-index
+  slug: cn/solar_node
+  title: Solar Node 太阳能节点
+  description: 用于 Meshtastic 的 SenseCAP 太阳能节点

@@ -1,0 +1,10 @@
+position: 1 # float position is supported
+label: '智能家居'
+collapsible: true # make the category collapsible
+collapsed: true # keep the category open by default
+className: smart_home_with_watcher
+link:
+  type: generated-index
+  slug: cn/smart_main_page
+  title: 带有观察者的智能家居
+  description: 它专注于观察者在智能家居中的使用。
