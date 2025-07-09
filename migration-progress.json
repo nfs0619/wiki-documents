@@ -1,5 +1,5 @@
 {
-  "currentIndex": 10,
+  "currentIndex": 35,
   "completed": [
     {
       "file": "ja\\Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_J10\\reComputer_J1010\\ja_J1010_Boot_From_SD_Card.md",
@@ -45,8 +45,123 @@
       "file": "ja\\Sensor\\Arch\\ja_Arch_GPRS.md",
       "completedAt": "2025-07-09T10:23:08.844Z",
       "index": 9
+    },
+    {
+      "file": "ja\\Sensor\\Arch\\ja_Grove-Starter_Kit_for_mbed.md",
+      "completedAt": "2025-07-09T13:23:48.966Z",
+      "index": 10
+    },
+    {
+      "file": "ja\\Sensor\\Azure Sphere MT3620\\ja_Azure_Sphere_MT3620_Development_Kit.md",
+      "completedAt": "2025-07-09T13:23:54.453Z",
+      "index": 11
+    },
+    {
+      "file": "ja\\Sensor\\Azure Sphere MT3620\\ja_MT3620_Grove_Breakout.md",
+      "completedAt": "2025-07-09T13:24:31.205Z",
+      "index": 12
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Charge\\ja_0.5w_Solar_Panel_55x70.md",
+      "completedAt": "2025-07-09T13:28:30.690Z",
+      "index": 14
+    },
+    {
+      "file": "ja\\Sensor\\Beyond_Grove\\Accessories\\Tools\\ja_DSO_Nano-Development.md",
+      "completedAt": "2025-07-09T13:28:41.683Z",
+      "index": 15
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\Actuator\\ja_Grove-Voltage_Divider.md",
+      "completedAt": "2025-07-09T13:28:47.529Z",
+      "index": 16
+    },
+    {
+      "file": "ja\\Sensor\\Grove\\Grove_Accessories\\LED\\ja_Grove-LED_Bar.md",
+      "completedAt": "2025-07-09T13:28:53.448Z",
+      "index": 17
+    },
+    {
+      "file": "ja\\Sensor\\Wio_Terminal\\ArduPy\\ja_ArduPy.md",
+      "completedAt": "2025-07-09T13:28:59.666Z",
+      "index": 18
+    },
+    {
+      "file": "ja\\Top_Brand\\Arduino\\Kit with Courses\\ja_Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS.md",
+      "completedAt": "2025-07-09T13:30:50.413Z",
+      "index": 20
+    },
+    {
+      "file": "ja\\Top_Brand\\Arduino\\shield\\ja_Small_e-Paper_Shield.md",
+      "completedAt": "2025-07-09T13:31:14.347Z",
+      "index": 21
+    },
+    {
+      "file": "ja\\Top_Brand\\Arduino\\shield\\ja_Wifi_Shield_V1.2.md",
+      "completedAt": "2025-07-09T13:31:24.819Z",
+      "index": 22
+    },
+    {
+      "file": "ja\\Top_Brand\\Arduino\\Tutorials\\Arduino_Basic_Usage\\ja_A_Comparison_of_Different_Grove_Temperature_Sensors.md",
+      "completedAt": "2025-07-09T13:32:24.787Z",
+      "index": 23
+    },
+    {
+      "file": "Network\\LoRa_Wio_Series\\Wio_SX1262\\Wio_SX1262_with_XIAO_ESP32S3_Kit\\Single_Channel_LoRaWAN_Gateway.md",
+      "completedAt": "2025-07-09T13:32:51.104Z",
+      "index": 24
+    },
+    {
+      "file": "Network\\LoRa_Wio_Series\\Wio-E5\\LoRa_E5_mini.md",
+      "completedAt": "2025-07-09T13:46:36.823Z",
+      "index": 25
+    },
+    {
+      "file": "Network\\Meshtastic_Network\\T1000-E\\t1000_e_intro.md",
+      "completedAt": "2025-07-09T13:46:44.542Z",
+      "index": 26
+    },
+    {
+      "file": "Network\\Meshtastic_Network\\Wio Tracker L1\\wio_tracker_node.md",
+      "completedAt": "2025-07-09T13:46:51.668Z",
+      "index": 27
+    },
+    {
+      "file": "Network\\Meshtastic_Network\\wio_tracker_kit\\flash_meshtastic_kit.md",
+      "completedAt": "2025-07-09T13:47:00.677Z",
+      "index": 28
+    },
+    {
+      "file": "Network\\Meshtastic_Network\\wio_tracker_kit\\meshtastic_kit_wio_tracker_1110.md",
+      "completedAt": "2025-07-09T13:47:08.286Z",
+      "index": 29
+    },
+    {
+      "file": "Network\\RK_Devices\\LinkStar\\Linkstar_Intro.md",
+      "completedAt": "2025-07-09T13:47:14.562Z",
+      "index": 30
+    },
+    {
+      "file": "Network\\SenseCAP_K1100\\Contributors_Project\\K1111-Quick-Start-Guide.md",
+      "completedAt": "2025-07-09T13:47:21.036Z",
+      "index": 31
+    },
+    {
+      "file": "Network\\SenseCAP_K1100\\LoRaWAN-Network_Application\\Sensors_Basic_Usage_with_Arduino\\K1100-Light-Sensor-Grove-LoRa-E5.md",
+      "completedAt": "2025-07-09T13:47:27.675Z",
+      "index": 32
+    },
+    {
+      "file": "Network\\SenseCAP_Network\\SenseCAPMX_Hotspot\\Helium_Gateway\\SenseCAP_M1\\Troubleshooting.md",
+      "completedAt": "2025-07-09T13:47:35.680Z",
+      "index": 33
+    },
+    {
+      "file": "Seeed_Elderly\\LinkIt\\Linklt ONE\\LinkIt_ONE_Tutorial-Get_temperature_with_Webpage.md",
+      "completedAt": "2025-07-09T13:47:42.883Z",
+      "index": 34
     }
   ],
-  "lastSkipped": "ja\\Edge\\NVIDIA_Jetson\\reComputer_Jetson_Series\\reComputer_Industrial\\ja_reComputer_Industrial_Getting_Started.md",
-  "lastCompleted": "2025-07-09T10:23:08.846Z"
+  "lastSkipped": "ja\\Top_Brand\\Arduino\\Kit with Courses\\ja_Grove_Starter_kit_for_Arduino_101.md",
+  "lastCompleted": "2025-07-09T13:47:42.884Z"
 }

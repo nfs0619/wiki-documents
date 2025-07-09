@@ -164,15 +164,15 @@ USB ISP モードに入るには、Arch をコンピュータに接続し、ボ�
 
 - Linux の場合
 
-    1.ディスクがマウントされていない場合、{mnt_dir} にディスクをマウントします。
+    1.ディスクがマウントされていない場合、`{mnt_dir}` にディスクをマウントします。
 
-    2.dd if={new_firmware.bin} of={mnt_dir}/firmware.bin conv=notrunc
+    2.`dd if={new_firmware.bin} of={mnt_dir}/firmware.bin conv=notrunc`
 
 - Mac の場合
 
     ターミナルを使用して以下のスクリプトを実行し、.bin ファイルを Arch にコピーします。
 
-    1.dd if={new_firmware.bin} of=/Volumes/CRP\ DISABLD/firmware.bin conv=notrunc
+    1.`dd if={new_firmware.bin} of=/Volumes/CRP\ DISABLD/firmware.bin conv=notrunc`
 
     また、**Automator** アプリケーションを作成して、ファイルをボードにドラッグ＆ドロップでコピーできるようにすることも可能です。「Run Shell Script」を作成し、以下のコマンドを使用します：
 
