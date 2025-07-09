@@ -82,42 +82,7 @@ Expected a closing tag for `<td>` (39:4-39:8) before the end of `paragraph`
 </td>
 ```
 
-### 4. 复杂表格语法错误
-
-**错误信息：**
-```
-Failed to generate code because ast or source is not set
-```
-
-**原因：** 复杂的HTML表格语法导致MDX解析器无法正确生成抽象语法树
-
-**修复方法：**
-- 将复杂的HTML表格转换为简单的Markdown表格
-- 示例转换：
-
-```html
-<!-- 复杂HTML表格 -->
-<table style={{borderCollapse: 'collapse', width: '100%', height: 125}} border={1}>
-  <tbody>
-    <tr style={{height: 21}}>
-      <td style={{width: '33.3333%', height: 21}}>
-        <strong>Frequency Plan</strong>
-      </td>
-      <td style={{width: '33.3333%', height: 21}}>EU868</td>
-      <td style={{width: '33.3333%', height: 21}}>US915</td>
-    </tr>
-  </tbody>
-</table>
-```
-
-```markdown
-<!-- 简单Markdown表格 -->
-| Frequency Plan | EU868 | US915 |
-|---|---|---|
-| Certification | CE | FCC |
-```
-
-### 5. 特殊字符转义问题
+### 4. 特殊字符转义问题
 
 **原因：** 某些特殊字符被MDX解析器误解
 
@@ -126,7 +91,7 @@ Failed to generate code because ast or source is not set
 - 例如：`154\*100\*44 mm` → `154×100×44 mm`
 - 避免使用可能被误解为转义字符的符号
 
-### 6. 标题格式问题
+### 5. 标题格式问题
 
 **错误信息：**
 ```
