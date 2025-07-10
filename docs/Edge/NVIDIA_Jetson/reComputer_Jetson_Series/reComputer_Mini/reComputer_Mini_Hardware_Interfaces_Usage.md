@@ -376,7 +376,7 @@ First, as shown in the figure below, connect the signal lines of CAN0 to those o
 <div align="center">
   <img width ="800" src="https://files.seeedstudio.com/wiki/recomputer_mini/CAN0toCAN1.jpg"/>
 </div>
-
+ 
 #### Usage Instruction
 After completing the hardware connections.
 

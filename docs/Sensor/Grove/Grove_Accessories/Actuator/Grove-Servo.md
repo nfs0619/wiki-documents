@@ -29,43 +29,55 @@ Specification
 ---
 
 <table cellSpacing={0} width="80%">
-  <tbody>
+  <tbody><tr>
+      <th scope="col"> Item
+      </th>
+      <th scope="col"> Min
+      </th>
+      <th scope="col"> Typical
+      </th>
+      <th scope="col"> Max
+      </th>
+      <th scope="col"> Unit
+      </th></tr>
     <tr>
-      <th scope="col">Item</th>
-      <th scope="col">Min</th>
-      <th scope="col">Typical</th>
-      <th scope="col">Max</th>
-      <th scope="col">Unit</th>
-    </tr>
+      <th> Working Voltage
+      </th>
+      <td> 4.8
+      </td>
+      <td> 5.0
+      </td>
+      <td> 6.0
+      </td>
+      <td> V
+      </td></tr>
     <tr>
-      <th>Working Voltage</th>
-      <td>4.8</td>
-      <td>5.0</td>
-      <td>6.0</td>
-      <td>V</td>
-    </tr>
+      <th> Torque
+      </th><td colSpan={3}> 1.5/1.8
+      </td>
+      <td> Kg.cm
+      </td></tr>
     <tr>
-      <th>Torque</th>
-      <td colSpan={3}>1.5/1.8</td>
-      <td>Kg.cm</td>
-    </tr>
+      <th scope="row"> Speed
+      </th>
+      <td colSpan={3}> 0.12/0.16
+      </td>
+      <td> s/60°
+      </td></tr>
     <tr>
-      <th scope="row">Speed</th>
-      <td colSpan={3}>0.12/0.16</td>
-      <td>s/60°</td>
-    </tr>
+      <th scope="row"> Size
+      </th>
+      <td colSpan={3}> 32X11.5X24
+      </td>
+      <td> mm
+      </td></tr>
     <tr>
-      <th scope="row">Size</th>
-      <td colSpan={3}>32X11.5X24</td>
-      <td>mm</td>
-    </tr>
-    <tr>
-      <th scope="row">Weight</th>
-      <td colSpan={3}>8.5</td>
-      <td>g</td>
-    </tr>
-  </tbody>
-</table>
+      <th scope="row"> Weight
+      </th>
+      <td colSpan={3}> 8.5
+      </td>
+      <td> g
+      </td></tr></tbody></table>
 
 Platforms Supported
 -------------------
@@ -75,12 +87,16 @@ Platforms Supported
 | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo.jpg) |
 
 :::caution
-    The platforms mentioned above as supported is/are an indication of the module's software or theoritical compatibility. We only provide software library or code examples for Arduino platform in most cases. It is not possible to provide software library / demo code for all possible MCU platforms. Hence, users have to write their own software library.
+The platforms mentioned above as supported is/are an indication of the module's software or theoritical compatibility. We only provide software library or code examples for Arduino platform in most cases. It is not possible to provide software library / demo code for all possible MCU platforms. Hence, users have to write their own software library.
 :::
 
 ## Getting Started
 
 ### Play with Arduino
+
+:::note
+The method of connecting the servo described in this article is not the most proper or recommended approach. For servos—especially when using multiple servos simultaneously—a dedicated servo driver board should be used to provide additional power to the servos, with the development board controlling the servos via the driver board. Since Seeed Studio does not currently offer a suitable driver board, this article demonstrates connecting the servo directly to the main board as a usage example only. This approach is **not recommended** for actual projects.
+:::
 
 Here we will show you how this Grove - Servo works via a simple demo. First of all, we need to prepare the below stuffs:
 
@@ -102,7 +118,7 @@ The Servo has three wires: power, ground, and signal. The power wire is typicall
 
   ![](https://files.seeedstudio.com/wiki/Grove-Servo/img/library%20example.jpg)
 
-```
+```cpp
 /* Sweep
  by BARRAGAN <http://barraganstudio.com>
  This example code is in the public domain.
@@ -153,7 +169,7 @@ void loop() {
 **Step 1.** Open [Codecraft](https://ide.chmakered.com/), add Arduino support, and drag a main procedure to working area.
 
 :::note
-    If this is your first time using Codecraft, see also [Guide for Codecraft using Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+If this is your first time using Codecraft, see also [Guide for Codecraft using Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 :::
 **Step 2.** Drag blocks as picture below or open the cdc file which can be downloaded at the end of this page.
 
@@ -162,10 +178,15 @@ void loop() {
 Upload the program to your Arduino/Seeeduino.
 
 :::tip
-    When the code finishes uploaded, you will see the servo sweep.
+When the code finishes uploaded, you will see the servo sweep.
 :::
 
 ### Play With Raspberry Pi (With Grove Base Hat for Raspberry Pi)
+
+:::note
+The method of connecting the servo described in this article is not the most proper or recommended approach. For servos—especially when using multiple servos simultaneously—a dedicated servo driver board should be used to provide additional power to the servos, with the development board controlling the servos via the driver board. Since Seeed Studio does not currently offer a suitable driver board, this article demonstrates connecting the servo directly to the main board as a usage example only. This approach is **not recommended** for actual projects.
+:::
+
 
 #### Hardware
 
@@ -183,13 +204,13 @@ Upload the program to your Arduino/Seeeduino.
 ![](https://files.seeedstudio.com/wiki/Grove-Servo/img/Servo_Hat.jpg)
 
 :::note
-    For step 3 you are able to connect the servo module to **any GPIO Port** but make sure you change the command with the corresponding port number.
+For step 3 you are able to connect the servo module to **any GPIO Port** but make sure you change the command with the corresponding port number.
 :::
 
 #### Software
 
 :::tip
-     If you are using **Raspberry Pi with Raspberrypi OS >= Bullseye**, you have to use this command line **only with Python3**.
+If you are using **Raspberry Pi with Raspberrypi OS >= Bullseye**, you have to use this command line **only with Python3**.
 :::
 * **Step 1**. Follow [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) to configure the development environment.
 * **Step 2**. Download the source file by cloning the grove.py library.

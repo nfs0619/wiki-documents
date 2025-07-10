@@ -1,6 +1,6 @@
 ---
 description: This topic introduces Seeed Studio's Robotics product documentation.
-title: Robotics Page
+title: Robotics
 keywords:
 - robotics
 - nvidia
@@ -13,7 +13,7 @@ last_update:
   author: ZhuYaohui
 ---
 
-# 🤖 Robotics Navigation 
+# 🤖 Robotics 
 
 > *"The science of today is the technology of tomorrow." - Edward Teller*
 
@@ -26,7 +26,7 @@ last_update:
     </a>
     <a href="#actuators" className="nav-item">
       <span className="icon">⚙️</span>
-      <span className="text">Actuators</span>
+      <span className="text">Joint Actuators</span>
       <div className="hover-effect"></div>
     </a>
     <a href="#sensors" className="nav-item">
@@ -52,13 +52,19 @@ last_update:
 
 ## 🤗 Lerobot
 
-- [SO100/101 Arm](/lerobot_so100m/) <span className="tag stable">Update</span>
-- [SO100 Arm with IsaacSim](/lerobot_so100m_isaacsim/)
-- [Lekiwi Mobile Base](/lerobot_lekiwi/) <span className="tag recommended">New</span>
-
-## Others
-
-- **Comming soon**
+<div className="card-container">
+    <a href="/lerobot_so100m/" className="nav-item">
+      <span className="text">SO100/101 Arm</span>
+      <span className="tag stable">Update</span>
+    </a>
+    <a href="/lerobot_so100m_isaacsim/" className="nav-item">
+      <span className="text">SO100 Arm with IsaacSim</span>
+    </a>
+    <a href="/lerobot_lekiwi/" className="nav-item">
+      <span className="text">Lekiwi Mobile Base</span>
+       <span className="tag recommended">New</span>
+    </a>
+</div>
 
 </div>
 </div>
@@ -67,8 +73,24 @@ last_update:
 <div class="category-group">
 <div className="category-card actuators">
 
-- [MyActuator X Series Motors](/myactuator_series/) <span className="tag recommended">New</span>
-- [Damiao DM43 Series Motors](/damiao_series/) <span className="tag recommended">New</span>
+<div className="card-container">
+    <a href="/myactuator_series/" className="nav-item">
+      <span className="text">MyActuator X Series</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/damiao_series/" className="nav-item">
+      <span className="text">Damiao DM43 Series</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/feetech_servo/" className="nav-item">
+      <span className="text">Feetech STS3215 Servo Motor</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/hightorque_series/" className="nav-item">
+      <span className="text">HighTorque Series</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
 
 </div>
 </div>
@@ -77,14 +99,58 @@ last_update:
 <div class="category-group">
 <div className="category-card sensors">
 
-**LiDAR Systems**  
-- [Robosense LiDAR](/robosense_lidar/)  
-- [MID360 LiDAR](/mid360/)  
-- [A-LOAM Algorithm](/a_loam/)  
+**LiDAR**  
 
-**Vision Systems**  
-- [Orbbec Depth Camera](/orbbec_depth_camera_on_ros/)  
-- [CSI Camera Setup](/csi_camera_on_ros/)
+<div className="card-container">
+    <a href="/robosense_lidar/" className="nav-item">
+      <span className="text">Robosense</span>
+    </a>
+    <a href="/mid360/" className="nav-item">
+      <span className="text">MID360</span>
+    </a>
+    <a href="/a_loam/" className="nav-item">
+      <span className="text">A-LOAM Algorithm</span>
+    </a>
+    <a href="/slamtec/" className="nav-item">
+      <span className="text">Slamtec Series</span>
+       <span className="tag recommended">New</span>
+    </a>
+</div>
+
+
+**Camera**  
+
+<div className="card-container">
+    <a href="/orbbec_depth_camera_on_ros/" className="nav-item">
+      <span className="text">Orbbec Depth Camera</span>
+    </a>
+    <a href="/csi_camera_on_ros/" className="nav-item">
+      <span className="text">CSI Camera</span>
+    </a>
+</div>
+
+**Voice**  
+
+<div className="card-container">
+    <a href="/ReSpeaker_Core_v2.0/" className="nav-item">
+      <span className="text">ReSpeaker Core v2.0</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/ReSpeaker_Mic_Array_v2.0/" className="nav-item">
+      <span className="text">ReSpeaker Mic Array v2.0</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
+
+**IMU**  
+
+<div className="card-container">
+    <a href="/hexfellow_y200/" className="nav-item">
+      <span className="text">HEXFELLOW Y200</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
+
 
 </div>
 </div>
@@ -94,19 +160,48 @@ last_update:
 <div className="category-card software">
 
 **ROS Ecosystem**  
-- [ROS1 Installation](/installing_ros1/) <span className="tag recommended">New</span>
-- [IsaacROS Setup](/install_isaacros/) <span className="tag recommended">New</span>
-- [ROS2 Humble](/install_ros2_humble/) <span className="tag recommended">New</span>
-- [AprilTag Module](/isaac_ros_apriltag/) <span className="tag recommended">New</span>
-- [Visual SLAM](/isaac_ros_visual_slam/) <span className="tag recommended">New</span>
+
+<div className="card-container">
+    <a href="/installing_ros1/" className="nav-item">
+      <span className="text">ROS1 Installation</span>
+    </a>
+    <a href="/install_ros2_humble/" className="nav-item">
+      <span className="text">ROS2 Installation</span>
+    </a>
+    <a href="/install_isaacros/" className="nav-item">
+      <span className="text">IsaacROS Installation</span>
+    </a>
+    <a href="/isaac_ros_apriltag/" className="nav-item">
+      <span className="text">AprilTag</span>
+    </a>
+    <a href="/isaac_ros_visual_slam/" className="nav-item">
+      <span className="text">Visual SLAM</span>
+    </a>
+</div>
+
+
 
 **NVIDIA Isaac**  
-- [Isaac Lab Installation](/install_isaaclab/)
+<div className="card-container">
+<a href="/install_isaaclab/" className="nav-item">
+  <span className="text">Isaac Lab Installation</span>
+</a>
+</div>
+
+
+**VLA**  
+<div className="card-container">
+<a href="/control_robotic_arm_via_gr00t" className="nav-item">
+  <span className="text">NVIDIA's GR00T</span>
+</a>
+</div>
+
 
 </div>
 </div>
 
 </div>
+
 
 
 
@@ -115,15 +210,23 @@ last_update:
 .quick-nav-container {
   margin: 2rem 0;
   padding: 1rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: 
+  radial-gradient(at 10% 20%, #f0fdf4 0%, transparent 50%),
+  radial-gradient(at 90% 80%, #f0f7ff 0%, transparent 50%),
+  white;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 /* Dark模式 - 导航容器 */
 html[data-theme='dark'] .quick-nav-container {
-  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  background: 
+    radial-gradient(at 10% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+    radial-gradient(at 90% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+    linear-gradient(135deg,rgb(42, 44, 49) 0%,rgb(32, 32, 33) 100%);
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.3),
+    inset 0 0 12px rgba(99, 102, 241, 0.1); /* 内发光增强深度 */
 }
 
 /* 导航主体 */
@@ -153,7 +256,7 @@ html[data-theme='dark'] .quick-nav-container {
 /* Dark模式 - 导航项 */
 html[data-theme='dark'] .nav-item {
   color: #e5e7eb;
-  background: #374151;
+  background:rgb(47, 50, 57);
   box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
@@ -245,7 +348,7 @@ html[data-theme='dark'] .nav-item:hover {
 
 /* Dark模式 - 内容卡片 */
 html[data-theme='dark'] .category-card {
-  background: #374151;
+  background:rgb(30, 30, 32);
   box-shadow: 0 4px 6px rgba(0,0,0,0.4);
   color: #e5e7eb;
 }
@@ -323,7 +426,7 @@ html[data-theme='dark'] .category-card a:hover {
 .category-card a::after {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: 2px;
   left: 0;
   width: 0;
   height: 2px;
@@ -338,6 +441,10 @@ html[data-theme='dark'] .category-card a::after {
 
 .category-card a:hover::after {
   width: 100%;
+}
+
+.card-container {
+  margin-bottom: 1.5rem; /* 原为0.1rem */
 }
 
 /* 标签样式增强 */

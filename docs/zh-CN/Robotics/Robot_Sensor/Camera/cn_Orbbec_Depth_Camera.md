@@ -1,11 +1,12 @@
 ---
-description: 本文档提供了在 reComputer 上通过 ROS 使用 Orbbec 深度相机的分步指南。
+description: 本文档提供了在 reComputer 上通过 ROS 使用 Orbbec奥比中光深度相机的分步指南。
 title: 使用 ROS 配置 Orbbec 深度相机
 keywords:
 - Jetson Nano
 - reComputer
 - Orbbec
 - 深度相机
+- 奥比中光
 - ROS
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/orbbec_depth_camera_on_ros
@@ -14,14 +15,10 @@ last_update:
   author: Lidayu
 ---
 
-# 如何在 reComputer 上通过 ROS 使用 Orbbec 深度相机
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+# 如何在 reComputer Jetson上通过 ROS 使用 Orbbec 奥比中光深度相机
 
 ## 简介
-本教程提供了在 [reComputer J30/J40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) 系列设备上通过 ROS 使用 Orbbec 深度相机的分步指南。我们将以 Orbbec Gemini 2 为例，获取深度图像和点云的主题数据，并在 rviz 中进行可视化。
+本教程提供了在 [reComputer J30/J40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) 系列设备上通过 ROS 使用 Orbbec 奥比中光深度相机的分步指南。我们将以 Orbbec Gemini 2 为例，获取深度图像和点云的主题数据，并在 rviz 中进行可视化。
 
 <div align="center">
     <img width={700} 

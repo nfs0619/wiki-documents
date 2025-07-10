@@ -14,9 +14,10 @@ last_update:
   author: Parker Hu & Yuxin Liang
 ---
 
-# Develop with c&cpp
+# Develop on reCamera with c&cpp
 
-Recamera has limited resources and no compilation environment for C code is configured. If you want to use `C&CPP` to develop applications on the recamera, you need to configure the cross-compilation environment (Compile the `C&CPP` program on another Linux, then transfer the compiled file to the recamera terminal for execution).If you're using Windows, you can install Windows Subsystem for Linux (WSL) to run Linux (Ubuntu, OpenSUSE, Kali, Debian, or Arch Linux).
+## Environment Configuration
+Recamera has limited resources and no compilation environment for C code is configured. If you want to use C/C++ to develop applications on the recamera, you need to configure the cross-compilation environment (Compile the C/C++ program on another Linux, then transfer the compiled file to the recamera terminal for execution).If you're using Windows, you can install Windows Subsystem for Linux (WSL) to run Linux (Ubuntu, OpenSUSE, Kali, Debian, or Arch Linux).
 
  **Step1**:Configuring the build environment on another Linux
 
@@ -82,9 +83,11 @@ The executable file has been successfully transferred.
 
 Execution succeeded.
 
-# More demos built with c&cpp
+## More demos built with c&cpp
 
-We provide more `C&CPP` demos for recamera.You can clone them from GitHub:https://github.com/Seeed-Studio/sscma-example-sg200x. You may have already cloned it in "Step 1".
+### ​Use Recamera to Capture Streaming Video
+
+We provide more C/C++ demos for recamera.You can clone them from GitHub:https://github.com/Seeed-Studio/sscma-example-sg200x. You may have already cloned it in "Step 1".
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/develop_with_c_cpp/6.png" /></div>
 
@@ -136,4 +139,3 @@ Thank you for choosing our products. We are here to provide you with different s
 <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-

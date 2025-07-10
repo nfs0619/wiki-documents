@@ -161,8 +161,7 @@ If this is your first time using Arduino, we highly recommend you to refer to [G
 #### Step 1. Download and Install the stable version of Arduino IDE according to your operating system
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
-        <strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
     </a>
 </div>
 
@@ -212,8 +211,8 @@ SoftwareSerial ss(RXPin, TXPin);
 void setup() {
   Serial.begin(115200);
 #ifdef ARDUINO_SEEED_XIAO_RP2040
-  pinMode(D10,OUTPUT);
-  digitalWrite(D10,1);
+  pinMode(D2,OUTPUT);
+  digitalWrite(D2,1);
   pinMode(D0,OUTPUT);
   digitalWrite(D0,1);
 #endif
@@ -377,11 +376,11 @@ Make sure that the L76K GNSS Module is placed outdoor where good GNSS signals ca
 
 <details>
 <summary>Why does the device's green light stay on constantly when plugged into the XIAO RP2040?</summary>
-To address this issue, you need to pull D0 and D10 high. The constant illumination of the fix green light indicates that the device has entered an abnormal working state.
+To address this issue, you need to pull D0 and D2 high. The constant illumination of the fix green light indicates that the device has entered an abnormal working state.
 
 ```cpp
-pinMode(D10,OUTPUT);
-digitalWrite(D10,1);
+pinMode(D2,OUTPUT);
+digitalWrite(D2,1);
 pinMode(D0,OUTPUT);
 digitalWrite(D0,1);
 ```

@@ -149,7 +149,7 @@ By gathering the necessary components and setting up Home Assistant with the ESP
 
 
 
-### Step 2: Preparing the Kit
+### Step 3: Preparing the Kit
 
 By default, your device comes pre-flashed with firmware for IoT Button. However, there are two scenarios where you may need to update the firmware:
 
@@ -161,9 +161,15 @@ There are two simple methods for flashing the firmware:
 <Tabs>
 <TabItem value='Web Tool'>
 
-You can use this [Web Tool](https://seeed-projects.github.io/Seeed_IoT_Button/) for an easy and direct method to flash your firmware. Simply follow the on-screen instructions.
+You can use this [Web Tool](https://gadgets.seeed.cc/) for an easy and direct method to flash your firmware.
 
-- Click the `CONNECT` button to initiate the connection. The tool will automatically update the firmware.
+**Step 1**: Connect your IoT Button to your computer using a USB cable.
+
+**Step 2**: Click the "Install" button on the Web Flasher page.
+
+**Step 3**: Select the correct USB port from the popup dialog.
+
+**Step 4**: The browser will automatically download and flash the firmware to your device.
 
 If something goes wrong, follow the on-screen troubleshooting steps or switch to the `ESPHome Web` method to complete the process.
 
@@ -195,7 +201,7 @@ Navigate to `192.168.4.1` to configure your Home Assistant server's local networ
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60fda2/ha-enter-psw.jpg" style={{width:360, height:'auto', "border-radius": '15px'}}/></div>
 
-### Step 3: Discovering and Adding the Device in Home Assistant {#discovering-and-adding-the-device-in-home-assistant}
+### Step 4: Discovering and Adding the Device in Home Assistant {#discovering-and-adding-the-device-in-home-assistant}
 
 In this section, we'll go through the process using the Home Assistant app, where the logic is the same as on the web.
 

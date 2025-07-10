@@ -1,11 +1,12 @@
 ---
-description: 本文档提供了在 reComputer J30/40 上使用 ROS 安装和设置 RoboSense LiDAR 的分步指南。
+description: 本文档提供了在 reComputer J30/40 上使用 ROS 安装和设置 RoboSense 速腾聚创3D雷达 的分步指南。
 title: 使用 ROS 配置 RoboSense LiDAR
 keywords:
 - Jetson Nano
 - reComputer
 - Robosense
 - Lidar
+- 速腾聚创3D雷达
 - ROS
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/robosense_lidar
@@ -14,14 +15,11 @@ last_update:
   author: ZhuYaoHui
 ---
 
-# 如何在 reComputer 上使用 RoboSense LiDAR
+# 如何在 reComputer 上使用 RoboSense速腾聚创3D雷达 LiDAR
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## 简介
-RoboSense LiDAR 传感器为各种应用提供高精度的 3D 点云数据。本指南重点介绍如何在运行 ROS Noetic 的 [reComputer J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) 设备上设置 RS32 型号。
+RoboSense速腾聚创3D雷达传感器为各种应用提供高精度的 3D 点云数据。本指南重点介绍如何在运行 ROS Noetic 的 [reComputer J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) 设备上设置 RS32 型号。
 
 本文档提供了在 [reComputer J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) Jetson 上使用 ROS 安装和设置 RoboSense LiDAR 的分步指南，并可视化点云数据。
 <div align="center">

@@ -174,7 +174,7 @@ Grove Vision AI V2 をコンピュータに接続する前に、BOOT ボタン�
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "/connect_vision_ai_v2_to_ha" class="getting_started_label2"> Home Assistant への接続</a>
+          <a href= "/ja/connect_vision_ai_v2_to_ha" class="getting_started_label2"> Home Assistant への接続</a>
           <br/>Grove Vision AI V2 を Home Assistant に統合
       </div>
   </div>

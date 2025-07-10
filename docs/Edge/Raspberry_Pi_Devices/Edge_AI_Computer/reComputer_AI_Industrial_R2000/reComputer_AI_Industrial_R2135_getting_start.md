@@ -12,7 +12,7 @@ last_update:
   author: Jiahao Li
 ---
 
-<div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/7/-/7-114993595-recomputer-ai-industrial-r2135-12.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_Industrial.jpeg" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-AI-Industrial-R2135-12-p-6432.html">
@@ -85,6 +85,8 @@ Designed for **24/7 reliability**, it features **wide voltage input (9-36V)**, *
 | **Mounting**              | DIN-rail / Wall Mount                                                           |
 | **Weight (Net)**          | 688g                                                                            |
 | **Statement**             | Options marked "Optional" require additional purchase (refer to accessories list). |
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_industrial_dimension.jpeg" style={{width:800, height:'auto'}}/></div>
 
 
 ## Hailo introduction
@@ -242,6 +244,7 @@ gpiochip0: GPIOs 569-622, parent: platform/1f000d0000.gpio, pinctrl-rp1:
 
 ### Mainboard Overview 
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_Industrial_Mainboard.jpeg" style={{width:800, height:'auto'}}/></div>
 
 ### Power Diagram
 ![image1](https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_Industrial_power_diagram.png)
@@ -381,6 +384,8 @@ If the USB hub is functioning properly, you should see its details listed in the
 
 ### SIM Slot(Internal)
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_Industrial_SIM.jpeg" style={{width:800, height:'auto'}}/></div>
+
 The reComputer AI Industrial R2135 series equipment includes an internal Standard SIM card slot, which is used to install Standard SIM card for obtaining 4G signals.
 The size differences between standard SIM, Micro SIM and Nano SIM cards are as follows:
 
@@ -392,6 +397,10 @@ The size differences between standard SIM, Micro SIM and Nano SIM cards are as f
 > For more information, please refer to section **"2.3.2 4G Module"**.
 
 ### M.2 Slot
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_Industrial_M2_1.jpeg" style={{width:800, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_Industrial_M22.jpeg" style={{width:800, height:'auto'}}/></div>
 
 The reComputer AI Industrial R2135 is equipped with two M.2 Key-M slots (NVMe1 and NVMe2) for NVMe M.2 2280 SSD and AI Acceleration, allows for high-speed storage expansion, enabling users to enhance the performance and capacity of their system.
 
@@ -410,6 +419,10 @@ The reComputer AI Industrial R2135 is equipped with two M.2 Key-M slots (NVMe1 a
 > If you plan to use an SSD as a boot drive and are unsure about compatibility, we recommend the **1TB SSD (SKU 112990267)**. This model has been tested and verified to support booting, helping avoid compatibility issues and reducing trial-and-error costs.
 
 ### Mini-PCIe Slot
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_Industrial_minipcie_1.jpeg" style={{width:800, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_Industrial_minipcie_2.jpeg" style={{width:800, height:'auto'}}/></div>
 
 The reComputer AI Industrial R2135 includes a Mini PCIe slot designed primarily for 4G LTE modem modules (e.g., Quectel EC20/EC25).
 
@@ -431,6 +444,8 @@ The reComputer AI Industrial R2135 includes a Mini PCIe slot designed primarily 
 
 ### Reset Hole
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_Industrial_reset.jpeg" style={{width:800, height:'auto'}}/></div>
+
 There is a Mini Push Button Switch located in the reset hole of the reComputer AI Industrial R2135. By pressing this button with a thin object, the CM4 can be reset. This pin when high signals that the CM4 has started. Driving this pin low resets the module.
 
 
@@ -451,6 +466,8 @@ reComputer AI Industrial R2135 comes with a standard RJ45 Gigabit Ethernet port 
 ● Onboard green/yellow LEDs indicate link and activity status.
 
 ### HDMI
+
+<div align="left"><img width={200} src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_Industrial_HDMI.jpeg" /></div>
 
 reComputer AI Industrial R2135 comes with two standard HDMI Type-A ports, labeled HDMI0 and HDMI1, which support high-resolution video output. The system is capable of delivering display resolutions up to 4K at 60Hz and supports simultaneous dual HDMI output, making it suitable for multi-display applications.
 
@@ -537,6 +554,9 @@ As shown in the figure below, the SSH connection was lost after entering the com
 <div align="left"><img width={500} src="https://files.seeedstudio.com/wiki/AI-box-cm5/watchdog.png" /></div>
 
 ### M.2 AI Acceleration 
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/reComputer_AI_industrial_accelerator.jpeg" style={{width:800, height:'auto'}}/></div>
+
 
 The reComputer AI Industrial R2135 includes a Hailo-8 AI accelerator module, pre-installed in the NVMe2 M.2 slot, delivering 26 TOPS of computing power for real-time multi-channel AI vision processing.
 

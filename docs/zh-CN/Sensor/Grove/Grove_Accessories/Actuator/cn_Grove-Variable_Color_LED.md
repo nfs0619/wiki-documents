@@ -21,7 +21,7 @@ last_update:
 - 兼容 Grove 接口
 - 颜色可调
 
-:::提示
+:::tip提示
     更多关于 Grove 模块的信息，请参见 [Grove 系统](https://wiki.seeedstudio.com/Grove_System/)
 :::
 
@@ -30,7 +30,7 @@ last_update:
 - 玩具
 - 装饰
 
-:::警告
+:::caution警告
     在调整 R、G 和 B 可调电阻时，请轻拿轻放，以防过度转动。
 :::
 
@@ -49,7 +49,7 @@ last_update:
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo_n.jpg) |
 
-:::警告
+:::caution警告
     上面提到的支持平台仅表明该模块的软件或理论兼容性。在大多数情况下，我们只提供针对 Arduino 平台的软件库或代码示例。由于无法为所有可能的 MCU 平台提供软件库/演示代码，因此用户需要自己编写软件库。
 :::
 
@@ -97,6 +97,7 @@ void loop()  {
 
 <div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-Variable_Color_LED/res/Variable_Color_LED_eagle_file.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
+
 ## 资源
 
 - [可变色 LED eagle_文件](https://files.seeedstudio.com/wiki/Grove-Variable_Color_LED/res/Variable_Color_LED_eagle_file.zip)

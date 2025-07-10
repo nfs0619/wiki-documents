@@ -47,6 +47,7 @@ We can't do it without the love, contribution that we get from the community, an
 		<li><a href="#esp_idf"><strong>ESP IDF</strong></a></li>
 		<li><a href="#rust"><strong>Rust</strong></a></li>
 		<li><a href="#tinygo"><strong>TinyGo</strong></a></li>
+		<li><a href="#microblocks"><strong>MicroBlocks</strong></a></li>
 		<li><strong>Lua</strong></li>
 		<li><strong>Graphical Programming Languages</strong></li>
 		</ul>
@@ -431,6 +432,32 @@ We can't do it without the love, contribution that we get from the community, an
 		</tr>
 	</table>
 </div>
+
+<br></br>
+<div><a href="https://microblocks.fun/"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/microblocks.png" style={{width:'auto', height:50}} /></a></div>
+
+
+<span id="microblocks"><strong><a href="https://microblocks.fun/">MicroBlocks</a></strong></span>, a blocks programming language for physical computing inspired by Scratch.
+<br></br>
+<br></br>
+
+<div class="table-center">
+	<table align="center">
+		<tr>
+			<th style={{width:333, height:'auto'}}><a href="https://microblocks.fun/downloads/pilot/vm/vm_xiao_samd21.uf2">XIAO SAMD21</a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://microblocks.fun/downloads/pilot/vm/vm_xiao_rp2040.uf2">XIAO RP2040</a></th>
+            <th style={{width:333, height:'auto'}}><a href="https://microblocks.fun/downloads/pilot/vm/vm_xiao_rp2350.uf2">XIAO RP2350</a></th>
+		</tr>
+		<tr>
+			<th style={{width:333, height:'auto'}}><a href="https://microblocks.fun/downloads/pilot/vm/vm_xiao_nrf52840.uf2">XIAO nRF52840</a></th>
+			<th style={{width:333, height:'auto'}}><a href=""></a></th>
+            <th style={{width:333, height:'auto'}}><a href=""></a></th>
+		</tr>
+	</table>
+</div>
+
+
+
 
 ## <span id="supported_rtos">Supported RTOS</span>
 

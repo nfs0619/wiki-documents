@@ -321,6 +321,7 @@ The below image is for Orin NX 16GB
 
 <summary> Flash the device with a single command. </summary>
 
+
 The reComputer Jetson J30/40 has launched a one-click flashing script, which supports flashing Jetpack 5.1.1, 5.1.2 and 6.0. Currently, the one-click flashing for Jetpack 6.1 and other series of reComputer Jetson is under testing and will be available to everyone in the near future. 
 
 ```bash
@@ -351,6 +352,11 @@ sudo apt install qemu-user-static sshpass abootimg nfs-kernel-server libxml2-uti
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+
+:::caution
+NVIDIA has updated the DRAM used in its modules. To ensure compatibility with the new modules, we have updated JetPack accordingly. The currently stable and supported version is `JetPack 5.1.3`.
+If the DRAM on your module is from `Hynix` (this can be identified from the markings on the chip package), it is recommended to flash `JetPack 5.1.3`.
+:::
 
 <Tabs>
 <TabItem value="JP5.1.1" label="JP5.1.1">
@@ -539,6 +545,8 @@ Here we will install Jetpack 5.1.3 on the reComputer.
   </tbody>
 </table>
 </div>
+
+
 
 :::info
 To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 

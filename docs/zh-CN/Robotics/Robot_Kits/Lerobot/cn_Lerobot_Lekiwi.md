@@ -15,6 +15,11 @@ last_update:
 
 # 如何在 Lerobot 中使用 Lekiwi
 
+:::tip
+本教程仓库代码保持为2025年6月5日之前的Lerobot经过测试的稳定版本，目前Huggingface对Lerobot进行了非常庞大的升级，增加了非常多的新功能，如果需要体验最新的教程请跟随[官方文档进行操作](https://huggingface.co/docs/lerobot/index)。
+:::
+
+
 ## 简介
 
 [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) 是由 [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC) 发起的一个完全开源的机器人小车项目。它包含详细的 3D 打印文件和操作指南，设计上与 [LeRobot](https://github.com/huggingface/lerobot/tree/main) 模仿学习框架兼容。它支持 SO101 机器人手臂，从而实现完整的模仿学习流程。
@@ -215,7 +220,7 @@ conda activate lerobot
 
 ### 4. 克隆 LeRobot：
 ```bash
-git clone https://github.com/huggingface/lerobot.git ~/lerobot
+git clone https://gitee.com/Marlboro1998/lerobot_seeed_version.git ~/lerobot
 ```
 
 ### 5. 在您的环境中安装 ffmpeg：
@@ -294,13 +299,13 @@ python lerobot/scripts/configure_motor.py \
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/1.jpg" />
 </div>
 
-**A. 使用 4 个 m2x5 自攻螺钉将驱动电机固定到电机支架上。**
+**A. 使用 12 个 m2x6 自攻螺钉将驱动电机固定到电机支架上。**
 
 | **步骤 1** | **步骤 2** |
 |:---------:|:---------:|
 | ![图1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/2.jpg) | ![图2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/3.jpg) |
 
-**B. 使用 4 个 m3x16 机器螺钉将驱动电机支架固定到底部底板上。**
+**B. 使用 12 个 m3x16 机器螺钉将驱动电机支架固定到底部底板上。**
 
 :::tip
 记住 ID 排列：8 代表后轮，7 和 9 分别对应左前轮和右前轮。
@@ -318,19 +323,19 @@ python lerobot/scripts/configure_motor.py \
 |:---------:|:---------:|
 | ![图1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/6.jpg) | ![图2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/7.jpg) |
 
-**步骤 3 和步骤 4**：使用 2 个 m4x16 机器螺钉将轮毂固定到全向轮上。
+**步骤 3 和步骤 4**：使用 9 个 m4x18 机器螺钉将轮毂固定到全向轮上。
 
 | **步骤 3** | **步骤 4** |
 |:---------:|:---------:|
 | ![图1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/8.jpg) | ![图2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/9.jpg) |
 
-**D. 使用 2 个 m3x16 机器螺钉将舵机舵盘固定到轮毂上。**
+**D. 使用 6 个 m3x16 机器螺钉将舵机舵盘固定到轮毂上。**
 
 | **步骤 1** | **步骤 2** | **步骤 3** |
 |:---------:|:---------:|:---------:|
 | ![图1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/10.jpg) | ![图2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/11.jpg) | ![图3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/12.jpg) |
 
-**E. 使用 1 个 m3x6 机器螺钉将舵机舵盘固定到驱动电机上。**
+**E. 使用 3 个 m3x10 机器螺钉将舵机舵盘固定到驱动电机上。**
 
 | **步骤 1** | **步骤 2** | **步骤 3** |
 |:---------:|:---------:|:---------:|
@@ -377,13 +382,13 @@ python lerobot/scripts/configure_motor.py \
 |:---------:|:---------:|
 | ![图1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/30.jpg) | ![图2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/31.jpg) |
 
-**J. 现在需要使用 M3×16 螺钉固定树莓派和顶板的其余部分。**
+**J. 现在需要使用 12 M3×16 螺钉固定树莓派和顶板的其余部分。**
 
 |  | ||
 |:---------:|:---------:|:---------:|
 | ![图1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/32.jpg) | ![图2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/33.jpg) | ![图3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/34.jpg) |
 
-**K. 现在您可以使用 M3x16 和 M5×25 螺钉安装 USB 摄像头和跟随臂**
+**K. 现在您可以使用 1个 M3x16 和 4个 M5×25 螺钉安装 USB 摄像头和跟随臂**
 
 |  |
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|

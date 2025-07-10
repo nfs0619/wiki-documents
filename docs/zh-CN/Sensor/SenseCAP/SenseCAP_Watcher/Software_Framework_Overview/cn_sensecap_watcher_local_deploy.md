@@ -252,7 +252,7 @@ sudo dpkg -i watcher_service_x.x.x_arm64.deb
 
 通过完成这些步骤，您可以直接在设备上利用 Watcher 的 AI 服务，确保增强的隐私性以及方便地定制您自己的集成系统。通过本地运行的 Watcher AI 功能，您可以安全高效地执行高级任务、分析和自动化操作，同时保持对数据的控制。
 
-我们将在应用程序目录中继续添加使用 **[HTTP 消息块](https://wiki.seeedstudio.com/getting_started_with_watcher_look_tool/#http-message-block)** 进行消息推送的教程，敬请期待！
+我们将在应用程序目录中继续添加使用 **[HTTP 消息块](https://wiki.seeedstudio.com/cn/integrate_watcher_to_ha/#%E7%AC%AC%E5%85%AD%E6%AD%A5%E8%AE%BE%E7%BD%AE%E4%BB%BB%E5%8A%A1%E5%B9%B6%E9%85%8D%E7%BD%AE-http-%E6%B6%88%E6%81%AF%E5%9D%97)** 进行消息推送的教程，敬请期待！
 
 ## 常见问题解答
 

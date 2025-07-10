@@ -110,7 +110,7 @@ The **OV2640 camera** has been discontinued, and the subsequent XIAO ESP32S3 Sen
 	</tr>
 	<tr>
 	    <td align="center"> - </td>
-        <td align="center">Webcam Web application: <br></br> - Type-C: <br></br> - - Average power consumption: 5V/<strong>138mA</strong> <br></br> - - Photo moment: 5V/<strong>341mA</strong> <br></br> - Battery: <br></br> - - Average power consumption: 3.8V/<strong>154mA</strong> <br></br> - - Photo moment: 3.8V/<strong>304mA</strong></td>
+        <td align="center">Webcam Web application: <br></br> - Type-C: <br></br> - - Average power consumption: 5V/<strong>220mA</strong> <br></br> - - Photo moment: 5V/<strong>341mA</strong> <br></br> - Battery: <br></br> - - Average power consumption: 4.2V/<strong>212mA</strong> <br></br> - - Photo moment: 3.8V/<strong>304mA</strong></td>
 		<td align="center"> - </td>
 	</tr>
 	<tr>
@@ -345,8 +345,7 @@ All the programs about cameras in the Wiki are compatible with both OV5640、OV2
 
 Ensure optimal cooling for your XIAO ESP32S3 Sense by installing our upgraded heat sink. This new design is tailored to address the cooling deficiencies observed with the previous models, particularly during intensive operations like camera usage. Feedback highlighted that the original heat sink did not adequately dissipate heat, leading to the development of a more effective solution.
 
-<details>
-<summary>Click to View Performance Comparison</summary>
+<details><summary>Click to View Performance Comparison</summary>
 
 Our testing has demonstrated the benefits of the upgraded heat sink over the original setup:
 
@@ -433,8 +432,7 @@ If this is your first time using Arduino, we highly recommend you to refer to [G
 - **Step 1.** Download and Install the stable version of Arduino IDE according to your operating system.
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
-        <strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
     </a>
 </div>
 

@@ -19,6 +19,26 @@ last_update:
 
 Before formal deployment, please test and configure the node first.
 
+### Flash Firmware
+
+Visit [Meshtastic Web Flasher](https://flasher.meshtastic.org/).
+
+Select the target device to `Seeed SenseCAP Solar Node` and choose the latest firmware, then click `Flash`.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/select-solar.png" alt="pir" width={800} height="auto" /></p>
+
+
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/3-steps.png" alt="pir" width={800} height="auto" /></p>
+
+Click `Enter DFU Mode`, there will be a serial port named `XIAO-xxx`, click and connect it, and there should be a driver named `XIAO-xxx` display.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/52840-connect.png" alt="pir" width={800} height="auto" /></p>
+
+Drag the UF2 file to the DFU drive. Firmware should be flashed after the file is downloaded and the device reboots.
+
+
+
 ### Install Battery and GPS Module(Optional)
 
 P1-Pro version has built-in battery and GPS module, for P1 version, user needs to install the battery and GPS module manually if needed.
@@ -30,6 +50,18 @@ P1-Pro version has built-in battery and GPS module, for P1 version, user needs t
 * Step 2: Install battery and the GPS module.
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/install-bat-gps.png" alt="pir" width={800} height="auto" /></p>
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/gps_install.png" alt="pir" width={800} height="auto" /></p>
+
+
+* Step 3: Assemble the shell.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/screws.png" alt="pir" width={800} height="auto" /></p>
+
+
+:::caution note
+Ensure that the shell is properly mounted and the screws are firmly tightened to maintain the device’s waterproof integrity.
+:::
 
 
 
@@ -133,6 +165,11 @@ Now that you have set the LoRa region on your device, you can continue with conf
 
 ## Installation
 
+:::danger note
+Since the device will be used outdoors for extended periods, please avoid installing the panel in a horizontal position. A tilted or diagonal installation is recommended to prevent water accumulation. Additionally, ensure that all screws are securely tightened and the cover is properly installed. For enhanced waterproof protection, you may also consider applying extra sealing measures.
+:::
+
+
 
 * **Part List**
 
@@ -188,5 +225,37 @@ Now that you have set the LoRa region on your device, you can continue with conf
 
 
 
+## FAQ
+
+### Power Consumption
+
+Power consumption primarily depends on factors such as the data transmission frequency and GPS update rate.
+The figures below are for reference only; actual consumption may vary based on real-world usage conditions.
+
+* **Shutdown Sleep Mode Power Consumption**
+
+|Description|Consumption|
+|---|---|
+|GPS_LED working current|1.02 mA|
+|Powered but not activated|56.195 μA|
+|Powered and activated|611 μA|
+
+**Example:**
+
+|Battery capacity |Battery life|
+|---|---|
+|3350|136.8|
+|12000|490.2|
 
 
+* **Active Mode Power Consumption**
+
+|Mode|Current|
+|---|---|
+|Static Current|10.65 mA|
+|EU868 Transmission Current|157.74 mA|
+|US915 Transmission Current|205.22 mA|
+|GPS Operating Current|50 mA|
+|GPS_LED Operating Current|1.02 mA|
+
+More details check [Solar Node Battery Life Calculation Table](https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/Solar%20Node%20Battery%20Life%20Calculation%20Table.xlsx)

@@ -754,7 +754,7 @@ sudo python watcher_uart.py
 
 - [Watcher 快速入门系列 1#：如何为 Watcher 分配任务](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)
 
-- [Watcher 快速入门系列 2#：Watcher 外观与 SenseCraft 工具](https://wiki.seeedstudio.com/getting_started_with_watcher_look_tool)
+- [Watcher 快速入门系列 2#：Watcher 外观与 SenseCraft 工具](https://wiki.seeedstudio.com/cn/integrate_watcher_to_ha/#%E7%AC%AC%E5%85%AD%E6%AD%A5%E8%AE%BE%E7%BD%AE%E4%BB%BB%E5%8A%A1%E5%B9%B6%E9%85%8D%E7%BD%AE-http-%E6%B6%88%E6%81%AF%E5%9D%97)
 
 - [Watcher 快速入门系列 3#：作为传感器并使用 Grove](https://wiki.seeedstudio.com/watcher_as_grove)
 

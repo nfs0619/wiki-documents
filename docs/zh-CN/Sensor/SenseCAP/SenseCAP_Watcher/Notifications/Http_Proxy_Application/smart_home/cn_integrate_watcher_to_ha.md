@@ -184,7 +184,7 @@ https://github.com/Seeed-Solution/SenseCraft-HomeAssistant.git
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_ha/4.png" style={{width:500, height:'auto'}}/></div>
 
-在接下来的页面中，请输入 Watcher 的设备 EUI，您可以在 [SenseCraft APP 的 Watcher 设置](https://wiki.seeedstudio.com/getting_started_with_watcher_look_tool/#other-settings) 中找到 Watcher 的 EUI。
+在接下来的页面中，请输入 Watcher 的设备 EUI，您可以在 [SenseCraft APP 的 Watcher 设置](https://wiki.seeedstudio.com/cn/integrate_watcher_to_ha/#%E7%AC%AC%E5%85%AD%E6%AD%A5%E8%AE%BE%E7%BD%AE%E4%BB%BB%E5%8A%A1%E5%B9%B6%E9%85%8D%E7%BD%AE-http-%E6%B6%88%E6%81%AF%E5%9D%97) 中找到 Watcher 的 EUI。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_ha/5.png" style={{width:500, height:'auto'}}/></div>
 

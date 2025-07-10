@@ -100,6 +100,11 @@ Before we can move on to the installation steps, we need to make sure that our r
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/5.png" /></div>
 
+:::caution
+The SPI interface on the Jetson-Nano is multiplexed with GPIO by default and is not enabled. Please refer to [**this guide**](/enable_spi_interface_on_jetsonnano) for instructions on how to enable it.
+:::
+
+
 ## Flashing JetPack OS via NVIDIA SDK Manager
 
 Next we will go through the tutorial about installing the system via NVIDIA SDK Manager. The an NVIDIA SDK Manager all-in-one tool that bundles developer software and provides an end-to-end development environment setup solution for NVIDIA SDKs. Thus, it is recommanded for the beginners.

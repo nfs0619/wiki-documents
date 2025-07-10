@@ -21,7 +21,8 @@ import TabItem from '@theme/TabItem';
 <br></br>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
 </div>
 
 
@@ -42,7 +43,8 @@ Home Assistant is a powerful open-source home automation platform that allows yo
 - **Customizable Dashboard**: Design your own user interface to display the information that matters most to you.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.home-assistant.io/"><strong><span><font color={'FFFFFF'} size={"4"}> Learn More 🖱️</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.home-assistant.io/"><strong><span><font color={'FFFFFF'} size={"4"}> Learn More 🖱️</font></span></strong>
+    </a>
 </div>
 
 ### Why E-Paper Display with Home Assistant?
@@ -186,7 +188,9 @@ display:
   - platform: waveshare_epaper
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 30s
@@ -314,7 +318,9 @@ display:
     cs_pin: GPIO3
     dc_pin: GPIO5
     reset_pin: GPIO2
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     update_interval: 5min
     lambda: |-
       it.rectangle(10, 10, 100, 50);
@@ -399,7 +405,9 @@ display:
   - platform: waveshare_epaper
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 30s
@@ -482,7 +490,9 @@ display:
   - platform: waveshare_epaper
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 30s
@@ -557,7 +567,9 @@ display:
   - platform: waveshare_epaper
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 30s
@@ -662,7 +674,9 @@ display:
     id: main_display
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: never
@@ -724,7 +738,9 @@ display:
   - platform: waveshare_epaper
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 3min
@@ -988,7 +1004,9 @@ display:
     id: my_display
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 50s

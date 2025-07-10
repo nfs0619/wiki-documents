@@ -48,8 +48,7 @@ If you don't use the complete ESP-IDF environment, it is also possible to flash 
 Click to download the firmware:
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/seeed_xiao_esp32s3_one_chanel_hub_2024120201.zip">
-        <strong><span><font color={'FFFFFF'} size={"4"}> Download ⏬ </font></span></strong>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/seeed_xiao_esp32s3_one_chanel_hub_2024_12_09_01.rar"><strong><span><font color={'FFFFFF'} size={"4"}> Download ⏬ </font></span></strong>
     </a>
 </div>
 

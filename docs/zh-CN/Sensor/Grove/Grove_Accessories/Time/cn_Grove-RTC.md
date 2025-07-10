@@ -16,7 +16,7 @@ RTC模块基于DS1307时钟芯片，支持I2C协议。它使用锂电池（CR122
 
 <p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/Grove-RTC-p-758.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" /></a></p>
 
-:::注意
+:::note注意
        电池未包含在内。
 :::
 
@@ -37,7 +37,7 @@ RTC模块基于DS1307时钟芯片，支持I2C协议。它使用锂电池（CR122
 - 逻辑低电平输入：-0.3~+0.8 V
 - 电池电压：2.0~3.5 V
 
-:::提示
+:::tip提示
 更多关于Grove模块的详细信息，请参考[Grove系统](https://wiki.seeedstudio.com/Grove_System/)
 :::
 
@@ -47,7 +47,7 @@ RTC模块基于DS1307时钟芯片，支持I2C协议。它使用锂电池（CR122
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg" /></div> | <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg" /></div> | <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg" /></div> | <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg" /></div> | <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo_n.jpg" /></div> |
 
-:::警告
+:::caution警告
 上面提到的支持平台是模块软件或理论兼容性的指示。在大多数情况下，我们只针对Arduino平台提供软件库或代码示例。我们无法为所有可能的MCU平台提供软件库/示例代码。因此，用户必须自己编写软件库。
 :::
 
@@ -68,13 +68,13 @@ RTC模块基于DS1307时钟芯片，支持I2C协议。它使用锂电池（CR122
 - **步骤 3.** 将Grove-Base Shield插入Seeeduino。
 - **步骤 4.**  通过USB线将Seeeduino连接到电脑。
 
-:::注意
+:::note注意
 为了获得稳健的性能，您必须在电池座中放置一个3伏特的CR1225锂电池。如果只使用主电源，模块可能无法正常工作，因为晶体可能不会振荡。
 :::
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-RTC/img/arduino_connection.jpg" /></div>
 
-:::注意
+:::note注意
 如果我们没有Base Shield，也可以直接将Grove-RTC连接到Arduino板上。请按照以下连接方式进行连接。
 :::
 

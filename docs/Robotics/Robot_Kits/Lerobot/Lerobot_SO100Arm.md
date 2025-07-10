@@ -15,6 +15,10 @@ last_update:
 
 # How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot
 
+:::tip
+This tutorial repository maintains the verified stable release of Lerobot as of June 5, 2025. Currently, ​Hugging Face​ has rolled out a ​major upgrade​ to Lerobot, introducing many new features. If you want to experience the latest tutorials, please follow the [​official documentation​ for guidance](https://huggingface.co/docs/lerobot/index).
+:::
+
 ## Introduction
 
 The [SO-10xARM](https://github.com/TheRobotStudio/SO-ARM100) is a fully open-source robotic arm project launched by [TheRobotStudio](https://www.therobotstudio.com/). It includes the follower arm and the leader robotic arm, and also provides detailed 3D printing files and operation guides. [LeRobot](https://github.com/huggingface/lerobot/tree/main) is committed to providing models, datasets and tools for real-world robotics in PyTorch. Its aim is to reduce the entry barrier of robotics, enabling everyone to contribute and benefit from sharing datasets and pretrained models. LeRobot integrates cutting-edge methodologies validated for real-world application, centering on imitation learning. It has furnished a suite of pre-trained models, datasets featuring human-gathered demonstrations, and simulation environments, enabling users to commence without the necessity of robot assembly. In the forthcoming weeks, the intention is to augment support for real-world robotics on the most cost-effective and competent robots presently accessible.
@@ -49,7 +53,7 @@ This wiki provides the assembly and debugging tutorial for the SO ARM10x and rea
 ## What's news：
 - Wiring optimization: Compared to SO-ARM100, SO-ARM101 features improved wiring that prevents disconnection issues previously seen at joint 3. The new wiring design also no longer limits the range of motion of the joints.
 - Different gear ratios for the leader arm: The leader arm now uses motors with optimized gear ratios, improving performance and eliminating the need for external gearboxes.
-- New functionality support: The leader arm can now follow the follower arm in real-time, which is crucial for the upcoming learning policy, where a human can intervene and correct the robot's actions.
+- New functionality support: The leader arm can now follow the follower arm in real-time, which is crucial for the upcoming learning policy, where a human can intervene and correct the robot’s actions.
 
 
 :::caution
@@ -109,7 +113,7 @@ Seeed Studio is only responsible for the quality of the hardware itself. The tut
     </tr>
     <tr>
       <td>Recommended Operating Temperature</td>
-      <td colSpan="4">0  °C to 40  °C</td>
+      <td colSpan="4">0 °C to 40 °C</td>
     </tr>
     <tr>
       <td>Communication</td>
@@ -323,6 +327,10 @@ If you are using a Jetson device, install Pytorch and Torchvision according to [
 Due to official code and servo manufacturer firmware updates, users before June 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
 :::
 
+:::note
+If the servo cannot be recognized again after a failed firmware update, you can connect another detectable servo directly to the host computer, then perform a motor scan and firmware online detection. Keep the current window open, immediately disconnect the current servo, and connect the unrecognized servo instead. Click ​​"Online Upgrade"​​ within 1 second. If it fails, you can retry multiple times.
+:::
+
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -333,7 +341,7 @@ import TabItem from '@theme/TabItem';
 <TabItem value="SO101" label="SO101">
 
 
-The servo calibration and initialization process for SO-ARM101 is the same as that of SO-ARM100 in terms of both method and code. However, please note that the gear ratios for the first three joints of the SO-ARM101 Leader Arm differ from those of SO-ARM100, so it's important to distinguish and calibrate them carefully.
+The servo calibration and initialization process for SO-ARM101 is the same as that of SO-ARM100 in terms of both method and code. However, please note that the gear ratios for the first three joints of the SO-ARM101 Leader Arm differ from those of SO-ARM100, so it’s important to distinguish and calibrate them carefully.
 
 To configure the motors designate one bus servo adapter and 6 motors for your leader arm, and similarly the other bus servo adapter and 6 motors for the follower arm. It's convenient to label them and write on each motor if it's for the follower F or for the leader L and it's ID from 1 to 6. We use **F1–F6** to represent joints 1 to 6 of the **Follower Arm**, and **L1–L6** to represent joints 1 to 6 of the **Leader Arm**. The corresponding servo model, joint assignments, and gear ratio details are as follows:
 
@@ -671,7 +679,7 @@ class So101RobotConfig(ManipulatorRobotConfig):
 ```
 
 :::caution
-You need to correctly match the left and right names of the dual arms and ensure that each robotic arm's serial port number on the device is correctly assigned.
+You need to correctly match the left and right names of the dual arms and ensure that each robotic arm’s serial port number on the device is correctly assigned.
 :::
 
 In the next step, when calibrating the robotic arms, you need to calibrate all four arms individually. The command is as follows:
@@ -1028,9 +1036,9 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 - If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
 
-- Press right arrow {'->'} at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
+- Press right arrow -> at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
 
-- Press left arrow {'<-'} at any time during episode recording or resetting to early stop, cancel the current episode, and re-record it.
+- Press left arrow <- at any time during episode recording or resetting to early stop, cancel the current episode, and re-record it.
 
 - Press escape ESC at any time during episode recording to end the session early and go straight to video encoding and dataset uploading.
 
@@ -1038,7 +1046,7 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 - Once you're comfortable with data recording, you can create a larger dataset for training. A good starting task is grasping an object at different locations and placing it in a bin. We suggest recording at least 50 episodes, with 10 episodes per location. Keep the cameras fixed and maintain consistent grasping behavior throughout the recordings. Also make sure the object you are manipulating is visible on the camera's. A good rule of thumb is you should be able to do the task yourself by only looking at the camera images.
 
-- In the following sections, you'll train your neural network. After achieving reliable grasping performance, you can start introducing more variations during data collection, such as additional grasp locations, different grasping techniques, and altering camera positions.
+- In the following sections, you’ll train your neural network. After achieving reliable grasping performance, you can start introducing more variations during data collection, such as additional grasp locations, different grasping techniques, and altering camera positions.
 
 - Avoid adding too much variation too quickly, as it may hinder your results.
 

@@ -158,12 +158,13 @@ The right result show as bellow:
 ```
 git clone https://github.com/hailo-ai/hailo-CLIP.git
 cd hailo-CLIP
-python3 -m pip install -v -e .
+./install.sh
 ```
 
 ###   Run the project
 Input the command below you will see a clip demo:
 ```
+ source setup_env.sh
  clip_app --input demo
 ```
 And if you want to use your camera, you should input command below after you make sure raspberry connect your own camera:

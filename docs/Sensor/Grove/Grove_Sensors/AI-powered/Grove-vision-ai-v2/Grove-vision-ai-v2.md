@@ -170,7 +170,7 @@ Before connecting the Grove Vision AI V2 to your computer, keep the BOOT button 
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "/connect_vision_ai_v2_to_ha" class="getting_started_label2"> Connecting to Home Assistant</a>
+          <a href= "/sensecraft-ai/application/application-for-homeassistant" class="getting_started_label2"> Connecting to Home Assistant</a>
           <br/>Integrating Grove Vision AI V2 into Home Assistant
       </div>
   </div>

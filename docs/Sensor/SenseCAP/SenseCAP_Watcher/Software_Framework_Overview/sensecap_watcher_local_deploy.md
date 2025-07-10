@@ -251,7 +251,7 @@ Please note that it is important to make sure that your computer meets the recom
 
 By completing these steps, you can harness the power of Watcher's AI services directly on your device, ensuring enhanced privacy and the ability to conveniently customize your own integrated system. With Watcher's AI capabilities running locally, you can perform advanced tasks, analysis, and automation securely and efficiently, all while keeping your data under your control.
 
-We will continue to add tutorials on using **[HTTP Message Block](https://wiki.seeedstudio.com/getting_started_with_watcher_look_tool/#http-message-block)** for message push after localised deployment in the Application directory, so stay tuned!
+We will continue to add tutorials on using **[HTTP Message Block](https://wiki.seeedstudio.com/integrate_watcher_to_ha/#step-6-place-the-task-and-configure-the-http-message-block)** for message push after localised deployment in the Application directory, so stay tuned!
 
 ## FAQ
 

@@ -322,7 +322,8 @@ Now that we have our library installed and we understand the basic functions, le
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong></a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+    </a>
 </div>
 
 **Step 2.** Select your development board model and add it to the Arduino IDE.
@@ -339,91 +340,133 @@ Now that we have our library installed and we understand the basic functions, le
 ```cpp
 #include <SCServo.h>
 
+// Define the correct serial port for your target board
 #if defined(CONFIG_IDF_TARGET_ESP32C3) || defined(CONFIG_IDF_TARGET_ESP32C6) || defined(CONFIG_IDF_TARGET_ESP32S3)
 #define COMSerial Serial0
 #else
 #define COMSerial Serial1
 #endif
 
-#if defined(NRF52840_XXAA) && defined(USE_TINYUSB)
-#include <Adafruit_TinyUSB.h>
-#endif
-
+// Define RX/TX pins for the servo bus (for reference)
+// Note: On ESP32, pins are usually specified in COMSerial.begin().
+// For example: COMSerial.begin(1000000, SERIAL_8N1, S_RXD, S_TXD);
+// If your board uses the default pins for Serial1, no extra specification is needed.
 #define S_RXD D7
 #define S_TXD D6
-#define Servo_Num 2
 
-SMS_STS st;
-byte ID[Servo_Num] = {1, 2};
-u16 Speed[Servo_Num] = {3400, 3400, 3400, 3400, 3400, 3400};
-byte ACC[Servo_Num] = {253, 253, 253, 253, 253, 253};
-s16 Pos[Servo_Num] = {0, 0, 0, 0, 0, 0};
+#define SERVO_NUM 2 // Number of servos
 
-int getPos(int id)
-{
-  return st.ReadPos(id);
-}
+SMS_STS st; // Servo control object
+
+// --- Servo Configuration ---
+byte ID[SERVO_NUM] = {1, 2};                // IDs of the servos
+u16 Speed[SERVO_NUM] = {1500, 1500};         // Set a medium speed for the servos
+byte ACC[SERVO_NUM] = {50, 50};             // Set a medium acceleration for the servos
+s16 Pos[SERVO_NUM] = {2048, 2048};           // Servo position array, initialized to the midpoint (2048)
 
 void setup()
 {
+  // Start the main serial port for debugging and receiving commands
   Serial.begin(115200);
+  // Wait a moment for the Serial Monitor to connect
+  delay(2000); 
+  Serial.println("--- Servo Control Program Start ---");
 
+  // Start the serial port for controlling the servos
   COMSerial.begin(1000000, SERIAL_8N1);
-  st.pSerial = &COMSerial;
-  delay(1000);
-
-  Serial.println("Calibration of all Servo");
-  for (int i = 0; i < Servo_Num; i++) {
-    st.CalibrationOfs(ID[i]);
+  st.pSerial = &COMSerial; // Associate the control object with the serial port
+  
+  Serial.println("Checking servo connection status...");
+  for (int i = 0; i < SERVO_NUM; i++) {
+    if (st.Ping(ID[i]) != -1) {
+      Serial.print("Servo with ID ");
+      Serial.print(ID[i]);
+      Serial.println(" is connected.");
+    } else {
+      Serial.print("Error: Servo with ID ");
+      Serial.print(ID[i]);
+      Serial.println(" is not responding!");
+    }
   }
 
-  for (int i = 0; i < Servo_Num; i++) {
-    Pos[i] = getPos(ID[i]);
+  // --- Power-on Self-Test ---
+  // This section makes the servos move automatically on power-up to confirm they are working correctly.
+  Serial.println("\nExecuting power-on self-test movement...");
+  
+  // 1. Move to position 1024
+  Serial.println("Moving to position 1024...");
+  for(int i=0; i<SERVO_NUM; i++) {
+    Pos[i] = 1024;
   }
+  st.SyncWritePosEx(ID, SERVO_NUM, Pos, Speed, ACC);
+  delay(2000); // Wait for the movement to complete
 
-  delay(1000);
+  // 2. Move to position 3072
+  Serial.println("Moving to position 3072...");
+  for(int i=0; i<SERVO_NUM; i++) {
+    Pos[i] = 3072;
+  }
+  st.SyncWritePosEx(ID, SERVO_NUM, Pos, Speed, ACC);
+  delay(2000); // Wait for the movement to complete
+
+  // 3. Return to center position (2048) to prepare for user commands
+  Serial.println("Returning to center position (2048)...");
+  for(int i=0; i<SERVO_NUM; i++) {
+    Pos[i] = 2048;
+  }
+  st.SyncWritePosEx(ID, SERVO_NUM, Pos, Speed, ACC);
+  delay(1500);
+
+  Serial.println("\n--- Initialization Complete ---");
+  Serial.println("Enter 'j' to decrease the angle, or 'k' to increase it.");
+  Serial.println("-----------------------------------");
 }
 
 void loop()
 {
-  if (!Serial.available()) {
-    delay(100);
-    return;
-  }
+  // Check if the user has sent a command via the Serial Monitor
+  if (Serial.available()) {
+    String input = Serial.readString();
+    input.trim(); // Remove extra spaces or newlines
 
-  String input = Serial.readString();
-  input.trim();
+    bool shouldMove = false; // Flag to indicate if a valid command was received
 
-  if(input.startsWith("j")) {
-    Serial.println("Reduce the angle");
-
-    for (int i = 0; i < Servo_Num; i++) {
-      if (Pos[i] == 0) {
-        Serial.print(i);
-        Serial.println(" It's already in the minimum position.");
-        continue;
+    if (input.startsWith("j")) {
+      Serial.println("Received command: 'j'. Decreasing angle.");
+      for (int i = 0; i < SERVO_NUM; i++) {
+        Pos[i] -= 512; // Move a small step for easy observation
+        if (Pos[i] < 0) {
+          Pos[i] = 0; // Prevent going below the minimum range
+        }
       }
-
-      Pos[i] -= 1024;
-      if (Pos[i] < 0) Pos[i] = 0;
-    }
-  } else if(input.startsWith("k")) {
-    Serial.println("Increase the angle");
-
-    for (int i = 0; i < Servo_Num; i++) {
-      if (Pos[i] == 4095) {
-        Serial.print(i);
-        Serial.println(" It's already in the maximum position.");
-        continue;
+      shouldMove = true;
+    } else if (input.startsWith("k")) {
+      Serial.println("Received command: 'k'. Increasing angle.");
+      for (int i = 0; i < SERVO_NUM; i++) {
+        Pos[i] += 512; // Move a small step
+        if (Pos[i] > 4095) {
+          Pos[i] = 4095; // Prevent going above the maximum range
+        }
       }
+      shouldMove = true;
+    } else {
+      Serial.print("Unknown command: '");
+      Serial.print(input);
+      Serial.println("'. Please enter 'j' or 'k'.");
+    }
 
-      Pos[i] += 1024;
-      if (Pos[i] > 4095) Pos[i] = 4095;
+    // If a valid command was received, send the new positions to the servos
+    if (shouldMove) {
+      Serial.print("Moving servos to new positions: [");
+      for(int i = 0; i < SERVO_NUM; i++){
+        Serial.print(Pos[i]);
+        if(i < SERVO_NUM - 1) Serial.print(", ");
+      }
+      Serial.println("]");
+      
+      st.SyncWritePosEx(ID, SERVO_NUM, Pos, Speed, ACC);
     }
   }
-
-  st.SyncWritePosEx(ID, Servo_Num, Pos, Speed, ACC);
-  delay(600);
 }
 ```
 
@@ -451,19 +494,14 @@ It's recommended to read through these FAQs before starting your project. They a
 
 :::
 
-<details>
-<summary>What if the power supply voltage doesn't match my servo?</summary>
+<details> <summary>What if the power supply voltage doesn’t match my servo?</summary>
 
-The board and servo may malfunction or sustain damage. Always match the input voltage to your servo's requirements.
-</details>
-
-<details>
-<summary>Can I connect multiple servos at once?</summary>
+The board and servo may malfunction or sustain damage. Always match the input voltage to your servo’s requirements.
+</details> <details> <summary>Can I connect multiple servos at once?</summary>
 
 Yes, multiple servos are supported, but ensure your power supply can handle the combined current draw.
-</details>
 
-<br/>
+</details> <br/>
 
 ## Resources
 

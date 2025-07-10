@@ -116,13 +116,9 @@ PCIe Extension Module will be released soon, please stay tuned.
 
 ### Install SSD
 
-:::note
-The M.2 SSD will be install on the PCIe Extension Module which will be released soon, please stay tuned.
-:::
-
 **STEP 1:** Remove the Back cover.
 
-**STEP 2:** Load the PCIe Extension Module board into the mainboard and lock the screws.
+**STEP 2:** Load the [PCIe Extension Module board](https://www.seeedstudio.com/reTerminal-DM-Dual-LAN-and-SSD-extension-p-5766.html) into the mainboard and lock the screws.
 
 **STEP 3:** Cover the rear case back and lock the screws.
 

@@ -16,10 +16,6 @@ last_update:
 
 # 如何在 reComputer 上使用 MID360 LiDAR
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 简介
 MID360 LiDAR 传感器为各种应用提供高精度的 3D 点云数据。本指南重点介绍如何在运行 ROS Noetic 的 [reComputer J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) 设备上设置 MID360。
 

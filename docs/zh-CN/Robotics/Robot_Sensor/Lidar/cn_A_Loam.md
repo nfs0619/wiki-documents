@@ -16,9 +16,6 @@ last_update:
 
 # 如何在 reComputer 上运行 A-LOAM 3D SLAM
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## A-LOAM 简介
 

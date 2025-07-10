@@ -388,11 +388,14 @@ reTerminal DM comes with the necessary drivers pre-installed out-of-the-box so y
 
 The Operating System that pre-installed on reTerminal DM is 64-bit, if you wish to install 32-bit OS please use the following method to install the DTS drivers.
 
+>⚠️Note : Please reboot your reTerminal DM after you flash 32-bit OS.
+
 Please follow the [**Access reTerminal DM via SSH**](#access-reterminal-dm-via-ssh) step, and then enter the following command:
 
 ```sh
 echo arm_64bit=0 | sudo tee -a /boot/config.txt
 ```
+
 Then continue the [**Install drivers after flashing new Raspbian OS process**](#install-reterminal-drivers-after-flashing-new-raspbian-os)
 
 :::

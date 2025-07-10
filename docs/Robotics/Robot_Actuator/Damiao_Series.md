@@ -24,25 +24,18 @@ This article will introduce how to get started with Damiao 43 series motors and 
 
 ## Specification
 
-
+ 
 Here's the completed table with all parameters filled in for all motor models:
 
 
  Motor Model | Rated Torque (Nm) | Peak Torque (Nm) | No-load Speed (rpm) | Rated Speed (rpm) | Reduction Ratio | Size Diameter*Height (mm) | Weight (g) | Supply Voltage (V) | Recommended Voltage Range (V) | Rated Phase Current (A) | Peak Phase Current (A) | Rated Power (W) | Pole Pairs | Communication Method | Encoder Type | Installation | Phase Resistance (Ω) | Phase Inductance (uH) | Flux Linkage (Wb) | Rotational Inertia (Kg*m²) | Torque Constant (Nm/A) | Drive Max Current (A) | Speed Loop KP | Default PMAX (rad) | Default VMAX (rad/s) | Default TMAX (Nm) | Speed Constant |
 ------------|------------------|-----------------|---------------------|------------------|----------------|--------------------------|-----------|-------------------|-----------------------------|------------------------|----------------------|----------------|-----------|---------------------|-------------|-------------|----------------------|---------------------|------------------|--------------------------|----------------------|---------------------|--------------|------------------|------------------|----------------|---------------|
-J3507-2EC | 0.8 | 3 | 460 | 150 | 7 | 46 * 37.9 | ~150 | 24 | 15-30 | 2.4 | 8.3 | 12.566371 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.8 | 235 | 0.0037 | 8.70E-06 | 0.5439 | 10.261194 | 3.01E-01 | 12.566 | 50 | 5 | 106.43415 |
 J4310-2EC V1.1 | 3 | 7 | 200 | 120 | 10 | 57 * 46 | ~300 | 24 | 15-32 | 3.7 | 7.2 | 37.699112 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.85 | 345 | 0.0045 | 1.80E-05 | 0.945 | 10.261194 | 3.72E-04 | 12.5 | 30 | 10 | 87.512523 |
 J4310-2EC V1.1(48V) | 3 | 7 | 400 | 120 | 10 | 57 * 46 | ~300 | 48 | 15-52 | 3.7 | 7.2 | 37.699112 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.85 | 345 | 0.0045 | 1.80E-05 | 0.945 | 10.261194 | 3.72E-04 | 12.5 | 30 | 10 | 87.512523 |
 J4340-2EC | 9 | 27 | 52.5 | 36 | 40 | 57 * 53.3 | ~362 | 24 | 15-32 | 3 | 8 | 33.929201 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261194 | 9.59E-05 | 12.5 | 8 | 28 | 81.197186 |
 J4340-2EC(48V) | 9 | 27 | 100 | 36 | 40 | 57 * 53.3 | ~362 | 48 | 15-52 | 2.5 | 9 | 33.929201 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261194 | 9.59E-05 | 12.5 | 8 | 28 | 81.197186 |
 J4340P-2EC | 9 | 27 | 52.5 | 36 | 40 | 57 * 56.5 | ~375 | 24 | 15-32 | 3 | 8 | 33.929201 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261194 | 9.59E-05 | 12.5 | 8 | 28 | 81.197186 |
 J4340P-2EC(48V) | 9 | 27 | 100 | 36 | 40 | 57 * 56.5 | ~375 | 48 | 15-52 | 2.5 | 9 | 33.929201 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261194 | 9.59E-05 | 12.5 | 8 | 28 | 81.197186 |
-J6006-2EC | 4 | 11 | 226@24V 408@48V | 150 | 6 | 76 * 36.5 | ~335 | 24-48 | 15-52 | 5.96 | 17.6 | 62.831853 | 14 | CAN | Magnetic, Dual | Built-in | 0.435 | 270 | 0.0058 | 5.80E-05 | 0.7308 | 20.52238806 | 7.75E-04 | 12.5 | 45 | 20 | 67.897647 |
-J8006-2EC V1.1 | 8 | 20 | 194.2@24V 392.8@48V | 120 | 6 | 96 * 40 | ~559 | 24-48 | 15-52 | 9 | 21 | 100.53096 | 21 | CAN | Magnetic, Dual | Built-in | 0.4 | 215 | 0.0054 | 1.15E-04 | 1.0206 | 41.04477612 | 5.50E-04 | 12.5 | 45 | 40 | 48.618068 |
-J8009-2EC | 20 | 40 | 168@24V 335@48V | 100@24V 200@48V | 9 | 98 * 61.7 | ~896 | 24-48 | 15-52 | 18.6 | 40 | 209.43951 | 21 | CAN, CANFD | Magnetic, Dual | Built-in | 0.145 | 80 | 0.00445 | 1.95E-04 | 1.261575 | 41.04477612 | 7.55E-04 | 12.5 | 45 | 54 | 58.997207 |
-J8009P-2EC | 20 | 40 | 168@24V 335@48V | 100@24V 200@48V | 9 | 98 * 61.7 | ~921 | 24-48 | 15-52 | 18.6 | 40 | 209.43951 | 21 | CAN, CANFD | Magnetic, Dual | Built-in | 0.145 | 80 | 0.00445 | 1.95E-04 | 1.261575 | 41.04477612 | 7.55E-04 | 12.5 | 45 | 54 | 58.997207 |
-J10010-2EC | 40 | 150 | 75@24V 150@48V | 50@24V 100@48V | 10 | 112 * 62 | ~1485 | 24-48 | 15-52 | 18.4 | 80.2 | 418.87902 | 21 | CAN, CANFD | Magnetic, Dual | Built-in | 0.125 | 100 | 0.00825 | 5.50E-04 | 2.59875 | 100 | 4.24E-04 | 12.5 | 20 | 200 | 31.822736 |
-J10010L-2EC | 40 | 120 | 100@24V 200@48V | 70@24V 100@48V | 10 | 120 * 53 | ~1375 | 24-48 | 15-52 | 23.5 | 95 | 418.87902 | 21 | CAN, CANFD | Magnetic, Dual | Built-in | 0.11 | 85 | 0.00635 | 5.56E-04 | 2.00025 | 99.7 | 5.59E-04 | 12.5 | 25 | 200 | 41.344499 |
 
 
 
@@ -271,12 +264,18 @@ You can also copy the CAN data (in hexadecimal format) and use a serial port deb
 
 ## Control the Motor Using the [​reComputer Mini Jetson Orin.](/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md)
 
-Currently, the most common CAN communication interfaces for motors in the market use **XT30 (2+2)** and **JST connectors**. Our **reComputer Mini Jetson Orin** device is equipped with **dual XT30 (2+2) ports** and **JST-based CAN interfaces**, providing seamless compatibility.  
+Currently, the most common CAN communication interfaces for motors in the market use **XT30 (2+2)** and **JST connectors**. Our **reComputer Mini Jetson Orin** and **reComputer Robotics** device is equipped with **dual XT30 (2+2) ports** and **JST-based CAN interfaces**, providing seamless compatibility.  
 
+**reComputer Mini:**
 <div align="center">
-    <img width={500} 
-     src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg" />
+  <img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg"/>  
 </div>
+
+**reComputer Robotics**
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/robotics/Sensor/IMU/hexfellow/fig5.jpg"/>  
+</div>
+
 
 For more details on CAN usage, you can refer to this [wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can ).
 
@@ -290,6 +289,15 @@ For more details on CAN usage, you can refer to this [wiki](https://wiki.seeedst
 </div>
 
 **Step2:** Connect the motor directly to the reComputer Mini CAN0 via the XT30 (2+2) interface.
+
+:::tip
+For the reComputer Mini's CAN interface, the H/L pins are inverted compared to the motor's H/L. Therefore, you need to reverse the H/L connections in the XT30 2+2 cable harness.
+:::
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/recomputer_mini/can0-datasheet.png"/>
+</div>
+
 
 <div align="center">
     <img width={800} 
@@ -1323,6 +1331,8 @@ if __name__ == "__main__":
 ```bash
 python damiao_test.py
 ```
+
+<iframe width="960" height="640" src="https://www.youtube.com/embed/e5hajjlaXAM?si=mTwNAeU5cfQEIuOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The motor will light up **green** and rotate at a **sinusoidal speed**.
 

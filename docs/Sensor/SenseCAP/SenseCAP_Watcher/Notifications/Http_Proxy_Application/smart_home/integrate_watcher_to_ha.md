@@ -181,7 +181,7 @@ Then select **Watcher** in the device options.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_ha/4.png" style={{width:500, height:'auto'}}/></div>
 
-Inside the next page, please enter the Watcher's device EUI, you can find Watche's EUI inside the [SenseCraft APP's Watcher's Setting](https://wiki.seeedstudio.com/getting_started_with_watcher_look_tool/#other-settings). 
+Inside the next page, please enter the Watcher's device EUI, you can find Watche's EUI inside the [SenseCraft APP's Watcher's Setting](https://wiki.seeedstudio.com/integrate_watcher_to_ha/#step-6-place-the-task-and-configure-the-http-message-block). 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_ha/5.png" style={{width:500, height:'auto'}}/></div>
 

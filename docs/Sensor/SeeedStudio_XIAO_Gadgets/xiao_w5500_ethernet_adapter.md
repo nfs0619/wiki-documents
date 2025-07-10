@@ -14,6 +14,8 @@ last_update:
 
 ## Introduction
 
+A compact PoE development board featuring the XIAO ESP32S3 Plus, with an integrated, isolated PoE module and TPS563201-based power conversion that delivers a clean 5V supply to power the microcontroller. Ideal for IoT projects, smart home devices, and industrial automation—where a versatile combination of reliable Ethernet connectivity and low-power wireless processing simplifies installation and enhances system performance.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -21,6 +23,84 @@ last_update:
     <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 </a></div>
 
+### Feature
+
+- **High-Performance Microcontroller**: Built on the XIAO ESP32S3 Plus platform, our board delivers robust processing power and efficient wireless connectivity, making it ideal for complex IoT and embedded applications.
+
+- **Integrated PoE with Isolation & Power Conversion**: Featuring a robust PoE module with built-in isolation, the board safely accepts a 12V Ethernet power input. A high-efficiency TPS563201 buck converter then steps the 12V down to a stable 5V rail, providing optimal power to the XIAO ESP32S3 Plus.
+
+- **Reliable Ethernet Connectivity**: Equipped with an onboard W5500 Ethernet chip and a standard RJ45 jack, the board ensures stable wired network access for seamless data transmission and remote management.
+
+- **Versatile I/O Options**: With dual-sided I/O outputs, you can easily expand functionality and interface with a range of sensors and peripherals to customize your application to exact specifications.
+
+- **Compact & Ready-to-Deploy Design**: Combining integrated PoE, isolation circuitry, and Ethernet connectivity in a small form factor, this board simplifies prototyping and enables efficient deployment in smart home, industrial automation, or network appliance projects.
+
+### Specification
+
+<div class="table-center">
+	<table align="center">
+		<tr>
+			<th>Parameter</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>MCU</td>
+			<td>XIAO ESP32-S3 Plus</td>
+		</tr>
+		<tr>
+			<td>Antenna</td>
+			<td>2.4GHz Rod Antenna (2.81dBi)</td>
+		</tr>
+		<tr>
+			<td>USB Type-C</td>
+			<td>Input voltage (Type-C): 5V</td>
+		</tr>
+		<tr>
+			<td>PoE Chip</td>
+			<td>MQ7813T120</td>
+		</tr>
+		<tr>
+			<td>PoE Power Supply</td>
+			<td>PoE IEEE802.3af<br />Output Current: 12V/1.1A<br />High Efficiency 86% (Input 48V, Load 12V@1.1A)</td>
+		</tr>
+		<tr>
+			<td>Ethernet Chip</td>
+			<td>WIZnet W5500</td>
+		</tr>
+		<tr>
+			<td>Ethernet Interface</td>
+			<td>RJ45<br />10 or 100Mbps Ethernet</td>
+		</tr>
+		<tr>
+			<td>TCP/IP Protocols</td>
+			<td>TCP, UDP, ICMP, IPv4, ARP, IGMP, PPPoE</td>
+		</tr>
+		<tr>
+			<td>LED Indicator</td>
+			<td>Power x 1<br />User x 1</td>
+		</tr>
+		<tr>
+			<td>Button</td>
+			<td>Reset</td>
+		</tr>
+		<tr>
+			<td>I/O Interface</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Product Size</td>
+			<td>83 x 118 x 26 mm</td>
+		</tr>
+		<tr>
+			<td>Product Weight</td>
+			<td>75g</td>
+		</tr>
+		<tr>
+			<td>Enclosure</td>
+			<td>3D-Printed in White</td>
+		</tr>
+	</table>
+</div>
 
 ## Hardware Overview
 
@@ -90,7 +170,8 @@ Now that you have installed the required libraries and understand the basic func
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong></a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+    </a>
 </div><br />
 
 **Step 2.** Select your development board model and add it to the Arduino IDE.

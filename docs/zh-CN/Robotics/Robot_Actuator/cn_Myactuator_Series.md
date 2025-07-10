@@ -1,6 +1,6 @@
 ---
 description: 本维基提供了 Myactuator 系列电机的教程。
-title: MyActuator 系列电机入门指南
+title: 脉塔X系列电机使用文档
 keywords:
 - 执行器
 - 电机
@@ -13,8 +13,8 @@ last_update:
   author: ZhuYaoHui
 ---
 
-# MyActuator X 系列电机入门指南
-本文将介绍如何开始使用 MyActuator 系列电机，以及如何在 reComputer Mini Jetson Orin 上使用 Python 和 ROS 控制它们。
+# MyActuator 脉塔 X 系列电机入门指南
+本文将介绍如何开始使用 MyActuator 脉塔关节电机，以及如何在 reComputer Mini Jetson Orin 上使用 Python 和 ROS 控制它们。
 
 <div align="center">
     <img width={800} 
@@ -172,12 +172,18 @@ last_update:
 
 ## 使用 [​reComputer Mini Jetson Orin](/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md) 控制电机
 
-目前市场上电机最常见的 CAN 通信接口使用 **XT30 (2+2)** 和 **JST 接头**。我们的 **reComputer Mini Jetson Orin** 设备配备了 **双 XT30 (2+2) 接口** 和 **基于 JST 的 CAN 接口**，提供无缝兼容性。
+目前市场上电机最常见的 CAN 通信接口使用 **XT30 (2+2)** 和 **JST 接头**。我们的 **reComputer Mini Jetson Orin** 和**reComputer Robotics**设备配备了 **双 XT30 (2+2) 接口** 和 **基于 JST 的 CAN 接口**，提供无缝兼容性。
 
+**reComputer Mini:**
 <div align="center">
-    <img width={500} 
-     src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg" />
+  <img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg"/>  
 </div>
+
+**reComputer Robotics**
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/robotics/Sensor/IMU/hexfellow/fig5.jpg"/>  
+</div>
+
 
 有关 CAN 使用的更多详细信息，请参考此 [wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can)。
 
@@ -721,6 +727,8 @@ actuator.setAcceleration(800, AccelerationType.POSITION_PLANNING_DECELERATION)
 actuator.setAcceleration(1200, AccelerationType.VELOCITY_PLANNING_ACCELERATION)
 actuator.setAcceleration(1000, AccelerationType.VELOCITY_PLANNING_DECELERATION)
 ```
+
+<iframe width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114737014705844&bvid=BV1vTKGzZEsT&cid=30669868360&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ## 技术支持与产品讨论
 

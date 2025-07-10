@@ -16,9 +16,6 @@ last_update:
 
 # 如何通过 ROS 在 reComputer 上使用多个 CSI 摄像头
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## 简介
 本教程提供了如何通过 ROS 在 [reComputer J30/J40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) 系列设备上读取多个 CSI 摄像头图像数据，并发布图像主题以在 RVIZ 可视化界面中显示的分步指南。

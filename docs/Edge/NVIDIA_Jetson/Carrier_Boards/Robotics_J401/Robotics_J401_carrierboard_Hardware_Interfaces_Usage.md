@@ -22,6 +22,17 @@ The reComputer Robotics J401 is a compact, high-performance edge AI carrier boar
 
 Supporting frameworks like NVIDIA Isaac ROS, Hugging Face, PyTorch, and ROS 2/1, the reComputer Robotics J401 bridges large language model-driven decision-making with physical robotics control, such as motion planning and sensor fusion. Ideal for the rapid development of autonomous robots, it accelerates time-to-market with ready-to-use interfaces and optimized AI frameworks.
 
+
+<div align="center">
+  <img width="600" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer-robotics-carrier-board.png"/>
+</div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Robotics-J401-Carrier-Board-optional-accessories.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font></span></strong>
+    </a>
+</div>
+
 ## reComputer Jetson Robotics J401 Carrier Board overview
 
 | **Top View** |
@@ -33,11 +44,7 @@ Supporting frameworks like NVIDIA Isaac ROS, Hugging Face, PyTorch, and ROS 2/1,
 | ![fig3](https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/carrier_board/bottom.png) |
 
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Robotics-J401-Carrier-Board-optional-accessories.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font></span></strong>
-    </a>
-</div>
+
 
 ## Part List
 - reComputer Robotics J401 Carrier Board x 1
@@ -264,7 +271,7 @@ Here, we need to download the system image to our Ubuntu PC corresponding to the
     <tr>
       <td>Orin Nano 8GB</td>
       <td>✅</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FRobotics%5FJ401%2Fmfi%5Frecomputer%2Drobo%2Dorin%2Dnano%2D8g%2Dj401%2D6%2E2%2D36%2E4%2E3%2D2025%2D05%2D23%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FRobotics%5FJ401&ga=1">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYGuJpmGQPBLprByA1CofVcBLzUO5dQ8nIEh1PsFQ0863w?e=Pf4GAv">Download</a></td>
       <td>379F2AC4BD574A7E5C8F8834F57BDC5<br />9FFA7BCFE0FDCBBF530CB7B4ED95E690D</td>
     </tr>
     <tr>
@@ -276,7 +283,7 @@ Here, we need to download the system image to our Ubuntu PC corresponding to the
     <tr>
       <td>Orin NX 16GB</td>
       <td>✅</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/my?id=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FRobotics%5FJ401%2Fmfi%5Frecomputer%2Drobo%2Dorin%2Dnx%2D16g%2Dj401%2D6%2E2%2D36%2E4%2E3%2D2025%2D05%2D22%2Etar%2Egz&parent=%2Fpersonal%2Fyoujiang%5Fyu%5Fseeedstudio88%5Fonmicrosoft%5Fcom%2FDocuments%2FJetson%2DImages%2FRobotics%5FJ401&ga=1">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EVx9z8620hNAjKhj18D1bNkBslhkjvq8fh5CsDB62yBxig?e=76f4wH">Download</a></td>
       <td> 9CD1EF04A34345B74B7179C1114080<br />5C8D073E8687FD103A385ED8B19E9162A5</td>
     </tr>
   </tbody>
@@ -837,7 +844,7 @@ Here are the Robotics j401 carrier board GMSL2 camera expansion board connection
 The reComputer Jetson Robotics J401  is equipped with an DP1.4 (included in Type-C Host) for high-resolution display output.
 
 ## Resources
-- [reComputer Robotics J401 Carrier Board Bazaar Bundle Page](https://www.seeedstudio.com/reComputer-Robotics-Bundle.html)
+- [reComputer Robotics J401 Carrier Board Schematic](https://files.seeedstudio.com/products/NVIDIA-Jetson/reComputer%20Robotics%20J401_V1.0_SCH_250421.pdf)
 - [reComputer Robotics J401 Carrier Board Datasheet](https://files.seeedstudio.com/products/NVIDIA-Jetson/reComputer_robotics_J401_datasheet.pdf)
 
 ## Tech Support & Product Discussion

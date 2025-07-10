@@ -74,7 +74,7 @@ last_update:
 |过零检测|支持|
 |认证|UL /  CSA|
 
-:::注意
+:::note注意
         请注意，**漏电流**为1.5mA，这足以驱动低功耗LED。因此，当继电器关闭时，LED可能仍然会发出微弱的光。
 :::
 
@@ -92,7 +92,7 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/Grove-4-Channel_Solid_State_Relay/img/pin_map_back.jpg)
 
-:::注意
+:::note注意
     - 开关1-4的引脚功能相同，因此对于其他开关，您可以参考**LOAD1**/**LOAD2**的引脚配置。
         - 在PCB的背面，有两个接口：SWD和I^2^C。在编程固件时，默认使用SWD接口。如果您想使用I^2^C（实际上作为启动UART工作），您需要将
         **BOOT** 引脚设置为高电平.
@@ -113,7 +113,7 @@ last_update:
 
 这是一个典型的双向电平转换电路，用于连接I^2^C总线的两个不同电压部分。该传感器的I^2^C总线使用3.3V，如果Arduino的I^2^C总线使用5V，则需要此电路。在上面的原理图中，**Q17** 和 **Q18** 是N沟道MOSFET （型号为[2N7002A](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/2N7002A_datasheet.pdf)），它们作为双向开关工作。为了更好地理解这部分内容，您可以参考[AN10441](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/AN10441.pdf)
 
-:::注意
+:::note注意
        本节中我们仅展示了部分原理图，如需完整文档，请参考 [资源](/#resources)
 :::
 
@@ -123,7 +123,7 @@ last_update:
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo_n.jpg) |
 
-:::警告
+:::caution警告
     上面提到的支持平台是模块软件或理论兼容性的指示。在大多数情况下，我们只提供针对Arduino平台的软件库或代码示例。我们无法为所有可能的MCU平台提供软件库/示例代码。因此，用户必须编写自己的软件库。
 :::
 
@@ -140,7 +140,7 @@ last_update:
 |![enter image description here](https://files.seeedstudio.com/wiki/Grove_Light_Sensor/images/gs_1.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/Grove_Light_Sensor/images/gs_4.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/Grove-4-Channel_Solid_State_Relay/img/thumbnail.jpg)|
 |<a href="https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html" target="_blank">立即获取</a>|<a href="https://www.seeedstudio.com/Base-Shield-V2-p-1378.html" target="_blank">立即获取</a>|<a href="https://www.seeedstudio.com/Grove-4-Channel-Solid-State-Relay-p-3130.html" target="_blank">立即获取</a>|
 
-:::注意
+:::note注意
     **1** 请轻轻插入USB线，否则可能会损坏端口。请使用内部有4根线的USB线，2根线的电缆无法传输数据。如果您不确定您手中的线缆是否合适，可以点击 [这里](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html) 进行购买。
 
     **2** 购买每个Grove模块时都会附带一根Grove电缆。如果您不小心丢失了Grove电缆，可以点击[这里](https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-%285-PCs-pack%29-p-936.html) 进行购买。
@@ -154,7 +154,7 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/Grove-4-Channel_Solid_State_Relay/img/connect.jpg)
 
-:::注意
+:::note注意
         如果没有Grove基础扩展板，我们也可以直接将此模块连接到Seeeduino，如下所示。
 :::
 
@@ -167,7 +167,7 @@ last_update:
 
 #### 软件
 
-:::注意
+:::note注意
         如果您是第一次使用Arduino，我们强烈建议您在开始之前先查看 [Arduino 入门指南](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)。
 :::
 
@@ -271,7 +271,7 @@ void loop()
 
 + **步骤 5.** 通过点击**工具->串口监视器**打开Arduino IDE的**串口监视器**。或者同时按下++ctrl+shift+m++键。
 
-:::提示
+:::tip提示
   如果一切正常，您将看到结果。同时，您会看到板载LED灯交替亮起和熄灭。
 :::
 
@@ -296,7 +296,7 @@ Channel 2 on
 
 ![](https://files.seeedstudio.com/wiki/Grove-4-Channel_Solid_State_Relay/img/gif.gif)
 
-:::注意
+:::note注意
         本示例中我们没有添加负载，如果您想查看如何添加负载，请查阅 [Grove -  2通道固态继电器](https://wiki.seeedstudio.com/Grove-2-Channel_Solid_State_Relay)的文档。
 :::
 

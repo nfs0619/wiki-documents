@@ -95,7 +95,7 @@ HardwareSerial mySerial(1);
 
 void setup() {
   Serial.begin(115200); // Initialize the hardware serial with a baud rate of 115200
-  mySerial.begin(115200, SERIAL_8N1, 7, 6); // RX=D4(GPIO4), TX=D5(GPIO5)
+  mySerial.begin(115200, SERIAL_8N1, 7, 6); // RX=D4(GPIO6), TX=D5(GPIO7)
 
   
   // Wait for the hardware serial to be ready

@@ -15,6 +15,14 @@ last_update:
 
 # How to use the Lekiwi in Lerobot
  
+:::tip
+
+This tutorial repository maintains the verified stable release of Lerobot as of June 5, 2025. Currently, ​Hugging Face​ has rolled out a ​major upgrade​ to Lerobot, introducing many new features. If you want to experience the latest tutorials, please follow the [​official documentation​ for guidance](https://huggingface.co/docs/lerobot/index).
+
+:::
+
+
+
 ## Introduction
 
 The [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) is a fully open-source robotic car project launched by [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC). It includes the detailed 3D printing files and operation guides, designed to be compatible with the [LeRobot](https://github.com/huggingface/lerobot/tree/main) imitation learning framework. It supports the SO101 robotic arm to enable a complete imitation learning pipeline, 
@@ -99,31 +107,6 @@ Seeed Studio is only responsible for the quality of the hardware itself. The tut
 
 **For Raspberry Pi:**
 - Raspberry Pi5 4G~16G
-
-## Table of Contents
-  [A. 3D Printing Guide]
-
-  [B. Install LeRobot]
-
-  [C. Configure the motors]
-
-  [D. Assembly]
-
-  [E. Calibrate]
-
-  [F. Teleoperate]
-
-  [G. Add cameras]
-
-  [H. Record the dataset]
-
-  [I. Visualize the dataset]
-
-  [J. Replay an episode]
-
-  [K. Train a policy]
-
-  [L. Evaluate your policy]
 
 
 ## 3D Printing Guide
@@ -221,7 +204,7 @@ conda activate lerobot
 
 ### 4. Clone LeRobot:
 ```bash
-git clone https://github.com/huggingface/lerobot.git ~/lerobot
+git clone https://github.com/ZhuYaoHui1998/lerobot ~/lerobot
 ```
 
 ### 5. Install ffmpeg in your environment:
@@ -304,13 +287,13 @@ Upon receiving the printed parts, all printed components are as shown below.
 </div>
 
 
-**A. Attach the drive motor to the motor mount using 4 m2x5 tap screws.**
+**A. Attach the drive motor to the motor mount using 12 m2x6 tap screws.**
 
 | **Step 1** | **Step 2** |
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/2.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/3.jpg) |
 
-**B. Screw the drive motor mount onto the bottom base plate using 4 m3x16 machine screws.**
+**B. Screw the drive motor mount onto the bottom base plate using 12 m3x16 machine screws.**
 
 :::tip
 Remember the ID arrangement: 8 represents the rear wheel, while 7 and 9 correspond to the left front and right front wheels respectively.
@@ -328,19 +311,19 @@ Remember the ID arrangement: 8 represents the rear wheel, while 7 and 9 correspo
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/6.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/7.jpg) |
 
-**Step 3 and Step 4**: Attach the wheel hub to the omniwheel using 2 m4x16 machine screws.
+**Step 3 and Step 4**: Attach the wheel hub to the omniwheel using 9 m4x18 machine screws.
 
 | **Step 3** | **Step 4** |
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/8.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/9.jpg) |
 
-**D. Attach the servo horn to the wheel hub using 2 m3x16 machine screws.**
+**D. Attach the servo horn to the wheel hub using 6 m3x16 machine screws.**
 
 | **Step 1** | **Step 2** |**Step 3** |
 |:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/10.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/11.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/12.jpg) |
 
-**E. Attach the servo horn to the drive motor using 1 m3x6 machine screw.**
+**E. Attach the servo horn to the drive motor using 3 m3x10 machine screw.**
 
 | **Step 1** | **Step 2** |**Step 3** |
 |:---------:|:---------:|:---------:|
@@ -388,13 +371,13 @@ For the additional **2-pin terminals (5V & 12V)**:
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/30.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/31.jpg) |
 
-**J. Now you need to secure the Raspberry Pi and the remaining parts of the top plate using M3×16 screws.**
+**J. Now you need to secure the Raspberry Pi and the remaining parts of the top plate using 12 M3×16 screws.**
 
 |  | ||
 |:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/32.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/33.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/34.jpg) |
 
-**K. Now you can install the USB camera and Follower Arm using M3x16 and M5×25 screws**
+**K. Now you can install the USB camera and Follower Arm using 1 M3x16 and 4 M5×25 screws**
 
 |  |
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
@@ -620,7 +603,7 @@ python lerobot/scripts/control_robot.py \
 |:---------:|:---------:|:---------:|:---------:|
 | ![fig7](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_middle.webp) | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_zero.webp) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_rotated.webp) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_rest.webp) |
 
-# F. Teleoperate
+## Teleoperate
 
 > [!TIP]
 > If you're using a Mac, you might need to give Terminal permission to access your keyboard. Go to System Preferences > Security & Privacy > Input Monitoring and check the box for Terminal.

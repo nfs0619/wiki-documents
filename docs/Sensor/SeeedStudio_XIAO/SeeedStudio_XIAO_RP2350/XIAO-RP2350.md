@@ -164,12 +164,8 @@ The XIAO RP2350, powered by the RP2350, supports MicroPython and the C/C++ SDK p
 This page primarily focuses on MicroPython users. For those interested in learning SDK programming or for advanced users, you may want to start with the [Raspberry Pi Pico-series C/C++ SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf). This guide will help you set up the environment and get started with example code. Additionally, you can visit [XIAO RP2350 with C/C++ SDK](/xiao-rp2350-c-cpp-sdk) for more specific instructions related to the XIAO RP2350.
 :::
 
-:::warning MicroPython Firmware Issue
-
-As of **November 10, 2024**, the stable MicroPython firmware version **`1.24.0`** available for download at [MicroPython.org for RPI_PICO2](https://micropython.org/download/RPI_PICO2/) is currently **incompatible with certain devices due to variations in the flash chip**.
-
-The **Seeed Team** is actively working to resolve this issue in collaboration with the official MicroPython maintainers. In the meantime, you can use a **preview version** of the MicroPython firmware as a temporary solution: [RP2350 MicroPython Firmware Preview](https://files.seeedstudio.com/wiki/XIAO-RP2350/res/RPI_PICO2-20240809-v1.24.0-preview.201.g269a0e0e1.uf2)
-
+:::tip
+If you download the firmware from the official website, you need to have version 1.26.0 or higher to use it.[SEEED_XIAO_RP2350](https://micropython.org/download/SEEED_XIAO_RP2350/)
 :::
 
 ### Step 1: Installing MicroPython on XIAO RP2350

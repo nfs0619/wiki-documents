@@ -16,10 +16,6 @@ last_update:
 
 # 如何在 reComputer 上安装 ROS1
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 简介
 ROS，即机器人操作系统（Robot Operating System），是一个广泛应用于机器人开发和研究的开源框架。ROS1 最初由斯坦福大学开发，后来由 Willow Garage 维护，支持异构计算平台、多种编程语言以及模块化设计。它通过 Topics、Services 和 Parameter Server 提供通信机制，使用 Catkin 进行高效的包管理，并提供丰富的开发工具，如 rviz、gazebo 和 rosbag，使其成为构建和集成复杂机器人系统的重要工具。
 

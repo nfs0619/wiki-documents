@@ -26,7 +26,7 @@ last_update:
     </a>
     <a href="#actuators" className="nav-item">
       <span className="icon">⚙️</span>
-      <span className="text">执行器</span>
+      <span className="text">关节模组</span>
       <div className="hover-effect"></div>
     </a>
     <a href="#sensors" className="nav-item">
@@ -51,13 +51,20 @@ last_update:
 
 ## 🤗 Lerobot
 
-- [SO100/101 机械臂](/cn/lerobot_so100m/) <span className="tag stable">更新</span>  
-- [SO100 机械臂与 IsaacSim](/cn/lerobot_so100m_isaacsim/)
-- [Lekiwi 移动底盘](/cn/lerobot_lekiwi/) <span className="tag recommended">新</span>
+<div className="card-container">
+    <a href="/cn/lerobot_so100m/" className="nav-item">
+      <span className="text">SO100/101 机械臂</span>
+      <span className="tag stable">更新</span>
+    </a>
+    <a href="/cn/lerobot_so100m_isaacsim/" className="nav-item">
+      <span className="text">SO100 机械臂与 IsaacSim</span>
+    </a>
+    <a href="/cn/lerobot_lekiwi/" className="nav-item">
+      <span className="text">Lekiwi 移动底盘</span>
+       <span className="tag recommended">新</span>
+    </a>
+</div>
 
-## 其他
-
-- **即将推出**
 
 </div>
 </div>
@@ -67,7 +74,25 @@ last_update:
 <div class="category-group">
   <div className="category-card actuators">
 
-- [MyActuator 系列电机](/cn/myactuator_series/) <span className="tag recommended">新</span>
+<div className="card-container">
+    <a href="/cn/myactuator_series" className="nav-item">
+      <span className="text">脉塔X系列关节模组</span>
+      <span className="tag recommended">新</span>
+    </a>
+    <a href="/cn/damiao_series/" className="nav-item">
+      <span className="text">达妙43系列关节模组</span>
+      <span className="tag recommended">新</span>
+    </a>
+    <a href="/cn/feetech_servo/" className="nav-item">
+      <span className="text">飞特STS3215舵机</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/cn/hightorque_series/" className="nav-item">
+      <span className="text">高擎系列关节模组</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
+
 
 </div>
 </div>
@@ -77,16 +102,54 @@ last_update:
 <div class="category-group">
   <div className="category-card sensors">
 
-**LiDAR 系统**  
+**激光雷达**  
 
-- [Robosense LiDAR](/cn/robosense_lidar/)
-- [MID360 LiDAR](/cn/mid360/)
-- [A-LOAM 算法](/cn/a_loam/)  
+<div className="card-container">
+    <a href="/cn/myactuator_series" className="nav-item">
+      <span className="text">Robosense速腾聚创</span>
+    </a>
+    <a href="/cn/mid360/" className="nav-item">
+      <span className="text">MID360</span>
+    </a>
+    <a href="/cn/slamtec/" className="nav-item">
+      <span className="text">思岚系列雷达</span>
+      <span className="tag recommended">新</span>
+    </a>
+    <a href="/cn/a_loam/" className="nav-item">
+      <span className="text">A-LOAM 算法</span>
+    </a>
+</div>
 
 **视觉系统**  
 
-- [Orbbec 深度相机](/cn/orbbec_depth_camera_on_ros/)  
-- [CSI 相机设置](/cn/csi_camera_on_ros/)
+<div className="card-container">
+    <a href="/cn/orbbec_depth_camera_on_ros/" className="nav-item">
+      <span className="text"> 奥比中光深度相机</span>
+    </a>
+    <a href="/cn/csi_camera_on_ros/" className="nav-item">
+      <span className="text">CSI 相机设置</span>
+    </a>
+</div>
+
+**麦克风阵列** 
+<div className="card-container">
+    <a href="/ReSpeaker_Core_v2.0/" className="nav-item">
+      <span className="text">ReSpeaker Core v2.0</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/ReSpeaker_Mic_Array_v2.0/" className="nav-item">
+      <span className="text">ReSpeaker Mic Array v2.0</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
+
+**陀螺仪**  
+
+<div className="card-container">
+    <a href="/cn/hexfellow_y200/" className="nav-item">
+      <span className="text">HEXFELLOW Y200</span>
+    </a>
+</div>
 
 </div>
 </div>
@@ -96,21 +159,37 @@ last_update:
 <div class="category-group">
   <div className="category-card software">
 
-**ROS 生态系统**  
-- [ROS1 安装](/cn/installing_ros1/) <span className="tag recommended">新</span>
-- [IsaacROS 设置](/cn/install_isaacros/) <span className="tag recommended">新</span>
-- [ROS2 Humble](/cn/install_ros2_humble/) <span className="tag recommended">新</span>
-- [AprilTag 模块](/cn/isaac_ros_apriltag/) <span className="tag recommended">新</span>
-- [视觉 SLAM](/cn/isaac_ros_visual_slam/) <span className="tag recommended">新</span>
+**ROS**  
+<div className="card-container">
+    <a href="/cn/installing_ros1/" className="nav-item">
+      <span className="text">ROS1 安装</span>
+    </a>
+    <a href="/cn/install_isaacros/" className="nav-item">
+      <span className="text">IsaacROS 安装</span>
+    </a>
+    <a href="/cn/install_ros2_humble/" className="nav-item">
+      <span className="text">ROS2 安装</span>
+    </a>
+    <a href="/cn/isaac_ros_apriltag/" className="nav-item">
+      <span className="text">AprilTag</span>
+    </a>
+    <a href="/cn/isaac_ros_visual_slam/" className="nav-item">
+      <span className="text">视觉 SLAM</span>
+    </a>
+</div>
 
 **NVIDIA Isaac**  
-- [Isaac Lab 安装](/cn/install_isaaclab/)
+
+<div className="card-container">
+    <a href="/cn/install_isaaclab/" className="nav-item">
+      <span className="text">Isaac Lab 安装</span>
+    </a>
+</div>
 
 </div>
 </div>
 
 </div>
-
 
 
 
@@ -119,15 +198,23 @@ last_update:
 .quick-nav-container {
   margin: 2rem 0;
   padding: 1rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: 
+  radial-gradient(at 10% 20%, #f0fdf4 0%, transparent 50%),
+  radial-gradient(at 90% 80%, #f0f7ff 0%, transparent 50%),
+  white;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 /* Dark模式 - 导航容器 */
 html[data-theme='dark'] .quick-nav-container {
-  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  background: 
+    radial-gradient(at 10% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+    radial-gradient(at 90% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+    linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.3),
+    inset 0 0 12px rgba(99, 102, 241, 0.1); /* 内发光增强深度 */
 }
 
 /* 导航主体 */
@@ -327,7 +414,7 @@ html[data-theme='dark'] .category-card a:hover {
 .category-card a::after {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: 2px;
   left: 0;
   width: 0;
   height: 2px;
@@ -342,6 +429,10 @@ html[data-theme='dark'] .category-card a::after {
 
 .category-card a:hover::after {
   width: 100%;
+}
+
+.card-container {
+  margin-bottom: 1.5rem; /* 原为0.1rem */
 }
 
 /* 标签样式增强 */

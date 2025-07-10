@@ -801,12 +801,14 @@ Then run the following code test according to your WM1302 version.
 ```sh
 USB version
 $ cd packet_forwarder
+$ sudo nano reset_lgw.sh
 $ ./lora_pkt_fwd -c global_conf.json.sx1250.EU868.USB
 ```
 
 ```sh
 SPI version
 $ cd packet_forwarder
+$ sudo nano reset_lgw.sh
 $ ./lora_pkt_fwd -c global_conf.json.sx1250.EU868
 ```
 
