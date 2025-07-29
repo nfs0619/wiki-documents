@@ -16,7 +16,7 @@ class MigrationHelper {
       const relativeA = path.relative(this.backupDir, a);
       const relativeB = path.relative(this.backupDir, b);
       return relativeA.localeCompare(relativeB);
-    });
+    }).reverse();
   }
 
   walkDirectory(dir, fileList) {

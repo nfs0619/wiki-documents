@@ -217,7 +217,7 @@ Some USB cables can only supply power and cannot transfer data. If you don't hav
 - **Step 3.** Add ESP32 board package to your Arduino IDE
 
 Navigate to **File > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
-*<https://jihulab.com/esp-mirror/espressif/arduino-esp32.git>*
+*<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json>*
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/add_board.png" style={{width:550, height:'auto'}}/></div>
 
