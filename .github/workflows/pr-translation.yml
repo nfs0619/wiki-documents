@@ -206,6 +206,7 @@ jobs:
         if: steps.check-permissions.outputs.has_permission == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "🔄 切换到PR分支..."
           gh pr checkout ${{ github.event.issue.number }}
@@ -240,6 +241,8 @@ jobs:
       - name: Get PR changes
         if: steps.check-permissions.outputs.has_permission == 'true'
         id: pr-changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "📊 分析PR变更..."
           base_sha=$(gh pr view ${{ github.event.issue.number }} --json baseRefOid --jq '.baseRefOid')
