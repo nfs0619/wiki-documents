@@ -267,7 +267,7 @@ jobs:
         if: steps.check-permissions.outputs.has_permission == 'true'
         run: |
           echo "📦 安装依赖..."
-          npm install @anthropic-ai/sdk
+          npm install @anthropic-ai/sdk --no-save --legacy-peer-deps
       
       - name: Run translation
         if: steps.check-permissions.outputs.has_permission == 'true'
