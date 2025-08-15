@@ -762,7 +762,7 @@ REASON: [详细解释为什么选择这个位置，包括与英文上下文的�
     console.log(`📤 发送改进的AI分析请求...`);
     const response = await anthropic.messages.create({
       model: 'claude-sonnet-4-20250514',
-      max_tokens: 2000,
+      max_tokens: 20000,
       temperature: 0.05, // 更低的温度以获得更一致的结果
       system: analysisPrompt,
       messages: [{
@@ -1481,7 +1481,7 @@ async function handleModifiedFile(filePath, targetLang) {
           console.log(`📡 调用Claude翻译新增内容...`);
           const response = await anthropic.messages.create({
             model: 'claude-sonnet-4-20250514',
-            max_tokens: 10000,
+            max_tokens: 20000,
             temperature: 0.05,
             system: prompt,
             messages: [{ role: 'user', content: modification.newContent }]
@@ -1542,7 +1542,7 @@ async function handleModifiedFile(filePath, targetLang) {
             console.log(`📡 调用Claude翻译修改内容...`);
             const response = await anthropic.messages.create({
               model: 'claude-sonnet-4-20250514',
-              max_tokens: 10000,
+              max_tokens: 20000,
               temperature: 0.05,
               system: prompt,
               messages: [
