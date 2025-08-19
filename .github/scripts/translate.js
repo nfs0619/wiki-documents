@@ -316,133 +316,120 @@ ${termsList}
 请只输出翻译后的YAML内容，不要添加任何解释。`;
 }
 
-// 重新设计的翻译prompt - 专门解决换行问题
+// 完全重新设计的翻译prompt - 逐行指导
 function generatePrompt(targetLang, pathPrefix, isChunk = false, chunkInfo = null) {
   const langName = LANGUAGE_CONFIG[targetLang].name;
   const termsList = Object.entries(PRESERVE_TERMS)
     .map(([original, preserved]) => `- ${original} → ${preserved}`)
     .join('\n');
 
-  const chunkInstructions = isChunk ? `
+  return `你需要将以下Markdown文档翻译成${langName}，但必须严格按照以下步骤操作：
 
-**分块翻译说明：**
-- 这是文档的第 ${chunkInfo.index + 1} 部分，共 ${chunkInfo.total} 部分` : '';
+第一步：将原文按行分解，逐行处理
+第二步：对每一行应用以下规则：
+- 如果是 "title: xxxxx" → 翻译为 "title: ${langName}翻译"
+- 如果是 "description: xxxxx" → 翻译为 "description: ${langName}翻译" 
+- 如果是代码行（包含\`或在\`\`\`代码块中）→ 完全不变
+- 如果是标题行（以#开头）→ 翻译内容，保持格式
+- 如果是普通文本 → 翻译成${langName}
+- 其他所有行（keywords:, slug:, image:等）→ 完全不变，除了slug需要添加${pathPrefix}前缀
 
-  return `请将以下Markdown文档从英文翻译成${langName}。
+第三步：输出时保持每一行的换行位置完全不变
 
-**关键要求：逐行对照翻译，每一行必须独立处理**
+重要规则：
+1. 绝对不要将两行合并成一行
+2. 绝对不要将一行拆分成两行  
+3. 代码块（\`\`\`包围的内容）中的所有内容包括注释都不翻译
+4. 行内代码（\`包围的内容）不翻译
 
-示例正确格式：
-原文：
----
-description: Some description.
-title: Some title here
-keywords:
-- keyword1
-- keyword2
-slug: /some-path
----
-
-译文：
----
-description: 这里是描述翻译。
-title: 这里是标题翻译
-keywords:
-- keyword1
-- keyword2
-slug: ${pathPrefix}/some-path
----
-
-**绝对禁止的错误示例：**
-❌ title: 标题翻译 keywords:  (两个字段在同一行)
-❌ ## 标题翻译 正文内容...     (标题和正文在同一行)
-
-**翻译规则：**
-1. 只翻译title、description字段的值和正文内容
-2. keywords、slug、image等其他字段保持不变
-3. slug字段：/path → ${pathPrefix}/path
-4. 代码块、链接、文件名保持不变
-
-**术语保护：**
+术语保护：
 ${termsList}
 
-**最重要：每一行都必须独立处理，保持原文的行结构！**${chunkInstructions}`;
+请严格按照上述步骤逐行处理。`;
 }
 
-// 强化的格式后处理 - 真正修复换行问题
-function strictFormatPostProcess(translatedContent, originalContent) {
-  try {
-    console.log('🔧 开始严格格式检查和修复...');
+// 预处理：标记代码块位置，防止翻译
+function preprocessContent(content) {
+  console.log('🛡️ 预处理：保护代码块内容...');
+  
+  const lines = content.split('\n');
+  const processedLines = [];
+  let inCodeBlock = false;
+  let codeBlockMarker = null;
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
     
-    let fixed = translatedContent;
-    let attempt = 0;
-    const maxAttempts = 3;
-    
-    while (attempt < maxAttempts) {
-      attempt++;
-      console.log(`🔍 格式检查第${attempt}次...`);
-      
-      // 先进行修复
-      fixed = forceFixFrontMatter(fixed, originalContent);
-      fixed = forceFixHeaders(fixed, originalContent);
-      
-      // 然后验证
-      const isValid = validateFormat(fixed, originalContent);
-      
-      if (isValid) {
-        console.log(`✅ 格式验证通过 (第${attempt}次尝试)`);
-        break;
+    // 检测代码块开始/结束
+    if (line.trim().startsWith('```')) {
+      if (!inCodeBlock) {
+        inCodeBlock = true;
+        codeBlockMarker = `CODE_BLOCK_START_${i}`;
+        processedLines.push(`${codeBlockMarker}\n${line}`);
       } else {
-        console.warn(`❌ 格式验证失败 (第${attempt}次尝试)，继续修复...`);
-        
-        if (attempt === maxAttempts) {
-          console.error('🚨 经过多次尝试仍有格式问题，请检查翻译结果');
-        }
+        inCodeBlock = false;
+        processedLines.push(`${line}\nCODE_BLOCK_END_${i}`);
+        codeBlockMarker = null;
       }
+      continue;
     }
     
-    return fixed;
-    
-  } catch (error) {
-    console.warn(`⚠️ 格式修复失败: ${error.message}`);
-    return translatedContent;
+    // 如果在代码块中，标记每一行
+    if (inCodeBlock) {
+      processedLines.push(`CODE_LINE_${i}: ${line}`);
+    } else {
+      processedLines.push(line);
+    }
   }
+  
+  return processedLines.join('\n');
 }
 
-// 强化的 Front Matter 修复
-function forceFixFrontMatter(content, originalContent) {
-  const frontMatterMatch = content.match(/^---\n([\s\S]*?)\n---\n/);
-  if (!frontMatterMatch) return content;
+// 后处理：恢复代码块内容
+function restoreCodeBlocks(content, originalContent) {
+  console.log('🔧 后处理：恢复代码块内容...');
   
-  let frontMatterContent = frontMatterMatch[1];
-  let isFixed = false;
+  let restored = content;
+  const originalLines = originalContent.split('\n');
   
-  // 修复字段合并问题
-  frontMatterContent = frontMatterContent.replace(
-    /^(\w+):\s*(.+?)\s+(\w+):/gm, 
-    (match, field1, value1, field2) => {
-      console.log(`🔧 修复字段合并: ${field1} 和 ${field2}`);
-      isFixed = true;
-      return `${field1}: ${value1.trim()}\n${field2}:`;
-    }
-  );
+  // 恢复标记的代码行
+  restored = restored.replace(/CODE_LINE_(\d+): .*/g, (match, lineNum) => {
+    const index = parseInt(lineNum);
+    return originalLines[index] || match;
+  });
   
-  // 特别处理title字段中包含其他字段的情况
-  frontMatterContent = frontMatterContent.replace(
-    /^(title|description):\s*(.+?)\s+(keywords|image|slug|last_update):/gm,
-    (match, field1, value1, field2) => {
-      console.log(`🔧 修复${field1}字段包含${field2}字段的问题`);
-      isFixed = true;
-      return `${field1}: ${value1.trim()}\n${field2}:`;
-    }
-  );
+  // 移除代码块标记
+  restored = restored.replace(/CODE_BLOCK_START_\d+\n?/g, '');
+  restored = restored.replace(/\nCODE_BLOCK_END_\d+/g, '');
   
-  if (isFixed) {
-    const fixedFrontMatter = `---\n${frontMatterContent}\n---\n`;
-    return content.replace(frontMatterMatch[0], fixedFrontMatter);
-  }
+  return restored;
+}
+
+// 简化而有效的格式修复
+function simpleFormatFix(translatedContent, originalContent) {
+  console.log('🔧 执行简单格式修复...');
   
-  return content;
+  let fixed = translatedContent;
+  
+  // 1. 恢复代码块内容
+  fixed = restoreCodeBlocks(fixed, originalContent);
+  
+  // 2. 修复最常见的换行问题：字段合并
+  // 匹配模式：field1: value1 field2: 
+  fixed = fixed.replace(/^(\w+):\s*([^:\n]+?)\s+(\w+):/gm, (match, field1, value1, field2) => {
+    console.log(`🔧 修复字段合并: ${field1}: ${value1.trim()} | ${field2}:`);
+    return `${field1}: ${value1.trim()}\n${field2}:`;
+  });
+  
+  // 3. 修复标题与内容合并
+  // 匹配模式：## title content
+  fixed = fixed.replace(/^(#{1,6}\s+[^\n]+?)\s+([^#\n][^\n]*)/gm, (match, header, content) => {
+    console.log(`🔧 修复标题内容合并: ${header} | ${content}`);
+    return `${header}\n\n${content}`;
+  });
+  
+  console.log('✅ 简单格式修复完成');
+  return fixed;
 }
 
 // 强化的标题格式修复
@@ -635,11 +622,17 @@ function addChineseEnglishSpacing(content) {
   return content;
 }
 
-// Claude翻译函数
+// Claude翻译函数 - 集成预处理和后处理
 async function translateWithClaude(text, targetLang, maxRetries = 2, isChunk = false, chunkInfo = null, isCategory = false) {
   const langConfig = LANGUAGE_CONFIG[targetLang];
   if (!langConfig) {
     throw new Error(`不支持的语言: ${targetLang}`);
+  }
+  
+  // 🔧 预处理：保护代码块
+  let processedText = text;
+  if (!isCategory) {
+    processedText = preprocessContent(text);
   }
   
   // 选择合适的prompt
@@ -654,10 +647,10 @@ async function translateWithClaude(text, targetLang, maxRetries = 2, isChunk = f
       const response = await anthropic.messages.create({
         model: 'claude-sonnet-4-20250514',
         max_tokens: 20000,
-        temperature: 0, // 🔥 完全确定性输出
+        temperature: 0, // 完全确定性输出
         system: systemPrompt,
         messages: [
-          { role: 'user', content: text }
+          { role: 'user', content: processedText }
         ]
       });
       
@@ -665,8 +658,8 @@ async function translateWithClaude(text, targetLang, maxRetries = 2, isChunk = f
       
       // 对非category文件进行后处理
       if (!isCategory) {
-        // 🆕 强化的格式后处理
-        translatedContent = strictFormatPostProcess(translatedContent, text);
+        // 🔧 简化的格式修复
+        translatedContent = simpleFormatFix(translatedContent, text);
         
         // 处理链接
         translatedContent = processInternalLinks(translatedContent, targetLang);
