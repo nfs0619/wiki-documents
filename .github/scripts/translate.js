@@ -353,7 +353,7 @@ ${termsList}
 请只输出翻译后的YAML内容，不要添加任何解释。`;
 }
 
-// 🔧 重新设计的清晰提示词
+// 🔧 增强的提示词 - 用具体例子说明换行保持
 function generatePrompt(targetLang, pathPrefix, isChunk = false, chunkInfo = null) {
   const langName = LANGUAGE_CONFIG[targetLang].name;
   const termsList = Object.entries(PRESERVE_TERMS)
@@ -364,78 +364,251 @@ function generatePrompt(targetLang, pathPrefix, isChunk = false, chunkInfo = nul
 
 你是专业的技术文档翻译助手。请将以下Markdown文档翻译为${langName}。
 
-## 🚨 最高优先级：换行格式保持
+## 🚨 换行格式保持（最重要）
 
-**核心规则**：
-1. **输出行数必须与输入完全一致** - 如果输入有100行，输出也必须有100行
-2. **绝对不要合并任何两行** - 即使看起来相关的内容也不能合并
-3. **绝对不要拆分任何一行** - 一行内容不能变成多行
-4. **空行位置完全保持** - 原文哪里有空行，译文就必须在相同位置有空行
+**绝对规则**：输出必须与输入有完全相同的行数和换行位置。
 
-## 📝 翻译内容规则
+**正确示例**：
+输入：
+\`\`\`
+## Getting Started
 
-### Front Matter处理
-\`\`\`yaml
-title: [翻译这里的内容]
-description: [翻译这里的内容]
-keywords: [保持不变]
-slug: ${pathPrefix}[原始值]
-last_update: [完全不变，包括date和author]
-image: [保持不变]
+This is a tutorial about XIAO.
+It covers basic usage.
 \`\`\`
 
+输出：
+\`\`\`
+## 入门指南
+
+这是关于 XIAO 的教程。
+它涵盖了基本用法。
+\`\`\`
+
+**错误示例（绝对禁止）**：
+❌ 合并行：
+\`\`\`
+## 入门指南
+这是关于 XIAO 的教程。它涵盖了基本用法。
+\`\`\`
+
+❌ 拆分行：
+\`\`\`
+## 入门指南
+
+这是关于 XIAO 的教程。
+它涵盖了
+基本用法。
+\`\`\`
+
+## 📝 翻译规则
+
+### Front Matter处理
+**只翻译这些字段的值**：
+- title: [翻译内容]
+- description: [翻译内容]
+
+**这些字段保持不变**：
+- keywords: [不翻译]
+- slug: ${pathPrefix}[原始值] 
+- last_update: [完全不变]
+- image: [不翻译]
+
 ### 正文翻译
-- **只翻译自然语言文本**
-- **保留所有专有名词**：${termsList.split('\n').slice(0, 3).join(', ')}等
-- **代码块内容不翻译**：包括\`\`\`块和\`行内代码\`
-- **HTML标签不翻译**：<div>、<table>等保持原样
-- **链接URL不翻译**：只翻译链接文本
+- 只翻译自然语言文本
+- 专有名词保持不变：${termsList.split('\n').slice(0, 3).join(', ')}等
+- 代码块（\`\`\`包围）内容不翻译
+- 行内代码（\`包围）不翻译  
+- HTML标签不翻译
+- URL链接不翻译
 
-## 🔒 格式保护规则
+## 🔒 格式保护
 
-### 表格格式
-- Markdown表格（|格式）→ 保持Markdown表格
-- HTML表格（<table>）→ 保持HTML表格
-- **绝对不允许格式转换**
+**表格格式**：
+- Markdown表格（|格式）→ 保持Markdown
+- HTML表格（<table>）→ 保持HTML
 
-### 列表格式
-- "- " 开头 → 保持 "- "
-- "1. " 开头 → 保持 "1. "
-
-### 代码格式
-- \`\`\`代码块 → 保持\`\`\`标记，不翻译内容
-- \`行内代码\` → 保持\`标记，不翻译内容
+**代码格式**：
+- 原文有\`\`\`就保持\`\`\`
+- 原文没有\`\`\`就不要添加\`\`\`
+- **不要给普通HTML内容添加\`\`\`html代码块**
 
 ## ❌ 严格禁止
 
-1. **禁止省略任何内容** - 不能使用"内容同原文"、"省略"等标记
-2. **禁止添加额外内容** - 不能添加原文没有的标题、段落或说明
-3. **禁止改变结构** - 不能调整段落顺序或标题层级
-4. **禁止格式转换** - Markdown不能变HTML，HTML不能变Markdown
+1. 合并任何两行内容
+2. 拆分任何一行内容  
+3. 添加原文没有的\`\`\`代码块标记
+4. 省略任何内容
+5. 改变段落顺序
 
-## 📋 检查清单
+## 📋 翻译前检查
 
-翻译前请确认：
-- [ ] 我将保持与输入完全相同的行数
-- [ ] 我不会合并或拆分任何行
+- [ ] 我将保持输入输出行数完全一致
+- [ ] 我不会添加多余的代码块标记
 - [ ] 我只翻译自然语言部分
-- [ ] 我不会改变任何格式标记
 
 ---
 
-**请直接开始翻译以下内容**：`;
+**开始翻译**：`;
 
-  // 分块说明
   if (isChunk && chunkInfo) {
     prompt += `
 
 ## 📄 分块信息
-- 当前块：${chunkInfo.index + 1}/${chunkInfo.total}
-- 请保持此块的格式完整性
-- 不要添加过渡性语句`;
+- 当前：第${chunkInfo.index + 1}块，共${chunkInfo.total}块
+- 保持此块的完整格式`;
   }
 
   return prompt;
+}
+
+// 🔧 新增：换行验证和修复函数
+function validateAndFixLineBreaks(translatedContent, originalContent) {
+  const originalLines = originalContent.split('\n');
+  const translatedLines = translatedContent.split('\n');
+  
+  console.log(`📏 行数检查: 原文 ${originalLines.length} 行, 译文 ${translatedLines.length} 行`);
+  
+  // 如果行数一致，直接返回
+  if (originalLines.length === translatedLines.length) {
+    console.log('✅ 行数一致，无需修复');
+    return translatedContent;
+  }
+  
+  // 如果行数不一致，尝试智能修复
+  console.log('🔧 检测到行数不一致，尝试修复...');
+  
+  const fixedLines = [];
+  let translatedIndex = 0;
+  
+  for (let i = 0; i < originalLines.length; i++) {
+    const originalLine = originalLines[i];
+    
+    if (translatedIndex >= translatedLines.length) {
+      // 译文行数不够，可能被合并了
+      console.log(`⚠️ 译文行数不足，原文第${i+1}行可能丢失`);
+      fixedLines.push(originalLine); // 暂时用原文
+      continue;
+    }
+    
+    const translatedLine = translatedLines[translatedIndex];
+    
+    // 如果是空行，直接保持
+    if (originalLine.trim() === '') {
+      fixedLines.push('');
+      translatedIndex++;
+      continue;
+    }
+    
+    // 如果是标题行，保持格式
+    if (originalLine.match(/^#+\s/)) {
+      if (translatedLine.match(/^#+\s/)) {
+        fixedLines.push(translatedLine);
+        translatedIndex++;
+      } else {
+        // 译文标题格式错误，需要修复
+        const level = originalLine.match(/^(#+)/)[1];
+        const translatedTitle = translatedLine.replace(/^#+\s*/, '');
+        fixedLines.push(`${level} ${translatedTitle}`);
+        translatedIndex++;
+      }
+      continue;
+    }
+    
+    // 检查是否有行被合并
+    if (translatedLine.length > originalLine.length * 2) {
+      // 可能多行被合并，尝试拆分
+      const sentences = translatedLine.split(/[。！？]/);
+      if (sentences.length > 1) {
+        console.log(`🔧 修复可能的行合并: "${translatedLine.substring(0, 50)}..."`);
+        for (let j = 0; j < sentences.length && j < 3; j++) {
+          if (sentences[j].trim()) {
+            fixedLines.push(sentences[j].trim() + (j < sentences.length - 1 ? '。' : ''));
+          }
+        }
+      } else {
+        fixedLines.push(translatedLine);
+      }
+      translatedIndex++;
+      continue;
+    }
+    
+    // 正常情况
+    fixedLines.push(translatedLine);
+    translatedIndex++;
+  }
+  
+  const result = fixedLines.join('\n');
+  const resultLines = result.split('\n');
+  
+  console.log(`🔧 修复后行数: ${resultLines.length} 行`);
+  
+  if (resultLines.length === originalLines.length) {
+    console.log('✅ 修复成功');
+  } else {
+    console.log('⚠️ 修复不完全，可能需要重新翻译');
+  }
+  
+  return result;
+}
+
+// 🔧 新增：清理多余代码块标记
+function cleanExtraCodeBlocks(content, originalContent) {
+  console.log('🧹 清理多余的代码块标记...');
+  
+  let cleaned = content;
+  
+  // 1. 移除错误添加的HTML代码块
+  // 如果原文没有```html，但译文有，则移除
+  if (!originalContent.includes('```html') && cleaned.includes('```html')) {
+    console.log('🔧 移除多余的 ```html 代码块');
+    cleaned = cleaned.replace(/```html\s*\n([\s\S]*?)\n```/g, '$1');
+  }
+  
+  // 2. 移除错误添加的其他代码块（如果原文对应位置没有）
+  const originalCodeBlocks = (originalContent.match(/```/g) || []).length;
+  const translatedCodeBlocks = (cleaned.match(/```/g) || []).length;
+  
+  if (translatedCodeBlocks > originalCodeBlocks) {
+    console.log(`🔧 检测到多余的代码块标记: 原文${originalCodeBlocks/2}个，译文${translatedCodeBlocks/2}个`);
+    
+    // 查找并移除多余的代码块
+    const lines = cleaned.split('\n');
+    const originalLines = originalContent.split('\n');
+    const fixedLines = [];
+    
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      const originalLine = i < originalLines.length ? originalLines[i] : '';
+      
+      // 如果译文有```但原文没有，考虑移除
+      if (line.includes('```') && !originalLine.includes('```')) {
+        // 检查这是否是错误添加的代码块开始
+        if (line.trim() === '```html' || line.trim() === '```') {
+          console.log(`🔧 移除第${i+1}行多余的代码块标记: ${line}`);
+          continue; // 跳过这行
+        }
+      }
+      
+      fixedLines.push(line);
+    }
+    
+    cleaned = fixedLines.join('\n');
+  }
+  
+  // 3. 修复代码块配对问题
+  const codeBlockCount = (cleaned.match(/```/g) || []).length;
+  if (codeBlockCount % 2 !== 0) {
+    console.log('🔧 修复代码块配对问题');
+    // 简单处理：如果是奇数个```，移除最后一个
+    const lastIndex = cleaned.lastIndexOf('```');
+    if (lastIndex !== -1) {
+      cleaned = cleaned.substring(0, lastIndex) + cleaned.substring(lastIndex + 3);
+    }
+  }
+  
+  console.log('✅ 代码块清理完成');
+  return cleaned;
 }
 
 // 处理内部链接和seeedstudio.com链接
@@ -525,19 +698,45 @@ async function translateWithClaude(text, targetLang, maxRetries = 3, isChunk = f
       
       let translatedContent = response.content[0].text;
       
-      // 对非category文件进行简单验证
+      // 对非category文件进行格式验证和修复
       if (!isCategory) {
+        // 🔧 1. 换行验证和修复
         const originalLines = text.split('\n');
         const translatedLines = translatedContent.split('\n');
         
         console.log(`📏 行数检查: 原文 ${originalLines.length} 行, 译文 ${translatedLines.length} 行`);
         
-        // 如果行数差异过大，重试
-        if (Math.abs(originalLines.length - translatedLines.length) > originalLines.length * 0.2) {
-          console.log(`⚠️ 行数差异过大，尝试 ${attempt + 1}/${maxRetries}`);
-          if (attempt < maxRetries) {
+        // 如果行数不一致，先尝试修复
+        if (Math.abs(originalLines.length - translatedLines.length) > 2) {
+          console.log(`⚠️ 行数差异较大，尝试修复...`);
+          translatedContent = validateAndFixLineBreaks(translatedContent, text);
+          
+          // 修复后如果还是不行且还有重试机会，重新翻译
+          const fixedLines = translatedContent.split('\n');
+          if (Math.abs(originalLines.length - fixedLines.length) > 3 && attempt < maxRetries) {
+            console.log(`🔄 修复效果不佳，重新翻译 (尝试 ${attempt + 1}/${maxRetries})`);
             continue;
           }
+        }
+        
+        // 🔧 2. 清理多余的代码块标记
+        translatedContent = cleanExtraCodeBlocks(translatedContent, text);
+        
+        // 🔧 3. 检查代码块标记是否被破坏
+        let codeBlockErrors = 0;
+        for (let i = 0; i < Math.min(originalLines.length, translatedContent.split('\n').length); i++) {
+          const origLine = originalLines[i];
+          const transLine = translatedContent.split('\n')[i];
+          
+          if (origLine && transLine && origLine.includes('```') && !transLine.includes('```')) {
+            console.log(`🚨 第${i+1}行代码块标记被破坏: "${origLine}" → "${transLine}"`);
+            codeBlockErrors++;
+          }
+        }
+        
+        if (codeBlockErrors > 0 && attempt < maxRetries) {
+          console.log(`🔄 发现 ${codeBlockErrors} 个代码块错误，重新翻译`);
+          continue;
         }
         
         // 处理链接
@@ -700,7 +899,7 @@ async function translateFile(filePath, targetLang) {
     console.log(`🔍 文件大小: ${content.length} 字符 (约 ${estimateTokens(content)} tokens)`);
     
     // 分块处理 - 使用更小的分块尺寸
-    const chunks = chunkDocument(content, 10000);
+    const chunks = chunkDocument(content, 10000);  // 降低到10000字节
     console.log(`📦 文档分为 ${chunks.length} 块`);
     
     const translatedContent = await translateDocumentChunks(chunks, targetLang, filePath);

@@ -1,6 +1,7 @@
 ---
 description: Seeed Studio XIAO MG24 的蓝牙使用方法。
-title: Seeed Studio XIAO MG24 蓝牙使用方法 keywords:
+title: Seeed Studio XIAO MG24 蓝牙使用方法
+keywords:
 - MG24
 - xiao
 - ble
@@ -41,7 +42,9 @@ last_update:
 
 Seeed Studio XIAO MG24 是一款强大的开发板，支持蓝牙 LE 5.3 和蓝牙 mesh，使其成为需要无线连接的各种物联网应用的理想选择。凭借其卓越的射频性能，XIAO MG24 在各种距离上提供可靠、高速的无线通信，使其成为短距离和长距离应用的多功能解决方案。在本教程中，我们将探索 XIAO MG24 蓝牙功能的基本特性，包括如何扫描附近的蓝牙设备、建立蓝牙连接以及通过该连接传输和接收数据。
 
-## 天线切换方法 Seeed Studio XIAO MG24 有两种天线选项：内置天线和外置天线。为了方便起见，您可以选择使用内置天线，为了增强信号强度，您可以选择外置天线。以下是在两种天线之间切换的方法。
+## 天线切换方法
+
+Seeed Studio XIAO MG24 有两种天线选项：内置天线和外置天线。为了方便起见，您可以选择使用内置天线，为了增强信号强度，您可以选择外置天线。以下是在两种天线之间切换的方法。
 
 PB04 用于选择使用内置天线还是外置天线。在此之前，您需要将 PB05 设置为高电平以开启此功能。如果 PB04 设置为低电平，则使用内置天线；如果设置为高电平，则使用外置天线。默认为低电平。如果您想将其设置为高电平，可以参考以下代码。
 
@@ -92,13 +95,17 @@ void setup() {
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/52.png" style={{width:600, height:'auto'}}/></div>
 
-#### GATT 当两个蓝牙设备建立连接时，它们需要一个协议来确定如何通信。GATT（通用属性配置文件）就是这样一个协议，它定义了蓝牙设备之间如何传输数据。
+#### GATT
+
+当两个蓝牙设备建立连接时，它们需要一个协议来确定如何通信。GATT（通用属性配置文件）就是这样一个协议，它定义了蓝牙设备之间如何传输数据。
 
 在 GATT 协议中，设备的功能和属性被组织成称为服务、特征和描述符的结构。服务代表设备提供的一组相关功能和特性。每个服务可以包含多个特征，这些特征定义了服务的某种属性或行为，例如传感器数据或控制命令。每个特征都有一个唯一标识符和一个值，可以读取或写入以进行通信。描述符用于描述特征的元数据，例如特征值的格式和访问权限。
 
 通过使用 GATT 协议，蓝牙设备可以在不同的应用场景中进行通信，例如传输传感器数据或控制远程设备。
 
-#### BLE 特征 ATT，全名属性协议。最终，ATT 由一组 ATT 命令组成，即请求和响应命令，ATT 也是蓝牙空包的最上层，即 ATT 是我们分析蓝牙包最多的地方。
+#### BLE 特征
+
+ATT，全名属性协议。最终，ATT 由一组 ATT 命令组成，即请求和响应命令，ATT 也是蓝牙空包的最上层，即 ATT 是我们分析蓝牙包最多的地方。
 
 ATT 命令，正式名称为 ATT PDU（协议数据单元）。它包括 4 个类别：读取、写入、通知和指示。这些命令可以分为两种类型：如果需要响应，则后面会跟一个请求；相反，如果只需要 ACK 而不需要响应，则后面不会跟请求。
 
@@ -116,7 +123,9 @@ ATT 命令，正式名称为 ATT PDU（协议数据单元）。它包括 4 个�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/51.png" style={{width:800, height:'auto'}}/></div>
 
-#### UUID 每个服务、特征和描述符都有一个 UUID（通用唯一标识符）。UUID 是一个唯一的 128 位（16 字节）数字。例如：
+#### UUID 
+
+每个服务、特征和描述符都有一个 UUID（通用唯一标识符）。UUID 是一个唯一的 128 位（16 字节）数字。例如：
 
 ```
 ea094cbd-3695-4205-b32d-70c1dea93c35
@@ -579,8 +588,6 @@ static void ble_initialize_gatt_db() {
 #ifndef BLE_STACK_SILABS
 #error "This example is only compatible with the Silicon Labs BLE stack. Please select 'BLE (Silabs)' in 'Tools > Protocol stack'."
 #endif
-
-```
 
 ```
 
