@@ -14,9 +14,7 @@ last_update:
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/mg24_platform/top_mg24_platform02.webp" /></div>
 
-## PlatformIO 介绍 
-
-PlatformIO 是一个集成了多种类型开发板的开发平台，具有良好的可扩展性。如果平台没有您需要的类型，您可以手动添加开发板类型。您在 Arduino 上编写的代码可以使用它，只需添加相应的库即可
+## PlatformIO 介绍 PlatformIO 是一个集成了多种类型开发板的开发平台，具有良好的可扩展性。如果平台没有您需要的类型，您可以手动添加开发板类型。您在 Arduino 上编写的代码可以使用它，只需添加相应的库即可
 
 在本教程中，我们将介绍如何在 PlatformIO 中安装和运行示例代码
 
@@ -62,8 +60,7 @@ board = seeed-xiao-mg24
 framework = arduino
 ```
 
-:::tip
-记住保存文件，ctrl+s，它会开始加载
+:::tip 记得保存文件，ctrl+s，它会开始加载
 :::
 
 ### 步骤 4. 编译和烧录
