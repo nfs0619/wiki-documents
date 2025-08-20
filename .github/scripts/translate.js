@@ -49,15 +49,13 @@ const PRESERVE_TERMS = {
     'Home Assistant': 'Home Assistant'
 };
 
-// 文档保护列表 - 这些文件和目录不进行翻译
+// 文档保护列表
 const PROTECTED_PATHS = [
-  'docs/Getting_Started.md',           // 各语言首页有不同内容
-  'docs/index.md',                     // 首页
-  'docs/README.md',                    // README
-  'docs/CONTRIBUTING.md',              // 贡献指南
-  'docs/LICENSE.md',                   // 许可证
-  // 可以添加目录保护，以/结尾
-  // 'docs/special-folder/',           // 整个目录
+  'docs/Getting_Started.md',
+  'docs/index.md',
+  'docs/README.md',
+  'docs/CONTRIBUTING.md',
+  'docs/LICENSE.md',
 ];
 
 // 翻译状态跟踪
@@ -71,25 +69,22 @@ const translationStatus = {
   errors: []
 };
 
-// 估算token数量
+// 估算token数量 - 使用字节数更准确
 function estimateTokens(text) {
   return Math.ceil(text.length * 0.75);
 }
 
 // 检查文件是否受保护
 function isProtectedPath(filePath) {
-  // 标准化路径
   const normalizedPath = filePath.replace(/\\/g, '/');
   
   for (const protectedPath of PROTECTED_PATHS) {
     const normalizedProtected = protectedPath.replace(/\\/g, '/');
     
-    // 检查精确匹配
     if (normalizedPath === normalizedProtected) {
       return true;
     }
     
-    // 检查目录匹配（以/结尾的保护路径）
     if (normalizedProtected.endsWith('/') && normalizedPath.startsWith(normalizedProtected)) {
       return true;
     }
@@ -105,7 +100,6 @@ function generateTargetPath(originalPath, targetLang) {
   
   const parsedPath = path.parse(relativePath);
   
-  // 特殊处理_category.yml文件
   if (parsedPath.base === '_category_.yml') {
     const targetPath = path.join('docs', langConfig.folder, relativePath);
     return targetPath;
@@ -148,7 +142,6 @@ async function detectFileOperations(baseSha) {
       const status = parts[0];
       const file = parts[1];
       
-      // 处理md/mdx和_category.yml文件，排除翻译文件
       if ((!file.match(/\.(md|mdx)$/) && !file.endsWith('_category_.yml')) || 
           file.match(/\/(zh-CN|ja|Spanish)\//)) {
         continue;
@@ -191,17 +184,15 @@ async function detectFileOperations(baseSha) {
   }
 }
 
-// 🔧 修复的分块函数 - 确保代码块完整性
-function chunkDocument(content, maxTokens = 15000) {
+// 🔧 改进的分块函数 - 参考用户的逻辑
+function chunkDocument(content, maxChunkSize = 10000) {
   const lines = content.split('\n');
   const chunks = [];
-  let currentChunk = '';
   let frontMatter = '';
   let inFrontMatter = false;
-  let frontMatterEnded = false;
   let contentStartIndex = 0;
   
-  // 首先提取Front Matter
+  // 提取Front Matter
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     
@@ -215,7 +206,6 @@ function chunkDocument(content, maxTokens = 15000) {
       frontMatter += line + '\n';
       if (line.trim() === '---') {
         inFrontMatter = false;
-        frontMatterEnded = true;
         contentStartIndex = i + 1;
         break;
       }
@@ -223,71 +213,12 @@ function chunkDocument(content, maxTokens = 15000) {
     }
   }
   
-  // 处理正文内容时考虑代码块完整性
+  // 处理正文内容 - 使用改进的分块策略
   const contentLines = lines.slice(contentStartIndex);
-  let inCodeBlock = false;
-  let codeBlockStartIndex = -1;
+  const contentChunks = splitMarkdownContent(contentLines.join('\n'), maxChunkSize);
   
-  for (let i = 0; i < contentLines.length; i++) {
-    const line = contentLines[i];
-    const lineWithNewline = line + '\n';
-    
-    // 🔧 检测代码块开始/结束
-    if (line.trim().startsWith('```')) {
-      if (!inCodeBlock) {
-        // 代码块开始
-        inCodeBlock = true;
-        codeBlockStartIndex = i;
-        console.log(`🔒 代码块开始于第 ${i} 行: ${line}`);
-      } else {
-        // 代码块结束
-        inCodeBlock = false;
-        console.log(`🔓 代码块结束于第 ${i} 行: ${line}`);
-        codeBlockStartIndex = -1;
-      }
-    }
-    
-    const potentialChunk = currentChunk + lineWithNewline;
-    const estimatedTokens = estimateTokens(potentialChunk);
-    
-    // 🔧 分块条件：
-    // 1. 遇到标题
-    // 2. 当前chunk已有内容
-    // 3. 超过token限制
-    // 4. 【关键】不在代码块内部
-    if (line.match(/^#+\s/) && 
-        currentChunk.trim() && 
-        estimatedTokens > maxTokens && 
-        !inCodeBlock) {
-      
-      console.log(`📦 在标题处分块，当前块大小: ${estimateTokens(currentChunk)} tokens`);
-      chunks.push(currentChunk.trim());
-      currentChunk = lineWithNewline;
-      
-    } else if (estimatedTokens > maxTokens && !inCodeBlock) {
-      // 如果超过限制但不在代码块内，强制分块
-      console.log(`📦 强制分块，当前块大小: ${estimateTokens(currentChunk)} tokens`);
-      if (currentChunk.trim()) {
-        chunks.push(currentChunk.trim());
-      }
-      currentChunk = lineWithNewline;
-      
-    } else if (estimatedTokens > maxTokens && inCodeBlock) {
-      // 如果在代码块内超过限制，警告但继续
-      console.log(`⚠️ 在代码块内超过token限制，继续合并以保持完整性`);
-      currentChunk = potentialChunk;
-      
-    } else {
-      currentChunk = potentialChunk;
-    }
-  }
-  
-  if (currentChunk.trim()) {
-    chunks.push(currentChunk.trim());
-  }
-  
-  // 如果没有分块或只有一块且大小合理，返回完整内容
-  if (chunks.length === 0) {
+  // 如果没有分块或只有一块
+  if (contentChunks.length <= 1) {
     return [{
       content: content,
       frontMatter: '',
@@ -297,25 +228,95 @@ function chunkDocument(content, maxTokens = 15000) {
     }];
   }
   
-  if (chunks.length === 1 && estimateTokens(content) <= maxTokens) {
-    return [{
-      content: content,
-      frontMatter: '',
-      isComplete: true,
-      index: 0,
-      total: 1
-    }];
-  }
+  console.log(`📦 文档分为 ${contentChunks.length} 块，各块大小: ${contentChunks.map(c => Math.ceil(c.length * 0.75)).join(', ')} tokens`);
   
-  console.log(`📦 文档分为 ${chunks.length} 块，各块大小: ${chunks.map(c => estimateTokens(c)).join(', ')} tokens`);
-  
-  return chunks.map((chunk, index) => ({
+  return contentChunks.map((chunk, index) => ({
     content: chunk,
     frontMatter: index === 0 ? frontMatter : '',
     isComplete: false,
     index: index,
-    total: chunks.length
+    total: contentChunks.length
   }));
+}
+
+// 🔧 参考用户代码的分块函数
+function splitMarkdownContent(content, chunkSize = 10000) {
+  const lines = content.split('\n');
+  const chunks = [];
+  let currentChunk = [];
+  let currentLength = 0;
+  
+  // 状态追踪
+  let inCodeBlock = false;
+  let inHtmlTable = false;
+  let codeBlockFenceType = null;
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    
+    // 检查代码块边界
+    if (!inCodeBlock && (line.trim().startsWith('```') || line.trim().startsWith('~~~'))) {
+      inCodeBlock = true;
+      codeBlockFenceType = line.trim().substring(0, 3);
+      console.log(`🔒 代码块开始于第 ${i} 行: ${line.trim()}`);
+    } else if (inCodeBlock && line.trim().startsWith(codeBlockFenceType)) {
+      inCodeBlock = false;
+      codeBlockFenceType = null;
+      console.log(`🔓 代码块结束于第 ${i} 行: ${line.trim()}`);
+    }
+    
+    // 检查HTML表格边界
+    if (!inCodeBlock) {
+      if (line.toLowerCase().includes('<table')) {
+        inHtmlTable = true;
+      } else if (line.toLowerCase().includes('</table>')) {
+        inHtmlTable = false;
+      }
+    }
+    
+    const lineLength = Buffer.byteLength(line, 'utf8');
+    
+    // 分割策略
+    let shouldSplit = false;
+    if (!inCodeBlock && !inHtmlTable && currentChunk.length > 0) {
+      // 在大标题处分割（# 或 ##）
+      if (line.trim().startsWith('#') && !line.trim().startsWith('###')) {
+        shouldSplit = currentLength > chunkSize * 0.5;
+      }
+      // 在达到大小限制时分割
+      else if (currentLength + lineLength > chunkSize) {
+        // 寻找合适的分割点：空行后的非空行
+        if (!line.trim() || (i > 0 && !lines[i-1].trim())) {
+          shouldSplit = true;
+        }
+        // 如果找不到好的分割点，强制分割
+        else if (currentLength > chunkSize * 1.2) {
+          shouldSplit = true;
+        }
+      }
+    }
+    
+    // 执行分割
+    if (shouldSplit) {
+      const chunkText = currentChunk.join('\n');
+      chunks.push(chunkText);
+      console.log(`📦 分块: ${Math.ceil(chunkText.length * 0.75)} tokens`);
+      currentChunk = [];
+      currentLength = 0;
+    }
+    
+    currentChunk.push(line);
+    currentLength += lineLength;
+  }
+  
+  // 添加最后一个块
+  if (currentChunk.length > 0) {
+    const chunkText = currentChunk.join('\n');
+    chunks.push(chunkText);
+    console.log(`📦 最后分块: ${Math.ceil(chunkText.length * 0.75)} tokens`);
+  }
+  
+  return chunks.length > 0 ? chunks : [content];
 }
 
 // 生成_category.yml翻译prompt
@@ -352,48 +353,91 @@ ${termsList}
 请只输出翻译后的YAML内容，不要添加任何解释。`;
 }
 
-// 🔧 简化且更强制的翻译prompt
+// 🔧 简化且严格的翻译prompt - 参考用户的风格
 function generatePrompt(targetLang, pathPrefix, isChunk = false, chunkInfo = null) {
   const langName = LANGUAGE_CONFIG[targetLang].name;
   const termsList = Object.entries(PRESERVE_TERMS)
     .map(([original, preserved]) => `- ${original} → ${preserved}`)
     .join('\n');
 
-  return `你是专业的技术文档翻译专家。请将以下Markdown文档从英文翻译成${langName}。
+  let prompt = `你是一个技术文档翻译助手。用户已经提供了 Markdown 技术文档，请直接将其翻译为${langName}。
 
-🚨 **绝对不可违反的格式规则**：
+**重要说明**：
+- 用户已经提供了需要翻译的内容，请直接开始翻译，不要询问或要求提供内容
+- 不要输出"请提供需要翻译的内容"等类似的请求
+- 直接输出翻译结果，不需要任何额外的说明或询问
 
-1. **行数必须完全一致**
-   - 输入有多少行，输出必须有多少行
-   - 绝对不要合并任何两行
-   - 绝对不要拆分任何一行
+**【Front Matter 处理规则】**：
+- 如果文档开头有 Front Matter（被 --- 包围的 YAML 部分），请按以下规则处理：
+  - **last_update 字段完全不翻译**：包括 date 和 author 的值都必须保持原文不变
+  - **keywords 字段不翻译**：保持原始英文关键词
+  - **slug 字段不翻译**：URL路径保持不变
+  - **image 字段不翻译**：图片链接保持不变
+  - 只翻译 description 和 title 字段的值
+  - 保持 Front Matter 的 YAML 结构和缩进完全不变
 
-2. **Front Matter严格格式**：
-   - title: [翻译内容但保持单行]
-   - description: [翻译内容但保持单行]
-   - keywords: [完全不变]
-   - slug: ${pathPrefix}[原始值]
-   - 其他字段: [完全不变]
+**【格式保持铁律 - 绝对不可违反】**：
+**原始标记语法不可改变**：
+   - Markdown表格（| 列1 | 列2 |）必须保持为Markdown表格格式，绝对不能转换为HTML表格
+   - HTML表格（<table><tr><td>）必须保持为HTML表格格式，绝对不能转换为Markdown表格
+   - 列表如果原文用 "- " 就保持 "- "，如果用 "1. " 就保持 "1. "
+   - 代码块如果用 \`\`\` 包围就保持 \`\`\`，如果用单个 \` 包围就保持单个 \`
+   - 链接如果用 [text](url) 格式就保持，如果用 <a href> 就保持
+   - 图片如果用 ![alt](src) 就保持，如果用 <img> 就保持
 
-3. **代码块绝对保护**：
-   - 所有\`\`\`行必须完全保持不变
-   - 代码块内所有内容完全不翻译
-   - 行内\`代码\`完全不翻译
+**逐字符级别的格式复制**：
+   - 空行数量必须与原文完全一致
+   - 缩进空格数量必须与原文完全一致
+   - 标点符号的位置和类型必须与原文完全一致
+   - 所有特殊字符（如 \`、*、_、#、|、[]、()等）的位置必须与原文完全一致
 
-4. **标题处理**：
-   - 保持#号数量完全不变
-   - 只翻译标题文字内容
+**严格要求 - 结构保持**：
+- **绝对不能添加、删除或修改任何标题**（# ## ### 等），必须保持原文的标题层级和数量完全一致
+- **绝对不能改变文档结构**，包括段落顺序、列表顺序、表格行列顺序等
+- **逐句对应翻译**，确保译文的每一句都对应原文的特定句子，不要重新组织语言
+- 保留所有 HTML 标签、JSX 格式、Markdown 语法结构不变（例如 <iframe>、<div>、属性名等不要翻译）
+- HTML 表格、列表等结构如果原文中没有代码块标记（\`\`\`），请保持内嵌状态，不要添加代码块标记
+- **代码块处理规则**：
+  - 代码块标记（\`\`\`）和编程代码本身保持不变
+  - 绝对不能省略代码块内容，即使很长也要完整保留
+  - 不要输出 "内容同原文档" 或类似的省略说明
+- 保留专有词、产品名、接口名不变（例如 SenseCAP、LoRa-E5 等）
+- 仅翻译自然语言部分，确保格式与原文结构**完全**保持一致
+- **绝对要求**：确保翻译完整，不要省略任何内容，包括长代码块
+- **重要**：对于 <table>、<tr>、<td> 等HTML标签内容，如果原文没有代码块包围，请保持原始格式，不要添加 \`\`\`html 代码块
+- **翻译顺序**：严格按照原文的顺序进行翻译，不要重新排列任何内容
+- 如果输入太长，请翻译所有内容，不要截断
 
-5. **保护术语**：
+**术语保护**：
 ${termsList}
 
-⚠️ **验证清单**：
-- [ ] 输出行数 = 输入行数
-- [ ] 所有\`\`\`行保持原样
-- [ ] Front Matter每个字段单独一行
-- [ ] 没有任何行被合并
+**严禁行为**：
+- 严禁改变任何标记语法格式（如 Markdown → HTML 或 HTML → Markdown）
+- 严禁翻译 Front Matter 中的 last_update、keywords、slug、image 字段
+- 严禁使用任何形式的省略标记，如：<!-- 剩余部分保持原样翻译 -->、"内容同原文档"、"省略"等
+- 严禁简化或跳过任何表格行、列表项或段落
+- 严禁因为内容过长而截断输出
+- 严禁在翻译中途停止或添加"后续内容省略"等说明
+- 必须完整翻译所有内容，哪怕输出会很长
+- 严禁输出"请提供需要翻译的内容"等请求
+- 严禁改变空行数量或缩进格式
 
-请翻译以下内容：`;
+**直接开始翻译**：用户提供的内容如下，请直接翻译，严格遵守以上格式保持规则：`;
+
+  // 如果是分块翻译，添加分块信息
+  if (isChunk && chunkInfo) {
+    prompt += `
+
+**分块翻译说明**：
+- 这是第 ${chunkInfo.index + 1} / ${chunkInfo.total} 个分块
+- 请确保翻译此块时保持与其他块的连贯性
+- 严格按照此块的原始格式和顺序翻译
+- 不要添加过渡语句或总结性内容
+- 如果块的开头或结尾看起来不完整，仍按原样翻译对应部分
+- **严禁使用任何省略标记**，必须完整翻译所有内容`;
+  }
+
+  return prompt;
 }
 
 // 处理内部链接和seeedstudio.com链接
@@ -455,7 +499,7 @@ function addChineseEnglishSpacing(content) {
   return content;
 }
 
-// 🔧 简化的Claude翻译函数 - 移除预处理，加强验证
+// 🔧 简化的Claude翻译函数
 async function translateWithClaude(text, targetLang, maxRetries = 3, isChunk = false, chunkInfo = null, isCategory = false) {
   const langConfig = LANGUAGE_CONFIG[targetLang];
   if (!langConfig) {
@@ -483,64 +527,19 @@ async function translateWithClaude(text, targetLang, maxRetries = 3, isChunk = f
       
       let translatedContent = response.content[0].text;
       
-      // 对非category文件进行验证
+      // 对非category文件进行简单验证
       if (!isCategory) {
-        // 🔧 严格验证行数和基本格式
         const originalLines = text.split('\n');
         const translatedLines = translatedContent.split('\n');
         
         console.log(`📏 行数检查: 原文 ${originalLines.length} 行, 译文 ${translatedLines.length} 行`);
         
-        // 检查行数差异
-        if (Math.abs(originalLines.length - translatedLines.length) > 2) {
+        // 如果行数差异过大，重试
+        if (Math.abs(originalLines.length - translatedLines.length) > originalLines.length * 0.2) {
           console.log(`⚠️ 行数差异过大，尝试 ${attempt + 1}/${maxRetries}`);
           if (attempt < maxRetries) {
             continue;
           }
-        }
-        
-        // 检查代码块标记是否被破坏
-        let codeBlockErrors = 0;
-        for (let i = 0; i < Math.min(originalLines.length, translatedLines.length); i++) {
-          const origLine = originalLines[i];
-          const transLine = translatedLines[i];
-          
-          if (origLine.includes('```') && !transLine.includes('```')) {
-            console.log(`🚨 第${i+1}行代码块标记被破坏: "${origLine}" → "${transLine}"`);
-            codeBlockErrors++;
-          }
-        }
-        
-        if (codeBlockErrors > 0 && attempt < maxRetries) {
-          console.log(`🔄 发现 ${codeBlockErrors} 个代码块错误，重新翻译`);
-          continue;
-        }
-        
-        // 检查Front Matter字段合并
-        let frontMatterErrors = 0;
-        let inFrontMatter = false;
-        for (let i = 0; i < Math.min(originalLines.length, translatedLines.length); i++) {
-          const origLine = originalLines[i];
-          const transLine = translatedLines[i];
-          
-          if (origLine.trim() === '---') {
-            inFrontMatter = !inFrontMatter;
-            continue;
-          }
-          
-          if (inFrontMatter && origLine.includes(':')) {
-            // 检查字段是否被合并
-            const fieldMatches = transLine.match(/^(\w+):\s*(.+?)\s+(\w+):\s*(.+)/);
-            if (fieldMatches) {
-              console.log(`🚨 第${i+1}行字段合并: "${fieldMatches[1]}" 和 "${fieldMatches[3]}"`);
-              frontMatterErrors++;
-            }
-          }
-        }
-        
-        if (frontMatterErrors > 0 && attempt < maxRetries) {
-          console.log(`🔄 发现 ${frontMatterErrors} 个字段合并错误，重新翻译`);
-          continue;
         }
         
         // 处理链接
@@ -588,7 +587,8 @@ async function translateDocumentChunks(chunks, targetLang, filePath) {
     const chunk = chunks[i];
     const chunkInfo = { index: i, total: chunks.length };
     
-    console.log(`📄 翻译块 ${i + 1}/${chunks.length} (${estimateTokens(chunk.content)} tokens)`);
+    const chunkTokens = estimateTokens(chunk.content);
+    console.log(`📄 翻译块 ${i + 1}/${chunks.length} (${chunkTokens} tokens)`);
     
     try {
       let contentToTranslate;
@@ -669,10 +669,7 @@ async function translateCategoryFile(filePath, targetLang) {
     
     const targetPath = generateTargetPath(filePath, targetLang);
     
-    // 确保目录存在
     await fs.mkdir(path.dirname(targetPath), { recursive: true });
-    
-    // 写入翻译文件
     await fs.writeFile(targetPath, translatedContent, 'utf8');
     
     console.log(`✅ Category文件翻译完成: ${targetPath}`);
@@ -688,14 +685,12 @@ async function translateCategoryFile(filePath, targetLang) {
 // 处理文件翻译（支持md和_category.yml）
 async function translateFile(filePath, targetLang) {
   try {
-    // 检查文件是否受保护
     if (isProtectedPath(filePath)) {
       console.log(`🛡️ 文件受保护，跳过翻译: ${filePath}`);
       translationStatus.protected++;
       return { success: true, path: filePath, action: 'protected' };
     }
     
-    // 根据文件类型选择处理方式
     if (filePath.endsWith('_category_.yml')) {
       return await translateCategoryFile(filePath, targetLang);
     }
@@ -706,18 +701,15 @@ async function translateFile(filePath, targetLang) {
     const content = await fs.readFile(filePath, 'utf8');
     console.log(`🔍 文件大小: ${content.length} 字符 (约 ${estimateTokens(content)} tokens)`);
     
-    // 分块处理
-    const chunks = chunkDocument(content);
+    // 分块处理 - 使用更小的分块尺寸
+    const chunks = chunkDocument(content, 10000);  // 降低到10000字节
     console.log(`📦 文档分为 ${chunks.length} 块`);
     
     const translatedContent = await translateDocumentChunks(chunks, targetLang, filePath);
     
     const targetPath = generateTargetPath(filePath, targetLang);
     
-    // 确保目录存在
     await fs.mkdir(path.dirname(targetPath), { recursive: true });
-    
-    // 写入翻译文件
     await fs.writeFile(targetPath, translatedContent, 'utf8');
     
     console.log(`✅ 文件翻译完成: ${targetPath}`);
@@ -735,14 +727,12 @@ async function translateRenamedAndModifiedFile(oldPath, newPath, targetLang) {
   try {
     console.log(`🔄 处理重命名+修改文件: ${oldPath} -> ${newPath} (${targetLang})`);
     
-    // 检查文件是否受保护
     if (isProtectedPath(oldPath) || isProtectedPath(newPath)) {
       console.log(`🛡️ 文件受保护，跳过处理: ${oldPath} -> ${newPath}`);
       translationStatus.protected++;
       return { success: true, path: newPath, action: 'protected' };
     }
     
-    // 先删除旧的翻译文件
     const oldTargetPath = generateTargetPath(oldPath, targetLang);
     try {
       await fs.access(oldTargetPath);
@@ -752,7 +742,6 @@ async function translateRenamedAndModifiedFile(oldPath, newPath, targetLang) {
       console.log(`ℹ️ 旧翻译文件不存在: ${oldTargetPath}`);
     }
     
-    // 重新翻译新文件
     const result = await translateFile(newPath, targetLang);
     
     if (result.success) {
@@ -771,7 +760,6 @@ async function translateRenamedAndModifiedFile(oldPath, newPath, targetLang) {
 // 处理文件移动
 async function moveTranslationFile(oldPath, newPath, targetLang) {
   try {
-    // 检查文件是否受保护
     if (isProtectedPath(oldPath) || isProtectedPath(newPath)) {
       console.log(`🛡️ 文件受保护，跳过移动: ${oldPath} -> ${newPath}`);
       translationStatus.protected++;
@@ -783,7 +771,6 @@ async function moveTranslationFile(oldPath, newPath, targetLang) {
     const oldTargetPath = generateTargetPath(oldPath, targetLang);
     const newTargetPath = generateTargetPath(newPath, targetLang);
     
-    // 检查原文件是否存在
     try {
       await fs.access(oldTargetPath);
     } catch (error) {
@@ -791,13 +778,9 @@ async function moveTranslationFile(oldPath, newPath, targetLang) {
       return { success: true, path: newTargetPath, action: 'skipped' };
     }
     
-    // 确保新目录存在
     await fs.mkdir(path.dirname(newTargetPath), { recursive: true });
-    
-    // 移动文件
     await fs.rename(oldTargetPath, newTargetPath);
     
-    // 删除空目录
     try {
       await fs.rmdir(path.dirname(oldTargetPath));
     } catch (error) {
@@ -818,7 +801,6 @@ async function moveTranslationFile(oldPath, newPath, targetLang) {
 // 处理文件删除
 async function deleteTranslationFile(filePath, targetLang) {
   try {
-    // 检查文件是否受保护
     if (isProtectedPath(filePath)) {
       console.log(`🛡️ 文件受保护，跳过删除: ${filePath}`);
       translationStatus.protected++;
@@ -829,7 +811,6 @@ async function deleteTranslationFile(filePath, targetLang) {
     
     const targetPath = generateTargetPath(filePath, targetLang);
     
-    // 检查文件是否存在
     try {
       await fs.access(targetPath);
     } catch (error) {
@@ -837,10 +818,8 @@ async function deleteTranslationFile(filePath, targetLang) {
       return { success: true, path: targetPath, action: 'skipped' };
     }
     
-    // 删除文件
     await fs.unlink(targetPath);
     
-    // 删除空目录
     try {
       await fs.rmdir(path.dirname(targetPath));
     } catch (error) {
@@ -937,19 +916,16 @@ async function main() {
   console.log('目标语言:', languages);
   console.log('🛡️ 保护路径:', PROTECTED_PATHS);
   
-  // 验证API密钥
   if (!process.env.TRANSLATION_API_KEY) {
     console.error('❌ 缺少TRANSLATION_API_KEY环境变量');
     process.exit(1);
   }
   
-  // 验证BASE_SHA
   if (!baseSha) {
     console.error('❌ 缺少BASE_SHA环境变量');
     process.exit(1);
   }
   
-  // 检测文件操作
   const operations = await detectFileOperations(baseSha);
   if (!operations) {
     console.error('❌ 无法检测文件操作');
@@ -967,7 +943,6 @@ async function main() {
     const langConfig = LANGUAGE_CONFIG[lang];
     console.log(`\n📄 开始处理 ${langConfig.name}...`);
     
-    // 处理新增和修改文件（直接全文翻译）
     const filesToTranslate = [...operations.added, ...operations.modified];
     for (const file of filesToTranslate) {
       const result = await translateFile(file, lang);
@@ -979,33 +954,27 @@ async function main() {
       });
     }
     
-    // 处理重命名+修改文件（需要重新翻译）
     for (const rename of operations.renamedAndModified) {
       const result = await translateRenamedAndModifiedFile(rename.from, rename.to, lang);
       allResults.push({...result, language: lang, operation: 'renamed_and_modified'});
     }
     
-    // 处理纯重命名文件（只移动）
     for (const rename of operations.renamed) {
       const result = await moveTranslationFile(rename.from, rename.to, lang);
       allResults.push({...result, language: lang, operation: 'renamed'});
     }
     
-    // 处理文件删除
     for (const file of operations.deleted) {
       const result = await deleteTranslationFile(file, lang);
       allResults.push({...result, language: lang, operation: 'deleted'});
     }
   }
   
-  // 生成最终报告
   const report = generateProgressReport(languages, allResults);
   console.log('\n' + report);
   
-  // 保存报告到文件供GitHub Action使用
   await fs.writeFile('/tmp/translation-report.md', report, 'utf8');
   
-  // 设置输出变量来指示是否需要触发其他工作流
   const hasChanges = allResults.some(r => r.success && 
     (r.action === 'translated' || r.action === 'renamed_and_retranslated'));
   
