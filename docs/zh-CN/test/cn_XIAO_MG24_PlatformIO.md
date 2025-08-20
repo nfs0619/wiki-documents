@@ -4,7 +4,7 @@ title: XIAO MG24 与 PlatformIO
 keywords:
 - xiao
 image: https://files.seeedstudio.com/wiki/mg24_platform/top_mg24_platform02.webp
-slug: /xiao_mg24_with_platform_io
+slug: /cn/xiao_mg24_with_platform_io
 last_update:
   date: 03/17/2024
   author: Jason
@@ -14,15 +14,15 @@ last_update:
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/mg24_platform/top_mg24_platform02.webp" /></div>
 
-## PlatformIO 介绍 PlatformIO 是一个集成了多种类型开发板的开发平台，具有良好的可扩展性。如果平台没有您需要的类型，您可以手动添加开发板类型。您在 Arduino 上编写的代码可以使用它，只需添加相应的库即可。
+## PlatformIO 介绍 PlatformIO 是一个集成了多种类型开发板的开发平台，具有良好的可扩展性。如果平台没有您需要的类型，您可以手动添加开发板类型。您在 Arduino 上编写的代码可以使用它，只需添加相应的库即可
 
-在本教程中，我们将介绍如何在 PlatformIO 中安装和运行示例代码。
+在本教程中，我们将介绍如何在 PlatformIO 中安装和运行示例代码
 
 ## 在 XIAO MG24 上使用 PlatformIO
 
 ### 步骤 1. 在官方网站安装 [PlatformIO](https://platformio.org/platformio-ide)
 
-如果您还没有安装 PlatformIO 软件，可以点击上面的链接。
+如果您还没有安装 PlatformIO 软件，您可以点击上面的链接。
 
 ### 步骤 2. 在 PlatformIO 中创建任意项目
 
@@ -42,7 +42,7 @@ last_update:
 
 ### 步骤 3. 修改 platformio.ini 文件
 
-当您成功创建 PlatformIO 文件后，左侧栏会出现许多文件。我们可以看到一个名为 platform.ini 的文件。接下来，我们需要替换其中的内容。
+当您成功创建 PlatformIO 文件后，左侧栏会出现许多文件。我们可以看到一个名为 platform.ini 的文件。接下来，我们需要替换其中的内容
 <table align="center">
   <tr>
       <th>操作三</th>
@@ -61,7 +61,7 @@ board = seeed-xiao-mg24
 framework = arduino
 ```
 
-:::tip 记住保存文件，按 ctrl+s，它会开始加载
+:::tip 记住保存文件，ctrl+s，它会开始加载
 :::
 
 ### 步骤 4. 编译和烧录
