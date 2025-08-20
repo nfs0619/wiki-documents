@@ -459,7 +459,7 @@ async function translateWithRetryAndValidation(text, targetLang, maxRetries = 3)
       
       const response = await anthropic.messages.create({
         model: 'claude-sonnet-4-20250514',
-        max_tokens: 25000,
+        max_tokens: 20000,
         temperature: 0,
         system: systemPrompt,
         messages: [
