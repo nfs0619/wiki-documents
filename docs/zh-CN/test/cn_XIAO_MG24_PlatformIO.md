@@ -1,5 +1,5 @@
 ---
-description: Seeed Studio XIAO MG24 与 PlatformIO
+description: 使用 PlatformIO 开发 Seeed Studio XIAO MG24
 title: XIAO MG24 与 PlatformIO
 keywords:
 - xiao
@@ -22,7 +22,7 @@ last_update:
 
 ### 步骤 1. 在官方网站安装 [PlatformIO](https://platformio.org/platformio-ide)
 
-如果您还没有安装 PlatformIO 软件，您可以点击上面的链接。
+如果您还没有安装 PlatformIO 软件，可以点击上面的链接。
 
 ### 步骤 2. 在 PlatformIO 中创建任意项目
 
