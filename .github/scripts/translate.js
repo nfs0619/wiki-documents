@@ -403,7 +403,7 @@ async function translateWithClaude(text, targetLang, maxRetries = 3, isChunk = f
       console.log(`📡 调用Claude API (尝试 ${attempt}/${maxRetries})...`);
       
       const response = await anthropic.messages.create({
-        model: 'claude-3-5-sonnet-20241022',
+        model: 'claude-sonnet-4-20250514',
         max_tokens: 20000,
         temperature: 0,
         system: systemPrompt,
