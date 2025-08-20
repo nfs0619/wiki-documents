@@ -49,13 +49,15 @@ const PRESERVE_TERMS = {
     'Home Assistant': 'Home Assistant'
 };
 
-// 文档保护列表
+// 文档保护列表 - 这些文件和目录不进行翻译
 const PROTECTED_PATHS = [
-  'docs/Getting_Started.md',
-  'docs/index.md',
-  'docs/README.md',
-  'docs/CONTRIBUTING.md',
-  'docs/LICENSE.md',
+  'docs/Getting_Started.md',           // 各语言首页有不同内容
+  'docs/index.md',                     // 首页
+  'docs/README.md',                    // README
+  'docs/CONTRIBUTING.md',              // 贡献指南
+  'docs/LICENSE.md',                   // 许可证
+  // 可以添加目录保护，以/结尾
+  // 'docs/special-folder/',           // 整个目录
 ];
 
 // 翻译状态跟踪
@@ -76,15 +78,18 @@ function estimateTokens(text) {
 
 // 检查文件是否受保护
 function isProtectedPath(filePath) {
+  // 标准化路径
   const normalizedPath = filePath.replace(/\\/g, '/');
   
   for (const protectedPath of PROTECTED_PATHS) {
     const normalizedProtected = protectedPath.replace(/\\/g, '/');
     
+    // 检查精确匹配
     if (normalizedPath === normalizedProtected) {
       return true;
     }
     
+    // 检查目录匹配（以/结尾的保护路径）
     if (normalizedProtected.endsWith('/') && normalizedPath.startsWith(normalizedProtected)) {
       return true;
     }
@@ -100,6 +105,7 @@ function generateTargetPath(originalPath, targetLang) {
   
   const parsedPath = path.parse(relativePath);
   
+  // 特殊处理_category.yml文件
   if (parsedPath.base === '_category_.yml') {
     const targetPath = path.join('docs', langConfig.folder, relativePath);
     return targetPath;
@@ -117,7 +123,7 @@ function generateTargetPath(originalPath, targetLang) {
   return targetPath;
 }
 
-// 检测文件操作类型
+// 🆕 检测文件操作类型（改进版）
 async function detectFileOperations(baseSha) {
   try {
     console.log(`🔍 检测文件操作 (基于 ${baseSha})...`);
@@ -132,7 +138,7 @@ async function detectFileOperations(baseSha) {
       modified: [],
       deleted: [],
       renamed: [],
-      renamedAndModified: []
+      renamedAndModified: []  // 🆕 新增：重命名且修改的文件
     };
     
     const lines = statusOutput.split('\n').filter(line => line.trim());
@@ -142,6 +148,7 @@ async function detectFileOperations(baseSha) {
       const status = parts[0];
       const file = parts[1];
       
+      // 处理md/mdx和_category.yml文件，排除翻译文件
       if ((!file.match(/\.(md|mdx)$/) && !file.endsWith('_category_.yml')) || 
           file.match(/\/(zh-CN|ja|Spanish)\//)) {
         continue;
@@ -157,13 +164,16 @@ async function detectFileOperations(baseSha) {
         const oldFile = file;
         const newFile = parts[2];
         
+        // 🆕 检查重命名的文件是否也有内容修改
         const similarity = status.match(/R(\d+)/);
         const similarityScore = similarity ? parseInt(similarity[1]) : 100;
         
         if (similarityScore < 100) {
+          // 相似度小于100%，说明除了重命名还有内容修改
           operations.renamedAndModified.push({ from: oldFile, to: newFile, similarity: similarityScore });
           console.log(`📝 检测到重命名+修改: ${oldFile} -> ${newFile} (相似度: ${similarityScore}%)`);
         } else {
+          // 纯重命名，无内容修改
           operations.renamed.push({ from: oldFile, to: newFile });
         }
       }
@@ -184,346 +194,8 @@ async function detectFileOperations(baseSha) {
   }
 }
 
-// 🆕 重新设计的代码块和行内代码保护机制
-function protectCodeContent(content) {
-  console.log('🛡️ 保护代码内容...');
-  
-  const protectedElements = [];
-  let protectedContent = content;
-  let elementIndex = 0;
-  
-  // 1. 保护代码块 ```
-  protectedContent = protectedContent.replace(/```[\s\S]*?```/g, (match) => {
-    const placeholder = `__PROTECTED_CODEBLOCK_${elementIndex}__`;
-    protectedElements[elementIndex] = match;
-    elementIndex++;
-    return placeholder;
-  });
-  
-  // 2. 保护行内代码 `code`
-  protectedContent = protectedContent.replace(/`[^`\n]+`/g, (match) => {
-    const placeholder = `__PROTECTED_INLINE_CODE_${elementIndex}__`;
-    protectedElements[elementIndex] = match;
-    elementIndex++;
-    return placeholder;
-  });
-  
-  // 3. 保护HTML标签
-  protectedContent = protectedContent.replace(/<[^>]+>/g, (match) => {
-    const placeholder = `__PROTECTED_HTML_TAG_${elementIndex}__`;
-    protectedElements[elementIndex] = match;
-    elementIndex++;
-    return placeholder;
-  });
-  
-  // 4. 保护链接
-  protectedContent = protectedContent.replace(/\[([^\]]*)\]\([^)]+\)/g, (match) => {
-    const placeholder = `__PROTECTED_LINK_${elementIndex}__`;
-    protectedElements[elementIndex] = match;
-    elementIndex++;
-    return placeholder;
-  });
-  
-  console.log(`🛡️ 保护了 ${protectedElements.length} 个代码/链接元素`);
-  
-  return {
-    content: protectedContent,
-    protectedElements: protectedElements
-  };
-}
-
-// 恢复受保护的代码内容
-function restoreCodeContent(content, protectedElements) {
-  console.log('🔧 恢复代码内容...');
-  
-  let restoredContent = content;
-  
-  // 恢复所有受保护的元素
-  for (let i = 0; i < protectedElements.length; i++) {
-    const placeholder = `__PROTECTED_CODEBLOCK_${i}__`;
-    const inlinePlaceholder = `__PROTECTED_INLINE_CODE_${i}__`;
-    const htmlPlaceholder = `__PROTECTED_HTML_TAG_${i}__`;
-    const linkPlaceholder = `__PROTECTED_LINK_${i}__`;
-    
-    if (restoredContent.includes(placeholder)) {
-      restoredContent = restoredContent.replace(placeholder, protectedElements[i]);
-    } else if (restoredContent.includes(inlinePlaceholder)) {
-      restoredContent = restoredContent.replace(inlinePlaceholder, protectedElements[i]);
-    } else if (restoredContent.includes(htmlPlaceholder)) {
-      restoredContent = restoredContent.replace(htmlPlaceholder, protectedElements[i]);
-    } else if (restoredContent.includes(linkPlaceholder)) {
-      restoredContent = restoredContent.replace(linkPlaceholder, protectedElements[i]);
-    }
-  }
-  
-  console.log('✅ 代码内容恢复完成');
-  return restoredContent;
-}
-
-// 🆕 按行分析文档结构，保持完整的换行信息
-function analyzeDocumentStructure(content) {
-  const lines = content.split('\n');
-  const lineTypes = [];
-  let inFrontMatter = false;
-  let inCodeBlock = false;
-  
-  lines.forEach((line, index) => {
-    let type = 'content';
-    
-    // 检测Front Matter
-    if (index === 0 && line.trim() === '---') {
-      inFrontMatter = true;
-      type = 'frontmatter';
-    } else if (inFrontMatter && line.trim() === '---') {
-      inFrontMatter = false;
-      type = 'frontmatter';
-    } else if (inFrontMatter) {
-      type = 'frontmatter';
-    }
-    // 检测代码块
-    else if (line.trim().startsWith('```')) {
-      inCodeBlock = !inCodeBlock;
-      type = 'codeblock';
-    } else if (inCodeBlock) {
-      type = 'codeblock';
-    }
-    // 检测标题
-    else if (line.match(/^#{1,6}\s+/)) {
-      type = 'heading';
-    }
-    // 检测空行
-    else if (line.trim() === '') {
-      type = 'empty';
-    }
-    // 检测列表
-    else if (line.match(/^\s*[-*+]\s+/) || line.match(/^\s*\d+\.\s+/)) {
-      type = 'list';
-    }
-    
-    lineTypes.push({
-      line: line,
-      type: type,
-      index: index
-    });
-  });
-  
-  return lineTypes;
-}
-
-// 🆕 完全重新设计的翻译prompt - 强调行级处理
-function generateAdvancedPrompt(targetLang, pathPrefix) {
-  const langName = LANGUAGE_CONFIG[targetLang].name;
-  const termsList = Object.entries(PRESERVE_TERMS)
-    .map(([original, preserved]) => `- ${original} → ${preserved}`)
-    .join('\n');
-
-  return `你是一个专业的技术文档翻译专家。你需要将Markdown文档翻译成${langName}，但必须严格按照以下规则：
-
-## 🚨 核心规则（绝对不能违反）
-
-1. **保持行结构绝对不变**：
-   - 原文有多少行，译文就必须有多少行
-   - 绝对不能将两行合并成一行
-   - 绝对不能将一行拆分成多行
-   - 每一行的换行符位置必须完全保持
-
-2. **逐行处理原则**：
-   - Front Matter字段：只翻译title、description的值
-   - 标题行（#开头）：只翻译文本部分，保持格式
-   - 普通文本行：翻译成${langName}
-   - 空行：保持为空行
-   - 代码相关：绝对不翻译
-
-3. **代码保护规则**：
-   - 所有\`\`\`代码块\`\`\`：完全不动
-   - 所有\`行内代码\`：完全不动
-   - 所有HTML标签：完全不动
-   - 所有链接：完全不动
-
-4. **格式严格要求**：
-   - slug字段值前添加${pathPrefix}前缀
-   - 保持所有缩进、空格、符号
-   - 保持所有Markdown格式标记
-
-## 术语保护列表：
-${termsList}
-
-## 🔍 检查方法
-翻译完成后，请验证：
-- 行数是否完全一致
-- Front Matter格式是否正确
-- 标题格式是否保持
-- 代码块是否未被翻译
-
-**重要提醒**：这是技术文档翻译，准确性和格式一致性比流畅性更重要。严格按行处理，绝不合并或拆分行。`;
-}
-
-// 🆕 严格的格式验证函数
-function strictFormatValidation(translatedContent, originalContent) {
-  console.log('🔍 执行严格格式验证...');
-  
-  const originalLines = originalContent.split('\n');
-  const translatedLines = translatedContent.split('\n');
-  const issues = [];
-  
-  // 1. 行数验证
-  if (originalLines.length !== translatedLines.length) {
-    issues.push(`🚨 严重错误: 行数不匹配 - 原文${originalLines.length}行，译文${translatedLines.length}行`);
-    return { valid: false, issues: issues };
-  }
-  
-  // 2. 逐行验证
-  for (let i = 0; i < originalLines.length; i++) {
-    const origLine = originalLines[i];
-    const transLine = translatedLines[i];
-    
-    // 验证空行保持
-    if (origLine.trim() === '' && transLine.trim() !== '') {
-      issues.push(`🚨 第${i + 1}行: 原文空行变成了内容行`);
-    }
-    
-    // 验证标题格式
-    const origHeaderMatch = origLine.match(/^(#{1,6})\s+(.*)$/);
-    if (origHeaderMatch) {
-      const transHeaderMatch = transLine.match(/^(#{1,6})\s+(.*)$/);
-      if (!transHeaderMatch) {
-        issues.push(`🚨 第${i + 1}行: 标题格式损坏 - "${origLine}" -> "${transLine}"`);
-      } else if (origHeaderMatch[1] !== transHeaderMatch[1]) {
-        issues.push(`🚨 第${i + 1}行: 标题级别改变 - "${origHeaderMatch[1]}" -> "${transHeaderMatch[1]}"`);
-      }
-    }
-    
-    // 验证Front Matter字段
-    if (origLine.includes(':') && !origLine.startsWith('#')) {
-      const origFieldMatch = origLine.match(/^(\w+):\s*(.*)$/);
-      if (origFieldMatch) {
-        const transFieldMatch = transLine.match(/^(\w+):\s*(.*)$/);
-        if (!transFieldMatch) {
-          issues.push(`🚨 第${i + 1}行: Front Matter字段格式损坏 - "${origLine}"`);
-        } else if (origFieldMatch[1] !== transFieldMatch[1]) {
-          issues.push(`🚨 第${i + 1}行: Front Matter字段名改变 - "${origFieldMatch[1]}" -> "${transFieldMatch[1]}"`);
-        }
-      }
-    }
-    
-    // 验证代码块标记
-    if (origLine.trim().startsWith('```')) {
-      if (!transLine.trim().startsWith('```')) {
-        issues.push(`🚨 第${i + 1}行: 代码块标记丢失`);
-      }
-    }
-  }
-  
-  // 3. Front Matter结构验证
-  const origFrontMatter = originalContent.match(/^---\n([\s\S]*?)\n---/);
-  const transFrontMatter = translatedContent.match(/^---\n([\s\S]*?)\n---/);
-  
-  if (origFrontMatter && !transFrontMatter) {
-    issues.push(`🚨 严重错误: Front Matter结构丢失`);
-  } else if (origFrontMatter && transFrontMatter) {
-    const origFields = origFrontMatter[1].split('\n').filter(line => line.includes(':'));
-    const transFields = transFrontMatter[1].split('\n').filter(line => line.includes(':'));
-    
-    if (origFields.length !== transFields.length) {
-      issues.push(`⚠️ 警告: Front Matter字段数量不匹配`);
-    }
-  }
-  
-  const isValid = issues.length === 0;
-  
-  if (isValid) {
-    console.log('✅ 格式验证通过');
-  } else {
-    console.error('🚨 格式验证失败:');
-    issues.forEach(issue => console.error(`  ${issue}`));
-  }
-  
-  return { valid: isValid, issues: issues };
-}
-
-// 🆕 智能重试机制
-async function translateWithRetryAndValidation(text, targetLang, maxRetries = 3) {
-  const langConfig = LANGUAGE_CONFIG[targetLang];
-  if (!langConfig) {
-    throw new Error(`不支持的语言: ${targetLang}`);
-  }
-  
-  // 保护代码内容
-  const { content: protectedContent, protectedElements } = protectCodeContent(text);
-  
-  for (let attempt = 1; attempt <= maxRetries; attempt++) {
-    try {
-      console.log(`📡 调用Claude API (尝试 ${attempt}/${maxRetries})...`);
-      
-      const systemPrompt = generateAdvancedPrompt(targetLang, langConfig.pathPrefix);
-      
-      const response = await anthropic.messages.create({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 20000,
-        temperature: 0,
-        system: systemPrompt,
-        messages: [
-          { role: 'user', content: protectedContent }
-        ]
-      });
-      
-      let translatedContent = response.content[0].text;
-      
-      // 恢复代码内容
-      translatedContent = restoreCodeContent(translatedContent, protectedElements);
-      
-      // 严格验证格式
-      const validation = strictFormatValidation(translatedContent, text);
-      
-      if (validation.valid) {
-        console.log(`✅ 翻译验证成功 (尝试 ${attempt})`);
-        
-        // 处理链接
-        translatedContent = processInternalLinks(translatedContent, targetLang);
-        
-        // 中英文混排处理
-        if (targetLang === 'zh-CN') {
-          translatedContent = addChineseEnglishSpacing(translatedContent);
-        }
-        
-        return translatedContent;
-      } else {
-        console.error(`❌ 格式验证失败 (尝试 ${attempt}/${maxRetries})`);
-        if (attempt === maxRetries) {
-          const errorInfo = {
-            error: `格式验证失败: ${validation.issues.join('; ')}`,
-            attempt: attempt,
-            textLength: text.length,
-            targetLang: targetLang
-          };
-          translationStatus.errors.push(errorInfo);
-          throw new Error(`翻译格式验证失败 (${maxRetries}次尝试): ${validation.issues[0]}`);
-        }
-      }
-      
-    } catch (error) {
-      console.error(`❌ 翻译失败 (尝试 ${attempt}/${maxRetries}): ${error.message}`);
-      
-      if (attempt === maxRetries) {
-        const errorInfo = {
-          error: error.message,
-          attempt: attempt,
-          textLength: text.length,
-          targetLang: targetLang
-        };
-        translationStatus.errors.push(errorInfo);
-        throw error;
-      }
-      
-      const delay = Math.pow(2, attempt) * 1000;
-      console.log(`⏳ 等待 ${delay}ms 后重试...`);
-      await new Promise(resolve => setTimeout(resolve, delay));
-    }
-  }
-}
-
 // 按Markdown结构分块文档
-function chunkDocument(content, maxTokens = 12000) {
+function chunkDocument(content, maxTokens = 15000) {
   const lines = content.split('\n');
   const chunks = [];
   let currentChunk = '';
@@ -532,7 +204,7 @@ function chunkDocument(content, maxTokens = 12000) {
   let frontMatterEnded = false;
   let contentStartIndex = 0;
   
-  // 提取Front Matter
+  // 首先提取Front Matter
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     
@@ -609,7 +281,245 @@ function chunkDocument(content, maxTokens = 12000) {
   }));
 }
 
-// 处理内部链接
+// 生成_category.yml翻译prompt
+function generateCategoryPrompt(targetLang, pathPrefix) {
+  const langName = LANGUAGE_CONFIG[targetLang].name;
+  const termsList = Object.entries(PRESERVE_TERMS)
+    .map(([original, preserved]) => `- ${original} → ${preserved}`)
+    .join('\n');
+
+  // 去掉 pathPrefix 前面的 /，避免重复
+  const cleanPathPrefix = pathPrefix.startsWith('/') ? pathPrefix.slice(1) : pathPrefix;
+
+  return `你是一个专业的技术文档翻译专家。请将以下 _category_.yml 文件从英文翻译成${langName}。
+
+重要规则：
+1. **保持YAML格式完全不变**：缩进、冒号、引号等格式必须完全保持
+2. **只翻译以下字段的值**：
+   - label: 标签名称（如果不是专有产品名）
+   - title: 标题
+   - description: 描述
+   - 注释内容（# 开头的行）
+3. **不要翻译以下内容**：
+   - 专有产品名称和品牌名
+   - 数字、布尔值、技术参数
+   - position、collapsible、collapsed、className等字段名
+   - type、slug等技术字段
+4. **link字段特殊处理**：
+   - 如果有slug字段，在其值前添加 "${cleanPathPrefix}/" 前缀
+   - 例如：slug: applications → slug: ${cleanPathPrefix}/applications
+   - 翻译title和description字段的值
+5. **术语保护**（保持不变）：
+${termsList}
+6. **换行保持**：确保输出的换行结构与输入完全一致
+
+请只输出翻译后的YAML内容，不要添加任何解释。`;
+}
+
+// 🔧 全新的翻译prompt - 专注于格式保持
+function generatePrompt(targetLang, pathPrefix, isChunk = false, chunkInfo = null) {
+  const langName = LANGUAGE_CONFIG[targetLang].name;
+  const termsList = Object.entries(PRESERVE_TERMS)
+    .map(([original, preserved]) => `- ${original} → ${preserved}`)
+    .join('\n');
+
+  return `你是一个专业的技术文档翻译专家。请将以下Markdown文档从英文翻译成${langName}。
+
+🚨 **格式保持的关键规则（必须严格遵守）**：
+
+1. **保持每一行的换行位置完全不变**
+   - 绝对不要将两行合并成一行
+   - 绝对不要将一行拆分成两行
+   - 空行必须保持为空行
+   - 标题后的空行必须保持
+
+2. **Front Matter处理**：
+   - title: 字段 → 翻译内容，但保持在同一行
+   - description: 字段 → 翻译内容，但保持在同一行
+   - slug: 字段 → 在原值前添加"${pathPrefix}"前缀，如 "/getting-started" → "${pathPrefix}/getting-started"
+   - 其他字段（keywords、image、last_update等）→ 完全不变
+
+3. **代码块处理**：
+   - \`\`\`包围的代码块内容（包括注释）→ 完全不翻译
+   - 行内代码\`包围的内容 → 完全不翻译
+   - 代码行号、文件名 → 完全不翻译
+
+4. **标题处理**：
+   - 翻译标题内容，保持#号数量不变
+   - 标题后的格式必须与原文保持一致
+
+5. **链接和图片**：
+   - 链接文本 → 翻译
+   - URL地址 → 不翻译
+   - 图片alt文本 → 翻译
+   - 图片路径 → 不翻译
+
+6. **术语保护**（始终保持英文）：
+${termsList}
+
+🎯 **翻译要求**：
+- 翻译成地道的${langName}
+- 保持技术文档的专业性
+- 确保术语一致性
+
+⚠️ **特别注意**：
+你的输出必须与输入有完全相同的行数和换行结构。如果输入有50行，输出也必须有50行。
+
+请开始翻译：`;
+}
+
+// 🔧 强化的格式验证函数
+function validateFormat(translatedContent, originalContent) {
+  console.log('🔍 执行严格格式验证...');
+  
+  const translatedLines = translatedContent.split('\n');
+  const originalLines = originalContent.split('\n');
+  
+  const issues = [];
+  
+  // 1. 检查行数是否一致
+  if (translatedLines.length !== originalLines.length) {
+    issues.push(`🚨 严重错误: 行数不匹配 - 原文 ${originalLines.length} 行，译文 ${translatedLines.length} 行`);
+  }
+  
+  // 2. 检查Front Matter字段是否在同一行
+  const frontMatterEnd = Math.min(translatedLines.length, originalLines.length);
+  let inFrontMatter = false;
+  
+  for (let i = 0; i < frontMatterEnd; i++) {
+    const origLine = originalLines[i];
+    const transLine = translatedLines[i];
+    
+    if (origLine.trim() === '---') {
+      inFrontMatter = !inFrontMatter;
+      continue;
+    }
+    
+    if (inFrontMatter) {
+      // 检查Front Matter字段格式
+      if (origLine.includes(':')) {
+        const origField = origLine.split(':')[0];
+        const transField = transLine.split(':')[0];
+        
+        if (origField !== transField) {
+          issues.push(`🚨 严重错误: 第${i+1}行字段名被修改 - "${origField}" → "${transField}"`);
+        }
+        
+        // 检查是否有字段合并到同一行
+        const fieldMatches = transLine.match(/^(\w+):\s*(.+?)\s+(\w+):/);
+        if (fieldMatches) {
+          issues.push(`🚨 严重错误: 第${i+1}行字段合并 - "${fieldMatches[1]}" 和 "${fieldMatches[3]}" 在同一行`);
+        }
+      }
+    }
+    
+    // 3. 检查标题格式
+    if (origLine.match(/^#+\s/)) {
+      if (!transLine.match(/^#+\s/)) {
+        issues.push(`🚨 严重错误: 第${i+1}行标题格式丢失 - 原文: "${origLine}" 译文: "${transLine}"`);
+      } else {
+        const origLevel = origLine.match(/^(#+)/)[1].length;
+        const transLevel = transLine.match(/^(#+)/)[1].length;
+        if (origLevel !== transLevel) {
+          issues.push(`🚨 严重错误: 第${i+1}行标题级别改变 - ${origLevel}级 → ${transLevel}级`);
+        }
+      }
+    }
+    
+    // 4. 检查空行保持
+    if (origLine.trim() === '' && transLine.trim() !== '') {
+      issues.push(`⚠️ 警告: 第${i+1}行应为空行但包含内容: "${transLine}"`);
+    }
+  }
+  
+  // 5. 检查代码块格式
+  let inCodeBlock = false;
+  for (let i = 0; i < Math.min(translatedLines.length, originalLines.length); i++) {
+    const origLine = originalLines[i];
+    const transLine = translatedLines[i];
+    
+    if (origLine.includes('```')) {
+      inCodeBlock = !inCodeBlock;
+      if (origLine !== transLine) {
+        issues.push(`🚨 严重错误: 第${i+1}行代码块标记被修改 - 原文: "${origLine}" 译文: "${transLine}"`);
+      }
+    }
+  }
+  
+  if (issues.length > 0) {
+    console.error('🚨 格式验证失败，发现以下问题:');
+    issues.forEach((issue, index) => {
+      console.error(`  ${index + 1}. ${issue}`);
+    });
+    return false;
+  } else {
+    console.log('✅ 格式验证通过');
+    return true;
+  }
+}
+
+// 🔧 增强的格式修复函数
+function enhancedFormatFix(translatedContent, originalContent) {
+  console.log('🔧 执行增强格式修复...');
+  
+  const translatedLines = translatedContent.split('\n');
+  const originalLines = originalContent.split('\n');
+  const fixedLines = [];
+  
+  // 优先使用原文的行数
+  const maxLines = Math.max(translatedLines.length, originalLines.length);
+  
+  for (let i = 0; i < maxLines; i++) {
+    const origLine = originalLines[i] || '';
+    let transLine = translatedLines[i] || '';
+    
+    // 1. 修复Front Matter字段合并问题
+    if (origLine.includes(':') && !origLine.startsWith('#')) {
+      const fieldMatches = transLine.match(/^(\w+):\s*(.+?)\s+(\w+):\s*(.+)/);
+      if (fieldMatches) {
+        console.log(`🔧 修复字段合并: ${fieldMatches[1]}: ${fieldMatches[2]} | ${fieldMatches[3]}: ${fieldMatches[4]}`);
+        fixedLines.push(`${fieldMatches[1]}: ${fieldMatches[2].trim()}`);
+        fixedLines.push(`${fieldMatches[3]}: ${fieldMatches[4].trim()}`);
+        continue;
+      }
+    }
+    
+    // 2. 修复标题后直接跟内容的问题
+    if (origLine.match(/^#+\s/) && transLine.match(/^#+\s/)) {
+      const headerContentMatch = transLine.match(/^(#+\s+[^#]+?)\s+([^#].+)/);
+      if (headerContentMatch) {
+        console.log(`🔧 修复标题内容合并: ${headerContentMatch[1]} | ${headerContentMatch[2]}`);
+        fixedLines.push(headerContentMatch[1].trim());
+        // 检查原文中标题后是否有空行
+        if (i + 1 < originalLines.length && originalLines[i + 1].trim() === '') {
+          fixedLines.push('');
+        }
+        fixedLines.push(headerContentMatch[2].trim());
+        continue;
+      }
+    }
+    
+    // 3. 保持空行
+    if (origLine.trim() === '') {
+      fixedLines.push('');
+      continue;
+    }
+    
+    // 4. 保持代码块标记不变
+    if (origLine.includes('```')) {
+      fixedLines.push(origLine);
+      continue;
+    }
+    
+    // 5. 默认使用翻译行
+    fixedLines.push(transLine);
+  }
+  
+  console.log('✅ 增强格式修复完成');
+  return fixedLines.join('\n');
+}
+
+// 处理内部链接和seeedstudio.com链接
 function processInternalLinks(content, targetLang) {
   const langConfig = LANGUAGE_CONFIG[targetLang];
   if (!langConfig || !langConfig.pathPrefix) return content;
@@ -668,30 +578,82 @@ function addChineseEnglishSpacing(content) {
   return content;
 }
 
-// 翻译_category.yml文件
-async function translateCategoryFile(filePath, targetLang) {
-  try {
-    console.log(`📋 翻译Category文件: ${filePath} -> ${targetLang}`);
-    translationStatus.total++;
-    
-    const content = await fs.readFile(filePath, 'utf8');
-    console.log(`🔍 文件大小: ${content.length} 字符`);
-    
-    const translatedContent = await translateWithRetryAndValidation(content, targetLang);
-    
-    const targetPath = generateTargetPath(filePath, targetLang);
-    
-    await fs.mkdir(path.dirname(targetPath), { recursive: true });
-    await fs.writeFile(targetPath, translatedContent, 'utf8');
-    
-    console.log(`✅ Category文件翻译完成: ${targetPath}`);
-    translationStatus.completed++;
-    return { success: true, path: targetPath, fileType: 'category' };
-    
-  } catch (error) {
-    console.error(`❌ Category文件翻译失败 ${filePath}:`, error.message);
-    translationStatus.failed++;
-    return { success: false, error: error.message, path: filePath, fileType: 'category' };
+// 🔧 改进的Claude翻译函数 - 移除预处理，增强验证
+async function translateWithClaude(text, targetLang, maxRetries = 3, isChunk = false, chunkInfo = null, isCategory = false) {
+  const langConfig = LANGUAGE_CONFIG[targetLang];
+  if (!langConfig) {
+    throw new Error(`不支持的语言: ${targetLang}`);
+  }
+  
+  // 选择合适的prompt
+  const systemPrompt = isCategory ? 
+    generateCategoryPrompt(targetLang, langConfig.pathPrefix) :
+    generatePrompt(targetLang, langConfig.pathPrefix, isChunk, chunkInfo);
+  
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      console.log(`📡 调用Claude API (尝试 ${attempt}/${maxRetries})${isCategory ? ' [Category]' : ''}...`);
+      
+      const response = await anthropic.messages.create({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 20000,
+        temperature: 0, // 完全确定性输出
+        system: systemPrompt,
+        messages: [
+          { role: 'user', content: text }
+        ]
+      });
+      
+      let translatedContent = response.content[0].text;
+      
+      // 对非category文件进行格式验证和修复
+      if (!isCategory) {
+        // 🔧 执行格式验证
+        const isFormatValid = validateFormat(translatedContent, text);
+        
+        if (!isFormatValid) {
+          console.log('🔧 格式验证失败，执行增强格式修复...');
+          translatedContent = enhancedFormatFix(translatedContent, text);
+          
+          // 再次验证
+          const isFixedValid = validateFormat(translatedContent, text);
+          if (!isFixedValid && attempt < maxRetries) {
+            console.log(`🔄 格式修复后仍有问题，重新翻译 (尝试 ${attempt + 1}/${maxRetries})`);
+            continue; // 重新翻译
+          }
+        }
+        
+        // 处理链接
+        translatedContent = processInternalLinks(translatedContent, targetLang);
+        
+        // 中英文混排处理
+        if (targetLang === 'zh-CN') {
+          translatedContent = addChineseEnglishSpacing(translatedContent);
+        }
+      }
+      
+      console.log(`✅ Claude翻译成功 (尝试 ${attempt})`);
+      return translatedContent;
+      
+    } catch (error) {
+      console.error(`❌ Claude翻译失败 (尝试 ${attempt}/${maxRetries}): ${error.message}`);
+      
+      if (attempt === maxRetries) {
+        const errorInfo = {
+          error: error.message,
+          attempt: attempt,
+          textLength: text.length,
+          estimatedTokens: estimateTokens(text),
+          targetLang: targetLang
+        };
+        translationStatus.errors.push(errorInfo);
+        throw new Error(`Claude翻译失败 (${maxRetries}次尝试): ${error.message}`);
+      }
+      
+      const delay = Math.pow(2, attempt) * 1000;
+      console.log(`⏳ 等待 ${delay}ms 后重试...`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
   }
 }
 
@@ -704,6 +666,7 @@ async function translateDocumentChunks(chunks, targetLang, filePath) {
   
   for (let i = 0; i < chunks.length; i++) {
     const chunk = chunks[i];
+    const chunkInfo = { index: i, total: chunks.length };
     
     console.log(`📄 翻译块 ${i + 1}/${chunks.length} (${estimateTokens(chunk.content)} tokens)`);
     
@@ -716,7 +679,13 @@ async function translateDocumentChunks(chunks, targetLang, filePath) {
         contentToTranslate = chunk.content;
       }
       
-      const translatedContent = await translateWithRetryAndValidation(contentToTranslate, targetLang);
+      const translatedContent = await translateWithClaude(
+        contentToTranslate, 
+        targetLang, 
+        3, 
+        chunks.length > 1, 
+        chunkInfo
+      );
       
       translatedChunks.push(translatedContent);
       translationStatus.completed++;
@@ -760,15 +729,53 @@ async function translateDocumentChunks(chunks, targetLang, filePath) {
   return finalContent;
 }
 
-// 处理文件翻译
+// 翻译_category.yml文件
+async function translateCategoryFile(filePath, targetLang) {
+  try {
+    console.log(`📋 翻译Category文件: ${filePath} -> ${targetLang}`);
+    translationStatus.total++;
+    
+    const content = await fs.readFile(filePath, 'utf8');
+    console.log(`🔍 文件大小: ${content.length} 字符`);
+    
+    const translatedContent = await translateWithClaude(
+      content, 
+      targetLang, 
+      3, 
+      false, 
+      null, 
+      true  // isCategory = true
+    );
+    
+    const targetPath = generateTargetPath(filePath, targetLang);
+    
+    // 确保目录存在
+    await fs.mkdir(path.dirname(targetPath), { recursive: true });
+    
+    // 写入翻译文件
+    await fs.writeFile(targetPath, translatedContent, 'utf8');
+    
+    console.log(`✅ Category文件翻译完成: ${targetPath}`);
+    return { success: true, path: targetPath, fileType: 'category' };
+    
+  } catch (error) {
+    console.error(`❌ Category文件翻译失败 ${filePath}:`, error.message);
+    translationStatus.failed++;
+    return { success: false, error: error.message, path: filePath, fileType: 'category' };
+  }
+}
+
+// 处理文件翻译（支持md和_category.yml）
 async function translateFile(filePath, targetLang) {
   try {
+    // 检查文件是否受保护
     if (isProtectedPath(filePath)) {
       console.log(`🛡️ 文件受保护，跳过翻译: ${filePath}`);
       translationStatus.protected++;
       return { success: true, path: filePath, action: 'protected' };
     }
     
+    // 根据文件类型选择处理方式
     if (filePath.endsWith('_category_.yml')) {
       return await translateCategoryFile(filePath, targetLang);
     }
@@ -779,6 +786,7 @@ async function translateFile(filePath, targetLang) {
     const content = await fs.readFile(filePath, 'utf8');
     console.log(`🔍 文件大小: ${content.length} 字符 (约 ${estimateTokens(content)} tokens)`);
     
+    // 分块处理
     const chunks = chunkDocument(content);
     console.log(`📦 文档分为 ${chunks.length} 块`);
     
@@ -786,7 +794,10 @@ async function translateFile(filePath, targetLang) {
     
     const targetPath = generateTargetPath(filePath, targetLang);
     
+    // 确保目录存在
     await fs.mkdir(path.dirname(targetPath), { recursive: true });
+    
+    // 写入翻译文件
     await fs.writeFile(targetPath, translatedContent, 'utf8');
     
     console.log(`✅ 文件翻译完成: ${targetPath}`);
@@ -799,18 +810,19 @@ async function translateFile(filePath, targetLang) {
   }
 }
 
-// 处理重命名+修改的文件
+// 🆕 处理重命名+修改的文件
 async function translateRenamedAndModifiedFile(oldPath, newPath, targetLang) {
   try {
     console.log(`🔄 处理重命名+修改文件: ${oldPath} -> ${newPath} (${targetLang})`);
     
+    // 检查文件是否受保护
     if (isProtectedPath(oldPath) || isProtectedPath(newPath)) {
       console.log(`🛡️ 文件受保护，跳过处理: ${oldPath} -> ${newPath}`);
       translationStatus.protected++;
       return { success: true, path: newPath, action: 'protected' };
     }
     
-    // 删除旧的翻译文件
+    // 先删除旧的翻译文件
     const oldTargetPath = generateTargetPath(oldPath, targetLang);
     try {
       await fs.access(oldTargetPath);
@@ -839,6 +851,7 @@ async function translateRenamedAndModifiedFile(oldPath, newPath, targetLang) {
 // 处理文件移动
 async function moveTranslationFile(oldPath, newPath, targetLang) {
   try {
+    // 检查文件是否受保护
     if (isProtectedPath(oldPath) || isProtectedPath(newPath)) {
       console.log(`🛡️ 文件受保护，跳过移动: ${oldPath} -> ${newPath}`);
       translationStatus.protected++;
@@ -850,6 +863,7 @@ async function moveTranslationFile(oldPath, newPath, targetLang) {
     const oldTargetPath = generateTargetPath(oldPath, targetLang);
     const newTargetPath = generateTargetPath(newPath, targetLang);
     
+    // 检查原文件是否存在
     try {
       await fs.access(oldTargetPath);
     } catch (error) {
@@ -857,9 +871,13 @@ async function moveTranslationFile(oldPath, newPath, targetLang) {
       return { success: true, path: newTargetPath, action: 'skipped' };
     }
     
+    // 确保新目录存在
     await fs.mkdir(path.dirname(newTargetPath), { recursive: true });
+    
+    // 移动文件
     await fs.rename(oldTargetPath, newTargetPath);
     
+    // 删除空目录
     try {
       await fs.rmdir(path.dirname(oldTargetPath));
     } catch (error) {
@@ -880,6 +898,7 @@ async function moveTranslationFile(oldPath, newPath, targetLang) {
 // 处理文件删除
 async function deleteTranslationFile(filePath, targetLang) {
   try {
+    // 检查文件是否受保护
     if (isProtectedPath(filePath)) {
       console.log(`🛡️ 文件受保护，跳过删除: ${filePath}`);
       translationStatus.protected++;
@@ -890,6 +909,7 @@ async function deleteTranslationFile(filePath, targetLang) {
     
     const targetPath = generateTargetPath(filePath, targetLang);
     
+    // 检查文件是否存在
     try {
       await fs.access(targetPath);
     } catch (error) {
@@ -897,8 +917,10 @@ async function deleteTranslationFile(filePath, targetLang) {
       return { success: true, path: targetPath, action: 'skipped' };
     }
     
+    // 删除文件
     await fs.unlink(targetPath);
     
+    // 删除空目录
     try {
       await fs.rmdir(path.dirname(targetPath));
     } catch (error) {
@@ -978,6 +1000,7 @@ function generateProgressReport(languages, results) {
     translationStatus.errors.forEach((error, index) => {
       report += `${index + 1}. **${error.targetLang}** - ${error.error}\n`;
       report += `   - 文本长度: ${error.textLength} 字符\n`;
+      report += `   - 估算Token: ${error.estimatedTokens}\n`;
       report += `   - 尝试次数: ${error.attempt}\n\n`;
     });
   }
@@ -994,16 +1017,19 @@ async function main() {
   console.log('目标语言:', languages);
   console.log('🛡️ 保护路径:', PROTECTED_PATHS);
   
+  // 验证API密钥
   if (!process.env.TRANSLATION_API_KEY) {
     console.error('❌ 缺少TRANSLATION_API_KEY环境变量');
     process.exit(1);
   }
   
+  // 验证BASE_SHA
   if (!baseSha) {
     console.error('❌ 缺少BASE_SHA环境变量');
     process.exit(1);
   }
   
+  // 检测文件操作
   const operations = await detectFileOperations(baseSha);
   if (!operations) {
     console.error('❌ 无法检测文件操作');
@@ -1021,7 +1047,7 @@ async function main() {
     const langConfig = LANGUAGE_CONFIG[lang];
     console.log(`\n📄 开始处理 ${langConfig.name}...`);
     
-    // 处理新增和修改文件
+    // 处理新增和修改文件（直接全文翻译）
     const filesToTranslate = [...operations.added, ...operations.modified];
     for (const file of filesToTranslate) {
       const result = await translateFile(file, lang);
@@ -1033,13 +1059,13 @@ async function main() {
       });
     }
     
-    // 处理重命名+修改文件
+    // 🆕 处理重命名+修改文件（需要重新翻译）
     for (const rename of operations.renamedAndModified) {
       const result = await translateRenamedAndModifiedFile(rename.from, rename.to, lang);
       allResults.push({...result, language: lang, operation: 'renamed_and_modified'});
     }
     
-    // 处理纯重命名文件
+    // 处理纯重命名文件（只移动）
     for (const rename of operations.renamed) {
       const result = await moveTranslationFile(rename.from, rename.to, lang);
       allResults.push({...result, language: lang, operation: 'renamed'});
@@ -1056,10 +1082,10 @@ async function main() {
   const report = generateProgressReport(languages, allResults);
   console.log('\n' + report);
   
-  // 保存报告到文件
+  // 保存报告到文件供GitHub Action使用
   await fs.writeFile('/tmp/translation-report.md', report, 'utf8');
   
-  // 🆕 设置输出变量
+  // 🆕 设置输出变量来指示是否需要触发其他工作流
   const hasChanges = allResults.some(r => r.success && 
     (r.action === 'translated' || r.action === 'renamed_and_retranslated'));
   
