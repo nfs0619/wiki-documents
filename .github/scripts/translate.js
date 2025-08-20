@@ -316,7 +316,7 @@ ${termsList}
 请只输出翻译后的YAML内容，不要添加任何解释。`;
 }
 
-// 🔧 全新的翻译prompt - 专注于格式保持
+// 🔧 改进的翻译prompt - 重点强调格式保持，但保持简单
 function generatePrompt(targetLang, pathPrefix, isChunk = false, chunkInfo = null) {
   const langName = LANGUAGE_CONFIG[targetLang].name;
   const termsList = Object.entries(PRESERVE_TERMS)
@@ -327,50 +327,41 @@ function generatePrompt(targetLang, pathPrefix, isChunk = false, chunkInfo = nul
 
 🚨 **格式保持的关键规则（必须严格遵守）**：
 
-1. **保持每一行的换行位置完全不变**
-   - 绝对不要将两行合并成一行
-   - 绝对不要将一行拆分成两行
+1. **保持换行结构完全不变**
+   - 每一行的换行位置必须保持与原文完全一致
+   - 不要将多行合并成一行
+   - 不要将一行拆分成多行
    - 空行必须保持为空行
-   - 标题后的空行必须保持
 
 2. **Front Matter处理**：
-   - title: 字段 → 翻译内容，但保持在同一行
-   - description: 字段 → 翻译内容，但保持在同一行
-   - slug: 字段 → 在原值前添加"${pathPrefix}"前缀，如 "/getting-started" → "${pathPrefix}/getting-started"
-   - 其他字段（keywords、image、last_update等）→ 完全不变
+   - title: 翻译内容，但保持在同一行内
+   - description: 翻译内容，但保持在同一行内
+   - slug: 在原值前添加"${pathPrefix}"前缀
+   - 其他字段完全不变
 
-3. **代码块处理**：
-   - \`\`\`包围的代码块内容（包括注释）→ 完全不翻译
-   - 行内代码\`包围的内容 → 完全不翻译
-   - 代码行号、文件名 → 完全不翻译
+3. **代码块和行内代码**：
+   - \`\`\`包围的代码块内容（包括注释）完全不翻译
+   - \`包围的行内代码完全不翻译
+   - 代码块的开始和结束标记保持不变
 
-4. **标题处理**：
-   - 翻译标题内容，保持#号数量不变
-   - 标题后的格式必须与原文保持一致
+4. **标题和段落**：
+   - 翻译标题内容，但保持#号数量和格式
+   - 段落翻译后保持原有的换行结构
 
-5. **链接和图片**：
-   - 链接文本 → 翻译
-   - URL地址 → 不翻译
-   - 图片alt文本 → 翻译
-   - 图片路径 → 不翻译
-
-6. **术语保护**（始终保持英文）：
+5. **术语保护**（始终保持英文）：
 ${termsList}
 
-🎯 **翻译要求**：
-- 翻译成地道的${langName}
-- 保持技术文档的专业性
-- 确保术语一致性
+⚠️ **重要提醒**：
+- 你的输出必须与输入有相同的行数和换行结构
+- 代码块内的所有内容都不要翻译，包括注释
+- 如果不确定某个内容是否应该翻译，请保持原文
 
-⚠️ **特别注意**：
-你的输出必须与输入有完全相同的行数和换行结构。如果输入有50行，输出也必须有50行。
-
-请开始翻译：`;
+请翻译以下内容：`;
 }
 
-// 🔧 强化的格式验证函数
-function validateFormat(translatedContent, originalContent) {
-  console.log('🔍 执行严格格式验证...');
+// 🔧 增强的换行验证函数
+function validateLineBreaks(translatedContent, originalContent) {
+  console.log('🔍 验证换行格式...');
   
   const translatedLines = translatedContent.split('\n');
   const originalLines = originalContent.split('\n');
@@ -383,10 +374,10 @@ function validateFormat(translatedContent, originalContent) {
   }
   
   // 2. 检查Front Matter字段是否在同一行
-  const frontMatterEnd = Math.min(translatedLines.length, originalLines.length);
   let inFrontMatter = false;
+  const maxLines = Math.min(translatedLines.length, originalLines.length);
   
-  for (let i = 0; i < frontMatterEnd; i++) {
+  for (let i = 0; i < maxLines; i++) {
     const origLine = originalLines[i];
     const transLine = translatedLines[i];
     
@@ -395,127 +386,162 @@ function validateFormat(translatedContent, originalContent) {
       continue;
     }
     
-    if (inFrontMatter) {
-      // 检查Front Matter字段格式
-      if (origLine.includes(':')) {
-        const origField = origLine.split(':')[0];
-        const transField = transLine.split(':')[0];
-        
-        if (origField !== transField) {
-          issues.push(`🚨 严重错误: 第${i+1}行字段名被修改 - "${origField}" → "${transField}"`);
-        }
-        
-        // 检查是否有字段合并到同一行
-        const fieldMatches = transLine.match(/^(\w+):\s*(.+?)\s+(\w+):/);
-        if (fieldMatches) {
-          issues.push(`🚨 严重错误: 第${i+1}行字段合并 - "${fieldMatches[1]}" 和 "${fieldMatches[3]}" 在同一行`);
-        }
+    if (inFrontMatter && origLine.includes(':')) {
+      // 检查字段是否被合并
+      const fieldMatches = transLine.match(/^(\w+):\s*(.+?)\s+(\w+):\s*(.+)/);
+      if (fieldMatches) {
+        issues.push(`🚨 字段合并错误: 第${i+1}行 - "${fieldMatches[1]}" 和 "${fieldMatches[3]}" 被合并`);
       }
     }
     
-    // 3. 检查标题格式
-    if (origLine.match(/^#+\s/)) {
-      if (!transLine.match(/^#+\s/)) {
-        issues.push(`🚨 严重错误: 第${i+1}行标题格式丢失 - 原文: "${origLine}" 译文: "${transLine}"`);
-      } else {
-        const origLevel = origLine.match(/^(#+)/)[1].length;
-        const transLevel = transLine.match(/^(#+)/)[1].length;
-        if (origLevel !== transLevel) {
-          issues.push(`🚨 严重错误: 第${i+1}行标题级别改变 - ${origLevel}级 → ${transLevel}级`);
-        }
-      }
-    }
-    
-    // 4. 检查空行保持
-    if (origLine.trim() === '' && transLine.trim() !== '') {
-      issues.push(`⚠️ 警告: 第${i+1}行应为空行但包含内容: "${transLine}"`);
-    }
-  }
-  
-  // 5. 检查代码块格式
-  let inCodeBlock = false;
-  for (let i = 0; i < Math.min(translatedLines.length, originalLines.length); i++) {
-    const origLine = originalLines[i];
-    const transLine = translatedLines[i];
-    
-    if (origLine.includes('```')) {
-      inCodeBlock = !inCodeBlock;
-      if (origLine !== transLine) {
-        issues.push(`🚨 严重错误: 第${i+1}行代码块标记被修改 - 原文: "${origLine}" 译文: "${transLine}"`);
-      }
+    // 3. 检查代码块标记
+    if (origLine.includes('```') && origLine !== transLine) {
+      issues.push(`🚨 代码块标记被修改: 第${i+1}行 - 原文: "${origLine}" 译文: "${transLine}"`);
     }
   }
   
   if (issues.length > 0) {
-    console.error('🚨 格式验证失败，发现以下问题:');
+    console.error('🚨 发现格式问题:');
     issues.forEach((issue, index) => {
       console.error(`  ${index + 1}. ${issue}`);
     });
     return false;
   } else {
-    console.log('✅ 格式验证通过');
+    console.log('✅ 换行格式验证通过');
     return true;
   }
 }
 
-// 🔧 增强的格式修复函数
-function enhancedFormatFix(translatedContent, originalContent) {
-  console.log('🔧 执行增强格式修复...');
+// 预处理：标记代码块位置，防止翻译
+function preprocessContent(content) {
+  console.log('🛡️ 预处理：保护代码块内容...');
   
-  const translatedLines = translatedContent.split('\n');
-  const originalLines = originalContent.split('\n');
-  const fixedLines = [];
+  const lines = content.split('\n');
+  const processedLines = [];
+  let inCodeBlock = false;
+  let codeBlockMarker = null;
   
-  // 优先使用原文的行数
-  const maxLines = Math.max(translatedLines.length, originalLines.length);
-  
-  for (let i = 0; i < maxLines; i++) {
-    const origLine = originalLines[i] || '';
-    let transLine = translatedLines[i] || '';
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
     
-    // 1. 修复Front Matter字段合并问题
-    if (origLine.includes(':') && !origLine.startsWith('#')) {
-      const fieldMatches = transLine.match(/^(\w+):\s*(.+?)\s+(\w+):\s*(.+)/);
-      if (fieldMatches) {
-        console.log(`🔧 修复字段合并: ${fieldMatches[1]}: ${fieldMatches[2]} | ${fieldMatches[3]}: ${fieldMatches[4]}`);
-        fixedLines.push(`${fieldMatches[1]}: ${fieldMatches[2].trim()}`);
-        fixedLines.push(`${fieldMatches[3]}: ${fieldMatches[4].trim()}`);
-        continue;
+    // 检测代码块开始/结束
+    if (line.trim().startsWith('```')) {
+      if (!inCodeBlock) {
+        inCodeBlock = true;
+        codeBlockMarker = `CODE_BLOCK_START_${i}`;
+        processedLines.push(`${codeBlockMarker}\n${line}`);
+      } else {
+        inCodeBlock = false;
+        processedLines.push(`${line}\nCODE_BLOCK_END_${i}`);
+        codeBlockMarker = null;
       }
-    }
-    
-    // 2. 修复标题后直接跟内容的问题
-    if (origLine.match(/^#+\s/) && transLine.match(/^#+\s/)) {
-      const headerContentMatch = transLine.match(/^(#+\s+[^#]+?)\s+([^#].+)/);
-      if (headerContentMatch) {
-        console.log(`🔧 修复标题内容合并: ${headerContentMatch[1]} | ${headerContentMatch[2]}`);
-        fixedLines.push(headerContentMatch[1].trim());
-        // 检查原文中标题后是否有空行
-        if (i + 1 < originalLines.length && originalLines[i + 1].trim() === '') {
-          fixedLines.push('');
-        }
-        fixedLines.push(headerContentMatch[2].trim());
-        continue;
-      }
-    }
-    
-    // 3. 保持空行
-    if (origLine.trim() === '') {
-      fixedLines.push('');
       continue;
     }
     
-    // 4. 保持代码块标记不变
-    if (origLine.includes('```')) {
-      fixedLines.push(origLine);
-      continue;
+    // 如果在代码块中，标记每一行
+    if (inCodeBlock) {
+      processedLines.push(`CODE_LINE_${i}: ${line}`);
+    } else {
+      processedLines.push(line);
     }
-    
-    // 5. 默认使用翻译行
-    fixedLines.push(transLine);
   }
   
-  console.log('✅ 增强格式修复完成');
+  return processedLines.join('\n');
+}
+
+// 后处理：恢复代码块内容
+function restoreCodeBlocks(content, originalContent) {
+  console.log('🔧 后处理：恢复代码块内容...');
+  
+  let restored = content;
+  const originalLines = originalContent.split('\n');
+  
+  // 恢复标记的代码行
+  restored = restored.replace(/CODE_LINE_(\d+): .*/g, (match, lineNum) => {
+    const index = parseInt(lineNum);
+    return originalLines[index] || match;
+  });
+  
+  // 移除代码块标记
+  restored = restored.replace(/CODE_BLOCK_START_\d+\n?/g, '');
+  restored = restored.replace(/\nCODE_BLOCK_END_\d+/g, '');
+  
+  return restored;
+}
+
+// 简化而有效的格式修复
+function simpleFormatFix(translatedContent, originalContent) {
+  console.log('🔧 执行简单格式修复...');
+  
+  let fixed = translatedContent;
+  
+  // 1. 恢复代码块内容
+  fixed = restoreCodeBlocks(fixed, originalContent);
+  
+  // 2. 修复最常见的换行问题：字段合并
+  // 匹配模式：field1: value1 field2: 
+  fixed = fixed.replace(/^(\w+):\s*([^:\n]+?)\s+(\w+):/gm, (match, field1, value1, field2) => {
+    console.log(`🔧 修复字段合并: ${field1}: ${value1.trim()} | ${field2}:`);
+    return `${field1}: ${value1.trim()}\n${field2}:`;
+  });
+  
+  // 3. 修复标题与内容合并
+  // 匹配模式：## title content
+  fixed = fixed.replace(/^(#{1,6}\s+[^\n]+?)\s+([^#\n][^\n]*)/gm, (match, header, content) => {
+    console.log(`🔧 修复标题内容合并: ${header} | ${content}`);
+    return `${header}\n\n${content}`;
+  });
+  
+  console.log('✅ 简单格式修复完成');
+  return fixed;
+}
+
+// 强化的标题格式修复
+function forceFixHeaders(content, originalContent) {
+  const lines = content.split('\n');
+  const originalLines = originalContent.split('\n');
+  const fixedLines = [];
+  let isFixed = false;
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    fixedLines.push(line);
+    
+    // 如果是标题行且下一行不是空行
+    if (line.match(/^#{1,6}\s+/) && i + 1 < lines.length) {
+      const nextLine = lines[i + 1];
+      
+      // 检查下一行是否直接是内容（不是空行，也不是另一个标题）
+      if (nextLine && nextLine.trim() !== '' && !nextLine.match(/^#{1,6}\s+/)) {
+        // 在原文中找对应的标题位置
+        const headerLevel = line.match(/^(#{1,6})/)[1].length;
+        let shouldHaveEmptyLine = false;
+        
+        // 检查原文中同级别标题后是否有空行
+        for (let j = 0; j < originalLines.length - 1; j++) {
+          const origLine = originalLines[j];
+          if (origLine.match(/^#{1,6}\s+/)) {
+            const origHeaderLevel = origLine.match(/^(#{1,6})/)[1].length;
+            if (origHeaderLevel === headerLevel && originalLines[j + 1].trim() === '') {
+              shouldHaveEmptyLine = true;
+              break;
+            }
+          }
+        }
+        
+        if (shouldHaveEmptyLine) {
+          console.log(`🔧 修复标题后缺少空行: "${line.substring(0, 30)}..."`);
+          fixedLines.push('');
+          isFixed = true;
+        }
+      }
+    }
+  }
+  
+  if (isFixed) {
+    console.log('✅ 标题格式已修复');
+  }
+  
   return fixedLines.join('\n');
 }
 
@@ -578,11 +604,17 @@ function addChineseEnglishSpacing(content) {
   return content;
 }
 
-// 🔧 改进的Claude翻译函数 - 移除预处理，增强验证
+// 🔧 改进的Claude翻译函数 - 只添加换行验证
 async function translateWithClaude(text, targetLang, maxRetries = 3, isChunk = false, chunkInfo = null, isCategory = false) {
   const langConfig = LANGUAGE_CONFIG[targetLang];
   if (!langConfig) {
     throw new Error(`不支持的语言: ${targetLang}`);
+  }
+  
+  // 🔧 预处理：保护代码块（保持原有逻辑）
+  let processedText = text;
+  if (!isCategory) {
+    processedText = preprocessContent(text);
   }
   
   // 选择合适的prompt
@@ -600,27 +632,22 @@ async function translateWithClaude(text, targetLang, maxRetries = 3, isChunk = f
         temperature: 0, // 完全确定性输出
         system: systemPrompt,
         messages: [
-          { role: 'user', content: text }
+          { role: 'user', content: processedText }
         ]
       });
       
       let translatedContent = response.content[0].text;
       
-      // 对非category文件进行格式验证和修复
+      // 对非category文件进行后处理
       if (!isCategory) {
-        // 🔧 执行格式验证
-        const isFormatValid = validateFormat(translatedContent, text);
+        // 🔧 简化的格式修复（保持原有逻辑）
+        translatedContent = simpleFormatFix(translatedContent, text);
         
-        if (!isFormatValid) {
-          console.log('🔧 格式验证失败，执行增强格式修复...');
-          translatedContent = enhancedFormatFix(translatedContent, text);
-          
-          // 再次验证
-          const isFixedValid = validateFormat(translatedContent, text);
-          if (!isFixedValid && attempt < maxRetries) {
-            console.log(`🔄 格式修复后仍有问题，重新翻译 (尝试 ${attempt + 1}/${maxRetries})`);
-            continue; // 重新翻译
-          }
+        // 🆕 新增：换行验证，如果验证失败且还有重试机会，则重试
+        const isLineBreakValid = validateLineBreaks(translatedContent, text);
+        if (!isLineBreakValid && attempt < maxRetries) {
+          console.log(`🔄 换行格式验证失败，重新翻译 (尝试 ${attempt + 1}/${maxRetries})`);
+          continue; // 重新翻译
         }
         
         // 处理链接
