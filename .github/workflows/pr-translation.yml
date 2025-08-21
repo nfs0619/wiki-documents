@@ -327,7 +327,7 @@ jobs:
         run: |
           echo "📦 安装翻译依赖..."
           # 只安装翻译脚本需要的依赖，避免修改yarn.lock
-          npm install @anthropic-ai/sdk --no-save --no-package-lock
+          npm install @anthropic-ai/sdk --no-save --legacy-peer-deps
       
       - name: Run translation
         if: steps.check-permissions.outputs.has_permission == 'true'
