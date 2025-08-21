@@ -709,7 +709,6 @@ jobs:
             comment += `- **撤回的SHA:** \`${afterSha}\`\n\n`;
             
             comment += `### 🔄 后续操作\n`;
-            comment += `- 构建检查正在重新运行中...\n`;
             comment += `- 现在可以重新进行翻译或手动修改文档\n`;
             comment += `- 使用 \`/translate [语言]\` 重新翻译\n\n`;
             
