@@ -25,27 +25,25 @@ jobs:
         with:
           script: |
             const { owner, repo } = context.repo;
-            const pull_number = context.payload.pull_request.number;
+            const sha = context.payload.after;
             
             try {
-              // 获取PR的所有commit，取最后一个
-              const { data: commits } = await github.rest.pulls.listCommits({
+              const { data: commit } = await github.rest.repos.getCommit({
                 owner,
                 repo,
-                pull_number,
-                per_page: 250, // 最多一次性取250个
+                ref: sha,
               });
+              const message = commit.commit.message;
               
-              if (commits.length > 0) {
-                const latestCommit = commits[commits.length - 1]; // ⚡ 一定要取最后一个
-                const message = latestCommit.commit.message;
-                
-                // 检查是否是翻译或撤回commit
-                if (message.includes('🌍 自动翻译文档')) {
-                  console.log('检测到翻译commit，跳过文档变更检测和评论');
-                  core.setOutput('skip', 'true');
-                  return;
-                }
+              if (message.includes('🌍 自动翻译文档')) {
+                console.log('检测到翻译commit，跳过文档变更检测和评论');
+                core.setOutput('skip', 'true');
+                return;
+              }
+              if (message.includes('🔄 撤回翻译')) {
+                console.log('检测到撤回commit，跳过文档变更检测和评论');
+                core.setOutput('skip', 'true');
+                return;
               }
             } catch (error) {
               console.error('检查commit失败:', error);
