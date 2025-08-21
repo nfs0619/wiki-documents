@@ -277,7 +277,6 @@ return "N/A";
 #ifndef BLE_STACK_SILABS
 #error "This example is only compatible with the Silicon Labs BLE stack. Please select 'BLE (Silabs)' in 'Tools > Protocol stack'."
 #endif
-
 ```
 
 :::tip
@@ -589,7 +588,6 @@ app_assert_status(sc);
 #ifndef BLE_STACK_SILABS
 #error "This example is only compatible with the Silicon Labs BLE stack. Please select 'BLE (Silabs)' in 'Tools > Protocol stack'."
 #endif
-
 ```
 
 同时，您可以在主要的移动应用商店中搜索并下载 **nRF Connect** 应用，该应用允许您的手机搜索并连接到蓝牙设备。
@@ -879,7 +877,6 @@ return found;
 #error "This example is only compatible with the Silicon Labs BLE stack. Please select 'BLE (Silabs)' in 'Tools > Protocol stack'."
 #endif
 ```
-
 
 上述程序将把 XIAO 变成客户端并搜索附近的蓝牙设备。当蓝牙设备的 UUID 与您提供的 UUID 匹配时，它将连接到该设备并获取其特征值。
 
@@ -1325,7 +1322,6 @@ app_assert_status(sc);
 #ifndef BLE_STACK_SILABS
 #error "This example is only compatible with the Silicon Labs BLE stack. Please select 'BLE (Silabs)' in 'Tools > Protocol stack'."
 #endif
-
 ```
 
 为其中一个 XIAO 上传程序后，如果程序运行顺利，那么你可以拿出手机，使用 nRF Connect APP 搜索名为**XIAOMG24_BLE**的蓝牙设备，连接它，并点击下面显示的按钮，你将收到温度数据信息。
@@ -1641,7 +1637,6 @@ return ((float)mantissa) * pow(10.0f, (float)exponent);
 #error "This example is only compatible with the Silicon Labs BLE stack. Please select 'BLE (Silabs)' in 'Tools > Protocol stack'."
 #endif
 ```
-
 
 最后，如果服务器和客户端程序运行顺利，您可以通过串口看到客户端打印的以下信息。
 

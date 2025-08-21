@@ -69,59 +69,100 @@ const translationStatus = {
   errors: []
 };
 
-// 🔥 核心改进1：预处理文档，添加行号标记
+// 🔥 核心改进1：预处理文档，添加行号标记（保留缩进）
 function preprocessDocument(content) {
   const lines = content.split('\n');
   const processedLines = [];
-  const lineMap = new Map();
+  const lineMetadata = [];
   
   lines.forEach((line, index) => {
-    // 为每行添加唯一标识符（翻译后会移除）
-    const lineId = `[LINE_${index}]`;
-    lineMap.set(index, line);
+    // 计算缩进（空格和制表符）
+    const indentMatch = line.match(/^(\s*)/);
+    const indent = indentMatch ? indentMatch[1] : '';
+    const trimmedContent = line.slice(indent.length);
     
-    // 空行特殊处理
+    // 保存每行的元数据
+    lineMetadata.push({
+      originalLine: line,
+      indent: indent,
+      content: trimmedContent,
+      isEmpty: line.trim() === ''
+    });
+    
+    // 为每行添加唯一标识符，保留缩进
+    const lineId = `[LINE_${index}]`;
+    
     if (line.trim() === '') {
+      // 空行
       processedLines.push(`${lineId}[EMPTY_LINE]`);
     } else {
-      processedLines.push(`${lineId} ${line}`);
+      // 保留缩进在标记后面
+      processedLines.push(`${lineId}${indent}${trimmedContent}`);
     }
   });
   
   return {
     processed: processedLines.join('\n'),
-    lineMap: lineMap,
+    lineMetadata: lineMetadata,
     totalLines: lines.length
   };
 }
 
-// 🔥 核心改进2：后处理移除标记并确保行数一致
-function postprocessDocument(translatedContent, lineMap, totalLines) {
-  // 移除行号标记
-  let cleaned = translatedContent.replace(/\[LINE_\d+\]\s*/g, '');
-  cleaned = cleaned.replace(/\[EMPTY_LINE\]/g, '');
+// 🔥 核心改进2：后处理移除标记并恢复缩进
+function postprocessDocument(translatedContent, lineMetadata, totalLines) {
+  const translatedLines = translatedContent.split('\n');
+  const finalLines = [];
   
-  const translatedLines = cleaned.split('\n');
-  
-  // 确保行数完全一致
-  if (translatedLines.length !== totalLines) {
-    console.log(`⚠️ 行数不一致: 期望 ${totalLines} 行，实际 ${translatedLines.length} 行`);
+  for (let i = 0; i < totalLines; i++) {
+    const metadata = lineMetadata[i];
     
-    // 强制修正行数
-    const fixedLines = [];
-    for (let i = 0; i < totalLines; i++) {
-      if (i < translatedLines.length) {
-        fixedLines.push(translatedLines[i]);
-      } else {
-        // 如果译文行数不够，用原文填充（这种情况应该很少见）
-        fixedLines.push(lineMap.get(i) || '');
-      }
+    if (i >= translatedLines.length) {
+      // 如果译文行数不够，使用原文
+      console.log(`⚠️ 第${i+1}行缺失，使用原文`);
+      finalLines.push(metadata.originalLine);
+      continue;
     }
     
-    return fixedLines.join('\n');
+    let translatedLine = translatedLines[i];
+    
+    // 移除行号标记
+    translatedLine = translatedLine.replace(/^\[LINE_\d+\]/, '');
+    
+    // 处理空行
+    if (translatedLine.includes('[EMPTY_LINE]')) {
+      finalLines.push('');
+      continue;
+    }
+    
+    // 恢复原始缩进
+    if (metadata.indent) {
+      // 移除译文中可能存在的缩进（避免双重缩进）
+      const translatedTrimmed = translatedLine.trimStart();
+      // 添加原始缩进
+      finalLines.push(metadata.indent + translatedTrimmed);
+    } else {
+      finalLines.push(translatedLine);
+    }
   }
   
-  return cleaned;
+  // 确保行数完全一致
+  if (finalLines.length !== totalLines) {
+    console.log(`⚠️ 行数修复: 期望 ${totalLines} 行，实际 ${finalLines.length} 行`);
+    
+    // 强制修正行数
+    while (finalLines.length < totalLines) {
+      const missingIndex = finalLines.length;
+      const metadata = lineMetadata[missingIndex];
+      finalLines.push(metadata ? metadata.originalLine : '');
+    }
+    
+    // 如果行数过多，截断
+    if (finalLines.length > totalLines) {
+      finalLines.length = totalLines;
+    }
+  }
+  
+  return finalLines.join('\n');
 }
 
 // 🔥 核心改进3：智能分块，避免在关键位置切断
@@ -242,7 +283,7 @@ function intelligentSplit(lines, maxSize) {
   return chunks.length > 0 ? chunks : [lines.join('\n')];
 }
 
-// 🔥 核心改进5：增强的提示词生成
+// 🔥 核心改进5：增强的提示词生成（强调缩进保持）
 function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkInfo = null) {
   const langName = LANGUAGE_CONFIG[targetLang].name;
   const termsList = Object.entries(PRESERVE_TERMS)
@@ -255,15 +296,18 @@ function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkIn
 <critical_rule>
 **最重要的规则：保持格式完全一致**
 1. 输出必须与输入有完全相同的行数
-2. 每个[LINE_X]标记必须保持在对应的行开始
-3. [EMPTY_LINE]表示空行，必须保持为空行
-4. 绝对不能合并或拆分任何行
+2. 每个[LINE_X]标记必须保持在对应行的开始
+3. [LINE_X]标记后的缩进（空格或制表符）必须完全保留
+4. [EMPTY_LINE]表示空行，必须保持为空行
+5. 绝对不能合并或拆分任何行
+6. 绝对不能改变任何行的缩进级别
 </critical_rule>
 
 <translation_rules>
 1. **只翻译自然语言文本**，保持以下内容不变：
    - 所有[LINE_X]标记
    - 所有[EMPTY_LINE]标记
+   - 标记后的所有缩进（空格和制表符）
    - 代码块内容（\`\`\`之间的内容）
    - 行内代码（\`之间的内容）
    - URL链接
@@ -274,8 +318,14 @@ function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkIn
    - 只翻译title和description字段的值
    - slug字段添加前缀：${pathPrefix}
 
-3. **严格禁止**：
+3. **缩进保持**：
+   - 如果原文有缩进，译文必须保持相同的缩进
+   - 列表项的缩进级别必须保持不变
+   - 代码块内的缩进必须完全保留
+
+4. **严格禁止**：
    - 添加或删除任何行
+   - 改变任何缩进
    - 添加原文没有的\`\`\`代码块标记
    - 改变[LINE_X]标记的位置
 </translation_rules>
@@ -284,18 +334,30 @@ function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkIn
 输入：
 [LINE_0] ## Getting Started
 [LINE_1][EMPTY_LINE]
-[LINE_2] This is a tutorial.
-[LINE_3] It covers basics.
+[LINE_2] This is a tutorial about:
+[LINE_3]   - First item
+[LINE_4]   - Second item
+[LINE_5]     - Nested item
 
 正确输出：
 [LINE_0] ## 入门指南
 [LINE_1][EMPTY_LINE]
-[LINE_2] 这是一个教程。
-[LINE_3] 它涵盖了基础知识。
+[LINE_2] 这是一个关于以下内容的教程：
+[LINE_3]   - 第一项
+[LINE_4]   - 第二项
+[LINE_5]     - 嵌套项
+
+错误输出（绝对禁止）：
+[LINE_0] ## 入门指南
+[LINE_1][EMPTY_LINE]
+[LINE_2] 这是一个关于以下内容的教程：
+[LINE_3] - 第一项  ❌ 缩进丢失
+[LINE_4] - 第二项  ❌ 缩进丢失
+[LINE_5]   - 嵌套项  ❌ 缩进级别错误
 </example>
 </instruction>
 
-请直接翻译以下内容，保持所有标记和格式：`;
+请直接翻译以下内容，保持所有标记、缩进和格式：`;
 
   if (isChunk && chunkInfo) {
     prompt += `\n\n注意：这是第${chunkInfo.index + 1}/${chunkInfo.total}块。`;
@@ -304,7 +366,7 @@ function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkIn
   return prompt;
 }
 
-// 🔥 核心改进6：验证翻译结果
+// 🔥 核心改进6：验证翻译结果（包括缩进检查）
 function validateTranslation(original, translated) {
   const originalLines = original.split('\n');
   const translatedLines = translated.split('\n');
@@ -330,20 +392,44 @@ function validateTranslation(original, translated) {
     });
   }
   
-  // 检查关键格式
+  // 检查关键格式和缩进
   for (let i = 0; i < Math.min(originalLines.length, translatedLines.length); i++) {
     const origLine = originalLines[i];
     const transLine = translatedLines[i];
     
-    // 检查标题级别
-    const origHeader = origLine.match(/^(#{1,6})\s/);
-    const transHeader = transLine.match(/^(#{1,6})\s/);
+    // 检查缩进级别
+    const origIndent = origLine.match(/^(\s*)/)[1].length;
+    const transIndent = transLine.match(/^(\s*)/)[1].length;
     
-    if (origHeader && (!transHeader || origHeader[1] !== transHeader[1])) {
+    if (origIndent !== transIndent && origLine.trim() !== '' && transLine.trim() !== '') {
+      issues.push({
+        type: 'indent',
+        line: i + 1,
+        message: `缩进不一致: 第${i + 1}行，原文${origIndent}个空格，译文${transIndent}个空格`
+      });
+    }
+    
+    // 检查标题级别
+    const origHeader = origLine.match(/^(\s*)(#{1,6})\s/);
+    const transHeader = transLine.match(/^(\s*)(#{1,6})\s/);
+    
+    if (origHeader && (!transHeader || origHeader[2] !== transHeader[2])) {
       issues.push({
         type: 'header',
         line: i + 1,
         message: `标题格式不一致: 第${i + 1}行`
+      });
+    }
+    
+    // 检查列表标记（保持缩进后的列表标记）
+    const origList = origLine.match(/^(\s*)[-*+]\s/);
+    const transList = transLine.match(/^(\s*)[-*+]\s/);
+    
+    if (origList && !transList) {
+      issues.push({
+        type: 'list',
+        line: i + 1,
+        message: `列表格式丢失: 第${i + 1}行`
       });
     }
     
@@ -395,7 +481,7 @@ async function translateWithClaude(text, targetLang, maxRetries = 3, isChunk = f
   }
   
   // 对于markdown文件，使用改进的流程
-  const { processed, lineMap, totalLines } = preprocessDocument(text);
+  const { processed, lineMetadata, totalLines } = preprocessDocument(text);
   const systemPrompt = generateEnhancedPrompt(targetLang, langConfig.pathPrefix, isChunk, chunkInfo);
   
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
@@ -414,16 +500,27 @@ async function translateWithClaude(text, targetLang, maxRetries = 3, isChunk = f
       
       let translatedContent = response.content[0].text;
       
-      // 后处理：移除标记并修复格式
-      translatedContent = postprocessDocument(translatedContent, lineMap, totalLines);
+      // 后处理：移除标记并恢复缩进
+      translatedContent = postprocessDocument(translatedContent, lineMetadata, totalLines);
       
       // 验证翻译结果
       const issues = validateTranslation(text, translatedContent);
       
-      if (issues.length > 0 && attempt < maxRetries) {
-        console.log(`⚠️ 发现${issues.length}个问题，重试翻译...`);
-        issues.forEach(issue => console.log(`  - ${issue.message}`));
-        continue;
+      if (issues.length > 0) {
+        console.log(`⚠️ 发现${issues.length}个格式问题:`);
+        issues.forEach(issue => {
+          if (issue.type === 'indent') {
+            console.log(`  - ${issue.message}`);
+          } else {
+            console.log(`  - ${issue.message}`);
+          }
+        });
+        
+        // 如果问题太多且还有重试机会，重新翻译
+        if (issues.length > 3 && attempt < maxRetries) {
+          console.log(`🔄 问题较多，重新翻译...`);
+          continue;
+        }
       }
       
       // 处理链接
