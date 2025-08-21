@@ -47,33 +47,29 @@ SenseCraft HMI currently supports the following Seeed Studio devices:
 
 The reTerminal E10xx series combines powerful computing capabilities with ePaper display technology, making it perfect for digital signage, information dashboards, and interactive displays. The series includes two models with different display capabilities:
 
-#### reTerminal E1001
+#### [reTerminal E1001](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1001/)
 
 The reTerminal E1001 features a 7.5-inch monochrome ePaper display with 4-level grayscale capability. With its 800×480 resolution, it delivers crisp text and clear images while consuming minimal power. The monochrome display is perfect for applications where text legibility and battery life are priorities.
 
 **Key Features**
-- 7.5-inch monochrome ePaper display with 4-level grayscale
 
-- 800×480 resolution
+- **Beautiful, Ready-to-Use ePaper Display**
+- **Ultra-Low Power with 3-Month Battery Life**
+- **No-Code UI Design & Deployment with SenseCraft HMI**
+- **Works with Popular Software Platforms**
+- **Flexible Hardware & Software Customization**
 
-- Ultra-low power consumption for extended battery life
-
-- Perfect for text-heavy applications like calendars, to-do lists, and information displays
-
-#### reTerminal E1002
+#### [reTerminal E1002](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002/)
 
 The reTerminal E1002 features a vibrant 7.3-inch six-color ePaper display with ACeP (Advanced Color ePaper) technology. This color display offers the same power efficiency benefits of ePaper technology while allowing for more visually engaging content with multiple colors, making it ideal for applications where visual distinction and aesthetic appeal are important.
 
 **Key Features**
-- 7.3-inch six-color ePaper display with ACeP technology
 
-- 800×480 resolution
-
-- Rich color representation while maintaining low power consumption
-
-- Perfect for gallery displays, colorful dashboards, and visually oriented applications
-
-Both models integrate seamlessly with SenseCraft HMI, providing an excellent platform for creating beautiful, energy-efficient displays for a wide range of applications.
+- **Beautiful, Ready-to-Use E Ink® Spectra™6 Color ePaper Display**
+- **Ultra-Low Power with 3-Month Battery Life**
+- **No-Code UI Design & Deployment with SenseCraft HMI**
+- **Works with Popular Software Platforms**
+- **Flexible Hardware & Software Customization**
 
 ## Getting Started
 

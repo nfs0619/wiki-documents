@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 
 # Using Canvas in SenseCraft HMI
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/98.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/141.jpg" style={{width:800, height:'auto'}}/></div>
 
 ## Introduction
 
@@ -159,6 +159,42 @@ Step 3. Use the properties panel to customize:
   - Corner radius (for rectangles)
 
   - Other shape-specific properties
+
+### Date
+
+The Date component displays a date, time, or timestamp that can be configured in various formats.
+
+Step 1. Click on the "Date" component in the Data section
+
+Step 2. The component will automatically be placed in the upper left corner of your canvas with a default date format (usually MM/DD/YYYY)
+
+Step 3. Click the calendar icon in the toolbar to open the Date Settings panel
+
+Step 4. In the Date Settings panel:
+
+   - Set a specific date using the date picker or input field
+
+   - Select a date format from the dropdown menu (e.g., MM/DD/YYYY, DD/MM/YYYY, YYYY-MM-DD)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/105.png" style={{width:1000, height:'auto'}}/></div>
+
+Step 5. Use the property panel to further customize:
+
+   - Font size and style
+
+   - Text color
+
+   - Alignment
+
+   - Background (if desired)
+
+:::note
+The date shown in the Canvas is static and represents what you've configured in the Date Settings. When deployed to your device, the Date component can either:
+
+- Display the static date you configured (useful for deadlines, event dates, etc.)
+
+- If set to dynamic mode, display the current date/time which will update automatically on the device
+:::
 
 ## Device Components
 
@@ -361,42 +397,6 @@ For testing purposes, you can use common stock symbols like:
 - AMZN (Amazon)
 
 - TSLA (Tesla)
-:::
-
-### Date
-
-The Date component displays a date, time, or timestamp that can be configured in various formats.
-
-Step 1. Click on the "Date" component in the Data section
-
-Step 2. The component will automatically be placed in the upper left corner of your canvas with a default date format (usually MM/DD/YYYY)
-
-Step 3. Click the calendar icon in the toolbar to open the Date Settings panel
-
-Step 4. In the Date Settings panel:
-
-   - Set a specific date using the date picker or input field
-
-   - Select a date format from the dropdown menu (e.g., MM/DD/YYYY, DD/MM/YYYY, YYYY-MM-DD)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/105.png" style={{width:1000, height:'auto'}}/></div>
-
-Step 5. Use the property panel to further customize:
-
-   - Font size and style
-
-   - Text color
-
-   - Alignment
-
-   - Background (if desired)
-
-:::note
-The date shown in the Canvas is static and represents what you've configured in the Date Settings. When deployed to your device, the Date component can either:
-
-- Display the static date you configured (useful for deadlines, event dates, etc.)
-
-- If set to dynamic mode, display the current date/time which will update automatically on the device
 :::
 
 ### GitHub
@@ -760,12 +760,12 @@ Step 2. In the "Configure Template: YouTube Channel Stats" dialog that appears:
    - Enter a YouTube Channel Identifier in one of the supported formats:
 
      * Channel ID: 24-character string starting with "UC" (e.g., UC_x5XG1OV2P6uZZ5FSM9Ttw)
-     * @Handle: Channel handle starting with @ (e.g., @seeedstudioSZ)
-     * Channel URL: Full YouTube URL (e.g., youtube.com/@seeedstudioSZ)
+     * @Handle: Channel handle starting with @ (e.g., @seeedstudiosz)
+     * Channel URL: Full YouTube URL (e.g., youtube.com/@seeedstudiosz)
 
 Step 3. Click "Validate Channel" to verify the channel exists and retrieve its data
 
-Step 4. If validation is successful, you'll see a confirmation message (e.g., "Found channel: SeeedStudioSZ • 20K")
+Step 4. If validation is successful, you'll see a confirmation message (e.g., "Found channel: Seeed Studio • 20.4K")
 
 Step 5. Click "OK" to proceed
 
@@ -835,6 +835,45 @@ This feature is particularly useful for:
 - Creating backups of complex layouts
 
 - Sharing layouts with others
+
+### Import Export and Share
+
+SenseCraft HMI provides convenient Import and Export functions that allow you to easily save, share, and restore your design work. These two features are located in the top toolbar of the interface, clearly identified by their icons.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/142.png" style={{width:1000, height:'auto'}}/></div>
+
+#### Exporting Designs
+
+The Export function allows you to save your current UI design as a file:
+
+**Step 1.** After completing your interface design, click the **Export** button (outward arrow icon) in the top toolbar.
+
+**Step 2.** In the file save dialog that appears, choose a save location and name your file.
+
+**Step 3.** Click "Save" to complete the export process.
+
+Your design will be saved as a JSON file containing all interface information, which can be used for backup or sharing.
+
+#### Importing Designs
+
+The Import function enables you to load previously exported designs or templates:
+
+**Step 1.** Click the **Import** button (inward arrow icon) in the top toolbar.
+
+**Step 2.** In the file selection dialog, locate and select your previously exported design file.
+
+**Step 3.** Click "Open" and the selected design will load into your current workspace.
+
+:::tip
+The import operation will replace the current workspace content. It's recommended to export your current design before importing to prevent data loss.
+:::
+
+These features are particularly useful for:
+- Backing up designs before making major changes
+- Sharing interface designs with team members
+- Transferring projects between different devices
+- Quickly starting new projects using pre-made templates
+
 
 ### AI Layout Generator
 

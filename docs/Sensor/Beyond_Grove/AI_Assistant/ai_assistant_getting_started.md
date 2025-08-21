@@ -15,14 +15,14 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/1-114993645-Al-Assistant-v1.1.jpg" style={{width:600, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-	<a class="get_one_now_item" href="https://www.seeedstudio.com/AI-Assistant-p-6510.html" target="_blank">
+	<a class="get_one_now_item" href="https://www.seeedstudio.com/AI-Assistant-p-6510.html">
 			<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 	</a>
 </div>
 
 ## Introduction
 
-The AI Assistant development kit, jointly created by Seeed Studio and STMicroelectronics. This is an development platform designed for cutting-edge edge AI applications. Centered around the high-performance STM32N657 MCU with its integrated ST Neural-ART AI accelerator, it perfectly blends powerful AI computing capabilities with the classic MCU advantages of low power consumption, a small form factor, and cost-effectiveness. The kit comes equipped with an onboard global shutter camera, an IMU sensor with an AI processing unit, a high-definition touchscreen, and a Wi-Fi module, offering a complete hardware and software solution for developing next-generation smart vision and voice interaction products.
+The AI Assistant development kit, jointly created by Seeed Studio and STMicroelectronics. This is a development platform designed for cutting-edge edge AI applications. Centered around the high-performance STM32N657 MCU with its integrated ST Neural-ART AI accelerator, it perfectly blends powerful AI computing capabilities with the classic MCU advantages of low power consumption, a small form factor, and cost-effectiveness. The kit comes equipped with an onboard global shutter camera, an IMU sensor with an AI processing unit, a high-definition touchscreen, and a Wi-Fi module, offering a complete hardware and software solution for developing next-generation smart vision and voice interaction products.
 
 ### Features
 
@@ -36,8 +36,6 @@ Features an LSM6DSO16IS IMU with a built-in Intelligent Sensor Processing Unit (
 Integrates a 4.0-inch 480x480 capacitive touch display, a high-fidelity digital microphone, and an audio codec, providing a complete hardware foundation for developing interactive AI applications out of the box.
 - **Feature 5: Comprehensive Connectivity**
 Includes an onboard Wi-Fi module for seamless IoT connectivity, alongside a USB-C port and multiple expansion headers for maximum development flexibility.
-- **Feature 6: Ready-to-Run Linux Environment**
-Comes with a pre-built OpenSTLinux BSP, providing a stable and flexible open-source software foundation to jumpstart your development.
 
 ## Hardware Overview
 
@@ -47,7 +45,7 @@ Before everything starts, it is quite essential to have some basic parameters of
 | Category             | Feature               | Specification                                                                 |
 |----------------------|------------------------|-------------------------------------------------------------------------------|
 | **Core System**      | Main Controller        | STMicroelectronics STM32N657X0H3Q                                             |
-|                      | Core Architecture      | Arm® Cortex®-M55 + Ethos™-U65 NPU                                             |
+|                      | Core Architecture      | Arm® Cortex®-M55                                             |
 |                      | Neural Processing Unit | ST Neural-ART, 600 GOPS                                                       |
 |                      | External Memory        | 128MB NOR Flash, 32MB DRAM                                                    |
 | **Sensors**          | Camera                 | STMicroelectronics VD55G1 (800x700, Global Shutter)                           |
@@ -98,21 +96,29 @@ This section provides an overview of the application. Additional documentation i
 
 - 3 Cameras are supported:
   - MB1854B IMX335
-  - STEVAL-55G1MBI VD55G1 Camera module (Default Camera provided with the MB1939 STM32N6570-DK board)
-  - STEVAL-66GYMAI VD66GY Camera module
 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/3-114993645-Al-Assistant-v1.1.jpg" style={{width:800, height:'auto'}}/></div>
 AI Assistant kit with VD55G1 Camera.
 
 ### Tools Version
-
-- IAR Embedded Workbench for Arm (**EWARM 9.40.1**) + N6 patch (**EWARMv9_STM32N6xx_V1.0.0**)
 - STM32CubeIDE (**STM32CubeIDE 1.18.0**)
 - STM32CubeProgrammer (**v2.18.0**)
 - [STEdgeAI](https://www.st.com/en/development-tools/stedgeai-core.html) (**v2.1.0**)
 
 
+### ST-Link Connection
+**Right Hand Side Connectors**
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/STLC1.PNG" style={{width:1000, height:'auto'}}/></div>
+
+**Left Hand Side Connectors**
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/STLC2.PNG" style={{width:1000, height:'auto'}}/></div>
+
+**Debugger Connection**
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/STLC3.PNG" style={{width:1000, height:'auto'}}/></div>
+
+**Headers pinout**
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/STLC4.PNG" style={{width:1000, height:'auto'}}/></div>
 
 ### Boot Modes
 
@@ -174,9 +180,6 @@ __Make sure to have the switch to the right side.__
 
 Double click on `STM32CubeIDE/.project` to open the project in STM32CubeIDE. Build and run with the build and run buttons.
 
-##### IAR EWARM
-
-Double click on `EWARM/Project.eww` to open the project in IAR IDE. Build and run with the build and run buttons.
 
 ##### Makefile
 
@@ -211,10 +214,6 @@ __Make sure to have the switch on the right side.__
 ##### STM32CubeIDE
 
 Double click on `STM32CubeIDE/.project` to open project in STM32CubeIDE. Build with build button.
-
-##### IAR EWARM
-
-Double click on `EWARM/Project.eww` to open project in IAR IDE. Build with build button.
 
 ##### Makefile
 
@@ -301,7 +300,7 @@ For more details on DCMIPP, see the Digital Camera Interface Pixel Pipeline (DCM
 
 #### Boot from Flash with First Stage Boot Loader
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/FSBL.png" style={{width:1000, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/FSBL1.png" style={{width:1000, height:'auto'}}/></div>
 
 ### Build Options
 
@@ -440,7 +439,7 @@ See [Program app in external flash](#application-build-and-run---boot-from-flash
 
 0. Ensure the board is in dev mode (boot switch in dev mode position).
 1. Open STM32CubeProgrammer.
-2. Select the Disco board through the "External loaders" tab.
+2. Select the MX66UW1G45G_STM32N6570-DK flash through the External loaders tab.
 3. ST-Link configuration: set mode to "Hot plug".
 4. Connect the board.
 5. From the "Erasing & programming" tab, select the `Binary/ai_assistant_fsbl.hex` file.
@@ -453,7 +452,11 @@ See [Program app in external flash](#application-build-and-run---boot-from-flash
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/selectBoard.JPG" style={{width:1000, height:'auto'}}/></div>
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/flashHex.JPG" style={{width:1000, height:'auto'}}/></div>
 
+## Resources
+ - **[PDF]** [AI Assistant Schematic](https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/res/SCH_AI%20ASSISTANT_V1-1%20RELEASE_20250314.pdf)
+
 ## Tech Support 
 This product is supported by **STMicroelectronics**. 
 For any technical issues or inquiries, please contact:
-**Technical Support Contact: [[Click here](https://ols.st.com/s/)]**
+**Technical Support Contact:
+ [[Click here](https://ols.st.com/s/)]**

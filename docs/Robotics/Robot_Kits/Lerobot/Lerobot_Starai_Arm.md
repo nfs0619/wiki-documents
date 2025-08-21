@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.webp
 slug: /lerobot_starai_arm
 last_update:
-  date: 8/15/2025
+  date: 8/20/2025
   author: LiShanghang
 ---
 
@@ -486,6 +486,22 @@ python lerobot/scripts/control_robot.py \
   --control.display_data=true
 ```
 
+:::tip
+If you find bug like this.
+
+<div align="center">
+    <img width={800}
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/rerun-version.png" />
+</div>
+
+You can downgrade the rerun version to resolve the issue.
+
+```bash
+pip3 install rerun-sdk==0.23
+```
+
+:::
+
 ## Record the dataset
 
 <div class="video-container">
@@ -721,6 +737,12 @@ If you upload your model checkpoint to the Hub, you can also use the model repos
 - Ensure that the `num-episodes` parameter in the data collection command is set to collect sufficient data, and do not manually pause midway. This is because the mean and variance of the data are calculated only after data collection is complete, which is necessary for training.
 
 - If the program prompts that it cannot read the USB camera image data, please ensure that the USB camera is not connected to a hub. The USB camera must be directly connected to the device to ensure a fast image transmission rate.
+
+- If you find bug like `AttributeError: module 'rerun' has no attribute 'scalar'. Did you mean: 'scalars'?`, You can downgrade the rerun version to resolve the issue.
+
+```bash
+pip3 install rerun-sdk==0.23
+```
 
 :::tip
 If you encounter software issues or environment dependency problems that cannot be resolved, in addition to checking the FAQ section at the end of this tutorial, please promptly report the issue to the [LeRobot platform](https://github.com/huggingface/lerobot) or the [LeRobot Discord channel](https://discord.gg/8TnwDdjFGU).

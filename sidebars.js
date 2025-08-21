@@ -1928,6 +1928,7 @@ const sidebars = {
               'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_record_playback',
               'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_gpio',
               'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_mqtt_stream',
+              'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_udp_streaming',
               {
                 type: 'category',
                 label: 'Application',
@@ -3738,6 +3739,7 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/Quickly_Deploy_DeepSeek_on_reComputer_Jetson',
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/Deploy_DeepSeek_on_reComputer_Jetson_with_MLC',
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/GPT_OSS_Running_Live_on_reComputer_Jetson',
+                'Edge/NVIDIA_Jetson/Application/Generative_AI/Control_Motor_by_Voice_LLM_on_Jetson',
               ]
             },
             {
@@ -9641,10 +9643,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'Sensor LoRaWAN SenseCAP',
-
               items: [
-
-
                 {
                   type: 'category',
                   label: 'SenseCAP A1102',
@@ -10995,7 +10994,7 @@ const sidebars = {
       collapsible: true,
       link: {
         type: "doc",
-        id: 'Network/SenseCAP_Network/SenseCAP_Gateway_Intro',
+        id: 'Spanish/Network/SenseCAP_Network/es_SenseCAP_Gateway_Intro',
       },
       items: [
 

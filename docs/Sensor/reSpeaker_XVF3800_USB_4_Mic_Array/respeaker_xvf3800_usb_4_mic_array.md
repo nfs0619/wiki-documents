@@ -7,7 +7,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array.webp
 slug: /respeaker_xvf3800_introduction
 last_update:
-  date: 7/15/2025
+  date: 8/20/2025
   author: Kasun Thushara
 ---
 
@@ -18,7 +18,7 @@ last_update:
 The ReSpeaker XVF3800 USB 4-Mic Array is a professional 4-mic circular array with XMOS XVF3800, featuring AEC, AGC, DoA, beamforming, VAD, noise suppression, de-reverberation, 360° voice capture (up to 5m), and dual operation modes for advanced voice applications.
 
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/intropcb.jpg" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-banner.jpg" alt="pir" width={800} height="auto" /></p>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/ReSpeaker-XVF3800-USB-Mic-Array-p-6488.html" target="_blank">

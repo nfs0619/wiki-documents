@@ -15,6 +15,8 @@ The Wiki content is under development and is not available at this time.
 
 # reTerminal E10xx Works with TRMNL
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/140.jpg" style={{width:700, height:'auto'}}/></div>
+
 ## What is [TRMNL](https://trmnl.app/)?
 
 TRMNL is an innovative platform designed to help people stay focused and calm in our increasingly distracting digital world. Founded in 2023, TRMNL has quickly become a leading solution for E Ink® dashboard management, offering a unique approach to displaying information without the constant notifications and distractions of traditional screens.

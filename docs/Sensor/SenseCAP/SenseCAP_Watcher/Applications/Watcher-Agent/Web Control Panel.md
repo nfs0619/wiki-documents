@@ -11,8 +11,8 @@ keywords:
 image: http://files.seeedstudio.com/wiki/Watcher_Agent/Watcher_Agent.webp
 slug: /watcher_web_control_panel
 last_update:
-  date: 2024/04/24
-  author: Tony
+  date: 2025/08/20
+  author: Twelve
 ---
 
 # Web Control Panel Beta Guide
@@ -74,9 +74,9 @@ To get the current time, you need to add: __DATE__
 :::
 
 
-### Viewing&Managing History
+### Viewing History
 - Access chat logs
-- Delete individual messages
+- View individual messages
   <div style={{textAlign:'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/Panel/history%20del.jpg" style={{width:600, height:'auto'}}/></div> 
 
 ## Device Information
@@ -85,15 +85,12 @@ To get the current time, you need to add: __DATE__
 
 The control panel displays essential device information including:
 
-- Device Model
-- Chip Model
-- Firmware Version
+- Board Name
 - MAC address
-- Binding time
-- Online status
-- Notes
-- OTA Upgrade switch
-- Unbind
+- APP Version
+- Last Connected Time
+- Auto Upgrade switch
+- Operation
 
 :::note
 This is a beta version of the Web Control Panel, and features may be updated or changed in future releases. Please check for updates regularly for the latest functionality.

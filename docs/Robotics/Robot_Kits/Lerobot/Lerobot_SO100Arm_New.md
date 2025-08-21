@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp
 slug: /lerobot_so100m_new
 last_update:
-  date: 7/26/2025
+  date: 8/20/2025
   author: LiShanghang
 ---
 
@@ -657,13 +657,26 @@ python -m lerobot.teleoperate \
     --display_data=true
 ```
 
+:::tip
+If you find bug like this.
+
+<div align="center">
+    <img width={800}
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/rerun-version.png" />
+</div>
+
+You can downgrade the rerun version to resolve the issue.
+
+```bash
+pip3 install rerun-sdk==0.23
+```
+
+:::
 
 
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/EUcXlLlOjGE?si=6ncQ7o5ZFLR4PGTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
-
 
 
 
@@ -1000,6 +1013,12 @@ python -m lerobot.record  \
 - For the data collection command, ensure the `num-episodes` parameter is set to collect sufficient data. Do not manually pause midway, as the mean and variance of the data are calculated only after data collection is complete, which are necessary for training.
 
 - If the program indicates it cannot read image data from the USB camera, ensure the USB camera is not connected through a hub. The USB camera must be directly connected to the device to ensure fast image transmission speed.
+
+- If you find bug like `AttributeError: module 'rerun' has no attribute 'scalar'. Did you mean: 'scalars'?`, You can downgrade the rerun version to resolve the issue.
+
+```bash
+pip3 install rerun-sdk==0.23
+```
 
 :::tip
 If you encounter software issues or environment dependency problems that cannot be resolved, in addition to checking the FAQ section at the end of this tutorial, please promptly report the issue to the [LeRobot platform](https://github.com/huggingface/lerobot) or the [LeRobot Discord channel](https://discord.gg/8TnwDdjFGU).

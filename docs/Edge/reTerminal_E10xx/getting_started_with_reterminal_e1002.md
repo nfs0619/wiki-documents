@@ -11,23 +11,26 @@ last_update:
 
 # Getting Started with reTerminal E1002
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/132.jpg" style={{width:700, height:'auto'}}/></div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="/getting_started_with_reterminal_e1002" target="_blank">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+</div>
+
+
 ## Introduction
 
-The reTerminal E1002 is a 7.3-inch full-color ePaper display terminal designed for low-power information display applications. Unlike traditional e-readers, the reTerminal E1002 is optimized for displaying vibrant text and graphical information in various environments such as desktops, walls, and retail shelves. Its power-efficient design and wireless connectivity make it an ideal solution for smart home dashboards, information displays, digital signage, and electronic photo frames, with the added benefit of full color visualization.
+reTerminal E1002 is a 7.3 inch open-source full color ePaper display with exceptional 3-month battery life. Powered by ESP32-S3, it natively supports our SenseCraft HMI no-code UI platform for effortless dashboard creation,  while supporting Home Assistant, TRMNL E-ink dashboard, Arduino and ESP-IDF for further development. With the E Ink® Spectra™ 6 full-color ePaper Display, it's perfect for digital frame, colorful dashboard visulization.
 
 ### Features
 
-- **7.3-inch full-Color ePaper Display**: 800×480 resolution with ACeP (Advanced Color ePaper) technology
-- **ESP32S3 Controller**: Powerful main controller with built-in Wi-Fi connectivity
-- **Ultra-Low Power Consumption**: Designed for extended battery operation
-- **Integrated Buzzer**: For notifications and alerts
-- **Battery Support**: JST connector for 2000mAh lithium battery with charging circuit
-- **USB-C Interface**: For power and firmware updates
-- **Multiple Control Buttons**: Refresh button and navigation keys for user interaction
-- **Temperature and Humidity Sensor**: Integrated SHT40 sensor for environmental monitoring
-- **Expandable Storage**: MicroSD card slot for additional storage
-- **SenseCraft HMI Compatibility**: Seamless integration with Seeed's SenseCraft platform
-- **Open Hardware & Software**: Fully open source for customization and development
+- **Beautiful, Ready-to-Use E Ink® Spectra™6 Color ePaper Display**
+- **Ultra-Low Power with 3-Month Battery Life**
+- **No-Code UI Design & Deployment with SenseCraft HMI**
+- **Works with Popular Software Platforms**
+- **Flexible Hardware & Software Customization**
 
 ## Hardware Overview
 
@@ -57,6 +60,8 @@ The reTerminal E1002 hardware includes:
 
 **Step 2.** (Optional) Insert a microSD card if you plan to use the device as a digital photo frame or need additional storage.
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/133.jpg" style={{width:700, height:'auto'}}/></div>
+
 :::note
 The reTerminal E10xx only supports MicroSD cards up to 64GB in Fat32 format.
 :::
@@ -78,6 +83,8 @@ Depending on your operating system, you may need to install USB drivers to ensur
 1. Connect your reTerminal E1002 to your computer using the USB-C cable
 
 2. Power on the device using the power switch on the back
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/134.jpg" style={{width:700, height:'auto'}}/></div>
 
 3. Visit **[SenseCraft HMI](https://sensecraft.seeed.cc/hmi)** and sign in to your account
 
@@ -104,14 +111,16 @@ Depending on your operating system, you may need to install USB drivers to ensur
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/10.png" style={{width:800, height:'auto'}}/></div>
 
 :::note
-Updating the firmware ensures optimal performance and access to the latest features. It's recommended to perform this update before using your device for the first time.
+1. Updating the firmware ensures optimal performance and access to the latest features. It's recommended to perform this update before using your device for the first time.
+
+2. It is not possible to flash the firmware properly when the device is in the shutdown or sleep state. If you select the correct port for your device but never see the flash firmware progress, then you may need to wake up the device by pressing the green button on the top of the unit and try again.
 :::
 
 ### Power On
 
 **Step 1.** Power on the device by sliding the power switch to the **ON** position. The power switch is located on the back of the unit.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/4.png" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/135.gif" style={{width:700, height:'auto'}}/></div>
 
 
 **Step 2.** On first boot, the device will display product information and network setup instructions.
@@ -120,6 +129,10 @@ Updating the firmware ensures optimal performance and access to the latest featu
 
 
 **Step 3.** The green user LED will light up for approximately 30 seconds, indicating the device is powered on and initializing. 30 seconds of no operation of the device, in order to ensure the power, the device will automatically enter the sleep mode, the LED light will automatically turn off.
+
+:::tip
+So, we need to complete the next steps of configuring the network during this time. When the device goes to sleep, you will not be able to find the device's hotspot. If this is the case, you can wake up the device by clicking once on the device's green Wake button.
+:::
 
 ### Network Setup
 
@@ -163,8 +176,6 @@ The reTerminal E10xx series only supports 2.4GHz WiFi networks, not 5GHz or othe
 **Step 4.** Once paired, the device will display a message prompting you to create your first dashboard.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/18.png" style={{width:600, height:'auto'}}/></div>
-
-增加个Template的下载作为第一个示例。
 
 ## Creating a Dashboard
 
@@ -224,6 +235,8 @@ Once you've created and saved your dashboard in the SenseCraft platform, simply 
 
 ### Refresh Button
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/137.jpg" style={{width:700, height:'auto'}}/></div>
+
 The refresh button at the top of the device serves several functions:
 
 - **Single Press**: Manually refreshes the display and checks for new content from the SenseCraft platform. The buzzer will beep once to confirm the action. This button is also commonly used to wake up the device. You can use this button to wake up a device when it has gone to sleep and a dashboard refresh command is usually not immediately available to the device.
@@ -240,11 +253,13 @@ The left and right buttons allow you to navigate between multiple pages if your 
 
 ### Network Reset
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/138.jpg" style={{width:700, height:'auto'}}/></div>
+
 If you need to connect to a different Wi-Fi network:
 
 **Step 1.** Press and hold both navigation buttons (left and right) simultaneously for 2 seconds.
 
-**Step 2.** The device will enter Wi-Fi configuration mode, and you can follow the "Network Setup" steps again to connect to a new network.
+**Step 2.** The device will enter Wi-Fi configuration mode, and you can follow the [Network Setup](#network-setup) steps again to connect to a new network.
 
 ### LED Indicators
 
@@ -261,31 +276,105 @@ When operating on battery power:
 
 - The device will automatically enter low-power mode between refreshes
 
-- Battery life depends on refresh frequency (typically several weeks on a full charge with default settings)
+- Battery life depends on refresh frequency (typically 3-month on a full charge with default settings)
 
 - The device will display a low battery icon in the top-right corner when the battery level is below 20%
 
 ### Expansion Pins
 
-The reTerminal E1002 features an 8-pin expansion header that provides:
-- Power (VDD)
-- Ground (GND)
-- I2C interface
-- GPIO pins
+The reTerminal E1002 features an 8-pin expansion header (J2) that provides connectivity options for adding external sensors, modules, or other hardware to extend the functionality of your device. This expansion header exposes several ESP32-S3 GPIO pins and communication interfaces, making it a versatile connection point for your DIY projects.
 
-These expansion pins allow you to connect additional sensors, actuators, or other hardware to extend the functionality of your device. They can be accessed for custom development projects when you need to add hardware capabilities beyond those built into the reTerminal E1002.
+#### Expansion Header Pinout
+
+The 8-pin expansion header (J2) has the following pinout:
+
+<div class="table-center">
+	<table align="center">
+		<tr>
+			<th>Pin (from top to bottom)</th>
+			<th>Label</th>
+			<th>ESP32-S3 Pin</th>
+			<th>Function</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>HEADER_3V3</td>
+			<td>-</td>
+			<td>Power</td>
+			<td>3.3V power supply for external devices</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>GND</td>
+			<td>-</td>
+			<td>Ground</td>
+			<td>Common ground reference</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>ESP_IO46</td>
+			<td>GPIO46</td>
+			<td>GPIO/ADC</td>
+			<td>General purpose I/O with analog input capability</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>ESP_IO2/ADC1_CH4</td>
+			<td>GPIO2</td>
+			<td>GPIO/ADC</td>
+			<td>General purpose I/O with analog input capability (ADC1 channel 4)</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>ESP_IO17/TX1</td>
+			<td>GPIO17</td>
+			<td>GPIO/UART TX</td>
+			<td>GPIO or UART transmit (TX) signal</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>ESP_IO18/RX1</td>
+			<td>GPIO18</td>
+			<td>GPIO/UART RX</td>
+			<td>GPIO or UART receive (RX) signal</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>ESP_IO20/I2C0_SCL</td>
+			<td>GPIO20</td>
+			<td>GPIO/I2C SCL</td>
+			<td>GPIO or I2C clock signal</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>ESP_IO19/I2C0_SDA</td>
+			<td>GPIO19</td>
+			<td>GPIO/I2C SDA</td>
+			<td>GPIO or I2C data signal</td>
+		</tr>
+	</table>
+</div>
 
 ## Device Placement
 
-The reTerminal E1002 comes with a support stand accessory that allows you to position the device upright for optimal viewing:
+The reTerminal E1002 comes with a 3D-printed support stand accessory that allows you to position the device upright for optimal viewing:
 
-**Step 1.** Locate the support stand included in the package.
+**Step 1.** Locate the 3D-printed support stand included in the package.
 
-**Step 2.** Insert the stand into the designated slot at the bottom back of the reTerminal E1002.
+**Step 2.** Position the support stand against the designated mounting area on the bottom back of the reTerminal E1002 where the embedded nuts are located.
 
-**Step 3.** Adjust the angle of the stand to achieve your preferred viewing position.
+**Step 3.** Use a long screwdriver to secure the stand to the device by tightening the screws into the embedded nuts on the back of the reTerminal E1002.
 
-The stand allows the device to be placed on desks, countertops, or shelves, making it ideal for use as an information display or digital photo frame in various environments.
+**Step 4.** Once securely attached, place the reTerminal E1002 on a flat surface where the stand will support it in an upright position.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/139.jpg" style={{width:600, height:'auto'}}/></div>
+
+:::note
+The stand provides a fixed viewing angle and cannot be adjusted. This fixed positioning is designed to offer optimal visibility in most usage scenarios.
+
+The stand allows the device to be placed on desks, countertops, or shelves, making it ideal for use as an information display, control panel, or digital photo frame in various environments.
+:::
 
 ## Troubleshooting
 

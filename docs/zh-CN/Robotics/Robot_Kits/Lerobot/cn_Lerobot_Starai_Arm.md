@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.webp
 slug: /cn/lerobot_starai_arm
 last_update:
-  date: 8/15/2025
+  date: 8/20/2025
   author: LiShanghang
 ---
 
@@ -471,6 +471,22 @@ python lerobot/scripts/control_robot.py \
   --control.display_data=true
 ```
 
+:::tip
+
+如果遇到此错误 `AttributeError: module 'rerun' has no attribute 'scalar'. Did you mean: 'scalars'?`。
+
+<div align="center">
+    <img width={800}
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/rerun-version.png" />
+</div>
+
+你可以降低rerun版本来解决。
+
+```bash
+pip3 install rerun-sdk==0.23
+```
+
+:::
 
 ## 数据集制作采集
 
@@ -704,6 +720,12 @@ python lerobot/scripts/control_robot.py \
 - 数据采集命令的num-episodes要确保采集数据足够，不可中途手动暂停，因为在数据采集结束后才会计算数据的均值和方差，这在训练中是必要的数据。
 
 - 如果程序提示无法读取USB摄像头图像数据，请确保USB摄像头不是接在Hub上的，USB摄像头必须直接接入设备，确保图像传输速率快。
+
+- 如果遇到此错误 `AttributeError: module 'rerun' has no attribute 'scalar'. Did you mean: 'scalars'?`, 你可以降低rerun版本来解决.
+
+```bash
+pip3 install rerun-sdk==0.23
+```
 
 ## 参考文档
 

@@ -11,8 +11,8 @@ keywords:
 image: http://files.seeedstudio.com/wiki/Watcher_Agent/Watcher_Agent.webp
 slug: /device_network_setup
 last_update:
-  date: 04/25/2024
-  author: Zeke
+  date: 08/20/2025
+  author: Twelve
 ---
 
 # Device Network Setup Guide
@@ -59,8 +59,6 @@ Step 2. Configure WiFi Connection
 - Enter the password for your selected WiFi network
 - Click the "Connect" button to submit
 
-<div style={{textAlign:'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/wifi%20config.jpg" style={{width:500, height:'auto'}}/></div> 
-
 :::note
 Only 2.4GHz networks are supported
 If using an iPhone hotspot, enable the "Maximum Compatibility" option
@@ -83,7 +81,7 @@ Step 1. Device display a verification code
 <div style={{textAlign:'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/activation.jpg" style={{width:300, height:'auto'}}/></div> 
 
 Step 2. Register Device
-- Access the [SenseCraft AI-Watcher Agent platform](https://sensecraft.seeed.cc/ai/home)
+- Access the [SenseCraft AI-Watcher Agent platform](https://sensecraft.seeed.cc/ai/watcher-agent)
 - Configure your Agent according to this [WiKi](https://wiki.seeedstudio.com/Web_Control_Panel/)
 
 ### Basic Operations

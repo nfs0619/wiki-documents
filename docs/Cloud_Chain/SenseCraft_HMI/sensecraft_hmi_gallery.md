@@ -251,6 +251,8 @@ Step 2. Locate the MicroSD card slot on your device
 
 Step 3. Insert the properly formatted MicroSD card
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/133.jpg" style={{width:700, height:'auto'}}/></div>
+
 Step 4. Power on your device
 
 Step 5. Reconnect to SenseCraft HMI to verify the expanded storage is recognized
