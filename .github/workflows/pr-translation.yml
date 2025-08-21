@@ -28,16 +28,16 @@ jobs:
             const pull_number = context.payload.pull_request.number;
             
             try {
-              // 获取PR的最新commit
+              // 获取PR的所有commit，取最后一个
               const { data: commits } = await github.rest.pulls.listCommits({
                 owner,
                 repo,
                 pull_number,
-                per_page: 1
+                per_page: 250, // 最多一次性取250个
               });
               
               if (commits.length > 0) {
-                const latestCommit = commits[0];
+                const latestCommit = commits[commits.length - 1]; // ⚡ 一定要取最后一个
                 const message = latestCommit.commit.message;
                 
                 // 检查是否是翻译或撤回commit
