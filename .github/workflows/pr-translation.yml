@@ -186,6 +186,7 @@ jobs:
         with:
           token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+          clean: true  # 确保工作区干净
       
       - name: Add start comment
         id: start-comment
@@ -324,8 +325,9 @@ jobs:
       - name: Install dependencies
         if: steps.check-permissions.outputs.has_permission == 'true'
         run: |
-          echo "📦 安装依赖..."
-          npm install @anthropic-ai/sdk --no-save --legacy-peer-deps
+          echo "📦 安装翻译依赖..."
+          # 只安装翻译脚本需要的依赖，避免修改yarn.lock
+          npm install @anthropic-ai/sdk --no-save --no-package-lock
       
       - name: Run translation
         if: steps.check-permissions.outputs.has_permission == 'true'
@@ -356,10 +358,18 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
           
-          if git diff --quiet; then
-            echo "ℹ️ 没有翻译内容需要提交"
-            echo "HAS_CHANGES=false" >> $GITHUB_ENV
-          else
+          # 显示当前状态（用于调试）
+          echo "📋 当前git状态："
+          git status --short
+          
+          # 重置不需要的文件修改（如yarn.lock）
+          git checkout -- yarn.lock package-lock.json 2>/dev/null || true
+          
+          # 检查docs目录是否有变更
+          if [ -n "$(git status --porcelain docs/)" ]; then
+            echo "📝 检测到文档变更，准备提交..."
+            
+            # 添加docs目录的更改
             git add docs/
             
             # 创建commit message
@@ -369,7 +379,7 @@ jobs:
           Triggered by: @${TRIGGERED_BY}
           Time: $(date '+%Y-%m-%d %H:%M:%S')"
             
-            # 使用-m两次来添加标题和详情
+            # 提交更改
             git commit -m "$COMMIT_MSG" -m "$COMMIT_DETAILS"
             
             # 使用PAT推送以触发其他工作流
@@ -384,6 +394,9 @@ jobs:
             echo "HAS_CHANGES=true" >> $GITHUB_ENV
             echo "TRANSLATION_COMMIT_SHA=$(git rev-parse HEAD)" >> $GITHUB_ENV
             echo "✅ 翻译结果已提交并推送"
+          else
+            echo "ℹ️ 没有翻译内容需要提交"
+            echo "HAS_CHANGES=false" >> $GITHUB_ENV
           fi
       
       - name: Save translation metadata
