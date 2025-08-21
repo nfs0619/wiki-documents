@@ -283,7 +283,7 @@ function intelligentSplit(lines, maxSize) {
   return chunks.length > 0 ? chunks : [lines.join('\n')];
 }
 
-// 🔥 核心改进5：增强的提示词生成（强调缩进保持）
+// 🔥 核心改进5：增强的提示词生成（强调缩进保持和锚点处理）
 function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkInfo = null) {
   const langName = LANGUAGE_CONFIG[targetLang].name;
   const termsList = Object.entries(PRESERVE_TERMS)
@@ -323,11 +323,17 @@ function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkIn
    - 列表项的缩进级别必须保持不变
    - 代码块内的缩进必须完全保留
 
-4. **严格禁止**：
+4. **锚点链接处理**：
+   - 在[文本](#锚点)格式中，锚点部分的空格用连字符替换
+   - 例如：[Some Text](#some-text) → [一些文本](#一些-文本)
+   - 注意：锚点中绝不能有空格，必须用连字符连接
+
+5. **严格禁止**：
    - 添加或删除任何行
    - 改变任何缩进
    - 添加原文没有的\`\`\`代码块标记
    - 改变[LINE_X]标记的位置
+   - 在锚点链接的#后面使用空格
 </translation_rules>
 
 <example>
@@ -336,7 +342,7 @@ function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkIn
 [LINE_1][EMPTY_LINE]
 [LINE_2] This is a tutorial about:
 [LINE_3]   - First item
-[LINE_4]   - Second item
+[LINE_4]   - [BLE Scanner](#ble-scanner)
 [LINE_5]     - Nested item
 
 正确输出：
@@ -344,7 +350,7 @@ function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkIn
 [LINE_1][EMPTY_LINE]
 [LINE_2] 这是一个关于以下内容的教程：
 [LINE_3]   - 第一项
-[LINE_4]   - 第二项
+[LINE_4]   - [BLE 扫描器](#ble-扫描器)
 [LINE_5]     - 嵌套项
 
 错误输出（绝对禁止）：
@@ -352,7 +358,7 @@ function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkIn
 [LINE_1][EMPTY_LINE]
 [LINE_2] 这是一个关于以下内容的教程：
 [LINE_3] - 第一项  ❌ 缩进丢失
-[LINE_4] - 第二项  ❌ 缩进丢失
+[LINE_4]   - [BLE 扫描器](#ble 扫描器)  ❌ 锚点中有空格
 [LINE_5]   - 嵌套项  ❌ 缩进级别错误
 </example>
 </instruction>
@@ -366,7 +372,7 @@ function generateEnhancedPrompt(targetLang, pathPrefix, isChunk = false, chunkIn
   return prompt;
 }
 
-// 🔥 核心改进6：验证翻译结果（包括缩进检查）
+// 🔥 核心改进6：验证翻译结果（包括缩进和锚点检查）
 function validateTranslation(original, translated) {
   const originalLines = original.split('\n');
   const translatedLines = translated.split('\n');
@@ -389,6 +395,16 @@ function validateTranslation(original, translated) {
     issues.push({
       type: 'code_blocks',
       message: `代码块标记不匹配: 原文${originalCodeBlocks}个，译文${translatedCodeBlocks}个`
+    });
+  }
+  
+  // 检查锚点链接中的空格（不应该有空格）
+  const anchorWithSpaces = translated.match(/\[[^\]]*\]\(#[^)]*\s[^)]*\)/g);
+  if (anchorWithSpaces) {
+    issues.push({
+      type: 'anchor_spaces',
+      message: `锚点链接中包含空格: ${anchorWithSpaces.join(', ')}`,
+      autofix: true
     });
   }
   
@@ -503,27 +519,38 @@ async function translateWithClaude(text, targetLang, maxRetries = 3, isChunk = f
       // 后处理：移除标记并恢复缩进
       translatedContent = postprocessDocument(translatedContent, lineMetadata, totalLines);
       
+      // 先修复锚点链接（在验证之前）
+      translatedContent = fixAnchorLinks(translatedContent);
+      
       // 验证翻译结果
       const issues = validateTranslation(text, translatedContent);
       
-      if (issues.length > 0) {
-        console.log(`⚠️ 发现${issues.length}个格式问题:`);
-        issues.forEach(issue => {
-          if (issue.type === 'indent') {
-            console.log(`  - ${issue.message}`);
-          } else {
-            console.log(`  - ${issue.message}`);
-          }
+      // 过滤掉已自动修复的问题
+      const unresolved = issues.filter(issue => !issue.autofix);
+      
+      if (unresolved.length > 0) {
+        console.log(`⚠️ 发现${unresolved.length}个格式问题:`);
+        unresolved.forEach(issue => {
+          console.log(`  - ${issue.message}`);
         });
         
         // 如果问题太多且还有重试机会，重新翻译
-        if (issues.length > 3 && attempt < maxRetries) {
+        if (unresolved.length > 3 && attempt < maxRetries) {
           console.log(`🔄 问题较多，重新翻译...`);
           continue;
         }
       }
       
-      // 处理链接
+      // 如果有自动修复的问题，记录日志
+      const autofixed = issues.filter(issue => issue.autofix);
+      if (autofixed.length > 0) {
+        console.log(`✅ 自动修复了${autofixed.length}个问题:`);
+        autofixed.forEach(issue => {
+          console.log(`  - ${issue.message}`);
+        });
+      }
+      
+      // 处理链接（这会再次调用fixAnchorLinks，但这是为了确保）
       translatedContent = processInternalLinks(translatedContent, targetLang);
       
       // 中英文混排处理
@@ -574,6 +601,42 @@ ${termsList}
 只输出翻译后的YAML内容。`;
 }
 
+// 🔥 新增：修复锚点链接中的空格问题
+function fixAnchorLinks(content) {
+  // 修复锚点链接中的空格
+  // 匹配 [文本](#锚点) 格式，将锚点中的空格替换为连字符
+  content = content.replace(
+    /\[([^\]]*)\]\(#([^)]*)\)/g,
+    (match, text, anchor) => {
+      // 将锚点中的空格替换为连字符
+      const fixedAnchor = anchor.replace(/\s+/g, '-');
+      return `[${text}](#${fixedAnchor})`;
+    }
+  );
+  
+  // 同时处理HTML格式的锚点链接
+  content = content.replace(
+    /<a\s+([^>]*\s+)?href="#([^"]*)"([^>]*)>/gi,
+    (match, beforeAttrs, anchor, afterAttrs) => {
+      const fixedAnchor = anchor.replace(/\s+/g, '-');
+      const before = beforeAttrs || '';
+      const after = afterAttrs || '';
+      return `<a ${before}href="#${fixedAnchor}"${after}>`;
+    }
+  );
+  
+  // 修复标题的id属性（如果有的话）
+  content = content.replace(
+    /^(#{1,6})\s+(.*?)\s*\{#([^}]+)\}/gm,
+    (match, hashes, title, id) => {
+      const fixedId = id.replace(/\s+/g, '-');
+      return `${hashes} ${title} {#${fixedId}}`;
+    }
+  );
+  
+  return content;
+}
+
 // 处理内部链接（保持原有）
 function processInternalLinks(content, targetLang) {
   const langConfig = LANGUAGE_CONFIG[targetLang];
@@ -614,17 +677,33 @@ function processInternalLinks(content, targetLang) {
     }
   );
   
+  // 修复锚点链接
+  content = fixAnchorLinks(content);
+  
   return content;
 }
 
-// 中英文混排处理（保持原有）
+// 中英文混排处理（保持原有，但避免影响锚点）
 function addChineseEnglishSpacing(content) {
-  content = content.replace(/([一-龯])([a-zA-Z])/g, '$1 $2');
-  content = content.replace(/([a-zA-Z])([一-龯])/g, '$1 $2');
-  content = content.replace(/([一-龯])(\d)/g, '$1 $2');
-  content = content.replace(/(\d)([一-龯])/g, '$1 $2');
+  // 先保存所有的锚点链接
+  const anchorLinks = [];
+  let tempContent = content.replace(/\[([^\]]*)\]\(#([^)]*)\)/g, (match, text, anchor) => {
+    anchorLinks.push(match);
+    return `__ANCHOR_PLACEHOLDER_${anchorLinks.length - 1}__`;
+  });
   
-  return content;
+  // 进行中英文混排处理
+  tempContent = tempContent.replace(/([一-龯])([a-zA-Z])/g, '$1 $2');
+  tempContent = tempContent.replace(/([a-zA-Z])([一-龯])/g, '$1 $2');
+  tempContent = tempContent.replace(/([一-龯])(\d)/g, '$1 $2');
+  tempContent = tempContent.replace(/(\d)([一-龯])/g, '$1 $2');
+  
+  // 恢复锚点链接
+  anchorLinks.forEach((link, index) => {
+    tempContent = tempContent.replace(`__ANCHOR_PLACEHOLDER_${index}__`, link);
+  });
+  
+  return tempContent;
 }
 
 // 检查文件是否受保护

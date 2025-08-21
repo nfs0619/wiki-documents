@@ -7,7 +7,7 @@ keywords:
 - ble
 - bluetooth
 image: https://files.seeedstudio.com/wiki/XIAO_MG24/Bluetooth/ble-cover.webp
-slug: /cn/xiao_mg24_bluetooth
+slug: /cnn/xiao_mg24_bluetooth
 last_update:
   date: 02/8/2025
   author: Hugo
@@ -277,7 +277,6 @@ static String get_complete_local_name_from_ble_advertisement(sl_bt_evt_scanner_l
 #ifndef BLE_STACK_SILABS
 #error "This example is only compatible with the Silicon Labs BLE stack. Please select 'BLE (Silabs)' in 'Tools > Protocol stack'."
 #endif
-
 ```
 
 :::tip
@@ -589,7 +588,6 @@ static void ble_initialize_gatt_db() {
 #ifndef BLE_STACK_SILABS
 #error "This example is only compatible with the Silicon Labs BLE stack. Please select 'BLE (Silabs)' in 'Tools > Protocol stack'."
 #endif
-
 ```
 
 同时，您可以在主要的移动应用商店中搜索并下载 **nRF Connect** 应用，该应用允许您的手机搜索并连接到蓝牙设备。
@@ -879,7 +877,6 @@ static bool find_complete_local_name_in_advertisement(sl_bt_evt_scanner_legacy_a
 #error "This example is only compatible with the Silicon Labs BLE stack. Please select 'BLE (Silabs)' in 'Tools > Protocol stack'."
 #endif
 ```
-
 
 上述程序将把 XIAO 变成一个客户端，搜索附近的蓝牙设备。当蓝牙设备的 UUID 与您提供的 UUID 匹配时，它将连接到该设备并获取其特征值。
 
@@ -1641,7 +1638,6 @@ static float translate_IEEE_11073_temperature_to_float(IEEE_11073_float const *I
   #error "This example is only compatible with the Silicon Labs BLE stack. Please select 'BLE (Silabs)' in 'Tools > Protocol stack'."
 #endif
 ```
-
 
 最后，如果服务器和客户端程序运行顺利，您可以通过串口看到客户端打印的以下信息。
 
