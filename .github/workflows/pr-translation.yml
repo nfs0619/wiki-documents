@@ -478,7 +478,6 @@ jobs:
               comment += `翻译文件已自动提交到当前PR分支。\n\n`;
               
               comment += `### 🔄 后续操作\n`;
-              comment += `- 构建检查正在自动运行中...\n`;
               comment += `- 如果对翻译结果不满意，可以使用 \`/rollback translation\` 撤回此次翻译\n`;
               comment += `- 撤回后可以重新翻译或手动修改\n\n`;
               

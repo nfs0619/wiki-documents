@@ -1066,7 +1066,7 @@ function generateProgressReport(languages, results) {
   const successCount = results.filter(r => r.success).length;
   const failCount = results.filter(r => !r.success).length;
   
-  let report = `## 📊 翻译完成报告\n\n`;
+  let report = `#### 📊 翻译完成报告\n\n`;
   report += `**目标语言:** ${languages.map(l => LANGUAGE_CONFIG[l]?.name || l).join(', ')}\n`;
   report += `**处理时间:** ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}\n\n`;
   report += `**统计信息:**\n`;
