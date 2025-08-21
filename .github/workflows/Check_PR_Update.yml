@@ -39,10 +39,7 @@ env:
 jobs:
   test-deploy:
     name: Test deployment
-    # 避免重复运行：如果是push事件且commit message包含特定标记，可以跳过
-    if: |
-      github.event_name == 'pull_request' || 
-      (github.event_name == 'push' && !contains(github.event.head_commit.message, '[skip deploy]'))
+    # 正常运行，不跳过任何检查
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -58,30 +55,46 @@ jobs:
       - name: Test build website
         run: yarn docusaurus build
         
-      - name: Report build status
-        if: always()
+      - name: Report status to PR
+        if: github.event_name == 'push'
         uses: actions/github-script@v7
         with:
           script: |
-            // 只在push事件且是翻译或撤回操作时报告状态
-            if (context.eventName === 'push') {
-              const commitMessage = context.payload.head_commit.message;
-              if (commitMessage.includes('🌍 自动翻译文档') || commitMessage.includes('撤回翻译')) {
-                const { owner, repo } = context.repo;
-                const sha = context.sha;
+            // 获取相关的PR
+            const { owner, repo } = context.repo;
+            const branch = context.ref.replace('refs/heads/', '');
+            
+            try {
+              // 查找与这个分支关联的PR
+              const { data: prs } = await github.rest.pulls.list({
+                owner,
+                repo,
+                head: `${owner}:${branch}`,
+                state: 'open'
+              });
+              
+              if (prs.length > 0) {
+                const pr = prs[0];
                 const success = '${{ job.status }}' === 'success';
                 
-                // 创建commit status
-                await github.rest.repos.createCommitStatus({
+                // 创建一个check run来显示状态
+                await github.rest.checks.create({
                   owner,
                   repo,
-                  sha,
-                  state: success ? 'success' : 'failure',
-                  target_url: `https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }}`,
-                  description: success ? 'Build succeeded' : 'Build failed',
-                  context: 'continuous-integration/docusaurus'
+                  name: 'Docusaurus Build Check',
+                  head_sha: context.sha,
+                  status: 'completed',
+                  conclusion: success ? 'success' : 'failure',
+                  output: {
+                    title: success ? 'Build Successful' : 'Build Failed',
+                    summary: success ? 
+                      '✅ The documentation build completed successfully.' : 
+                      '❌ The documentation build failed. Please check the logs.'
+                  }
                 });
                 
-                console.log(`Build status reported: ${success ? 'success' : 'failure'}`);
+                console.log(`Status reported for PR #${pr.number}`);
               }
+            } catch (error) {
+              console.error('Failed to report status:', error);
             }
