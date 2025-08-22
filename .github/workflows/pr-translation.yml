@@ -182,7 +182,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
           clean: true  # 确保工作区干净
       
@@ -271,8 +271,8 @@ jobs:
       - name: Checkout PR
         if: steps.check-permissions.outputs.has_permission == 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
-          GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
         run: |
           echo "📄 切换到PR分支..."
           gh pr checkout ${{ github.event.issue.number }}
@@ -313,7 +313,7 @@ jobs:
         if: steps.check-permissions.outputs.has_permission == 'true'
         id: pr-info
         env:
-          GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
         run: |
           echo "📊 获取PR基础信息..."
           base_sha=$(gh pr view ${{ github.event.issue.number }} --json baseRefOid --jq '.baseRefOid')
@@ -347,7 +347,7 @@ jobs:
       - name: Commit and push changes
         if: steps.check-permissions.outputs.has_permission == 'true'
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          TRANSLATION_PAT: ${{ secrets.TRANSLATION_PAT }}
           LANGUAGES: ${{ steps.parse.outputs.languages }}
           TRIGGERED_BY: ${{ github.event.comment.user.login }}
         run: |
@@ -380,9 +380,9 @@ jobs:
             git commit -m "$COMMIT_MSG" -m "$COMMIT_DETAILS"
             
             # 使用PAT推送以触发其他工作流
-            if [ -n "$PAT_TOKEN" ]; then
+            if [ -n "$TRANSLATION_PAT" ]; then
               echo "使用PAT推送..."
-              git push https://${PAT_TOKEN}@github.com/${{ github.repository }}.git HEAD
+              git push https://${TRANSLATION_PAT}@github.com/${{ github.repository }}.git HEAD
             else
               echo "使用默认token推送..."
               git push origin HEAD
@@ -532,7 +532,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
       
       - name: Check user permissions
@@ -627,9 +627,9 @@ jobs:
       - name: Checkout PR and rollback
         if: steps.find-metadata.outputs.has_metadata == 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
-          GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
+          TRANSLATION_PAT: ${{ secrets.TRANSLATION_PAT }}
         run: |
           echo "📄 切换到PR分支..."
           gh pr checkout ${{ github.event.issue.number }}
@@ -657,9 +657,9 @@ jobs:
           git reset --hard $BEFORE_SHA
           
           # 强制推送（需要PAT）
-          if [ -n "$PAT_TOKEN" ]; then
+          if [ -n "$TRANSLATION_PAT" ]; then
             echo "使用PAT强制推送..."
-            git push --force https://${PAT_TOKEN}@github.com/${{ github.repository }}.git HEAD
+            git push --force https://${TRANSLATION_PAT}@github.com/${{ github.repository }}.git HEAD
           else
             echo "使用默认token强制推送..."
             git push --force origin HEAD
@@ -670,7 +670,7 @@ jobs:
       - name: Add rollback marker commit
         if: steps.find-metadata.outputs.has_metadata == 'true'
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          TRANSLATION_PAT: ${{ secrets.TRANSLATION_PAT }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
@@ -678,9 +678,9 @@ jobs:
           # 新建一个空 commit 作为标记
           git commit --allow-empty -m "🔄 撤回翻译"
           
-          if [ -n "$PAT_TOKEN" ]; then
+          if [ -n "$TRANSLATION_PAT" ]; then
             echo "使用PAT推送 rollback 标记 commit..."
-            git push https://${PAT_TOKEN}@github.com/${{ github.repository }}.git HEAD
+            git push https://${TRANSLATION_PAT}@github.com/${{ github.repository }}.git HEAD
           else
             git push origin HEAD
           fi
